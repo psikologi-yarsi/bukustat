@@ -59,6 +59,7 @@ format:
     code-link: true
     author-meta: "Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, & Aswin Januarsjaf"
     breadcrumb: true
+    title-block-banner: true
   pdf:
     documentclass: scrbook
 
