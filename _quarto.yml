@@ -42,6 +42,8 @@ book:
     - part: 7_korelasi.qmd
     
     - part: 8_regresi.qmd
+    
+    - references.qmd
 
 bibliography: references.bib
 bibliographystyle: apa
