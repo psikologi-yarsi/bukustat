@@ -125,5 +125,92 @@
     "crumbs": [
       "Daftar Pustaka"
     ]
+  },
+  {
+    "objectID": "2_1_jenis_data.html",
+    "href": "2_1_jenis_data.html",
+    "title": "4  Jenis Data",
+    "section": "",
+    "text": "4.1 Mengidentifikasi Jenis Data\nSebelum data dianalisis, peneliti perlu memahami terlebih dahulu jenis data yang dimiliki. Pengklasifikasian data menjadi nominal, ordinal, interval, atau rasio akan menentukan teknik statistik apa yang tepat untuk digunakan. Selain itu, proses penamaan dan pengkodean variabel juga merupakan bagian penting dalam pengelolaan data yang baik. Pengkodean yang konsisten akan memudahkan dalam proses input data, analisis, maupun interpretasi hasil. Oleh karena itu, pengenalan jenis data dan cara mengelola variabel adalah fondasi penting sebelum melangkah ke tahap analisis statistik.\nData adalah kumpulan informasi berupa angka. Informasi ini biasanya dicatat sesuai dengan definisi yang diinginkan oleh peneliti. Sebagai contoh, data tinggi badan dicatat dalam centimeter per individu untuk anak-anak usia 0-10 tahun di Indonesia. Pada data tersebut terdapat data tinggi badan anak yang dapat diolah per individu. Di saat yang sama, terdapat pula kelompok data yang lebih besar, misalnya data tinggi badan untuk wilayah DKI Jakarta, Jawa Barat, dan wilayah lainnya yang kemudian dapat diolah dan dibandingkan per wilayah.\nData disebut dengan raw score (data mentah) apabila data tersebut adalah data langsung dari partisipan, tidak dimodifikasi, dan tidak dikonversi ke dalam nilai tertentu. Contoh data mentah:\nData dapat memberikan berbagai jenis informasi yang berbeda. Misalnya, informasi dasar seperti jenis kelamin, atau informasi lainnya yang lebih rumit seperti sikap atau perasaan seseorang. Terdapat berbagai jenis data di dalam penelitian psikologi, yaitu:",
+    "crumbs": [
+      "PERSIAPAN DATA",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Jenis Data</span>"
+    ]
+  },
+  {
+    "objectID": "2_1_jenis_data.html#mengidentifikasi-jenis-data",
+    "href": "2_1_jenis_data.html#mengidentifikasi-jenis-data",
+    "title": "4  Jenis Data",
+    "section": "",
+    "text": "ID Partisipan\nSkor Mentah Matematika (jumlah menjawab benar dari 50 soal)\nSkor Konversi dalam rentang 0-100 (raw/50 x 100)\n\n\n\n\n1\n25\n50\n\n\n2\n35\n70\n\n\n3\n45\n90\n\n\n4\n15\n30\n\n\n5\n37\n74\n\n\n\n\n\nData kategorikal atau nominal\nData kategorikal atau nominal adalah penunjuk karakteristik, label, atau golongan pada subjek. Sebagai contoh: jenis kelamin (laki-laki dan perempuan), daerah tempat tinggal (Jakarta, Bekasi, Bogor) dan lain sebagainya. Pemberian kode pada data-data ini hanya bersifat dummy dan tidak memiliki makna apa-apa secara statistik.\nData ordinal\nSebagai contoh, pada sebuah data penelitian, laki-laki diberikan kode 0 dan perempuan kode 1. Hal ini tidak berarti perempuan memiliki nilai yang lebih tinggi daripada laki-laki, begitu pula sebaliknya. Pemberian kode ini hanya untuk kemudahan pengolahan data dan tidak berarti secara statistik. Misalnya pada jenis kelamin, nilai rata-rata (mean) tidak dapat dihitung meski laki-laki disematkan angka 0 dan perempuan disematkan angka 1.\nData interval\nData interval adalah data yang memiliki makna, terdapat informasi mengenai jarak antara satu skor dengan skor lainnya namun tidak ada informasi mengenai seberapa mutlak nilai tersebut karena titik 0 tidak definitif. Misalnya suhu udara 0o Celsius tidak berarti ‘tidak ada temperatur’. Titik tersebut adalah definisi dari kondisi di mana air membeku. Perbedaan suhu antara 30oC dan 20o C adalah 10oC. Namun, tidak dapat dikatakan bahwa 20oC adalah dua kali lebih panas daripada 10oC karena suhu tidak memiliki titik 0oC yang definitif.\nData rasio\nData rasio adalah data yang memiliki titik 0 yang mutlak sehingga jarak antara satu skor dengan skor lainnya dapat dilakukan secara definit. Sebagai contoh, berat badan 100 kilogram dapat dikatakan lebih berat dua kali lipat dibandingkan seseorang dengan berat badan 50 kg.",
+    "crumbs": [
+      "PERSIAPAN DATA",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Jenis Data</span>"
+    ]
+  },
+  {
+    "objectID": "2_1_jenis_data.html#penamaan-dan-pengkodean-datavariabel",
+    "href": "2_1_jenis_data.html#penamaan-dan-pengkodean-datavariabel",
+    "title": "4  Jenis Data",
+    "section": "4.2 Penamaan dan Pengkodean Data/Variabel",
+    "text": "4.2 Penamaan dan Pengkodean Data/Variabel\nLangkah awal yang penting dalam mempersiapkan data adalah memberikan nama atau kode variabel dengan jelas, mudah dipahami, dan mengikuti pola penamaan yang konsisten. Penamaan variabel yang baik tidak hanya memudahkan peneliti dalam mengolah data, tetapi juga memastikan bahwa data dapat dipahami dan digunakan kembali oleh peneliti lain, terutama ketika bekerja dengan data set yang besar atau di dalam tim.\nSebagai contoh, dalam sebuah penelitian yang melibatkan tiga kali pengambilan data menggunakan dua kuesioner – EQ-5D dan PedsQL – penamaan variabel dapat menggunakan kode yang menggambarkan waktu pengambilan data dan jenis instrumen secara ringkas dan jelas. Misalnya:\n\nData pengambilan pertama diberi kode B (Baseline)\nPengambilan kedua diberi kode R (Retest),\nDan pengambilan ketiga diberi kode F (Follow-up).\n\nSelanjutnya, nama variabel dibentuk dengan menggabungkan kode waktu dan nama instrumen. Dengan demikian:\n\nUntuk pengambilan pertama dengan EQ-5D, variabel dinamai BEQ5D, dan untuk PedsQL dinamai BPedsQL.\nUntuk pengambilan kedua: REQ5D dan RPedsQL.\nDan seterusnya untuk pengambilan ketiga.\n\nPola penamaan yang konsisten seperti ini akan mempermudah proses analisis, mengurangi risiko kesalahan, serta meningkatkan transparansi dan akuntabilitas, khususnya jika pengolahan data dilakukan oleh pihak lain atau pada proyek penelitian berskala besar.",
+    "crumbs": [
+      "PERSIAPAN DATA",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Jenis Data</span>"
+    ]
+  },
+  {
+    "objectID": "2_persiapan.html",
+    "href": "2_persiapan.html",
+    "title": "PERSIAPAN DATA",
+    "section": "",
+    "text": "Bab ini akan membahas mengenai mengenali dan mempersiapkan data penelitian agar dapat diolah lebih lanjut secara statistik. Untuk menghasilkan analisis yang valid dan bermakna, peneliti perlu memahami jenis data yang dimiliki, melakukan proses pembersihan data secara sistematis, serta menjaga akuntabilitas dalam setiap tahap pengelolaan data. Tahapan ini bukan sekadar teknis, melainkan fondasi penting untuk memastikan bahwa hasil analisis benar-benar mencerminkan realitas yang diteliti.\nBab ini diawali dengan penjelasan tentang jenis data, termasuk cara mengidentifikasi tipe data serta prinsip dalam penamaan dan pengkodean variabel agar konsisten dan mudah diinterpretasikan. Selanjutnya, pembahasan berlanjut pada proses pembersihan data, yang mencakup analisis deskriptif awal, penanganan missing value, serta deteksi pencilan (outlier) yang dapat memengaruhi hasil analisis. Terakhir, bab ini menekankan pentingnya akuntabilitas data, yaitu tanggung jawab peneliti untuk mendokumentasikan, menyimpan, dan mengelola data secara transparan agar dapat dipertanggungjawabkan secara ilmiah. Dengan memahami dan menerapkan ketiga aspek ini, mahasiswa akan memiliki dasar yang kuat dalam mempersiapkan data untuk analisis statistik yang sahih dan terpercaya.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 4. Jenis Data:\n\nMengidentifikasi berbagai jenis data dalam konteks penelitian psikologi (nominal, ordinal, interval, rasio).\nMenerapkan prinsip penamaan dan pengkodean variabel secara konsisten dan sistematis.\nMemahami pentingnya kesesuaian antara jenis data dan teknik analisis statistik yang akan digunakan.\n\n\nBab 5. Pembersihan Data:\n\nMelakukan analisis deskriptif awal untuk mengevaluasi distribusi dan karakteristik dasar data.\nMengidentifikasi dan menangani data hilang (missing value) serta outlier secara tepat untuk memastikan keakuratan analisis lanjutan.\n\n\nBab 6. Akuntabilitas Data:\n\nMenjelaskan pentingnya pencatatan proses analisis statistik sebagai bentuk akuntabilitas ilmiah.\nMemahami pentingnya transparansi dalam meningkatkan kualitas dan integritas penelitian psikologi.",
+    "crumbs": [
+      "PERSIAPAN DATA"
+    ]
+  },
+  {
+    "objectID": "2_2_cleaning.html",
+    "href": "2_2_cleaning.html",
+    "title": "5  Pembersihan Data",
+    "section": "",
+    "text": "5.1 Melakukan Analisis Deskriptif\nSetelah data dikumpulkan dan diklasifikasikan, langkah selanjutnya adalah memastikan data tersebut layak untuk dianalisis. Proses ini dikenal sebagai data cleaning atau pembersihan data. Dalam tahap ini, peneliti melakukan analisis deskriptif awal untuk mendapatkan gambaran umum data, serta mengecek kemungkinan adanya missing valueatau outlier yang dapat memengaruhi hasil analisis. Pembersihan data bukan hanya soal menghapus skor-skor yang tidak wajar, tetapi juga tentang membuat keputusan yang tepat berdasarkan konteks penelitian. Dengan data yang bersih, hasil analisis akan menjadi lebih akurat dan dapat dipercaya.\nSetelah peneliti memberi nama variabel dan mengidentifikasi jenis data sesuai dengan sifat masing-masing variabel, langkah berikutnya adalah melakukan analisis deskriptif awal terhadap data. Analisis deskriptif ini bertujuan untuk memastikan kualitas data sebelum masuk ke tahap analisis lebih lanjut.\nBeberapa hal penting yang perlu diperhatikan dalam tahap ini antara lain:\nDengan melakukan analisis deskriptif ini secara teliti, peneliti dapat memastikan bahwa data yang akan dianalisis lebih lanjut sudah bersih, valid, dan siap untuk digunakan, sehingga hasil penelitian menjadi lebih akurat dan dapat dipertanggungjawabkan.",
+    "crumbs": [
+      "PERSIAPAN DATA",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Pembersihan Data</span>"
+    ]
+  },
+  {
+    "objectID": "2_2_cleaning.html#melakukan-analisis-deskriptif",
+    "href": "2_2_cleaning.html#melakukan-analisis-deskriptif",
+    "title": "5  Pembersihan Data",
+    "section": "",
+    "text": "Memeriksa sebaran skor\nPeneliti perlu melihat apakah nilai total skor, minimum, maksimum, rata-rata (mean), dan simpangan baku (standar deviasi) dari setiap variabel berada dalam rentang yang sesuai dengan instrumen alat ukur dan sampel yang diteliti. Hal ini membantu mendeteksi adanya kesalahan input data atau anomali yang tidak sesuai dengan ekspektasi.\nMemeriksa data hilang (missing values)\nIdentifikasi jumlah dan pola missing values pada setiap variabel sangat penting, karena dapat mempengaruhi validitas hasil analisis.\nMendeteksi nilai pencilan (outliers)\nNilai-nilai pencilan dapat mengindikasikan kesalahan pencatatan data atau variasi yang ekstrem di dalam sampel. Oleh karena itu, penting untuk mengidentifikasi outlier pada tahap awal, kemudian menentukan apakah nilai tersebut merupakan bagian dari variasi alami atau justru kesalahan yang perlu diperbaiki atau dikeluarkan dari analisis.",
+    "crumbs": [
+      "PERSIAPAN DATA",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Pembersihan Data</span>"
+    ]
+  },
+  {
+    "objectID": "2_2_cleaning.html#data-hilang",
+    "href": "2_2_cleaning.html#data-hilang",
+    "title": "5  Pembersihan Data",
+    "section": "5.2 Data Hilang",
+    "text": "5.2 Data Hilang\nTerdapat sejumlah hal yang perlu Anda lakukan sebelum memulai analisis utama terhadap data Anda. Hal pertama adalah memeriksa apakah terdapat missing data (data hilang). Data hilang terjadi ketika terdapat pernyataan yang tidak diisi oleh seseorang yang menjawab survei atau kuesioner Anda. Partisipan mungkin tidak menjawab salah satu item pada survei karena berbagai alasan. Mereka mungkin melewatkan sebuah pertanyaan, enggan menjawab pertanyaan tertentu, atau merasa bosan dan berhenti mengisi survei. Ketidaklengkapan jawaban pada satu atau beberapa item ini menimbulkan masalah dalam analisis.\nData hilang dapat dikategorikan menjadi (1) missing completely at random (MCAR), (2) missing at random (MAR), atau (3) missing not at random (MNAR) (Buuren, 2018).\n\nMissing completely at random (MCAR) berarti probabilitas sebuah data hilang sama besar untuk semua responden. Misalnya, seseorang secara acak melewatkan satu pertanyaan di survei Anda, sehingga data hilang itu benar-benar acak.\nJika probabilitas sebuah nilai hilang hanya sama dalam kelompok-kelompok tertentu yang didefinisikan oleh data yang teramati, maka data tersebut disebut missing at random (MAR). Karena itu, MCAR dan MAR adalah konsep yang saling terkait. Sebagai contoh, ditemukan bahwa responden yang tingkat stresnya tinggi cenderung melewatkan pertanyaan tentang tidur, mungkin karena merasa pertanyaan tersebut terlalu sensitif atau tidak relevan bagi mereka dalam kondisi stres.\nJika data hilang tidak memenuhi asumsi MCAR maupun MAR, maka disebut missing not at random (MNAR). Sebagai contoh, jika sejumlah besar peserta sengaja melewati satu pertanyaan tertentu pada survei, maka hal itu tidak terjadi secara acak. Kemungkinan ada alasan tertentu mengapa pertanyaan itu dilewati, misalnya karena pertanyaan kurang jelas, terlalu pribadi, atau tersembunyi di bagian bawah halaman.\n\nTerdapat sebuah uji untuk mengetahui apakah data hilang secara acak atau tidak, yaitu Little’s MCAR test. Secara sederhana, jika hasil uji tidak signifikan, maka data hilang kemungkinan terjadi secara acak. Sebaliknya, jika hasil uji signifikan, ada kemungkinan data hilang karena alasan sistematis atau tidak acak.\nLalu, apa yang bisa dilakukan peneliti untuk menangani data hilang? Secara umum, terdapat dua cara utama untuk menangani data hilang, yaitu:\n\nPenggantian dengan rata-rata (mean replacement). Dalam prosedur ini, Anda mengganti titik data yang hilang dengan nilai rata-rata variabel tersebut. Namun, teknik ini hanya disarankan jika data hilang secara acak (at random) dan proporsinya kurang dari 5% pada variabel yang bersangkutan.\nImputasi majemuk (multiple imputation). Teknik ini dilakukan dengan bantuan program statistik yang Anda gunakan, yang menganalisis pola data dan menetapkan nilai untuk variabel yang hilang pada kasus tertentu. Nilai ini didasarkan pada jawaban sebelumnya pada variabel terkait, serta jawaban tidak hilang pada variabel tersebut di kasus lain. Disarankan menggunakan metode ini jika data hilang secara acak dengan proporsi antara 5–10% dari total respons pada variabel tersebut.",
+    "crumbs": [
+      "PERSIAPAN DATA",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Pembersihan Data</span>"
+    ]
+  },
+  {
+    "objectID": "2_2_cleaning.html#data-pencilan",
+    "href": "2_2_cleaning.html#data-pencilan",
+    "title": "5  Pembersihan Data",
+    "section": "5.3 Data Pencilan",
+    "text": "5.3 Data Pencilan\nSalah satu hal yang perlu diperhatikan saat menganalisis data adalah pengaruhoutlier — yaitu data yang nilainya sangat tinggi atau sangat rendah dibandingkan data lainnya — terhadap hasil keseluruhan. Contohnya, jika Anda bertanya kepada orang-orang tentang berapa cangkir kopi yang mereka minum dalam sehari, sebagian besar jawabannya mungkin berkisar antara nol hingga empat cangkir. Sebaran ini disebut dengan sebaran jawaban yang normal. Namun, jika ada satu orang yang menjawab bahwa ia minum 17 cangkir kopi sehari, maka jawaban ini bisa dianggap sebagai outlier bila dibandingkan dengan partisipan lainnya.\nKita bisa mengasumsikan bahwa orang tersebut memang memiliki masalah dengan kafein atau mungkin salah memasukkan jawaban. Apa pun alasannya, jawaban ini bisa meningkatkan rata-rata (mean) konsumsi kopi dalam sampel, padahal sebetulnya jawaban ini tidak mewakili kebiasaan rata-rata peminum kopi.\nAda beberapa cara secara statistik untuk mengidentifikasi outlier dalam kumpulan data Anda (Tabachnick & Fidell, 2014):\n\nMengubah jawaban peserta untuk setiap variabel menjadi skor-z (z-score).\nSkor-z adalah transformasi dasar untuk membandingkan jawaban peserta dengan distribusi standar yang memiliki rata-rata 0 dan standar deviasi 1.\nJika suatu jawaban memiliki skor-z lebih besar dari +3.3 atau kurang dari -3.3, maka jawaban ini dianggap sebagai outlier.\nMemvisualisasikan data menggunakan box plot atau bar graph, lalu melihat secara langsung apakah ada data yang tampak menyimpang jauh. Lihat Gambar 5.1 untuk visualisasi dari outlier menggunakan box plot.\n\n\n\n\n\n\n\nFigure 5.1: Outlier dalam boxplot\n\n\n\nSetelah menemukan outlier, Anda punya dua pilihan (Dancey & Reidy, 2017):\n\nTetap menyertakan dalam analisis jika Anda menganggap outlier ini bukan kebetulan.\nMenghapus dari analisis jika outlier ini muncul karena alasan yang tidak valid, misalnya kesalahan input atau jawaban yang tidak realistis.\n\nJika jawaban outlier tersebut tidak masuk akal dalam konteks pertanyaan, atau terlalu ekstrem tanpa alasan yang jelas, maka sebaiknya dianggap sebagai jawaban tidak valid (spurious response) dan dihapus dari analisis. Namun, jika jawaban tersebut masih masuk akal atau hanya sedikit melampaui batas skor-z (± 3.3), Anda bisa mempertimbangkannya sebagai outlier yang valid dan tetap menyertakannya dalam analisis.\n\n\n\n\nBuuren, S. van. (2018). Flexible Imputation of Missing Data. CRC Press.\n\n\nDancey, C. P., & Reidy, J. (2017). Statistics without maths for psychology (7th ed.). Pearson Education Limited.\n\n\nTabachnick, B. G., & Fidell, L. S. (2014). Using Multivariate Statistics (6th ed.). Pearson Education Limited.",
+    "crumbs": [
+      "PERSIAPAN DATA",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Pembersihan Data</span>"
+    ]
   }
 ]

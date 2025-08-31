@@ -36,6 +36,9 @@ book:
         - 1_latihan.qmd
         
     - part: 2_persiapan.qmd
+      chapters: 
+        - 2_1_jenis_data.qmd
+        - 2_2_cleaning.qmd
       
     - part: 3_deskriptif.qmd
       chapters: 
