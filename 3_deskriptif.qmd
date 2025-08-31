@@ -1,1 +1,1 @@
-# Statistik Deskriptif {#sec-deskriptif}
+# STATISTIK DESKRIPTIF {#sec-deskriptif}

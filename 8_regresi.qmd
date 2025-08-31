@@ -1,1 +1,1 @@
-# Model Regresi Linear {#sec-regresi}
+# MODEL REGRESI LINEAR {#sec-regresi}
