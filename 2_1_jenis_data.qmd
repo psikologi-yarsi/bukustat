@@ -1,0 +1,17 @@
+# Jenis Data {#sec-jenis-data}
+
+Sebelum data dianalisis, peneliti perlu memahami terlebih dahulu **jenis data** yang dimiliki. Pengklasifikasian data menjadi **nominal**, **ordinal**, **interval**, atau **rasio** akan menentukan teknik statistik apa yang tepat untuk digunakan. Selain itu, proses penamaan dan pengkodean variabel juga merupakan bagian penting dalam pengelolaan data yang baik. **Pengkodean yang konsisten** akan memudahkan dalam proses input data, analisis, maupun interpretasi hasil. Oleh karena itu, pengenalan jenis data dan cara mengelola variabel adalah fondasi penting sebelum melangkah ke tahap analisis statistik.
+
+## Mengidentifikasi Jenis Data
+
+**Data**\index{Data} adalah kumpulan informasi berupa angka. Informasi ini biasanya dicatat sesuai dengan definisi yang diinginkan oleh peneliti. Sebagai contoh, data tinggi badan dicatat dalam centimeter per individu untuk anak-anak usia 0-10 tahun di Indonesia. Pada data tersebut terdapat data tinggi badan anak yang dapat diolah per individu. Di saat yang sama, terdapat pula kelompok data yang lebih besar, misalnya data tinggi badan untuk wilayah DKI Jakarta, Jawa Barat, dan wilayah lainnya yang kemudian dapat diolah dan dibandingkan per wilayah.
+
+Data disebut dengan *raw score* (**data mentah**) apabila data tersebut adalah data langsung dari partisipan, tidak dimodifikasi, dan tidak dikonversi ke dalam nilai tertentu. Contoh data mentah:
+
+| ID Partisipan | Skor Mentah Matematika (jumlah menjawab benar dari 50 soal) | Skor Konversi dalam rentang 0-100 (*raw*/50 x 100) |
+|----|----|----|
+| 1 | 25 | 50 |
+| 2 | 35 | 70 |
+| 3 | 45 | 90 |
+| 4 | 15 | 30 |
+| 5 | 37 | 74 |
