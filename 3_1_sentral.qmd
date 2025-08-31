@@ -1,3 +1,51 @@
-# Ukuran Pemusatan Data  {#sec-sentral}
+# Ukuran Pemusatan Data {#sec-sentral}
 
 Bayangkan, Anda sedang melakukan pengamatan terhadap hasil belajar di satu sekolah, misalnya pelajaran matematika dari 150 anak kelas X. Dari daftar nilai itu, Anda mempunyai informasi mengenai nilai dari setiap anak. Namun, bagaimana Anda akan mengatakan kepada khalayak, mengenai capaian nilai matematika dari ke-150 anak ini? Seberapa baik capaian tersebut? Untuk menjawabnya, Anda memerlukan satu **perwakilan angka** yang dapat dinilai sebagai baik, cukup atau buruk. Inilah yang disebut dengan konsep ***central*** ***tendency*** atau ukuran pemusatan data, yaitu satu angka yang menjadi ukuran sentral dari semua kumpulan angka yang diwakilinya. Terdapat tiga macam ukuran sentral, yaitu *mean*, median dan modus.
+
+## *Mean*
+
+***Mean*** (rerata) merupakan ukuran tendensi sentral yang paling umum digunakan karena mempertimbangkan semua nilai dalam distribusi. *Mean* diperoleh dengan cara menjumlahkan seluruh nilai data dibagi dengan banyaknya data. *Mean* sangat sensitif terhadap nilai ekstrem (*outlier*) yang dapat memengaruhi hasilnya secara signifikan.
+
+Misalnya kita memperoleh data dari 10 orang seperti di bawah ini:
+
+|     |     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 4   | 4   | 6   | 6   | 7   | 4   | 7   | 3   | 5   | 4   |
+
+Setiap angka menggambarkan skor dari setiap orang. Berikut adalah cara menghitung *mean* dari data tersebut:
+
+$$
+\text{Mean} \;=\; \frac{\sum x}{n} \;=\; \frac{4+4+6+6+7+4+7+3+5+4}{10} \;=\; \frac{50}{10} \;=\; 5
+$$
+
+## Median
+
+**Median** adalah **nilai tengah** dari data yang telah diurutkan dari yang terkecil ke terbesar. Jika jumlah data ganjil, median adalah nilai di posisi tengah; jika genap, median adalah rata-rata dari dua nilai tengah. Median berguna ketika data mengandung pencilan atau distribusinya tidak simetris, karena tidak terpengaruh oleh nilai-nilai ekstrem.
+
+Menggunakan data yang sama dengan yang di atas, maka untuk memperoleh nilai median kita perlu mengurutkan data dari yang paling kecil hingga yang paling besar. Nilai median merupakan nilai yang ada di tengah dari urutan data tersebut. Sehingga, dari data tersebut, dapat ditentukan bahwa nilai median adalah sebagai berikut:
+
+|     |     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| 3   | 4   | 4   | 4   | 4   | 5   | 6   | 6   | 7   | 7   |
+
+Mengingat jumlah data yang diperoleh genap (10), maka nilai median dihitung dengan menghitung rata-rata dari dua nilai yang berada di tengah. Dalam hal ini, maka median dari data adalah:
+
+$$
+\text{Median} \;=\; \frac{4+5}{2} \;=\; 4.5
+$$
+
+## Modus
+
+**Modus** adalah nilai yang **paling sering** muncul dalam suatu kumpulan data. Tidak seperti *mean* dan median, modus bisa digunakan pada data kategorikal dan dapat memiliki lebih dari satu nilai (bimodal atau multimodal). Modus cocok digunakan untuk mengidentifikasi nilai yang paling umum dalam suatu populasi atau kelompok.
+
+Langkah penting untuk memperoleh nilai modus dalam kelompok data adalah dengan membuat tabel **distribusi frekuensi**. Tabel ini berfungsi untuk mengidentifikasi nilai, skor, atau data apa yang paling sering muncul (frekuensi tertinggi). Masih menggunakan data yang sama dengan yang di atas, perlu dibuat tabel distribusi frekuensi sebagai berikut:
+
+| Nilai | Frekuensi |
+|:-----:|:---------:|
+|   3   |     1     |
+|   4   |     4     |
+|   5   |     1     |
+|   6   |     2     |
+|   7   |     2     |
+
+Berdasarkan pengelompokan data berdasarkan frekuensi kemunculannya yang ditampilkan pada tabel Distribusi frekuensi tersebut, maka kita dapat menentukan bahwa nilai Modus dari data adalah 4.

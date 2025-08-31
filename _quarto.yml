@@ -45,6 +45,8 @@ book:
     - part: 3_deskriptif.qmd
       chapters: 
         - 3_1_sentral.qmd
+        - 3_2_dispersi.qmd
+        - 3_3_distribusi.qmd
       
     - part: 4_inferensial.qmd
 
@@ -83,6 +85,8 @@ format:
     title-block-banner: true
   pdf:
     documentclass: book
+    lof: true     # aktifkan List of Figures
+    lot: true     # aktifkan List of Tables (opsional)
     classoption: [openany]
     papersize: a4
     mainfont: "Ubuntu-Light"

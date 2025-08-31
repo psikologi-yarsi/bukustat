@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./4_inferensial.html" rel="next">
+<link href="./3_2_dispersi.html" rel="next">
 <link href="./3_deskriptif.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.scss">
 </head>
@@ -207,6 +236,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Akuntabilitas Data</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -222,6 +257,18 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./3_1_sentral.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ukuran Pemusatan Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_2_dispersi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ukuran Penyebaran Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_3_distribusi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Bentuk Distribusi Data</span></span></a>
   </div>
 </li>
       </ul>
@@ -257,8 +304,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#mean" id="toc-mean" class="nav-link active" data-scroll-target="#mean"><span class="header-section-number">7.1</span> <em>Mean</em></a></li>
+  <li><a href="#median" id="toc-median" class="nav-link" data-scroll-target="#median"><span class="header-section-number">7.2</span> Median</a></li>
+  <li><a href="#modus" id="toc-modus" class="nav-link" data-scroll-target="#modus"><span class="header-section-number">7.3</span> Modus</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -268,8 +323,94 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Bayangkan, Anda sedang melakukan pengamatan terhadap hasil belajar di satu sekolah, misalnya pelajaran matematika dari 150 anak kelas X. Dari daftar nilai itu, Anda mempunyai informasi mengenai nilai dari setiap anak. Namun, bagaimana Anda akan mengatakan kepada khalayak, mengenai capaian nilai matematika dari ke-150 anak ini? Seberapa baik capaian tersebut? Untuk menjawabnya, Anda memerlukan satu <strong>perwakilan angka</strong> yang dapat dinilai sebagai baik, cukup atau buruk. Inilah yang disebut dengan konsep <strong><em>central</em></strong> <strong><em>tendency</em></strong> atau ukuran pemusatan data, yaitu satu angka yang menjadi ukuran sentral dari semua kumpulan angka yang diwakilinya. Terdapat tiga macam ukuran sentral, yaitu <em>mean</em>, median dan modus.</p>
+<section id="mean" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="mean"><span class="header-section-number">7.1</span> <em>Mean</em></h2>
+<p><strong><em>Mean</em></strong> (rerata) merupakan ukuran tendensi sentral yang paling umum digunakan karena mempertimbangkan semua nilai dalam distribusi. <em>Mean</em> diperoleh dengan cara menjumlahkan seluruh nilai data dibagi dengan banyaknya data. <em>Mean</em> sangat sensitif terhadap nilai ekstrem (<em>outlier</em>) yang dapat memengaruhi hasilnya secara signifikan.</p>
+<p>Misalnya kita memperoleh data dari 10 orang seperti di bawah ini:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+<td>4</td>
+<td>7</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Setiap angka menggambarkan skor dari setiap orang. Berikut adalah cara menghitung <em>mean</em> dari data tersebut:</p>
+<p><span class="math display">\[
+\text{Mean} \;=\; \frac{\sum x}{n} \;=\; \frac{4+4+6+6+7+4+7+3+5+4}{10} \;=\; \frac{50}{10} \;=\; 5
+\]</span></p>
+</section>
+<section id="median" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="median"><span class="header-section-number">7.2</span> Median</h2>
+<p><strong>Median</strong> adalah <strong>nilai tengah</strong> dari data yang telah diurutkan dari yang terkecil ke terbesar. Jika jumlah data ganjil, median adalah nilai di posisi tengah; jika genap, median adalah rata-rata dari dua nilai tengah. Median berguna ketika data mengandung pencilan atau distribusinya tidak simetris, karena tidak terpengaruh oleh nilai-nilai ekstrem.</p>
+<p>Menggunakan data yang sama dengan yang di atas, maka untuk memperoleh nilai median kita perlu mengurutkan data dari yang paling kecil hingga yang paling besar. Nilai median merupakan nilai yang ada di tengah dari urutan data tersebut. Sehingga, dari data tersebut, dapat ditentukan bahwa nilai median adalah sebagai berikut:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>Mengingat jumlah data yang diperoleh genap (10), maka nilai median dihitung dengan menghitung rata-rata dari dua nilai yang berada di tengah. Dalam hal ini, maka median dari data adalah:</p>
+<p><span class="math display">\[
+\text{Median} \;=\; \frac{4+5}{2} \;=\; 4.5
+\]</span></p>
+</section>
+<section id="modus" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="modus"><span class="header-section-number">7.3</span> Modus</h2>
+<p><strong>Modus</strong> adalah nilai yang <strong>paling sering</strong> muncul dalam suatu kumpulan data. Tidak seperti <em>mean</em> dan median, modus bisa digunakan pada data kategorikal dan dapat memiliki lebih dari satu nilai (bimodal atau multimodal). Modus cocok digunakan untuk mengidentifikasi nilai yang paling umum dalam suatu populasi atau kelompok.</p>
+<p>Langkah penting untuk memperoleh nilai modus dalam kelompok data adalah dengan membuat tabel <strong>distribusi frekuensi</strong>. Tabel ini berfungsi untuk mengidentifikasi nilai, skor, atau data apa yang paling sering muncul (frekuensi tertinggi). Masih menggunakan data yang sama dengan yang di atas, perlu dibuat tabel distribusi frekuensi sebagai berikut:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Nilai</th>
+<th style="text-align: center;">Frekuensi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<p>Berdasarkan pengelompokan data berdasarkan frekuensi kemunculannya yang ditampilkan pada tabel Distribusi frekuensi tersebut, maka kita dapat menentukan bahwa nilai Modus dari data adalah 4.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -678,8 +819,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./4_inferensial.html" class="pagination-link" aria-label="STATISTIK INFERENSIAL">
-        <span class="nav-page-text">STATISTIK INFERENSIAL</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./3_2_dispersi.html" class="pagination-link" aria-label="Ukuran Penyebaran Data">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ukuran Penyebaran Data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -83,3 +83,12 @@
   align-items: center;          /* sejajarkan emoji dengan teks */
   margin-right: .1rem;          /* jarak ke judul */
 }
+.rowboxes { display:flex; align-items:center; gap:1rem; margin:.5rem 0; }
+.rowboxes .label { width:6.5rem; }             /* lebar kolom label */
+.rowboxes .box   { 
+  display:inline-block; 
+  width:28px; height:28px; line-height:28px;
+  border:1px solid #333; border-radius:3px;
+  text-align:center; margin-right:6px;
+  font-variant-numeric: tabular-nums;
+}

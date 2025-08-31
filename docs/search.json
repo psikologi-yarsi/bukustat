@@ -1,12 +1,46 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Statistik untuk Psikologi dan Ilmu Sosial",
+    "objectID": "3_1_sentral.html",
+    "href": "3_1_sentral.html",
+    "title": "7  Ukuran Pemusatan Data",
     "section": "",
-    "text": "Selamat Datang!\nAlhamdulillah, akhirnya buku Statistik untuk Psikologi dan Ilmu Sosial ini bisa sampai ke tangan Anda. Buku ini lahir dari pengalaman sehari-hari di kelas, saat mendampingi mahasiswa yang sering kali merasa “alergi” begitu mendengar kata statistik. Padahal, kalau dipahami dengan cara yang tepat, statistik bukan sesuatu yang menakutkan. Justru ia adalah alat yang sangat membantu kita untuk membaca, memahami, dan menjelaskan fenomena psikologi secara lebih objektif.\nDalam buku ini, kami mencoba menyajikan konsep-konsep statistik dengan bahasa yang sederhana, runtut, dan dekat dengan dunia psikologi. Setiap bab tidak hanya berisi teori, tetapi juga contoh nyata serta latihan soal yang bisa membantu pembaca melatih pemahaman. Harapannya, buku ini bisa menjadi jembatan agar mahasiswa lebih percaya diri ketika berhadapan dengan data penelitian.\nKami menyadari buku ini masih jauh dari sempurna. Kritik dan saran dari para pembaca tentu sangat kami nantikan, agar pada edisi-edisi berikutnya buku ini bisa semakin baik.\nAkhir kata, semoga buku ini tidak hanya menjadi pegangan dalam belajar, tetapi juga menjadi sahabat yang menemani perjalanan Anda meneliti, menulis, dan memahami psikologi dengan lebih ilmiah.\nJakarta, Agustus 2025\n\nTim Penulis",
+    "text": "7.1 Mean\nBayangkan, Anda sedang melakukan pengamatan terhadap hasil belajar di satu sekolah, misalnya pelajaran matematika dari 150 anak kelas X. Dari daftar nilai itu, Anda mempunyai informasi mengenai nilai dari setiap anak. Namun, bagaimana Anda akan mengatakan kepada khalayak, mengenai capaian nilai matematika dari ke-150 anak ini? Seberapa baik capaian tersebut? Untuk menjawabnya, Anda memerlukan satu perwakilan angka yang dapat dinilai sebagai baik, cukup atau buruk. Inilah yang disebut dengan konsep central tendency atau ukuran pemusatan data, yaitu satu angka yang menjadi ukuran sentral dari semua kumpulan angka yang diwakilinya. Terdapat tiga macam ukuran sentral, yaitu mean, median dan modus.\nMean (rerata) merupakan ukuran tendensi sentral yang paling umum digunakan karena mempertimbangkan semua nilai dalam distribusi. Mean diperoleh dengan cara menjumlahkan seluruh nilai data dibagi dengan banyaknya data. Mean sangat sensitif terhadap nilai ekstrem (outlier) yang dapat memengaruhi hasilnya secara signifikan.\nMisalnya kita memperoleh data dari 10 orang seperti di bawah ini:\nSetiap angka menggambarkan skor dari setiap orang. Berikut adalah cara menghitung mean dari data tersebut:\n\\[\n\\text{Mean} \\;=\\; \\frac{\\sum x}{n} \\;=\\; \\frac{4+4+6+6+7+4+7+3+5+4}{10} \\;=\\; \\frac{50}{10} \\;=\\; 5\n\\]",
     "crumbs": [
-      "Selamat Datang!"
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ukuran Pemusatan Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_1_sentral.html#mean",
+    "href": "3_1_sentral.html#mean",
+    "title": "7  Ukuran Pemusatan Data",
+    "section": "",
+    "text": "4\n4\n6\n6\n7\n4\n7\n3\n5\n4",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ukuran Pemusatan Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_1_sentral.html#median",
+    "href": "3_1_sentral.html#median",
+    "title": "7  Ukuran Pemusatan Data",
+    "section": "7.2 Median",
+    "text": "7.2 Median\nMedian adalah nilai tengah dari data yang telah diurutkan dari yang terkecil ke terbesar. Jika jumlah data ganjil, median adalah nilai di posisi tengah; jika genap, median adalah rata-rata dari dua nilai tengah. Median berguna ketika data mengandung pencilan atau distribusinya tidak simetris, karena tidak terpengaruh oleh nilai-nilai ekstrem.\nMenggunakan data yang sama dengan yang di atas, maka untuk memperoleh nilai median kita perlu mengurutkan data dari yang paling kecil hingga yang paling besar. Nilai median merupakan nilai yang ada di tengah dari urutan data tersebut. Sehingga, dari data tersebut, dapat ditentukan bahwa nilai median adalah sebagai berikut:\n\n\n\n3\n4\n4\n4\n4\n5\n6\n6\n7\n7\n\n\n\nMengingat jumlah data yang diperoleh genap (10), maka nilai median dihitung dengan menghitung rata-rata dari dua nilai yang berada di tengah. Dalam hal ini, maka median dari data adalah:\n\\[\n\\text{Median} \\;=\\; \\frac{4+5}{2} \\;=\\; 4.5\n\\]",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ukuran Pemusatan Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_1_sentral.html#modus",
+    "href": "3_1_sentral.html#modus",
+    "title": "7  Ukuran Pemusatan Data",
+    "section": "7.3 Modus",
+    "text": "7.3 Modus\nModus adalah nilai yang paling sering muncul dalam suatu kumpulan data. Tidak seperti mean dan median, modus bisa digunakan pada data kategorikal dan dapat memiliki lebih dari satu nilai (bimodal atau multimodal). Modus cocok digunakan untuk mengidentifikasi nilai yang paling umum dalam suatu populasi atau kelompok.\nLangkah penting untuk memperoleh nilai modus dalam kelompok data adalah dengan membuat tabel distribusi frekuensi. Tabel ini berfungsi untuk mengidentifikasi nilai, skor, atau data apa yang paling sering muncul (frekuensi tertinggi). Masih menggunakan data yang sama dengan yang di atas, perlu dibuat tabel distribusi frekuensi sebagai berikut:\n\n\n\nNilai\nFrekuensi\n\n\n\n\n3\n1\n\n\n4\n4\n\n\n5\n1\n\n\n6\n2\n\n\n7\n2\n\n\n\nBerdasarkan pengelompokan data berdasarkan frekuensi kemunculannya yang ditampilkan pada tabel Distribusi frekuensi tersebut, maka kita dapat menentukan bahwa nilai Modus dari data adalah 4.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ukuran Pemusatan Data</span>"
     ]
   },
   {
@@ -96,34 +130,13 @@
     ]
   },
   {
-    "objectID": "3_deskriptif.html",
-    "href": "3_deskriptif.html",
-    "title": "STATISTIK DESKRIPTIF",
+    "objectID": "2_persiapan.html",
+    "href": "2_persiapan.html",
+    "title": "PERSIAPAN DATA",
     "section": "",
-    "text": "Setelah data dikumpulkan dan dipersiapkan, langkah selanjutnya dalam proses analisis adalah memahami karakteristik umum dari data tersebut. Bab ini membahas tentang statistik deskriptif, yaitu serangkaian teknik yang digunakan untuk merangkum, menyederhanakan, dan menyajikan data mentah menjadi informasi yang lebih mudah dipahami. Statistik deskriptif tidak berfokus pada pengambilan keputusan atau generalisasi, melainkan pada penggambaran pola, kecenderungan, dan sebaran data yang ada.\nBab ini terdiri dari tiga bagian utama. Pertama, pembahasan mengenai ukuran pemusatan data (central tendency), mencakup mean (rata-rata), median, dan modus yang menggambarkan nilai pusat dari sekumpulan data. Kedua, penjelasan tentang sebaran data (dispersi) yang mencakup rentang, varians, dan standar deviasi untuk memahami seberapa jauh data menyebar dari pusatnya. Terakhir, akan dibahas mengenai bentuk distribusi data, termasuk konsep simetri, skewness, dan kurtosis, yang penting untuk mengetahui apakah data berdistribusi normal atau memiliki penyimpangan tertentu.",
+    "text": "Bab ini akan membahas mengenai mengenali dan mempersiapkan data penelitian agar dapat diolah lebih lanjut secara statistik. Untuk menghasilkan analisis yang valid dan bermakna, peneliti perlu memahami jenis data yang dimiliki, melakukan proses pembersihan data secara sistematis, serta menjaga akuntabilitas dalam setiap tahap pengelolaan data. Tahapan ini bukan sekadar teknis, melainkan fondasi penting untuk memastikan bahwa hasil analisis benar-benar mencerminkan realitas yang diteliti.\nBab ini diawali dengan penjelasan tentang jenis data, termasuk cara mengidentifikasi tipe data serta prinsip dalam penamaan dan pengkodean variabel agar konsisten dan mudah diinterpretasikan. Selanjutnya, pembahasan berlanjut pada proses pembersihan data, yang mencakup analisis deskriptif awal, penanganan missing value, serta deteksi pencilan (outlier) yang dapat memengaruhi hasil analisis. Terakhir, bab ini menekankan pentingnya akuntabilitas data, yaitu tanggung jawab peneliti untuk mendokumentasikan, menyimpan, dan mengelola data secara transparan agar dapat dipertanggungjawabkan secara ilmiah. Dengan memahami dan menerapkan ketiga aspek ini, mahasiswa akan memiliki dasar yang kuat dalam mempersiapkan data untuk analisis statistik yang sahih dan terpercaya.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 4. Jenis Data:\n\nMengidentifikasi berbagai jenis data dalam konteks penelitian psikologi (nominal, ordinal, interval, rasio).\nMenerapkan prinsip penamaan dan pengkodean variabel secara konsisten dan sistematis.\nMemahami pentingnya kesesuaian antara jenis data dan teknik analisis statistik yang akan digunakan.\n\n\nBab 5. Pembersihan Data:\n\nMelakukan analisis deskriptif awal untuk mengevaluasi distribusi dan karakteristik dasar data.\nMengidentifikasi dan menangani data hilang (missing value) serta outlier secara tepat untuk memastikan keakuratan analisis lanjutan.\n\n\nBab 6. Akuntabilitas Data:\n\nMenjelaskan pentingnya pencatatan proses analisis statistik sebagai bentuk akuntabilitas ilmiah.\nMemahami pentingnya transparansi dalam meningkatkan kualitas dan integritas penelitian psikologi.",
     "crumbs": [
-      "STATISTIK DESKRIPTIF"
-    ]
-  },
-  {
-    "objectID": "3_1_sentral.html",
-    "href": "3_1_sentral.html",
-    "title": "7  Ukuran Pemusatan Data",
-    "section": "",
-    "text": "Bayangkan, Anda sedang melakukan pengamatan terhadap hasil belajar di satu sekolah, misalnya pelajaran matematika dari 150 anak kelas X. Dari daftar nilai itu, Anda mempunyai informasi mengenai nilai dari setiap anak. Namun, bagaimana Anda akan mengatakan kepada khalayak, mengenai capaian nilai matematika dari ke-150 anak ini? Seberapa baik capaian tersebut? Untuk menjawabnya, Anda memerlukan satu perwakilan angka yang dapat dinilai sebagai baik, cukup atau buruk. Inilah yang disebut dengan konsep central tendency atau ukuran pemusatan data, yaitu satu angka yang menjadi ukuran sentral dari semua kumpulan angka yang diwakilinya. Terdapat tiga macam ukuran sentral, yaitu mean, median dan modus.",
-    "crumbs": [
-      "STATISTIK DESKRIPTIF",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ukuran Pemusatan Data</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "Daftar Pustaka",
-    "section": "",
-    "text": "Coolican, H. (2014). Research methods and statistics in\npsychology (p. 773). Psychology Press, Taylor & Francis Group.\n\n\nCowles, M. (2000). Statistics in psychology: An historical\nperspective. Psychology Press.\n\n\nDancey, C. P., & Reidy, J. (2017). Statistics without maths for\npsychology (7th ed.). Pearson Education Limited.\n\n\nGravetter, F. J., & Wallnau, L. B. (2017). Statistics for the\nbehavioral sciences. Cengage Learning.\n\n\nSalsburg, D. (2002). The lady tasting tea: How statistics\nrevolutionized science in the twentieth century. Henry Holt;\nCompany.",
-    "crumbs": [
-      "Daftar Pustaka"
+      "PERSIAPAN DATA"
     ]
   },
   {
@@ -157,16 +170,6 @@
     "crumbs": [
       "PERSIAPAN DATA",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Jenis Data</span>"
-    ]
-  },
-  {
-    "objectID": "2_persiapan.html",
-    "href": "2_persiapan.html",
-    "title": "PERSIAPAN DATA",
-    "section": "",
-    "text": "Bab ini akan membahas mengenai mengenali dan mempersiapkan data penelitian agar dapat diolah lebih lanjut secara statistik. Untuk menghasilkan analisis yang valid dan bermakna, peneliti perlu memahami jenis data yang dimiliki, melakukan proses pembersihan data secara sistematis, serta menjaga akuntabilitas dalam setiap tahap pengelolaan data. Tahapan ini bukan sekadar teknis, melainkan fondasi penting untuk memastikan bahwa hasil analisis benar-benar mencerminkan realitas yang diteliti.\nBab ini diawali dengan penjelasan tentang jenis data, termasuk cara mengidentifikasi tipe data serta prinsip dalam penamaan dan pengkodean variabel agar konsisten dan mudah diinterpretasikan. Selanjutnya, pembahasan berlanjut pada proses pembersihan data, yang mencakup analisis deskriptif awal, penanganan missing value, serta deteksi pencilan (outlier) yang dapat memengaruhi hasil analisis. Terakhir, bab ini menekankan pentingnya akuntabilitas data, yaitu tanggung jawab peneliti untuk mendokumentasikan, menyimpan, dan mengelola data secara transparan agar dapat dipertanggungjawabkan secara ilmiah. Dengan memahami dan menerapkan ketiga aspek ini, mahasiswa akan memiliki dasar yang kuat dalam mempersiapkan data untuk analisis statistik yang sahih dan terpercaya.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 4. Jenis Data:\n\nMengidentifikasi berbagai jenis data dalam konteks penelitian psikologi (nominal, ordinal, interval, rasio).\nMenerapkan prinsip penamaan dan pengkodean variabel secara konsisten dan sistematis.\nMemahami pentingnya kesesuaian antara jenis data dan teknik analisis statistik yang akan digunakan.\n\n\nBab 5. Pembersihan Data:\n\nMelakukan analisis deskriptif awal untuk mengevaluasi distribusi dan karakteristik dasar data.\nMengidentifikasi dan menangani data hilang (missing value) serta outlier secara tepat untuk memastikan keakuratan analisis lanjutan.\n\n\nBab 6. Akuntabilitas Data:\n\nMenjelaskan pentingnya pencatatan proses analisis statistik sebagai bentuk akuntabilitas ilmiah.\nMemahami pentingnya transparansi dalam meningkatkan kualitas dan integritas penelitian psikologi.",
-    "crumbs": [
-      "PERSIAPAN DATA"
     ]
   },
   {
@@ -233,6 +236,125 @@
     "crumbs": [
       "PERSIAPAN DATA",
       "Soal Latihan"
+    ]
+  },
+  {
+    "objectID": "3_deskriptif.html",
+    "href": "3_deskriptif.html",
+    "title": "STATISTIK DESKRIPTIF",
+    "section": "",
+    "text": "Setelah data dikumpulkan dan dipersiapkan, langkah selanjutnya dalam proses analisis adalah memahami karakteristik umum dari data tersebut. Bab ini membahas tentang statistik deskriptif, yaitu serangkaian teknik yang digunakan untuk merangkum, menyederhanakan, dan menyajikan data mentah menjadi informasi yang lebih mudah dipahami. Statistik deskriptif tidak berfokus pada pengambilan keputusan atau generalisasi, melainkan pada penggambaran pola, kecenderungan, dan sebaran data yang ada.\nBab ini terdiri dari tiga bagian utama. Pertama, pembahasan mengenai ukuran pemusatan data (central tendency), mencakup mean (rata-rata), median, dan modus yang menggambarkan nilai pusat dari sekumpulan data. Kedua, penjelasan tentang sebaran data (dispersi) yang mencakup rentang, varians, dan standar deviasi untuk memahami seberapa jauh data menyebar dari pusatnya. Terakhir, akan dibahas mengenai bentuk distribusi data, termasuk konsep simetri, skewness, dan kurtosis, yang penting untuk mengetahui apakah data berdistribusi normal atau memiliki penyimpangan tertentu.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF"
+    ]
+  },
+  {
+    "objectID": "3_2_dispersi.html",
+    "href": "3_2_dispersi.html",
+    "title": "8  Ukuran Penyebaran Data",
+    "section": "",
+    "text": "8.1 Range\nSetelah mengetahui nilai pusat dari suatu data melalui ukuran pemusatan data, langkah berikutnya adalah memahami seberapa jauh data menyebar dari nilai pusat tersebut. Ukuran penyebaran data, atau dispersi, memberikan informasi penting tentang variasi atau keragaman dalam kumpulan data. Dua set data bisa memiliki mean yang sama, tetapi penyebarannya bisa sangat berbeda, dan perbedaan ini dapat memengaruhi cara interpretasi data secara keseluruhan. Dalam sub-bab ini, akan dibahas beberapa ukuran utama penyebaran, yaitu rentang (range), standar deviasi, dan varians, yang membantu menggambarkan tingkat homogenitas atau heterogenitas suatu data secara lebih mendalam.\nRange, atau rentang data, adalah selisih antara nilai tertinggi dengan nilai terendah dalam sebuah set data. Range menunjukkan seberapa lebar sebaran nilai dalam data, namun karena hanya mempertimbangkan dua nilai ekstrem, ukuran ini sangat sensitif terhadap outlier dan tidak menggambarkan variasi data secara keseluruhan. Meskipun demikian, range tetap berguna sebagai gambaran awal tentang sebaran data.\nUntuk dapat memahami fungsi range dalam memahami set data, mari kita pelajari kasus berikut ini. Misalnya, seorang peneliti memiliki data nilai tugas mata pelajaran Matematika dari 3 kelas yang berbeda:\nPertanyaan penting mengenai data tersebut adalah apakah ketiga kelas tersebut memperoleh capaian belajar yang sama. Jika hanya mengandalkan nilai rata-rata, maka ketiga kelas tersebut akan tampak sama karena memiliki nilai rata-rata yang sama, yaitu 5. Padahal jika dilihat ke perolehan nilai individual, terlihat berbeda. Nilai range pada data dapat membantu kita untuk menggambarkan seberapa berbeda dan bervariasi data yang dimiliki dan makna variasi tersebut dalam memahami setiap poin data. Untuk itu, kita perlu menghitung selisih skor terbesar dengan skor terkecil untuk setiap data kelas.\n\\[\n\\begin{aligned}\nRange\\; kelas\\; A &= nilai\\; tertinggi - nilai\\; terendah = 7 -3 = 4\\\\\nRange\\; kelas\\; B &= nilai\\; tertinggi - nilai\\; terendah = 8 -2 = 6\\\\\nRange\\; kelas\\; C &= nilai\\; tertinggi - nilai\\; terendah = 6 -2 = 4\n\\end{aligned}\n\\]\nDari hasil penghitungan, dapat dilihat bahwa kelas B memiliki lebar data yang paling besar, artinya terdapat perbedaan atau variasi yang lebih besar di dalam kelas tersebut dibandingkan dengan kelas-kelas lainnya. Sebaliknya, kelas C memiliki rentang skor paling kecil di antara ketiganya. Dalam hal ini, satu skor yang sama (misalnya, 4) dapat dimaknai secara berbeda berdasarkan nilai range tiap kelas.\nSatu hal yang perlu diingat adalah bahwa variasi skor yang digambarkan dalam range hanya menunjukkan perbedaan antara yang mendapatkan nilai paling tinggi dan yang mendapatkan nilai paling rendah. Dari nilai range tersebut kita tidak memiliki informasi mengenai seberapa besar ukuran variabilitas (atau seberapa bervariasi) sebuah set data. Untuk mendapatkan gambaran ini, kita menggunakan ukuran penyebaran data berikutnya, yaitu varians.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ukuran Penyebaran Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_2_dispersi.html#range",
+    "href": "3_2_dispersi.html#range",
+    "title": "8  Ukuran Penyebaran Data",
+    "section": "",
+    "text": "Kelas A\n\n4\n4\n6\n6\n7\n4\n7\n3\n5\n4\n\n\nKelas B\n\n2\n6\n6\n7\n7\n8\n4\n4\n3\n3\n\n\nKelas C\n\n6\n5\n6\n4\n5\n6\n4\n4\n5\n5",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ukuran Penyebaran Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_2_dispersi.html#varians",
+    "href": "3_2_dispersi.html#varians",
+    "title": "8  Ukuran Penyebaran Data",
+    "section": "8.2 Varians",
+    "text": "8.2 Varians\nVarians (s2) adalah ukuran penyebaran data yang menunjukkan seberapa jauh nilai-nilai dalam suatu kumpulan data menyimpang dari nilai mean. Varians dihitung dengan menjumlahkan kuadrat selisih setiap nilai (X) terhadap mean (\\(\\bar{x}\\)), kemudian dibagi dengan jumlah data (N) (untuk populasi) atau jumlah data dikurangi satu (n-1) (untuk sampel). Dapat juga ditulis sebagai:\n\\[\ns^2 = \\frac{\\sum (X - \\bar{x})^2}{N - 1}\n\\]\nHasil varians menunjukkan “rata-rata kuadrat penyimpangan” dari mean, sehingga semakin besar nilai varians, semakin besar pula variasi data di sekitar mean. Dengan kata lain, varians juga menggambarkan homogenitas data, di mana semakin kecil varians maka semakin kecil perbedaan antar poin data, dan sebaliknya semakin besar varians semakin besar pula perbedaan antar poin data.\nSebagai ilustrasi, misalnya terdapat data set skor skala sikap dari dua kelompok partisipan yang berbeda (a & b), dengan masing-masing sebaran data sebagai berikut:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKelompok a\n\n6\n6\n6\n6\n7\n7\n7\n7\n7\n8\n8\n8\n\\(\\bar{x}\\)=6.9\n\n\nKelompok b\n\n2\n3\n5\n5\n6\n6\n6\n7\n9\n9\n10\n12\n\\(\\bar{x}\\)=6.7\n\n\n\nUntuk dapat memperoleh nilai varians, kita perlu menghitung simpangan atau selisih dari setiap data poin terhadap mean kemudian dikuadratkan, seperti pada Tabel 8.1.\n\n\nTabel 8.1: Perhitungan simpangan dan varians dua kelompok\n\n\n\n\n\n\n\n  \n\n\n\nKelompok a\nKelompok b\n\n\nSkor (X)\nSimpangan (X − x̄)\nKuadrat simpangan (X − x̄)²\nSkor (X)\nSimpangan (X − x̄)\nKuadrat simpangan (X − x̄)²\n\n\n\n\n6\n-0.9\n0.81\n2\n-4.7\n22.09\n\n\n6\n-0.9\n0.81\n3\n-3.7\n13.69\n\n\n6\n-0.9\n0.81\n5\n-1.7\n2.89\n\n\n6\n-0.9\n0.81\n5\n-1.7\n2.89\n\n\n7\n0.1\n0.01\n6\n-0.7\n0.49\n\n\n7\n0.1\n0.01\n6\n-0.7\n0.49\n\n\n7\n0.1\n0.01\n6\n-0.7\n0.49\n\n\n7\n0.1\n0.01\n7\n0.3\n0.09\n\n\n7\n0.1\n0.01\n9\n2.3\n5.29\n\n\n8\n1.1\n1.21\n9\n2.3\n5.29\n\n\n8\n1.1\n1.21\n10\n3.3\n10.89\n\n\n8\n1.1\n1.21\n12\n5.3\n28.09\n\n\nΣ(X − x̄)²\n6.92\nΣ(X − x̄)²\n92.68\n\n\ns² =  Σ(X − x̄)² N − 1 \n0.6\ns² =  Σ(X − x̄)² N − 1 \n8.4\n\n\n\n\n\n\n\nDari hasil penghitungan tersebut, kita menemukan perbedaan varians yang cukup besar antara kedua kelompok, meskipun mean keduanya tidak jauh berbeda. Hal ini menandakan bahwa kelompok b memiliki sebaran data yang jauh lebih beragam (heterogen) dibandingkan kelompok a (lihat Gambar 8.1). Oleh karena itu, pemaknaan terhadap nilai mean tiap kelompok juga berbeda, relatif terhadap variansnya masing-masing.\nVarians memiliki fungsi penting dalam memahami keragaman atau variasi data di sekitar nilai rata-rata. Informasi ini sangat berguna untuk a) menilai konsistensi data (misalnya, dua kelompok dengan rata-rata yang sama bisa memiliki varians yang berbeda; kelompok dengan varians kecil berarti anggotanya lebih homogen.) dan b) dasar dari analisis statistik lanjutan, di mana varians menjadi komponen penting dalam berbagai teknik analisis, seperti standar deviasi, analisis varians (ANOVA), uji-t, dan regresi. Dengan demikian, varians bukan hanya ukuran penyebaran, tetapi juga alat untuk mengevaluasi struktur dan kualitas data sebelum melakukan interpretasi atau pengambilan keputusan lebih lanjut.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ukuran Penyebaran Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_2_dispersi.html#standar-deviasi",
+    "href": "3_2_dispersi.html#standar-deviasi",
+    "title": "8  Ukuran Penyebaran Data",
+    "section": "8.3 Standar Deviasi",
+    "text": "8.3 Standar Deviasi\nStandar deviasi (s) adalah ukuran penyebaran data yang menunjukkan rata-rata penyimpangan (deviasi) nilai data dari mean. Ukuran ini memberikan gambaran yang lebih intuitif tentang seberapa besar variasi dalam data. Artinya, semakin besar standar deviasi, semakin lebar sebaran data dari nilai tengahnya. Standar deviasi diperoleh dengan mengambil akar kuadrat dari varians:\n\\[\ns = \\sqrt{s^2}\n\\]\nDengan menggunakan data pada pembahasan varians, kita dapat menghitung standar deviasi dari data tiap kelompok, yaitu:\nKelompok a: \\(s = \\sqrt{s^2} = \\sqrt{0.6} = 0.77\\)\nKelompok a: \\(s = \\sqrt{s^2} = \\sqrt{8.4} = 2.90\\)\nHasil penghitungan standar deviasi di atas memperkuat pemahaman bahwa Kelompok a lebih homogen (s = 0,77) dibandingkan Kelompok b yang lebih bervariasi (s = 2,90). Meskipun informasi ini serupa dengan yang diperoleh dari varians (0,6 vs 8,4), standar deviasi lebih mudah diinterpretasikan karena satuannya kembali ke satuan asli data, tidak dalam bentuk kuadrat seperti varians. Dengan demikian, standar deviasi memberikan gambaran yang lebih intuitif tentang jarak rata-rata setiap data dari mean, sehingga lebih sering digunakan dalam pelaporan dan interpretasi hasil statistik.\n\n\n\n\n\n\nGambar 8.1: Visualisasi data dengan: a) varians kecil & b) varians besar",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ukuran Penyebaran Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_3_distribusi.html",
+    "href": "3_3_distribusi.html",
+    "title": "9  Bentuk Distribusi Data",
+    "section": "",
+    "text": "9.1 Kurva Normal\nSetiap nilai dalam sekumpulan data memiliki frekuensi kemunculan yang berbeda-beda; nilai ekstrem biasanya muncul lebih jarang, sedangkan nilai yang mendekati mean lebih sering muncul. Pola ini membentuk distribusi data, yang jika digambarkan dalam grafik seperti poligon frekuensi, akan membentuk kurva. Pada distribusi yang ideal, yaitu distribusi normal, kurva berbentuk lonceng (bell-shaped) dan simetris di sekitar nilai ukuran pemusatan data seperti mean atau median. Namun, pada kenyataannya, data bisa saja miring (skewed) jika nilai-nilai terkonsentrasi di satu sisi, atau memiliki kurtosis jika kurvanya lebih runcing atau lebih datar dari distribusi normal. Pemahaman tentang bentuk distribusi ini penting karena banyak analisis statistik, terutama yang bersifat inferensial, mengasumsikan bahwa data terdistribusi normal. Untuk itu, bagian-bagian berikut akan membahas lebih lanjut mengenai kurva normal, skewness, kurtosis, dan z-score sebagai alat untuk menstandarkan data.\nSeperti telah disampaikan sebelumnya, distribusi data dapat dikatakan normal jika kurvanya membentuk lonceng dan simetris. Pada distribusi data yang demikian, frekuensi dari setiap nilai data tersebar secara simetris antara yang terletak di atas tendensi sentral dan yang di bawah tendensi sentral. Data tersebar 50% di atas dan 50% di bawah tendensi sentral, dengan frekuensi yang semakin mengecil pada nilai data yang semakin ekstrem, baik yang kecil maupun yang besar (lihat Gambar 9.1).\nPada kurva normal, tiga pengukuran data terpusat (mean, median, dan modus) berada pada satu titik atau nilai yang relatif sama. Dari Gambar 9.1 dapat lebih terlihat jelas bahwa 50% data tersebar di atas tendensi sentral dan 50% data tersebar di bawah tendensi sentral, di mana semakin jauh dari tendensi sentral maka semakin sedikit frekuensinya.\nUntuk menjawab masalah-masalah tertentu, kita perlu mencari besaran frekuensi sebuah nilai atau cakupan nilai berdasarkan sebaran data yang ada. Misalnya, kita ingin memperkirakan ada berapa jumlah mahasiswa yang nilai ujiannya antara 70 dan 85, di mana nilai mean = 80 SD = 5, dan N = 250. Dengan memanfaatkan informasi standar deviasi (s), proporsi frekuensi data pada distribusi normal dapat kita hitung berdasarkan luas area dalam kurva. Gambar 9.2 menunjukkan besaran proporsi frekuensi pada data dilihat dari luas area berdasarkan nilai standar deviasi.\nDari kurva normal yang ditampilkan pada Gambar 3.3, kita dapat mengetahui bahwa setiap belahan kurva dibagi menjadi 4 area berdasarkan standar deviasi, yaitu (1) mean – +/- 1 SD (34,1%), 1 SD – 2 SD (13,6%), 2 SD – 3 SD (2,1%), dan &gt; 3 SD (0,1%). Artinya, proporsi terbanyak dari data adalah nilai-nilai yang mendekati mean, dan sebaliknya, semakin jauh dari mean maka proporsinya semakin kecil, terutama untuk nilai-nilai ekstrem (&gt; +/- 3 SD).\nProporsi frekuensi data dengan nilai antara mean hingga 1 SD di bawah mean adalah sebesar 34,1% dari keseluruhan data, begitu juga dengan yang 1 SD di atas mean. Selanjutnya, jika kita ingin mengetahui proporsi frekuensi data antara mean hingga 2 SD di atas mean, maka kita menjumlahkan proporsi (mean – 1 SD) + (1 SD – 2 SD) = 34,1% + 13,6% = 47,7%.\nDengan demikian, untuk menjawab pertanyaan sebelumnya (proporsi mahasiswa yang memperoleh nilai ujian 70 (X1) – 85 (X2) dengan mean = 80, SD = 5, dan N = 250), maka kita menghitungnya dengan mencari besaran SD dari batas bawah dan atas rentang skor:\nX1 - mean = 70 – 80 = -10; karena SD = 5, maka skor 70 = -2SD\nX2 - mean = 85 – 80 = 5; karena SD = 5, maka skor 85 = 1SD\nMaka, proporsi X1 – X2 = (proporsi -2SD – mean) + (proporsi mean – 1SD)\n= (13,6% + 34,1%) + (34,1%)\n= 81,8%\nSehingga, jumlah mahasiswa dengan skor antara 70 – 85 = 81,8% × 250 orang = 204 orang (pembulatan).",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bentuk Distribusi Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_3_distribusi.html#kurva-normal",
+    "href": "3_3_distribusi.html#kurva-normal",
+    "title": "9  Bentuk Distribusi Data",
+    "section": "",
+    "text": "Gambar 9.1: Bentuk kurva normal\n\n\n\n\n\n\n\n\n\n\n\nGambar 9.2: Proporsi sebaran data pada kurva normal",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bentuk Distribusi Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_3_distribusi.html#skewness",
+    "href": "3_3_distribusi.html#skewness",
+    "title": "9  Bentuk Distribusi Data",
+    "section": "9.2 Skewness",
+    "text": "9.2 Skewness\nData pada sampel yang diambil dari populasi penelitian tidak selalu terdistribusi secara normal. Sebaran yang tidak normal ini seringnya terjadi pada sekumpulan data yang memiliki nilai ekstrem (outlier) yang proporsinya cukup jauh melebihi data yang tersebar secara normal. Besarnya outlier ini membuat sebaran data seolah-olah terpusat di bawah nilai tengah, atau sebaliknya terpusat di atas nilai tengah.\nJika data yang tersebar secara normal membentuk kurva berbentuk lonceng yang simetris, maka data yang tidak normal tersebut bisa membentuk kurva yang miring atau juling (skewed). Arah kemiringan (skewness) kurva bergantung pada besaran frekuensi data yang menyimpang dari nilai tengah. Jika frekuensi nilai yang berada di bawah mean jauh lebih kecil daripada frekuensi nilai di atas mean, maka puncak kurva akan condong ke kanan, yang disebut sebagai skew negatif (Gambar 9.3 (a)). Sebaliknya, jika frekuensi nilai yang berada di bawah mean jauh lebih besar daripada frekuensi nilai di atas mean, maka puncak kurva akan condong ke kiri, yang disebut sebagai skew positif (Gambar 9.3 (b)).\n\n\n\n\n\n\n\n\n\n\n\n(a) Skew negatif\n\n\n\n\n\n\n\n\n\n\n\n(b) Skew positif\n\n\n\n\n\n\n\nGambar 9.3: Distribusi skewed\n\n\n\nTerdapat dua cara yang umum digunakan untuk mengetahui arah kemiringan (skewness) dari sebuah distribusi data, yaitu dengan (a) menggunakan rumus Pearson, dan (b) membandingkan nilai-nilai ukuran pemusatan data.\n\nRumus Pearson:\n\\[\n\\text{Skewness} = 3 \\times \\frac{\\text{Mean} - \\text{Median}}{\\text{SD}}\n\\]\nJika hasil penghitungan nilai skewness adalah positif, maka disebut dengan kurva skewed positif. Jika hasil hitungnya negatif, maka disebut dengan kurva skewed negatif. Apabila hasil hitungnya (mendekati) nol, maka disebut dengan kurva normal. Tidak ada angka pasti, seberapa dekat dengan nol dapat disebut sebagai kurva normal, tetapi kesepakatan umum adalah ± 0,5.\nMembandingkan nilai ukuran pemusatan data\nJika mean lebih kecil dari median, maka bentuk distribusinya adalah skewed negatif. Sebaliknya, jika mean lebih lebih besar dari median, maka bentuk distribusinya adalah skewed positif. Namun, jika mean, median, dan modus berada pada satu titik yang relatif sama atau berdekatan, maka bentuk distribusi datanya adalah normal (Gambar 9.4).\n\n\n\n\n\n\n\nGambar 9.4: Skewness data berdasarkan lokasi tendensi sentral",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bentuk Distribusi Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_3_distribusi.html#kurtosis",
+    "href": "3_3_distribusi.html#kurtosis",
+    "title": "9  Bentuk Distribusi Data",
+    "section": "9.3 Kurtosis",
+    "text": "9.3 Kurtosis\nKurtosis adalah seberapa berbeda bentuk kurva dari kurva normal, dilihat dari seberapa tebal-tipis bagian ekor dari kurva tersebut. Selain dilihat dari ekor kurva, kurtosis sebenarnya juga menunjukkan seberapa tajam bentuk puncak dari kurva. Terdapat tiga bentuk kurtosis, yaitu normal, ekor panjang (heavy-tailed) dan ekor pendek (light-tailed) (Gambar 9.5).\n\n\n\n\n\n\nGambar 9.5: Visualisai kurtosis dalam distribusi data\n\n\n\nKurtosis pada distribusi data yang normal adalah ketika ekor kurva tersebar secara proporsional dan puncak kurva tidak terlalu curam maupun terlalu landai. Jika nilai kurtosis &gt; 0, maka kurva akan memiliki ekor yang pendek dan puncak yang curam, menandakan data menumpuk di nilai-nilai sekitar nilai tengah. Sebaliknya, jika nilai kurtosis &lt; 0 maka ekor kurva akan memanjang dan puncaknya melandai, yang artinya hampir seluruh nilai memiliki frekuensi atau jumlah kejadian yang serupa. Kurva yang menunjukkan baik ekor panjang maupun ekor pendek menandakan bahwa data tidak terdistribusi secara normal.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bentuk Distribusi Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_3_distribusi.html#z-score",
+    "href": "3_3_distribusi.html#z-score",
+    "title": "9  Bentuk Distribusi Data",
+    "section": "9.4 Z-Score",
+    "text": "9.4 Z-Score\nz-score, yang dikenal juga dengan nama skor baku, menunjukkan posisi sebuah skor dibandingkan dengan rata-rata dalam satuan standar deviasi. Dengan kata lain, z-score menyatakan posisi relatif suatu nilai (X) dalam distribusi data. z = nol berarti nilai tersebut tepat di mean, z-score negatif menandakan bahwa nilainya lebih rendah dari mean, dan z-score positif berarti nilainya di atas mean. z-score dapat dihitung dengan cara:\n\\[\nz = \\frac{X - \\bar{x}}{\\text{SD}}\n\\]\nTujuan utama penggunaan z-score adalah untuk menstandarkan data, sehingga memungkinkan perbandingan antar nilai dari distribusi yang berbeda. Sebagai analogi, kita tidak bisa menilai mana yang memiliki nilai yang lebih tinggi antara nilai dua mata uang yang berbeda (misalnya, 10 Rupee India dengan 10 Baht Thailand) tanpa mengkonversinya ke dalam satuan mata uang yang sama atau standar.\nDalam hal data, dua nilai dari distribusi yang berbeda (misalnya, nilai 8 pada subtes aritmatika dan nilai 8 pada subtest logika numerikal) bisa jadi memiliki posisi yang berbeda dalam distribusi data masing-masing, sehingga tidak dapat dibandingkan secara langsung. Oleh karena itu, kedua nilai tersebut perlu ditransformasi ke z-score agar memiliki satuan yang sama untuk dapat dibandingkan.\nz-score juga bermanfaat dalam mendeteksi outlier, serta dalam berbagai analisis statistik lanjutan seperti uji hipotesis dan analisis distribusi normal. Karena z-score mengubah data ke skala yang seragam, ia menjadi alat penting dalam interpretasi dan generalisasi hasil penelitian.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bentuk Distribusi Data</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Daftar Pustaka",
+    "section": "",
+    "text": "Buuren, S. van. (2018). Flexible imputation of missing data.\nCRC Press.\n\n\nCoolican, H. (2014). Research methods and statistics in\npsychology (p. 773). Psychology Press, Taylor & Francis Group.\n\n\nCowles, M. (2000). Statistics in psychology: An historical\nperspective. Psychology Press.\n\n\nDancey, C. P., & Reidy, J. (2017). Statistics without maths for\npsychology (7th ed.). Pearson Education Limited.\n\n\nGelfond, J. A. L., Klugman, C. M., Welty, L. J., Heitman, E., Louden,\nC., & Pollock, B. H. (2014). How to tell the\ntruth with statistics: The case for accountable data analyses in\nteam-based science. Journal of Translational Medicine &\nEpidemiology, 2.\n\n\nGravetter, F. J., & Wallnau, L. B. (2017). Statistics for the\nbehavioral sciences. Cengage Learning.\n\n\nSalsburg, D. (2002). The lady tasting tea: How statistics\nrevolutionized science in the twentieth century. Henry Holt;\nCompany.\n\n\nTabachnick, B. G., & Fidell, L. S. (2014). Using multivariate\nstatistics (6th ed.). Pearson Education Limited.",
+    "crumbs": [
+      "Daftar Pustaka"
     ]
   }
 ]
