@@ -1,1 +1,5 @@
 # STATISTIK DESKRIPTIF {#sec-deskriptif}
+
+Setelah data dikumpulkan dan dipersiapkan, langkah selanjutnya dalam proses analisis adalah memahami karakteristik umum dari data tersebut. Bab ini membahas tentang statistik deskriptif, yaitu serangkaian teknik yang digunakan untuk merangkum, menyederhanakan, dan menyajikan data mentah menjadi informasi yang lebih mudah dipahami. Statistik deskriptif tidak berfokus pada pengambilan keputusan atau generalisasi, melainkan pada penggambaran pola, kecenderungan, dan sebaran data yang ada.
+
+Bab ini terdiri dari tiga bagian utama. Pertama, pembahasan mengenai ukuran pemusatan data (*central tendency*), mencakup *mean* (rata-rata), median, dan modus yang menggambarkan nilai pusat dari sekumpulan data. Kedua, penjelasan tentang sebaran data (dispersi) yang mencakup rentang, varians, dan standar deviasi untuk memahami seberapa jauh data menyebar dari pusatnya. Terakhir, akan dibahas mengenai bentuk distribusi data, termasuk konsep simetri, *skewness*, dan *kurtosis*, yang penting untuk mengetahui apakah data berdistribusi normal atau memiliki penyimpangan tertentu.

@@ -38,6 +38,8 @@ book:
     - part: 2_persiapan.qmd
       
     - part: 3_deskriptif.qmd
+      chapters: 
+        - 3_1_sentral.qmd
       
     - part: 4_inferensial.qmd
 
@@ -56,7 +58,14 @@ bibliographystyle: apa
 csl: apa7id.csl
 
 lang: id_ID
+language: id.yml
 
+crossref: 
+  sec-prefix: "Bab"
+  fig-prefix: "Gambar"
+  tbl-prefix: "Tabel"
+  eq-prefix: "Persamaan"
+  
 format:
   html:
     theme:

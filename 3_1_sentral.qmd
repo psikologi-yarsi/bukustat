@@ -1,0 +1,3 @@
+# Ukuran Pemusatan Data  {#sec-sentral}
+
+Bayangkan, Anda sedang melakukan pengamatan terhadap hasil belajar di satu sekolah, misalnya pelajaran matematika dari 150 anak kelas X. Dari daftar nilai itu, Anda mempunyai informasi mengenai nilai dari setiap anak. Namun, bagaimana Anda akan mengatakan kepada khalayak, mengenai capaian nilai matematika dari ke-150 anak ini? Seberapa baik capaian tersebut? Untuk menjawabnya, Anda memerlukan satu **perwakilan angka** yang dapat dinilai sebagai baik, cukup atau buruk. Inilah yang disebut dengan konsep ***central*** ***tendency*** atau ukuran pemusatan data, yaitu satu angka yang menjadi ukuran sentral dari semua kumpulan angka yang diwakilinya. Terdapat tiga macam ukuran sentral, yaitu *mean*, median dan modus.

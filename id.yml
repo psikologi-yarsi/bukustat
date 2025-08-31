@@ -1,0 +1,6 @@
+crossref:
+  chap-prefix: "Bab"
+  sec-prefix: "Bagian"
+  fig-prefix: "Gambar"
+  tbl-prefix: "Tabel"
+  eq-prefix: "Persamaan"

@@ -1,0 +1,129 @@
+[
+  {
+    "objectID": "1_3_jenis_stat.html",
+    "href": "1_3_jenis_stat.html",
+    "title": "3  Jenis-jenis Statistik: Deskriptif & Inferensial",
+    "section": "",
+    "text": "Statistik dapat dibagi menjadi dua kategori utama, yaitu statistik deskriptif dan statistik inferensial, yang masing-masing memiliki peran penting dalam analisis data. Statistik deskriptif (Bab 3) Chapter 4 Lihat Bab @ref(sec-deskriptif) digunakan untuk merangkum, mengorganisasi, dan menyederhanakan data mentah menjadi informasi yang lebih mudah dipahami. Teknik-teknik ini termasuk distribusi frekuensi, tabel, grafik, rata-rata (mean), median, mode, serta ukuran dispersi seperti variansi dan standar deviasi. Statistik deskriptif membantu memberikan gambaran umum tentang data tanpa membuat kesimpulan lebih luas.\nSebaliknya, statistik inferensial ?sec-inferensial digunakan untuk membuat generalisasi tentang populasi berdasarkan data sampel. Teknik ini melibatkan analisis data dari sampel untuk menjawab pertanyaan penelitian dan menyimpulkan parameter populasi. Statistik inferensial sering menggunakan konsep probabilitas untuk memperkirakan sejauh mana kesimpulan dari sampel dapat mewakili populasi secara keseluruhan. Contoh aplikasinya termasuk uji hipotesis, analisis varians (ANOVA), dan regresi.\nPerbedaan utama antara keduanya terletak pada tujuan dan ruang lingkupnya. Statistik deskriptif fokus pada penggambaran data yang ada, sedangkan statistik inferensial fokus pada pengambilan keputusan atau prediksi berdasarkan data tersebut. Misalnya, statistik deskriptif digunakan untuk menghitung rata-rata usia partisipan dalam sebuah survei, sementara statistik inferensial menggunakan data tersebut untuk memprediksi rata-rata usia seluruh populasi.\nDalam praktiknya, kedua jenis statistik ini saling melengkapi. Statistik deskriptif menyediakan dasar untuk memahami data, sedangkan statistik inferensial memberikan kerangka untuk mengambil keputusan yang lebih luas. Sebagai contoh, analisis distribusi frekuensi dalam statistik deskriptif dapat menjadi langkah awal sebelum melakukan uji-t atau ANOVA dalam statistik inferensial.\nKombinasi kedua pendekatan ini mendukung analisis data yang kuat, terutama dalam ilmu perilaku dan sosial. Statistik deskriptif membantu menggambarkan data dengan jelas, sementara statistik inferensial memberikan justifikasi yang didukung oleh probabilitas untuk menjawab pertanyaan-pertanyaan penelitian yang kompleks. Hal ini menjadikan statistik alat yang tak tergantikan dalam proses penelitian ilmiah.",
+    "crumbs": [
+      "PENGANTAR STATISTIK",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Jenis-jenis Statistik: Deskriptif & Inferensial</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Tentang Penulis",
+    "section": "",
+    "text": "Dr. Sunu Bagaskara  \nadalah akademisi dan peneliti di bidang Psikologi dengan latar belakang pendidikan S1 hingga S3 di Fakultas Psikologi Universitas Indonesia. Ia berpengalaman mengajar Psikologi Sosial, Metode Penelitian Kuantitatif dan Statistik, serta Konstruksi Alat Ukur Psikologi. Minat penelitiannya mencakup kognisi sosial, psikologi lalu lintas, dan penerapan statistik dalam psikologi, dengan berbagai publikasi di jurnal ilmiah nasional dan internasional yang mencerminkan dedikasinya pada pengembangan ilmu psikologi dan keselamatan masyarakat.\n\n\nDr. Entin Nurhayati  \nberpengalaman mengajar kurang lebih selama 20 tahun. Pernah mengajar berbagai mata kuliah, seperti Faal, Psi Perkembangan, Psikodiagnosis (TAT/CAT, Rorschach) hingga beberapa tahun terakhir fokus di rumpun penelitian, khususnya mata kuliah metodologi penelitian dan statistik. Berdasar pengalaman mengajar ini serta membimbing penelitian mahasiswa, penulis memahami berbagai kesulitan yang dihadapi mahasiswa dalam memahami metopen dan statistik. Bersama sejawat, penulis berusaha melahirkan rangkaian buku praktis, agar mahasiswa dapat dengan mudah dan cepat memahami ilmu alat mengembangkan pengetahuan ini. Buku ini merupakan buku pertama yang dirancang untuk keperluan tersebut.\n\n\nSari Zakiah Akmal, Ph.D., Psikolog  \nadalah akademisi dan peneliti di bidang Psikologi Pendidikan. Ia lulusan dari program Sarjana dan Magister Profesi Psikologi Pendidikan, Fakultas Psikologi Universitas Indonesia dan program doktoral dari School of Applied Psychology, Griffith University, Australia. Sebagai dosen psikologi, ia pernah mengampu matakuliah terkait Metode Penelitian Kuantitatif, Statistik, Logika – Penulisan Ilmiah, Konstruksi Alat Ukur Psikologi, Asesmen Inteligensi, dan Pengembangan Diri dan Karier. Ia juga aktif dalam melakukan penelitian dan pengabdian masyarakat dengan fokus utama pada pengambilan keputusan karier, adaptabilitas karier, ketahanan akademik di kalangan mahasiswa, dan berbagai permasalahan terkait pendidikan siswa SMA/SMK dan mahasiswa di perguruan tinggi. Karya-karyanya telah dipublikasikan dalam berbagai jurnal akademik dan konferensi, mencerminkan komitmennya dalam mengembangkan penelitian dan pendidikan psikologi.\n\n\nTiti Sahidah, Ph.D., Psikolog  \n\n\nAswin Januarsjaf, S.Psi., M.M \nadalah akademisi dan praktisi di bidang Psikologi serta Manajemen Sumber Daya Manusia. Lulusan Psikologi Universitas Padjadjaran dan Magister Manajemen PPM School of Management ini memiliki pengalaman lebih dari dua dekade di berbagai industri, khususnya dalam bidang rekrutmen, asesmen, dan pengembangan SDM. Ia mendirikan Talentlytica, sebuah platform asesmen berbasis data, serta aktif mengajar statistik psikologi dan melatih topik manajemen SDM di berbagai institusi. Karya-karya dan inovasi perangkat asesmennya mencerminkan komitmennya untuk menghubungkan ilmu psikologi dengan praktik manajemen modern di Indonesia.",
+    "crumbs": [
+      "Tentang Penulis"
+    ]
+  },
+  {
+    "objectID": "1_pengantar.html",
+    "href": "1_pengantar.html",
+    "title": "PENGANTAR STATISTIK",
+    "section": "",
+    "text": "Statistik memainkan peran yang sangat penting dalam dunia psikologi, khususnya dalam konteks penelitian dan pengambilan keputusan berbasis data. Bab-bab awal buku ini bertujuan memberikan pemahaman dasar tentang konsep-konsep statistik yang relevan bagi mahasiswa psikologi. Mulai dari sejarah dan definisi statistik, pembahasan ini menjelaskan bagaimana perkembangan ilmu ini dipengaruhi oleh berbagai tokoh dan kebutuhan untuk memahami variasi dalam kehidupan manusia. Selain itu, bab-bab ini juga menguraikan prinsip-prinsip dasar seperti hubungan antara sampel dan populasi, serta peran parameter dan statistik dalam menginterpretasikan data penelitian.\nLebih jauh, buku ini membahas pentingnya statistik dalam penelitian psikologi, terutama untuk mengakomodasi kompleksitas perilaku manusia. Dengan menggunakan pendekatan deskriptif dan inferensial, statistik membantu peneliti menggambarkan data secara efektif sekaligus membuat generalisasi yang valid dari sampel ke populasi. Bab-bab ini dirancang untuk menjadi landasan kokoh bagi mahasiswa dalam memahami bagaimana statistik dapat digunakan untuk menjawab berbagai pertanyaan penelitian, mengatasi tantangan analisis data, dan mendukung validitas ilmiah psikologi sebagai disiplin ilmu.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 1. Pengertian & Sejarah Ringkas Statistik:\n\nMemahami definisi statistik dan konsep dasar yang meliputi parameter dan statistik.\nMengidentifikasi hubungan antara sampel dan populasi dalam konteks penelitian.\nMemahami peran statistik sebagai alat untuk mengorganisasi, merangkum, dan menginterpretasi informasi.\n\n\nBab 2. Statistik dalam Penelitian Psikologi:\n\nMenjelaskan peran statistik dalam mendukung psikologi sebagai ilmu ilmiah.\nMengevaluasi signifikansi statistik dalam memahami variasi perilaku dan membuat inferensi dari data penelitian.\n\n\nBab 3. Jenis-jenis Statistik: Deskriptif & Inferensial:\n\nMengidentifikasi perbedaan utama antara statistik deskriptif dan statistik inferensial, termasuk ruang lingkup dan tujuan keduanya.\nMemahami bagaimana kombinasi statistik deskriptif dan inferensial mendukung analisis data yang kuat, khususnya dalam ilmu perilaku dan sosial.",
+    "crumbs": [
+      "PENGANTAR STATISTIK"
+    ]
+  },
+  {
+    "objectID": "1_1_sejarah.html",
+    "href": "1_1_sejarah.html",
+    "title": "1  Pengertian & Sejarah Ringkas Statistik",
+    "section": "",
+    "text": "1.1 Definisi Statistik\nSejarah statistik bermula dari kebutuhan memahami variasi dalam ilmu hayati dan sosial (Gravetter & Wallnau, 2017). Variasi ini menjadi pusat perhatian dengan diperkenalkannya teori evolusi oleh Charles Darwin pada abad ke-19. Pionir seperti Francis Galton, sepupu Darwin, berusaha menguantifikasi pewarisan sifat biologis dan memunculkan konsep regresi terhadap rata-rata. Galton juga mengembangkan metode korelasi, yang menjadi dasar statistik modern. Selanjutnya, Karl Pearson memperkukuh landasan matematis statistik dengan memperkenalkan koefisien korelasi dan uji chi-kuadrat. Perkembangan ini melibatkan kajian biometrika dan genetik, dengan fokus pada pewarisan sifat yang dipengaruhi oleh gerakan eugenika.\nPada abad ke-20, Ronald Fisher memperkenalkan analisis varians dan metode eksperimental untuk memperluas penerapan statistik, terutama dalam ilmu perilaku (Cowles, 2000). Fisher, bersama Pearson, menekankan pentingnya inferensi statistik untuk mengatasi variasi alami. Pada saat yang sama, probabilitas berkembang sebagai dasar teoretis statistik, berakar dari upaya menjawab masalah dunia nyata seperti perjudian dan prediksi aktuarial. Normalisasi distribusi data, yang diperkenalkan oleh Lambert Quetelet, menjadi inti statistik inferensial. Hingga kini, statistik terus berkembang dengan mengintegrasikan metode baru untuk menjawab tantangan dalam berbagai disiplin ilmu.\nStatistik adalah kumpulan prosedur matematis yang digunakan untuk mengorganisasi, merangkum, dan menginterpretasi informasi (Gravetter & Wallnau, 2017). Dalam konteks penelitian, statistik membantu para peneliti untuk memahami hasil studi dan menyampaikan informasi tersebut secara akurat dan informatif. Statistik juga menyediakan teknik-teknik standar yang diakui dalam komunitas ilmiah sehingga hasil analisis dapat diinterpretasikan dengan konsistensi yang tinggi oleh peneliti lainnya.",
+    "crumbs": [
+      "PENGANTAR STATISTIK",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pengertian & Sejarah Ringkas Statistik</span>"
+    ]
+  },
+  {
+    "objectID": "1_1_sejarah.html#sampel-dan-populasi",
+    "href": "1_1_sejarah.html#sampel-dan-populasi",
+    "title": "1  Pengertian & Sejarah Ringkas Statistik",
+    "section": "1.2 Sampel dan Populasi",
+    "text": "1.2 Sampel dan Populasi\nPopulasi adalah keseluruhan individu atau elemen yang menjadi fokus penelitian. Karena populasi biasanya terlalu besar untuk dianalisis secara langsung, peneliti memilih sampel, yaitu sekelompok individu yang mewakili populasi. Sampel bertujuan untuk menyederhanakan penelitian sambil tetap memungkinkan penarikan kesimpulan yang dapat digeneralisasi ke populasi. Hubungan antara sampel dan populasi bersifat dua arah: sampel diambil dari populasi, dan hasil penelitian pada sampel digeneralisasikan kembali ke populasi.",
+    "crumbs": [
+      "PENGANTAR STATISTIK",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pengertian & Sejarah Ringkas Statistik</span>"
+    ]
+  },
+  {
+    "objectID": "1_1_sejarah.html#parameter-dan-statistik",
+    "href": "1_1_sejarah.html#parameter-dan-statistik",
+    "title": "1  Pengertian & Sejarah Ringkas Statistik",
+    "section": "1.3 Parameter dan Statistik",
+    "text": "1.3 Parameter dan Statistik\nParameter adalah nilai yang menggambarkan suatu karakteristik dari populasi, seperti rata-rata populasi, sedangkan statistik adalah nilai yang menggambarkan karakteristik dari sampel, seperti rata-rata sampel. Dalam penelitian, data yang diperoleh berasal dari sampel, sehingga statistik digunakan untuk memperkirakan parameter populasi. Proses ini menciptakan hubungan erat antara statistik sampel dan parameter populasi, yang menjadi dasar dari banyak prosedur statistik.\n\n\n\n\nCowles, M. (2000). Statistics in Psychology: An Historical Perspective. Psychology Press.\n\n\nGravetter, F. J., & Wallnau, L. B. (2017). Statistics for the Behavioral Sciences. Cengage Learning.",
+    "crumbs": [
+      "PENGANTAR STATISTIK",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Pengertian & Sejarah Ringkas Statistik</span>"
+    ]
+  },
+  {
+    "objectID": "1_2_stat_psiko.html",
+    "href": "1_2_stat_psiko.html",
+    "title": "2  Statistik dalam Penelitian Psikologi",
+    "section": "",
+    "text": "Statistik memegang peran penting dalam perkembangan ilmu psikologi, khususnya dalam upaya menjadikannya ilmu yang lebih ilmiah (Dancey & Reidy, 2017). Dimulai dengan prinsip determinisme yang mengasumsikan adanya keteraturan dalam alam, psikologi mencoba meniru pendekatan ilmu alam untuk memprediksi dan mengontrol perilaku. Hal ini dipopulerkan oleh tokoh seperti John B. Watson melalui behaviorisme yang mengedepankan studi eksperimental untuk mengendalikan variabel-variabel perilaku. Namun, pendekatan deterministik ini dipadukan dengan model probabilistik untuk mengakomodasi kompleksitas dan variasi yang melekat pada manusia.\nStatistik memungkinkan psikologi menangani variasi data dan membuat inferensi dari sampel ke populasi. Misalnya, Ronald Fisher mengembangkan desain eksperimen dan analisis varians (ANOVA) untuk membantu peneliti memahami hubungan sebab-akibat meskipun terdapat variabilitas. Selain itu, pengembangan metode korelasi oleh Francis Galton dan Karl Pearson membantu mengukur hubungan antar variabel, sementara analisis faktor yang diperkenalkan Charles Spearman mengidentifikasi faktor-faktor dalam kecerdasan (Coolican, 2014).\nDalam sejarahnya, statistik tidak hanya digunakan untuk menganalisis data, tetapi juga sebagai alat eksplorasi. Contohnya, metode analisis faktor sering digunakan untuk memetakan domain baru dalam psikologi sebelum eksperimen langsung dilakukan. Statistik juga membantu memperjelas perbedaan antara pendekatan eksperimental yang berfokus pada manipulasi variabel independen dan pendekatan korelasional yang mempelajari hubungan antar variabel dalam kondisi alami.\nSignifikansi statistik dalam psikologi tidak lepas dari pengaruh pionir seperti Gustav Fechner, yang memulai pendekatan kuantitatif untuk mengukur hubungan antara stimulus dan sensasi. Meskipun beberapa konsep awal seperti hukum psikofisik Fechner kini telah direvisi, kontribusinya mendasari metode eksperimental modern. Statistik memungkinkan peneliti psikologi untuk mengatasi tantangan dalam memahami kondisi manusia yang penuh variasi, sekaligus menyediakan dasar untuk menguji hipotesis secara objektif (Salsburg, 2002).\nStatistik juga memperkuat nilai-nilai keilmiahan psikologi, seperti keterbukaan terhadap koreksi, validasi empiris, dan kemampuan untuk memprediksi. Dengan demikian, statistik tidak hanya menjadi alat teknis tetapi juga kerangka filosofis yang mendukung psikologi sebagai ilmu yang dapat menjembatani antara determinisme dan kebebasan manusia, serta antara pandangan positivistik dan humanisme.\n\n\n\n\nCoolican, H. (2014). Research methods and statistics in psychology (hlm. 773). Psychology Press, Taylor & Francis Group.\n\n\nDancey, C. P., & Reidy, J. (2017). Statistics without maths for psychology (7th ed.). Pearson Education Limited.\n\n\nSalsburg, D. (2002). The lady tasting tea: how statistics revolutionized science in the twentieth century. Henry Holt; Company.",
+    "crumbs": [
+      "PENGANTAR STATISTIK",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Statistik dalam Penelitian Psikologi</span>"
+    ]
+  },
+  {
+    "objectID": "1_latihan.html",
+    "href": "1_latihan.html",
+    "title": "Soal Latihan",
+    "section": "",
+    "text": "Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bab 1 ini dengan menjawab sejumlah pertanyaan di bawah ini:",
+    "crumbs": [
+      "PENGANTAR STATISTIK",
+      "Soal Latihan"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Daftar Pustaka",
+    "section": "",
+    "text": "Coolican, H. (2014). Research methods and statistics in\npsychology (p. 773). Psychology Press, Taylor & Francis Group.\n\n\nCowles, M. (2000). Statistics in psychology: An historical\nperspective. Psychology Press.\n\n\nDancey, C. P., & Reidy, J. (2017). Statistics without maths for\npsychology (7th ed.). Pearson Education Limited.\n\n\nGravetter, F. J., & Wallnau, L. B. (2017). Statistics for the\nbehavioral sciences. Cengage Learning.\n\n\nSalsburg, D. (2002). The lady tasting tea: How statistics\nrevolutionized science in the twentieth century. Henry Holt;\nCompany.",
+    "crumbs": [
+      "Daftar Pustaka"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistik untuk Psikologi dan Ilmu Sosial",
+    "section": "",
+    "text": "Selamat Datang!\nAlhamdulillah, akhirnya buku Statistik untuk Psikologi dan Ilmu Sosial ini bisa sampai ke tangan Anda. Buku ini lahir dari pengalaman sehari-hari di kelas, saat mendampingi mahasiswa yang sering kali merasa “alergi” begitu mendengar kata statistik. Padahal, kalau dipahami dengan cara yang tepat, statistik bukan sesuatu yang menakutkan. Justru ia adalah alat yang sangat membantu kita untuk membaca, memahami, dan menjelaskan fenomena psikologi secara lebih objektif.\nDalam buku ini, kami mencoba menyajikan konsep-konsep statistik dengan bahasa yang sederhana, runtut, dan dekat dengan dunia psikologi. Setiap bab tidak hanya berisi teori, tetapi juga contoh nyata serta latihan soal yang bisa membantu pembaca melatih pemahaman. Harapannya, buku ini bisa menjadi jembatan agar mahasiswa lebih percaya diri ketika berhadapan dengan data penelitian.\nKami menyadari buku ini masih jauh dari sempurna. Kritik dan saran dari para pembaca tentu sangat kami nantikan, agar pada edisi-edisi berikutnya buku ini bisa semakin baik.\nAkhir kata, semoga buku ini tidak hanya menjadi pegangan dalam belajar, tetapi juga menjadi sahabat yang menemani perjalanan Anda meneliti, menulis, dan memahami psikologi dengan lebih ilmiah.\nJakarta, Agustus 2025\n\nTim Penulis",
+    "crumbs": [
+      "Selamat Datang!"
+    ]
+  },
+  {
+    "objectID": "3_1_sentral.html",
+    "href": "3_1_sentral.html",
+    "title": "4  Ukuran Pemusatan Data",
+    "section": "",
+    "text": "Bayangkan, Anda sedang melakukan pengamatan terhadap hasil belajar di satu sekolah, misalnya pelajaran matematika dari 150 anak kelas X. Dari daftar nilai itu, Anda mempunyai informasi mengenai nilai dari setiap anak. Namun, bagaimana Anda akan mengatakan kepada khalayak, mengenai capaian nilai matematika dari ke-150 anak ini? Seberapa baik capaian tersebut? Untuk menjawabnya, Anda memerlukan satu perwakilan angka yang dapat dinilai sebagai baik, cukup atau buruk. Inilah yang disebut dengan konsep central tendency atau ukuran pemusatan data, yaitu satu angka yang menjadi ukuran sentral dari semua kumpulan angka yang diwakilinya. Terdapat tiga macam ukuran sentral, yaitu mean, median dan modus.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ukuran Pemusatan Data</span>"
+    ]
+  },
+  {
+    "objectID": "3_deskriptif.html",
+    "href": "3_deskriptif.html",
+    "title": "STATISTIK DESKRIPTIF",
+    "section": "",
+    "text": "Setelah data dikumpulkan dan dipersiapkan, langkah selanjutnya dalam proses analisis adalah memahami karakteristik umum dari data tersebut. Bab ini membahas tentang statistik deskriptif, yaitu serangkaian teknik yang digunakan untuk merangkum, menyederhanakan, dan menyajikan data mentah menjadi informasi yang lebih mudah dipahami. Statistik deskriptif tidak berfokus pada pengambilan keputusan atau generalisasi, melainkan pada penggambaran pola, kecenderungan, dan sebaran data yang ada.\nBab ini terdiri dari tiga bagian utama. Pertama, pembahasan mengenai ukuran pemusatan data (central tendency), mencakup mean (rata-rata), median, dan modus yang menggambarkan nilai pusat dari sekumpulan data. Kedua, penjelasan tentang sebaran data (dispersi) yang mencakup rentang, varians, dan standar deviasi untuk memahami seberapa jauh data menyebar dari pusatnya. Terakhir, akan dibahas mengenai bentuk distribusi data, termasuk konsep simetri, skewness, dan kurtosis, yang penting untuk mengetahui apakah data berdistribusi normal atau memiliki penyimpangan tertentu.",
+    "crumbs": [
+      "STATISTIK DESKRIPTIF"
+    ]
+  }
+]
