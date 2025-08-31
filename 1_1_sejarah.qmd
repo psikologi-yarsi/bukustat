@@ -6,12 +6,12 @@ Pada abad ke-20, Ronald Fisher memperkenalkan **analisis varians** dan **metode 
 
 ## Definisi Statistik
 
-Statistik adalah **kumpulan prosedur matematis** yang digunakan untuk **mengorganisasi**, **merangkum**, dan **menginterpretasi** informasi (Gravetter & Wallnau, 2017). Dalam konteks penelitian, statistik membantu para peneliti untuk memahami hasil studi dan menyampaikan informasi tersebut secara akurat dan informatif. Statistik juga menyediakan teknik-teknik standar yang diakui dalam komunitas ilmiah sehingga hasil analisis dapat diinterpretasikan dengan konsistensi yang tinggi oleh peneliti lainnya.
+Statistik\index{Statistik} adalah **kumpulan prosedur matematis** yang digunakan untuk **mengorganisasi**, **merangkum**, dan **menginterpretasi** informasi [@Gravetter2017]. Dalam konteks penelitian, statistik membantu para peneliti untuk memahami hasil studi dan menyampaikan informasi tersebut secara akurat dan informatif. Statistik juga menyediakan teknik-teknik standar yang diakui dalam komunitas ilmiah sehingga hasil analisis dapat diinterpretasikan dengan konsistensi yang tinggi oleh peneliti lainnya.
 
-### Sampel dan Populasi
+## Sampel dan Populasi
 
 **Populasi** adalah **keseluruhan individu** atau elemen yang menjadi fokus penelitian. Karena populasi biasanya terlalu besar untuk dianalisis secara langsung, peneliti memilih **sampel**, yaitu **sekelompok individu yang mewakili populasi**. Sampel bertujuan untuk menyederhanakan penelitian sambil tetap memungkinkan penarikan kesimpulan yang dapat digeneralisasi ke populasi. Hubungan antara sampel dan populasi bersifat dua arah: sampel diambil dari populasi, dan hasil penelitian pada sampel digeneralisasikan kembali ke populasi.
 
-### Parameter dan Statistik
+## Parameter dan Statistik
 
 **Parameter** adalah nilai yang menggambarkan suatu **karakteristik dari populasi**, seperti rata-rata populasi, sedangkan statistik adalah nilai yang menggambarkan karakteristik dari sampel, seperti rata-rata sampel. Dalam penelitian, data yang diperoleh berasal dari sampel, sehingga **statistik** digunakan untuk **memperkirakan parameter populasi**. Proses ini menciptakan hubungan erat antara statistik sampel dan parameter populasi, yang menjadi dasar dari banyak prosedur statistik.

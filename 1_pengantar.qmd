@@ -1,10 +1,10 @@
-# I. PENGANTAR STATISTIK {#sec-pengantar}
+# PENGANTAR STATISTIK {#sec-pengantar}
 
 Statistik memainkan peran yang sangat penting dalam dunia psikologi, khususnya dalam konteks penelitian dan pengambilan keputusan berbasis data. Bab-bab awal buku ini bertujuan memberikan pemahaman dasar tentang konsep-konsep statistik yang relevan bagi mahasiswa psikologi. Mulai dari sejarah dan definisi statistik, pembahasan ini menjelaskan bagaimana perkembangan ilmu ini dipengaruhi oleh berbagai tokoh dan kebutuhan untuk memahami variasi dalam kehidupan manusia. Selain itu, bab-bab ini juga menguraikan prinsip-prinsip dasar seperti hubungan antara sampel dan populasi, serta peran parameter dan statistik dalam menginterpretasikan data penelitian.
 
 Lebih jauh, buku ini membahas pentingnya statistik dalam penelitian psikologi, terutama untuk mengakomodasi kompleksitas perilaku manusia. Dengan menggunakan pendekatan deskriptif dan inferensial, statistik membantu peneliti menggambarkan data secara efektif sekaligus membuat generalisasi yang valid dari sampel ke populasi. Bab-bab ini dirancang untuk menjadi landasan kokoh bagi mahasiswa dalam memahami bagaimana statistik dapat digunakan untuk menjawab berbagai pertanyaan penelitian, mengatasi tantangan analisis data, dan mendukung validitas ilmiah psikologi sebagai disiplin ilmu.
 
-```{=html}
+```{=htmlx}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,3 +60,24 @@ Lebih jauh, buku ini membahas pentingnya statistik dalam penelitian psikologi, t
 </div>
 </div>
 ```
+::: {.callout-note title="*Tujuan Pembelajaran*"}
+Bab 1. Pengertian & Sejarah Ringkas Statistik:
+
+-   Memahami definisi statistik dan konsep dasar yang meliputi parameter dan statistik.
+
+-   Mengidentifikasi hubungan antara sampel dan populasi dalam konteks penelitian.
+
+-   Memahami peran statistik sebagai alat untuk mengorganisasi, merangkum, dan menginterpretasi informasi.\
+
+Bab 2. Statistik dalam Penelitian Psikologi:
+
+-   Menjelaskan peran statistik dalam mendukung psikologi sebagai ilmu ilmiah.
+
+-   Mengevaluasi signifikansi statistik dalam memahami variasi perilaku dan membuat inferensi dari data penelitian.\
+
+Bab 3. Jenis-jenis Statistik: Deskriptif & Inferensial:
+
+-   Mengidentifikasi perbedaan utama antara statistik deskriptif dan statistik inferensial, termasuk ruang lingkup dan tujuan keduanya.
+
+-   Memahami bagaimana kombinasi statistik deskriptif dan inferensial mendukung analisis data yang kuat, khususnya dalam ilmu perilaku dan sosial.
+:::

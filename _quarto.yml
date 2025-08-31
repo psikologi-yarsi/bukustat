@@ -3,8 +3,8 @@ project:
   output-dir: docs
   
 book:
-  title: "Statistik untuk Psikologi & Ilmu Sosial"
-  subtitle: "Buku Panduan Praktis untuk Mahasiswa & Peneliti Muda"
+  title: "Statistik untuk Psikologi dan Ilmu Sosial"
+  subtitle: "Buku Panduan Praktis untuk Mahasiswa dan Peneliti Muda"
   reader-mode: true
   author: 
     - "Sunu Bagaskara"
@@ -12,6 +12,7 @@ book:
     - "Sari Zakiah Akmal"
     - "Titi Sahidah Fitriana"
     - "Aswin Januarsjaf"
+  language: id
   date: "8/30/2025"
   date-format: "D MMMM YYYY"
   page-footer:
@@ -19,8 +20,8 @@ book:
       Statistik untuk Psikologi & Ilmu Sosial
     right: |
       Buku ini dicetak menggunakan <a href="https://quarto.org/">Quarto</a>.
-  cover-image: Cover.png
-  favicon: Cover.png
+  cover-image: cover3.jpg
+  favicon: cover3.jpg
   chapters:
     - index.qmd
     - about.qmd
@@ -28,6 +29,8 @@ book:
     - part: 1_pengantar.qmd
       chapters:
         - 1_1_sejarah.qmd
+        - 1_2_stat_psiko.qmd
+        - 1_3_jenis_stat.qmd
         
     - part: 2_persiapan.qmd
       
@@ -56,11 +59,30 @@ format:
     theme:
       - united
       - brand
+    css: styles.scss
     code-link: true
     author-meta: "Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, & Aswin Januarsjaf"
     breadcrumb: true
     title-block-banner: true
   pdf:
-    documentclass: scrbook
+    documentclass: book
+    classoption: [openany]
+    papersize: a4
+    mainfont: "Ubuntu-Light"
+    sansfont: "Ubuntu-Light"
+    monofont: "Ubuntu-Light"
+    geometry: 
+      - paperwidth=8.0000000000000in
+      - paperheight=10.000000000000in
+      - left=1.25in
+      - textwidth= 5.25in
+      - top=1.00in
+      - textheight=8.25in
+    include-in-header: "header.tex"
+    include-after-body: 
+      text: |
+        \printindex
+    toc: true
+    toc-title: "Daftar Isi"
 
 editor: visual

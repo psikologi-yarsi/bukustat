@@ -1,0 +1,55 @@
+% ============ Index ============
+\usepackage{imakeidx}
+\makeindex[intoc=true, columns=2, columnseprule=true, options=-s latex/indexstyles.ist]
+
+% ============ Pengaturan Font (opsional; sudah ada di YAML) ============
+% \usepackage{fontspec}
+% \setmainfont{Ubuntu Light}
+% \setsansfont{Ubuntu Light}
+% \setmonofont{Ubuntu Mono}
+
+% ============ Judul Bab/Bagian ============
+\usepackage{titlesec}
+
+% Judul BAB (chapter)
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+% Judul BAGIAN (part) — pusat vertikal di HALAMAN SENDIRI
+\titleformat{\part}[display]
+  {\normalfont\Huge\bfseries\centering}
+  {\partname\ \thepart}{0pt}{\Huge}
+% before = \fill, after = \fill  -> memusatkan vertikal
+\titlespacing*{\part}{0pt}{\fill}{\fill}
+
+% ============ Callout (kotak catatan) ============
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\definecolor{MyCalloutHeader}{HTML}{58771F}
+\definecolor{MyCalloutBody}{HTML}{D6DEBF}
+\definecolor{MyCalloutTitle}{HTML}{FFFFFF}
+
+\tcbset{
+  quarto-callout-note/.style={
+    colback=MyCalloutBody,
+    colframe=MyCalloutHeader,
+    colbacktitle=MyCalloutHeader,
+    coltitle=MyCalloutTitle,
+    fonttitle=\itshape
+  }
+}
+
+% ============ Kontrol page break yang konsisten ============
+\usepackage{etoolbox}
+\makeatletter
+\AtBeginDocument{%
+  % 1) Pastikan PART berakhir dengan vfill + newpage (judul tetap center-middle)
+  \renewcommand\@endpart{\vfil\newpage}
+
+  % 2) Pastikan CHAPTER selalu mulai di halaman baru
+  \let\orig@chapter\chapter
+  \renewcommand{\chapter}{\clearpage\orig@chapter}
+}
+\makeatother
