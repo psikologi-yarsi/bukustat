@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: docs
+
+site-url: https://sunubagaskara.github.io/bukustat/
   
 book:
   title: "Statistik untuk Psikologi dan Ilmu Sosial"
@@ -20,8 +22,8 @@ book:
       Statistik untuk Psikologi & Ilmu Sosial
     right: |
       Buku ini dicetak menggunakan <a href="https://quarto.org/">Quarto</a>.
-  cover-image: cover3.jpg
-  favicon: cover3.jpg
+  cover-image: coverv3.jpg
+  favicon: coverv3.jpg
   chapters:
     - index.qmd
     - about.qmd
