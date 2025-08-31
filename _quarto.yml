@@ -33,6 +33,7 @@ book:
         - 1_1_sejarah.qmd
         - 1_2_stat_psiko.qmd
         - 1_3_jenis_stat.qmd
+        - 1_latihan.qmd
         
     - part: 2_persiapan.qmd
       
