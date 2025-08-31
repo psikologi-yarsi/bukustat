@@ -106,4 +106,9 @@ format:
     toc: true
     toc-title: "Daftar Isi"
 
+website:
+  title: "Statistik"
+  site-url: https://sunu.bagaskara.github.io/bukustat/
+  base-url: /bukustat/
+
 editor: visual
