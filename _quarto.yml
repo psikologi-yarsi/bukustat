@@ -39,6 +39,8 @@ book:
       chapters: 
         - 2_1_jenis_data.qmd
         - 2_2_cleaning.qmd
+        - 2_3_akuntabilitas.qmd
+        - 2_latihan.qmd
       
     - part: 3_deskriptif.qmd
       chapters: 
@@ -60,7 +62,7 @@ bibliography: references.bib
 bibliographystyle: apa
 csl: apa7id.csl
 
-lang: id_ID
+lang: id
 language: id.yml
 
 crossref: 

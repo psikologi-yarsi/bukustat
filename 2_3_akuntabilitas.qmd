@@ -1,0 +1,15 @@
+---
+bibliography: references.bib
+---
+
+# Akuntabilitas Data {#sec-akuntabilitas}
+
+Salah satu langkah penting yang sering kali terabaikan dalam pengolahan data statistik adalah **mencatat secara sistematis** setiap proses analisis yang dilakukan. Pencatatan ini merupakan inti dari prinsip **akuntabilitas**, yaitu kemampuan untuk mempertanggungjawabkan seluruh proses analisis kepada diri sendiri maupun komunitas ilmiah [@Gelfond2014]. Dengan memiliki catatan lengkap, peneliti lain dapat menelusuri, memverifikasi, atau mereplikasi prosedur yang telah dilakukan, sehingga penelitian menjadi lebih transparan dan dapat dipercaya.
+
+Pentingnya akuntabilitas semakin terasa ketika terjadi hasil yang tidak sesuai harapan atau tampak tidak wajar. Dalam situasi ini, dokumentasi proses analisis akan sangat membantu peneliti untuk menelusuri kembali langkah-langkah yang telah diambil, **mengidentifikasi potensi kesalahan** (seperti pengkodean yang keliru, pemilihan teknik analisis yang tidak tepat, atau salah input data), dan memperbaikinya tanpa harus mengulang seluruh proses dari awal.
+
+Pencatatan proses analisis dapat dilakukan melalui *script* atau *syntax* di perangkat lunak statistik. *Tools* ini memungkinkan setiap langkah (misalnya transformasi variabel dan *filtering* data) untuk terekam secara otomatis dan dapat dijalankan ulang. Penggunaan *syntax* bukan hanya efisien, tetapi juga menciptakan ***audit trail*** yang sangat berguna dalam kerja tim atau revisi laporan.
+
+Jika perangkat lunak yang digunakan tidak menyimpan jejak analisis secara otomatis, maka **pencatatan manual** menjadi penting. Hal ini bisa dilakukan dengan menuliskan setiap prosedur analisis dalam dokumen pendamping, seperti di *Microsoft Word*, *Google Docs*, atau aplikasi pencatat lain. Format catatan sebaiknya mencakup: nama *file* data, langkah-langkah analisis yang dilakukan, alasan memilih teknik tertentu, serta ringkasan hasil yang diperoleh.
+
+Menjaga akuntabilitas bukan hanya menunjukkan **profesionalisme** peneliti, tetapi juga mendukung prinsip replikasi, transparansi, dan validitas ilmiah. Dokumentasi proses analisis dianggap sebagai bagian dari etika penelitian, terutama di era *open science*. Oleh karena itu, mahasiswa perlu membiasakan diri untuk tidak hanya fokus pada hasil akhir, tetapi juga menaruh perhatian serius pada proses yang ditempuh untuk sampai ke hasil tersebut.
