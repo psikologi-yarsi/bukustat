@@ -1,63 +1,19 @@
 # Tentang Penulis {.unnumbered}
 
-::::: columns
-::: {.column width="28%"}
-![](images/SB.png){.author-photo width="150"}
-:::
-
-::: {.column width="72%"}
-### Dr. Sunu Bagaskara [![](images/gs.png){width="22" style="vertical-align:middle;"}](https://scholar.google.com/citations?user=fgMG__YAAAAJ&hl=en) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](https://orcid.org/0000-0003-1165-2031)
+### Dr. Sunu Bagaskara [![](images/gs.png){width="22" style="vertical-align:middle;"}](#0) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](#0) {.unnumbered .unlisted}
 
 adalah akademisi dan peneliti di bidang Psikologi dengan latar belakang pendidikan S1 hingga S3 di Fakultas Psikologi Universitas Indonesia. Ia berpengalaman mengajar Psikologi Sosial, Metode Penelitian Kuantitatif dan Statistik, serta Konstruksi Alat Ukur Psikologi. Minat penelitiannya mencakup kognisi sosial, psikologi lalu lintas, dan penerapan statistik dalam psikologi, dengan berbagai publikasi di jurnal ilmiah nasional dan internasional yang mencerminkan dedikasinya pada pengembangan ilmu psikologi dan keselamatan masyarakat.
-:::
-:::::
 
-::::: columns
-::: {.column width="28%"}
-![](images/EN.jpg){.author-photo width="150"}
-:::
+### Dr. Entin Nurhayati [![](images/gs.png){width="22" style="vertical-align:middle;"}](#0) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](#0) {.unnumbered .unlisted}
 
-::: {.column width="72%"}
-### Dr. Entin Nurhayati [![](images/gs.png){width="22" style="vertical-align:middle;"}](https://scholar.google.com/citations?hl=en&user=F9qebwEAAAAJ) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](https://orcid.org/0009-0007-3335-7144)
+berpengalaman mengajar kurang lebih selama 20 tahun. Pernah mengajar berbagai mata kuliah, seperti Faal, Psi Perkembangan, Psikodiagnosis (TAT/CAT, Rorschach) hingga beberapa tahun terakhir fokus di rumpun penelitian, khususnya mata kuliah metodologi penelitian dan statistik. Berdasar pengalaman mengajar ini serta membimbing penelitian mahasiswa, penulis memahami berbagai kesulitan yang dihadapi mahasiswa dalam memahami metopen dan statistik. Bersama sejawat, penulis berusaha melahirkan rangkaian buku praktis, agar mahasiswa dapat dengan mudah dan cepat memahami ilmu alat mengembangkan pengetahuan ini. Buku ini merupakan buku pertama yang dirancang untuk keperluan tersebut.
 
-
-:::
-:::::
-
-::::: columns
-::: {.column width="28%"}
-![](images/SZA.jpg){.author-photo width="150"}
-:::
-
-::: {.column width="72%"}
-### Sari Zakiah Akmal, Ph.D., Psikolog [![](images/gs.png){width="22" style="vertical-align:middle;"}](https://scholar.google.com/citations?hl=en&user=tBjAaI0AAAAJ) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](https://orcid.org/0000-0001-5497-655X)
+### Sari Zakiah Akmal, Ph.D., Psikolog [![](images/gs.png){width="22" style="vertical-align:middle;"}](#0) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](#0) {.unnumbered .unlisted}
 
 adalah akademisi dan peneliti di bidang Psikologi Pendidikan. Ia lulusan dari program Sarjana dan Magister Profesi Psikologi Pendidikan, Fakultas Psikologi Universitas Indonesia dan program doktoral dari School of Applied Psychology, Griffith University, Australia. Sebagai dosen psikologi, ia pernah mengampu matakuliah terkait Metode Penelitian Kuantitatif, Statistik, Logika – Penulisan Ilmiah, Konstruksi Alat Ukur Psikologi, Asesmen Inteligensi, dan Pengembangan Diri dan Karier. Ia juga aktif dalam melakukan penelitian dan pengabdian masyarakat dengan fokus utama pada pengambilan keputusan karier, adaptabilitas karier, ketahanan akademik di kalangan mahasiswa, dan berbagai permasalahan terkait pendidikan siswa SMA/SMK dan mahasiswa di perguruan tinggi. Karya-karyanya telah dipublikasikan dalam berbagai jurnal akademik dan konferensi, mencerminkan komitmennya dalam mengembangkan penelitian dan pendidikan psikologi.
-:::
-:::::
 
+### Titi Sahidah, Ph.D., Psikolog [![](images/gs.png){width="22" style="vertical-align:middle;"}](#0) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](#0) {.unnumbered .unlisted}
 
-::::: columns
-::: {.column width="28%"}
-![](images/TS.jpg){.author-photo width="150"}
-:::
-
-::: {.column width="72%"}
-### Titi Sahidah, Ph.D., Psikolog [![](images/gs.png){width="22" style="vertical-align:middle;"}](https://scholar.google.com/citations?hl=en&user=5uzr2PgAAAAJ) [![](images/orcid.png){width="22" style="vertical-align:middle;"}](https://orcid.org/0000-0001-5062-6886)
-
-
-:::
-:::::
-
-::::: columns
-::: {.column width="28%"}
-![](images/AJ.png){.author-photo width="150"}
-:::
-
-::: {.column width="72%"}
-### Aswin Januarsjaf, S.Psi., M.M [![](images/li.png){width="22" style="vertical-align:middle;"}](https://id.linkedin.com/in/aswinjanuarsjaf)
+### Aswin Januarsjaf, S.Psi., M.M [![](images/li.png){width="22" style="vertical-align:middle;"}](#0) {.unnumbered .unlisted}
 
 adalah akademisi dan praktisi di bidang Psikologi serta Manajemen Sumber Daya Manusia. Lulusan Psikologi Universitas Padjadjaran dan Magister Manajemen PPM School of Management ini memiliki pengalaman lebih dari dua dekade di berbagai industri, khususnya dalam bidang rekrutmen, asesmen, dan pengembangan SDM. Ia mendirikan Talentlytica, sebuah platform asesmen berbasis data, serta aktif mengajar statistik psikologi dan melatih topik manajemen SDM di berbagai institusi. Karya-karya dan inovasi perangkat asesmennya mencerminkan komitmennya untuk menghubungkan ilmu psikologi dengan praktik manajemen modern di Indonesia.
-
-:::
-:::::
