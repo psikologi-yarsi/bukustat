@@ -1,1 +1,22 @@
 # PERBEDAAN RATA-RATA DUA KELOMPOK {#sec-t-test}
+
+Pada bagian ini akan dibahas mengenai perbedaan *mean* variabel yang sama antara dua kelompok berbeda. Pemahaman mengenai hal ini diperlukan untuk membandingkan antara dua karakteristik atau kondisi yang berbeda, misalnya perbedaan antara kelompok eksperimen/*treatment group* (KE) dan kelompok kontrol/*control group* (KK), atau perbedaan antara kelompok pertama dan kelompok kedua, atau perbedaan antara sebelum dan sesudah mendapatkan *treatment*.
+
+::: {.callout-note title="*Tujuan Pembelajaran*"}
+**Bab 16. Memahami Perbedaan Rata-rata Antar Kelompok:**
+
+-   Memahami perbedaan antara kelompok eksperimen dan kelompok kontrol.
+
+**Bab 17. Analisis Perbedaan Rata-rata Antar Kelompok vs. Dalam Kelompok:**
+
+-   Mengidentifikasi perbedaan penggunaan uji beda antar kelompok dan dalam kelompok.
+-   Memahami makna perbedaan rata-rata dalam konteks analisa statistik.
+
+**Bab 18. Asumsi, Interpretasi, dan Pelaporan Analisis *Independent Samples t-test*: Parametrik dan Non-Parametrik:**
+
+-   Menjelaskan asumsi yang perlu dipenuhi dalam uji *independent samples t-test* (parametrik dan non-parametrik), interpretasi dan cara penulisannya dalam laporan.
+
+**Bab 19. Asumsi, Interpretasi, dan Pelaporan Analisis *Paired Samples t-test*: Parmetrik dan Non-Parametrik:**
+
+-   Menjelaskan asumsi yang perlu dipenuhi dalam uji *paired samples t-test test* (parametrik dan non-parametrik), interpretasi dan cara penulisannya dalam laporan.
+:::

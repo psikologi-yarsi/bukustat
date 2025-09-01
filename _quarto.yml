@@ -60,6 +60,10 @@ book:
         - 4_latihan.qmd
 
     - part: 5_t-test.qmd
+      chapters: 
+        - 5_1_perbedaan.qmd
+        - 5_2_between_within.qmd
+        - 5_3_independent_ttest.qmd
       
     - part: 6_anova.qmd
       

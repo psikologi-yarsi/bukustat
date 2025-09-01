@@ -1,0 +1,83 @@
+# Asumsi, Interpretasi, dan Pelaporan Analisis *Independent Samples t-test*: Parametrik dan Non-Parametrik
+
+Asumsi dasar yang perlu dipenuhi untuk melakukan uji beda menggunakan *independent t-test* adalah:
+
+-   *Dependent Variable* (DV – variabel yang menjadi fokus penelitian) berupa data kontinum (data interval atau rasio), misalnya skor tes, waktu respon.
+-   *Independent Variable* (IV – kelompok yang diuji) merupakan dua kelompok yang berbeda, misalnya perbedaan kemampuan bahasa antara kelompok laki-laki dan perempuan.
+-   Data yang diobservasi harus independen, tidak berasal dari kelompok yang sama.
+-   Data harus terdistribusi normal. Gunakan uji beda non-parametrik jika data tidak terdistribusi dengan normal.
+-   Tidak ada *outliers* (data yang sangat berbeda dari rata-rata).
+-   Data harus memiliki varians yang homogen (*homogeneity*). Asumsi ini dapat dilihat dengan menggunakan *Levene’s test for homogeneity of variance.*
+
+Interpretasi dari hasil uji beda menggunakan *independent t-test* perlu dilakukan secara bertahap. Misalnya, peneliti ingin mengetahui perbedaan *self-efficacy* berdasarkan  jenis kelamin (laki-laki dan perempuan). Tahapan interpretasi hasil uji *independent t-test* dapat dipahami dengan mempelajari contoh *output* penghitungan *independent t-test* menggunakan *software* JASP berikut:
+
+1.  Uji asumsi
+
+    Hal pertama yang perlu dilihat adalah uji asumsi terkait distribusi dan homogenitas data; data harus terdistribusi secara normal dan homogen. Pada contoh tabel hasil uji hipotesis yang diperlihatkan pada @tbl-normalitas-t-test, diketahui bahwa *self-efficacy* pada kedua kelompok terdistribusi normal (kelompok laki-laki *p* = .16; perempuan *p* = .07; *p* \> .05). Artinya, sebaran data *self-efficacy* partisipan pada kedua kelompok tidak berbeda secara signifikan dibandingkan sebaran data kurva normal.
+
+    ::: {#tbl-normalitas-t-test}
+    | Variabel        | Kelompok  | *W*   | *p*   |
+    |-----------------|-----------|-------|-------|
+    | *Self-efficacy* | Laki-laki | 0.961 | 0.155 |
+    |                 | Perempuan | 0.961 | 0.066 |
+
+    : Contoh hasil uji normalitas (*Shapiro-Wilk*)
+    :::
+
+    Uji homogenitas berdasarkan skor *Levene’s* *test* juga tidak signifikan (*F* = 1.53, *p* = .22 \> .05), menunjukkan bahwa kedua kelompok tidak menunjukkan varians yang berbeda, atau data bersifat homogen (@tbl-levene). Dengan demikian, data penelitian memenuhi kedua uji asumsi sehingga dapat dilanjutkan untuk dianalisis dengan menggunakan *independent samples t-test.* Jika data tidak memenuhi uji asumsi tersebut, maka uji parametrik tidak dapat dilanjutkan, perlu dilakukan uji non-parametrik (*Mann-Withney test*).
+
+    ::: {#tbl-levene}
+    | Variabel        | *F*   | *df~1~* | *df~2~* | *p*  |
+    |-----------------|-------|---------|---------|------|
+    | *Self-efficacy* | 1.527 | 1       | 98      | .220 |
+
+    : Contoh hasil uji homogenitas *Levene*
+    :::
+
+2.  Uji Hipotesis
+
+    Selanjutnya, hal yang perlu dilihat adalah nilai p pada tabel *independent samples t-test*. Nilai *p* = .006 (*p* \< .05) menunjukkan terdapat perbedaan signifikan tingkat *self-efficacy* yang dilaporkan oleh partisipan laki-laki dan perempuan. Pada tabel *output* uji *independent t-test* (lihat @tbl-independent-ttest) juga dapat dilihat nilai *Cohen’s d* yang menunjukkan seberapa besar efek dari perbedaan jenis kelamin terhadap perbedaan *self-efficacy* pada kedua kelompok (*effect size*). Nilai *t, df, p* dan *Cohen’s d* diperlukan dalam penulisan interpretasi hasil uji beda antar kelompok, yang dapat dilihat pada contoh interpretasi hasil *independent samples t-test.*
+
+    ::: {#tbl-independent-ttest}
+    | Variabel        | *t*   | *df* | *p*  | *Cohen's D* | *SE Cohen's D* |
+    |-----------------|-------|------|------|-------------|----------------|
+    | *Self-efficacy* | 2.280 | 98   | .006 | 0.570       | 0211           |
+
+    : Contoh hasil analisis *independent samples t-test*
+    :::
+
+3.  Data Deskriptif Kelompok
+
+    Terakhir, informasi mengenai *mean* dan *SD* diperlukan untuk mengetahui kelompok mana yang menunjukkan rata-rata skor paling tinggi (lihat @tbl-deskriptif-ttest). Contoh tabel menunjukkan laki-laki memiliki rata-rata *self-efficacy* yang lebih tinggi dibandingkan perempuan.
+
+::: {#tbl-deskriptif-ttest}
+| Variabel        | Kelompok  | *N* | *Mean* | *SD*  | *SE*  | *Coefficient of variation* |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| *Self-efficacy* | Laki-laki | 43  | 8.209  | 1.922 | 0.293 | 0.234                      |
+|                 | Perempuan | 57  | 7.193  | 1.674 | 0.222 | 0.233                      |
+
+: Contoh statistik deskriptif *independent samples t-test*
+:::
+
+Pelaporan hasil uji beda *independent samples t-test* dengan mengikuti format penulisan APA, adalah: Hasil *independent samples t-test* menunjukkan terdapat perbedaan tingkat *self-efficacy* yang signifikan (*t* (98) = 2.82, *p* = .006, *d* = .57) antara kelompok partisipan laki-laki (*M* = 8.21, *SD* = 1.92) dan partisipan perempuan (*M* = 7.19, *SD* = 1.67). Atau, partisipan laki-laki (*M* = 8.21, *SD* = 1.92) memiliki *self-efficacy* yang lebih tinggi (*t* (98) = 2.82, *p* = .006, *d* = .57) dibandingkan partisipan perempuan (*M* = 7.19, *SD* = 1.67).
+
+Prinsip yang sama juga dapat diterapkan untuk interpretasi dan melaporkan hasil uji beda non-parametrik (lihat @tbl-mann), dengan melihat hasil uji *Mann-Whitney test (U),* dan *mean rank* sebagai pengganti *mean*. Berikut adalah contoh *output* *Mann-Whitney:*
+
+::: {#tbl-mann}
+| Variabel | *U* | *df* | *p* | *Rank-Biserial Correlation* | *SE Rank-Biserial Correlation* |
+|------------|------------|------------|------------|------------|------------|
+| *Self-efficacy* | 1576.000 |  | 0.013 | 0.286 | 0.117 |
+
+: Contoh hasil analisis Mann-Whitney
+:::
+
+Hasil *Mann-Whitney test* menunjukkan bahwa terdapat perbedaan tingkat *self-efficacy* yang signifikan (*U* = 1576, *p* = .013) antara kelompok partisipan laki-laki (*Mdn* = 58.65) dan partisipan perempuan (*Mdn* = 44.35). Atau, partisipan laki-laki (*Mdn* = 58.65) memiliki *self-efficacy* yang lebih tinggi (*U* = 1576, *p* = .013) dibandingkan partisipan perempuan (*Mdn* = 44.35) (lihat @tbl-desk-mann).
+
+::: {#tbl-desk-mann}
+| Variabel | Kelompok | *N* | *Mean* | *SD* | *SE* | *Coefficent of Variation* | *Mean Rank* | *Sum Rank* |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| *Self-efficacy* | Laki-laki | 43 | 8.209 | 1.922 | 0.293 | 0.234 | 58.651 | 2522 |
+|  | Perempuan | 57 | 7.193 | 1.674 | 0.222 | 0.233 | 44.351 | 2528 |
+
+: Contoh statistik deskriptif *Mann-Whitney*
+:::
