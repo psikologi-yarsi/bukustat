@@ -3,3 +3,21 @@
 Setelah data dikumpulkan dan dipersiapkan, langkah selanjutnya dalam proses analisis adalah memahami karakteristik umum dari data tersebut. Bab ini membahas tentang statistik deskriptif, yaitu serangkaian teknik yang digunakan untuk merangkum, menyederhanakan, dan menyajikan data mentah menjadi informasi yang lebih mudah dipahami. Statistik deskriptif tidak berfokus pada pengambilan keputusan atau generalisasi, melainkan pada penggambaran pola, kecenderungan, dan sebaran data yang ada.
 
 Bab ini terdiri dari tiga bagian utama. Pertama, pembahasan mengenai ukuran pemusatan data (*central tendency*), mencakup *mean* (rata-rata), median, dan modus yang menggambarkan nilai pusat dari sekumpulan data. Kedua, penjelasan tentang sebaran data (dispersi) yang mencakup rentang, varians, dan standar deviasi untuk memahami seberapa jauh data menyebar dari pusatnya. Terakhir, akan dibahas mengenai bentuk distribusi data, termasuk konsep simetri, *skewness*, dan *kurtosis*, yang penting untuk mengetahui apakah data berdistribusi normal atau memiliki penyimpangan tertentu.
+
+::: {.callout-note title="*Tujuan Pembelajaran*"}
+**Bab 7. Ukuran Pemusatan Data:**
+
+-   Menjelaskan konsep ukuran pemusatan data dan peranannya dalam menggambarkan nilai pusat data.
+-   Menghitung dan menginterpretasikan *mean*, median, dan modus dari data.
+-   Memilih ukuran pemusatan data yang paling tepat berdasarkan karakteristik distribusi data.
+
+**Bab 8. Pembersihan Data:**
+
+-   Melakukan analisis deskriptif awal untuk mengevaluasi distribusi dan karakteristik dasar data.
+-   Mengidentifikasi dan menangani data hilang (*missing value*) serta *outlier* secara tepat untuk memastikan keakuratan analisis lanjutan.
+
+**Bab 6. Akuntabilitas Data:**
+
+-   Menjelaskan pentingnya pencatatan proses analisis statistik sebagai bentuk akuntabilitas ilmiah.
+-   Memahami pentingnya transparansi dalam meningkatkan kualitas dan integritas penelitian psikologi.
+:::

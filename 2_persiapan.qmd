@@ -5,23 +5,19 @@ Bab ini akan membahas mengenai mengenali dan mempersiapkan data penelitian agar 
 Bab ini diawali dengan penjelasan tentang jenis data, termasuk cara mengidentifikasi tipe data serta prinsip dalam penamaan dan pengkodean variabel agar konsisten dan mudah diinterpretasikan. Selanjutnya, pembahasan berlanjut pada proses pembersihan data, yang mencakup analisis deskriptif awal, penanganan missing value, serta deteksi pencilan (*outlier*) yang dapat memengaruhi hasil analisis. Terakhir, bab ini menekankan pentingnya akuntabilitas data, yaitu tanggung jawab peneliti untuk mendokumentasikan, menyimpan, dan mengelola data secara transparan agar dapat dipertanggungjawabkan secara ilmiah. Dengan memahami dan menerapkan ketiga aspek ini, mahasiswa akan memiliki dasar yang kuat dalam mempersiapkan data untuk analisis statistik yang sahih dan terpercaya.
 
 ::: {.callout-note title="*Tujuan Pembelajaran*"}
-Bab 4. Jenis Data:
+**Bab 4. Jenis Data:**
 
 -   Mengidentifikasi berbagai jenis data dalam konteks penelitian psikologi (nominal, ordinal, interval, rasio).
-
 -   Menerapkan prinsip penamaan dan pengkodean variabel secara konsisten dan sistematis.
+-   Memahami pentingnya kesesuaian antara jenis data dan teknik analisis statistik yang akan digunakan.
 
--   Memahami pentingnya kesesuaian antara jenis data dan teknik analisis statistik yang akan digunakan.\
-
-Bab 5. Pembersihan Data:
+**Bab 5. Pembersihan Data:**
 
 -   Melakukan analisis deskriptif awal untuk mengevaluasi distribusi dan karakteristik dasar data.
+-   Mengidentifikasi dan menangani data hilang (*missing value*) serta *outlier* secara tepat untuk memastikan keakuratan analisis lanjutan.
 
--   Mengidentifikasi dan menangani data hilang (*missing value*) serta *outlier* secara tepat untuk memastikan keakuratan analisis lanjutan.\
-
-Bab 6. Akuntabilitas Data:
+**Bab 6. Akuntabilitas Data:**
 
 -   Menjelaskan pentingnya pencatatan proses analisis statistik sebagai bentuk akuntabilitas ilmiah.
-
 -   Memahami pentingnya transparansi dalam meningkatkan kualitas dan integritas penelitian psikologi.
 :::

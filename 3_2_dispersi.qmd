@@ -1,4 +1,4 @@
-# Ukuran Penyebaran Data
+# Ukuran Penyebaran Data {#sec-dispersi}
 
 Setelah mengetahui nilai pusat dari suatu data melalui ukuran pemusatan data, langkah berikutnya adalah memahami seberapa jauh data menyebar dari nilai pusat tersebut. **Ukuran penyebaran data**, atau **dispersi**, memberikan informasi penting tentang variasi atau keragaman dalam kumpulan data. Dua set data bisa memiliki *mean* yang sama, tetapi penyebarannya bisa sangat berbeda, dan perbedaan ini dapat memengaruhi cara interpretasi data secara keseluruhan. Dalam sub-bab ini, akan dibahas beberapa ukuran utama penyebaran, yaitu rentang (*range*), standar deviasi, dan varians, yang membantu menggambarkan tingkat homogenitas atau heterogenitas suatu data secara lebih mendalam.
 

@@ -1,4 +1,4 @@
-# Confidence Interval {#sec-confidence}
+# *Confidence Interval* {#sec-confidence}
 
 Sebelum memahami konsep *Confidence Interval* (*CI*), kita perlu mengingat kembali prinsip dasar statistik, yaitu bahwa statistik adalah estimasi parameter-parameter populasi (misalnya, nilai rata-rata, standar deviasi) berdasarkan data yang diambil dari sampel. Dengan kata lain, nilai yang kita peroleh dalam statistik kemungkinan besar (atau bahkan hampir pasti) tidak sama dengan nilai yang sesungguhnya pada populasi. Akan selalu ada selisih (eror) antara nilai pada sampel dan pada populasi.
 

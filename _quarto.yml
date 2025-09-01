@@ -47,6 +47,7 @@ book:
         - 3_1_sentral.qmd
         - 3_2_dispersi.qmd
         - 3_3_distribusi.qmd
+        - 3_latihan.qmd
       
     - part: 4_inferensial.qmd
       chapters: 
@@ -56,6 +57,7 @@ book:
         - 4_4_signifikansi.qmd
         - 4_5_confidence.qmd
         - 4_6_effect_size.qmd
+        - 4_latihan.qmd
 
     - part: 5_t-test.qmd
       

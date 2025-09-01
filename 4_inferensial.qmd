@@ -1,1 +1,30 @@
 # STATISTIK INFERENSIAL {#sec-inferensial}
+
+Statistik inferensial merupakan salah satu cabang dalam statistik yang digunakan untuk mengambil kesimpulan. Berbeda dengan statistik deskriptif yang lebih bertujuan untuk menyajikan data secara ringkas dan mudah dipahami pembaca, statistik inferensial merupakan teknik perhitungan yang ditujukan untuk dapat lebih melihat makna dari pola-pola yang ditunjukkan oleh data. Misalnya, dari dua set ada yang ada, dengan statistik inferensial ini dapat kita lihat apakah menunjukkan pola teratur yang konsisten sehingga dapat dikatakan terdapat keterkaitan antara dua set data itu. Contoh lainnya, dengan statistik inferensial, kita dapat membandingkan dua set data sehingga kita tahu apakah dua set data itu benar-benar berbeda atau hanya tampak berbeda.
+
+::: {.callout-note title="*Tujuan Pembelajaran*"}
+**Bab 10. Statistik Parametrik dan Non-Parametrik:**
+
+-   Memahami perbedaan antara statistik parametrik dan non-parametrik
+
+**Bab 11. *Statistical Power*:**
+
+-   Memahami konsep *statistical power* sebagai probabilitas mendeteksi efek yang benar-benar ada.
+-   Menjelaskan Eror Tipe I & Eror Tipe II dalam statistik
+
+**Bab 12. Pengujian Hipotesis:**
+
+-   Memahami konsep dasar jenis-jenis hipotesis penelitian dan hipotesis statistik.
+
+**Bab 13. Signifikansi Statistik *dan p-value*:**
+
+-   Menjelaskan arti & interpretasi *p-value*, serta hubungannya dengan tingkat signifikansi.
+
+**Bab 14. *Confidence Interval*:**
+
+-   Memahami konsep *confidence interval* dan *level of confidence* dalam estimasi parameter populasi.
+
+**Bab 15. *Effect Size*:**
+
+-   Menjelaskan konsep dan intepretasi nilai *effect size* sebagai ukuran besarnya pengaruh atau hubungan dalam data.
+:::

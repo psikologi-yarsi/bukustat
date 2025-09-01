@@ -61,23 +61,19 @@ Lebih jauh, buku ini membahas pentingnya statistik dalam penelitian psikologi, t
 </div>
 ```
 ::: {.callout-note title="*Tujuan Pembelajaran*"}
-Bab 1. Pengertian & Sejarah Ringkas Statistik:
+**Bab 1. Pengertian & Sejarah Ringkas Statistik:**
 
 -   Memahami definisi statistik dan konsep dasar yang meliputi parameter dan statistik.
-
 -   Mengidentifikasi hubungan antara sampel dan populasi dalam konteks penelitian.
+-   Memahami peran statistik sebagai alat untuk mengorganisasi, merangkum, dan menginterpretasi informasi.
 
--   Memahami peran statistik sebagai alat untuk mengorganisasi, merangkum, dan menginterpretasi informasi.\
-
-Bab 2. Statistik dalam Penelitian Psikologi:
+**Bab 2. Statistik dalam Penelitian Psikologi:**
 
 -   Menjelaskan peran statistik dalam mendukung psikologi sebagai ilmu ilmiah.
+-   Mengevaluasi signifikansi statistik dalam memahami variasi perilaku dan membuat inferensi dari data penelitian.
 
--   Mengevaluasi signifikansi statistik dalam memahami variasi perilaku dan membuat inferensi dari data penelitian.\
-
-Bab 3. Jenis-jenis Statistik: Deskriptif & Inferensial:
+**Bab 3. Jenis-jenis Statistik: Deskriptif & Inferensial:**
 
 -   Mengidentifikasi perbedaan utama antara statistik deskriptif dan statistik inferensial, termasuk ruang lingkup dan tujuan keduanya.
-
 -   Memahami bagaimana kombinasi statistik deskriptif dan inferensial mendukung analisis data yang kuat, khususnya dalam ilmu perilaku dan sosial.
 :::
