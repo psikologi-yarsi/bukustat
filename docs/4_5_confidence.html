@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Tentang Penulis – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>14&nbsp; Confidence Interval – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1_pengantar.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./4_6_effect_size.html" rel="next">
+<link href="./4_4_signifikansi.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.scss">
 </head>
@@ -85,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">Tentang Penulis</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4_inferensial.html">STATISTIK INFERENSIAL</a></li><li class="breadcrumb-item"><a href="./4_5_confidence.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Confidence Interval</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -97,8 +126,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Tentang Penulis</h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4_inferensial.html">STATISTIK INFERENSIAL</a></li><li class="breadcrumb-item"><a href="./4_5_confidence.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Confidence Interval</span></a></li></ol></nav>
+      <h1 class="title"><span id="sec-confidence" class="quarto-section-identifier"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Confidence Interval</span></span></h1>
                       </div>
   </div>
     
@@ -141,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tentang Penulis</span></a>
   </div>
 </li>
@@ -265,6 +294,30 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><em>Statistical Power</em></span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_3_hipotesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pengujian Hipotesis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_4_signifikansi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Signifikansi Statistik &amp; *p-value*</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_5_confidence.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Confidence Interval</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_6_effect_size.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><em>Effect Size</em></span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -294,8 +347,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#prinsip-dasar-confidence-interval" id="toc-prinsip-dasar-confidence-interval" class="nav-link active" data-scroll-target="#prinsip-dasar-confidence-interval"><span class="header-section-number">14.1</span> Prinsip Dasar <em>Confidence Interval</em></a></li>
+  <li><a href="#margin-of-error" id="toc-margin-of-error" class="nav-link" data-scroll-target="#margin-of-error"><span class="header-section-number">14.2</span> <em>Margin of Error</em></a></li>
+  <li><a href="#level-of-confidence" id="toc-level-of-confidence" class="nav-link" data-scroll-target="#level-of-confidence"><span class="header-section-number">14.3</span> <em>Level of Confidence</em></a></li>
+  <li><a href="#menginterpretasi-ci-moe-loc" id="toc-menginterpretasi-ci-moe-loc" class="nav-link" data-scroll-target="#menginterpretasi-ci-moe-loc"><span class="header-section-number">14.4</span> Menginterpretasi <em>CI</em>, <em>MoE</em>, &amp; <em>LoC</em></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -304,25 +366,36 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="dr.-sunu-bagaskara" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="dr.-sunu-bagaskara">Dr.&nbsp;Sunu Bagaskara <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan peneliti di bidang Psikologi dengan latar belakang pendidikan S1 hingga S3 di Fakultas Psikologi Universitas Indonesia. Ia berpengalaman mengajar Psikologi Sosial, Metode Penelitian Kuantitatif dan Statistik, serta Konstruksi Alat Ukur Psikologi. Minat penelitiannya mencakup kognisi sosial, psikologi lalu lintas, dan penerapan statistik dalam psikologi, dengan berbagai publikasi di jurnal ilmiah nasional dan internasional yang mencerminkan dedikasinya pada pengembangan ilmu psikologi dan keselamatan masyarakat.</p>
+<p>Sebelum memahami konsep <em>Confidence Interval</em> (<em>CI</em>), kita perlu mengingat kembali prinsip dasar statistik, yaitu bahwa statistik adalah estimasi parameter-parameter populasi (misalnya, nilai rata-rata, standar deviasi) berdasarkan data yang diambil dari sampel. Dengan kata lain, nilai yang kita peroleh dalam statistik kemungkinan besar (atau bahkan hampir pasti) tidak sama dengan nilai yang sesungguhnya pada populasi. Akan selalu ada selisih (eror) antara nilai pada sampel dan pada populasi.</p>
+<section id="prinsip-dasar-confidence-interval" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="prinsip-dasar-confidence-interval"><span class="header-section-number">14.1</span> Prinsip Dasar <em>Confidence Interval</em></h2>
+<p><em>Confidence interval</em> adalah rentang nilai yang digunakan untuk memperkirakan posisi parameter populasi berdasarkan data sampel. Interval ini dibentuk dari estimasi titik, seperti mean atau proporsi, kemudian ditambahkan batas bawah dan batas atas yang dihitung dari data.</p>
+<p>Prinsip dasarnya adalah memberikan gambaran bahwa parameter populasi tidak dinyatakan sebagai satu angka pasti, tetapi berada dalam suatu rentang yang masuk akal menurut data yang dikumpulkan. Dengan menggunakan <em>CI</em>, peneliti dapat menyampaikan hasil estimasi secara lebih informatif dan transparan, karena selain nilai estimasi, juga disertakan rentang ketidakpastian yang menyertainya.</p>
+<p>Tingkat kesahihan dan keterpercayaan sebuah hasil riset bergantung pada seberapa representatif data yang diperoleh dari sampel dan seberapa yakin bahwa hasil analisis data yang dilakukan menggambarkan kondisi populasi yang sebenarnya. Oleh karena itu, pembahasan mengenai <em>CI</em> tidak dapat dilepaskan dari dua konsep yang terkait, yaitu <em>Margin of Error</em> (<em>MoE</em>) dan derajat keyakinan (<em>Level of Confidence</em>).</p>
 </section>
-<section id="dr.-entin-nurhayati" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="dr.-entin-nurhayati">Dr.&nbsp;Entin Nurhayati <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>berpengalaman mengajar kurang lebih selama 20 tahun. Pernah mengajar berbagai mata kuliah, seperti Faal, Psi Perkembangan, Psikodiagnosis (TAT/CAT, Rorschach) hingga beberapa tahun terakhir fokus di rumpun penelitian, khususnya mata kuliah metodologi penelitian dan statistik. Berdasar pengalaman mengajar ini serta membimbing penelitian mahasiswa, penulis memahami berbagai kesulitan yang dihadapi mahasiswa dalam memahami metopen dan statistik. Bersama sejawat, penulis berusaha melahirkan rangkaian buku praktis, agar mahasiswa dapat dengan mudah dan cepat memahami ilmu alat mengembangkan pengetahuan ini. Buku ini merupakan buku pertama yang dirancang untuk keperluan tersebut.</p>
+<section id="margin-of-error" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="margin-of-error"><span class="header-section-number">14.2</span> <em>Margin of Error</em></h2>
+<p><em>Margin of error</em> adalah batas toleransi kesalahan yang menunjukkan seberapa jauh nilai estimasi sampel dapat berbeda dari nilai sebenarnya di populasi. Dalam konteks <em>CI</em>, <em>MoE</em> menentukan jarak antara estimasi titik (misalnya <em>mean</em> sampel) dan batas atas atau batas bawah interval kepercayaan. Semakin kecil <em>MoE</em>, semakin sempit intervalnya, yang berarti estimasi lebih presisi.</p>
+<p>Besarnya <em>MoE</em> dipengaruhi oleh <em>level of confidence</em> (<em>LoC</em>) yang dipilih (misalnya 95%), ukuran sampel, dan variasi data. Pada <em>LoC</em> yang sama, ukuran sampel yang lebih besar atau variasi data yang lebih kecil akan menghasilkan <em>MoE</em> yang lebih kecil, sehingga interval kepercayaan menjadi lebih akurat.</p>
 </section>
-<section id="sari-zakiah-akmal-ph.d.-psikolog" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="sari-zakiah-akmal-ph.d.-psikolog">Sari Zakiah Akmal, Ph.D., Psikolog <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan peneliti di bidang Psikologi Pendidikan. Ia lulusan dari program Sarjana dan Magister Profesi Psikologi Pendidikan, Fakultas Psikologi Universitas Indonesia dan program doktoral dari School of Applied Psychology, Griffith University, Australia. Sebagai dosen psikologi, ia pernah mengampu matakuliah terkait Metode Penelitian Kuantitatif, Statistik, Logika – Penulisan Ilmiah, Konstruksi Alat Ukur Psikologi, Asesmen Inteligensi, dan Pengembangan Diri dan Karier. Ia juga aktif dalam melakukan penelitian dan pengabdian masyarakat dengan fokus utama pada pengambilan keputusan karier, adaptabilitas karier, ketahanan akademik di kalangan mahasiswa, dan berbagai permasalahan terkait pendidikan siswa SMA/SMK dan mahasiswa di perguruan tinggi. Karya-karyanya telah dipublikasikan dalam berbagai jurnal akademik dan konferensi, mencerminkan komitmennya dalam mengembangkan penelitian dan pendidikan psikologi.</p>
+<section id="level-of-confidence" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="level-of-confidence"><span class="header-section-number">14.3</span> <em>Level of Confidence</em></h2>
+<p><em>LoC</em> adalah tingkat keyakinan yang digunakan untuk menyatakan seberapa besar kemungkinan <em>CI</em> mencakup nilai parameter sebenarnya di populasi. Misalnya, <em>LoC</em> 95% berarti jika penelitian yang sama diulang berkali-kali dengan metode yang sama, sekitar 95% dari <em>CI</em> yang dihasilkan akan mengandung nilai parameter populasi. Semakin tinggi <em>LoC</em>, semakin besar jaminan bahwa interval mencakup parameter yang benar, namun konsekuensinya interval akan menjadi lebih lebar. Sebaliknya, level yang lebih rendah menghasilkan interval yang lebih sempit tetapi meningkatkan risiko parameter sebenarnya berada di luar interval tersebut.</p>
+<p>Mari kita gunakan analogi untuk dapat lebih mudah memahaminya. Misalnya, Anda diminta untuk mengestimasi jarak antara Jakarta (dihitung dari lokasi Monumen Nasional) dan Yogyakarta (dihitung dari lokasi Monumen Yogya Kembali). Jika Anda bukan orang yang terbiasa bepergian Jakarta-Yogyakarta, Anda bisa menjawab bahwa jarak keduanya antara 550-600 KM (rentang sempit) dengan derajat keyakinan 45% (level rendah) karena Anda tidak terlalu yakin bahwa jarak sebenarnya ada di antara rentang tersebut.</p>
+<p>Atau, Anda bisa menjawab dengan tingkat keyakinan yang jauh lebih tinggi (misalnya 99%) bahwa jaraknya antara 100-800KM (rentang sangat lebar). Memang, hampir pasti jawabannya ada di dalam rentang tersebut, tetapi kemampuan estimasi Anda menjadi sangat diragukan karena rentangnya sangat lebar (700 KM), sehingga sulit untuk memperkirakan berapa jarak sebenarnya (menurut perhitungan <em>Google Maps</em> dengan mode kendaraan roda 4, jaraknya adalah 578 KM).</p>
 </section>
-<section id="titi-sahidah-m.psi-m.sc.-ph.d.-psikolog" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="titi-sahidah-m.psi-m.sc.-ph.d.-psikolog">Titi Sahidah, M.Psi, M.Sc., Ph.D., Psikolog <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah pengajar di Fakultas Psikologi Universitas YARSI, Jakarta. Sejak memulai karier akademiknya pada tahun 2012, ia secara konsisten mengampu mata kuliah Psikometri dan Konstruksi Alat Ukur, yang menjadi bidang minat dan keahliannya. Ia melanjutkan studi doktoralnya di bidang Psikologi Medis di Erasmus MC, Rotterdam, Belanda. Di bawah bimbingan ahli dalam bidang psikometri, Titi menulis disertasi mengenai validitas, reliabilitas dan norma alat ukur EQ-5D-Y di Indonesia. Karya-karya publikasinya, khususnya dalam pengembangan alat ukur psikologi kesehatan yang dipresentasikan di berbagai konferensi dan diterbitkan di jurnal internasional, menjadikannya salah satu pakar dalam bidang pengukuran psikologi kesehatan di Indonesia.</p>
-</section>
-<section id="aswin-januarsjaf-s.psi.-m.m" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="aswin-januarsjaf-s.psi.-m.m">Aswin Januarsjaf, S.Psi., M.M <a href="#0"><img src="images/li.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan praktisi di bidang Psikologi serta Manajemen Sumber Daya Manusia. Lulusan Psikologi Universitas Padjadjaran dan Magister Manajemen PPM School of Management ini memiliki pengalaman lebih dari dua dekade di berbagai industri, khususnya dalam bidang rekrutmen, asesmen, dan pengembangan SDM. Ia mendirikan Talentlytica, sebuah platform asesmen berbasis data, serta aktif mengajar statistik psikologi dan melatih topik manajemen SDM di berbagai institusi. Karya-karya dan inovasi perangkat asesmennya mencerminkan komitmennya untuk menghubungkan ilmu psikologi dengan praktik manajemen modern di Indonesia.</p>
+<section id="menginterpretasi-ci-moe-loc" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="menginterpretasi-ci-moe-loc"><span class="header-section-number">14.4</span> Menginterpretasi <em>CI</em>, <em>MoE</em>, &amp; <em>LoC</em></h2>
+<p>Rentang keyakinan atau <em>CI</em> diperoleh dengan cara sebagai berikut:</p>
+<p><span class="math display">\[\text{CI} = \bar{x} \;\pm\; \text{MoE}
+\]</span></p>
+<p><span class="math display">\[
+\text{di mana MoE} = z \times \frac{s}{\sqrt{n}}
+\]</span></p>
+<p>Ket.: <span class="math inline">\(\bar{x}\)</span> = rata-rata (<em>mean</em>) sampel; <span class="math inline">\(z\)</span> = nilai <em>z-score</em> yang sesuai dengan tingkat kepercayaan yang dipilih (misalnya, 1,96 untuk <em>LoC</em> 95% dan 2,58 untuk <em>LoC</em> 99%); <span class="math inline">\(s\)</span> = standar deviasi sampel; <span class="math inline">\(n\)</span> = ukuran sampel</p>
+<p>Jika <em>mean</em> dari data adalah 25 dan <em>MoE</em> (LoC 95%) = 4, maka <em>CI</em> = 25 ± 4 = 21–29, yang artinya bahwa nilai populasi diestimasi berada pada kisaran 21 hingga 29. Dengan menggunakan <em>LoC</em> yang lebih tinggi (99%), maka <em>MoE</em> = 5,25, sehingga <em>CI</em> = 25 ± 5,25 = 19,75–30,25. Dengan kata lain, dengan tingkat keyakinan 99%, nilai <em>mean</em> populasi berada di antara 19,75 hingga 30,25. Kita dapat melihat bahwa semakin tinggi <em>LoC</em> maka semakin lebar rentang keyakinannya, begitu pula sebaliknya.</p>
+<p>Pemahaman mengenai <em>CI</em> dan <em>MoE</em> ini sangat penting bagi peneliti untuk mengambil kesimpulan dan keputusan dari data yang telah dianalisis. Kesalahan atau kurangnya pemahaman dapat membawa peneliti pada penyimpulan yang keliru. Sebagai ilustrasi, di masa Pemilu sebuah lembaga survei politik melakukan riset tingkat keterpilihan (elektabilitas) para pasangan kandidat presiden dan wakil presiden. Dari dua pasang kandidat, berdasarkan risetnya lembaga survei tersebut menemukan bahwa elektabilitas pasangan A mencapai 48% dan pasangan B 52% dengan <em>MoE</em> 3% pada <em>LoC</em> 95%.</p>
+<p>Jika tidak memahami bagaimana hasil ini seharusnya diinterpretasikan, maka mereka dapat berkesimpulan bahwa pasangan B unggul dan akan memenangi persaingan dengan pasangan A. Padahal, jika memperhitungkan <em>MoE</em> dalam memahami hasil tersebut, kita akan menemukan bahwa pada kondisi aktualnya, elektabilitas A berada di antara 45–51%, sedangkan B 49–55%. Artinya, masih ada kemungkinan bahwa pasangan A meraih skor lebih tinggi (misalnya 51%) dibandingkan B (misalnya 49%). Oleh karena itu, kemenangan di antara kedua pasangan tersebut masih belum dapat diestimasi secara meyakinkan karena ada area skor elektabilitas yang beririsan. Terlebih lagi jika penghitungannya menggunakan <em>LoC</em> 99%, maka irisan skornya akan makin besar, sehingga makin sulit menentukan siapa di antara mereka yang secara aktual lebih unggul.</p>
 
 
 </section>
@@ -729,13 +802,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Selamat Datang!">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Selamat Datang!</span>
+      <a href="./4_4_signifikansi.html" class="pagination-link" aria-label="Signifikansi Statistik &amp; *p-value*">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Signifikansi Statistik &amp; <em>p-value</em></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1_pengantar.html" class="pagination-link" aria-label="PENGANTAR STATISTIK">
-        <span class="nav-page-text">PENGANTAR STATISTIK</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./4_6_effect_size.html" class="pagination-link" aria-label="*Effect Size*">
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><em>Effect Size</em></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

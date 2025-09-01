@@ -1,0 +1,44 @@
+# Confidence Interval {#sec-confidence}
+
+Sebelum memahami konsep *Confidence Interval* (*CI*), kita perlu mengingat kembali prinsip dasar statistik, yaitu bahwa statistik adalah estimasi parameter-parameter populasi (misalnya, nilai rata-rata, standar deviasi) berdasarkan data yang diambil dari sampel. Dengan kata lain, nilai yang kita peroleh dalam statistik kemungkinan besar (atau bahkan hampir pasti) tidak sama dengan nilai yang sesungguhnya pada populasi. Akan selalu ada selisih (eror) antara nilai pada sampel dan pada populasi.
+
+## Prinsip Dasar *Confidence Interval*
+
+*Confidence interval* adalah rentang nilai yang digunakan untuk memperkirakan posisi parameter populasi berdasarkan data sampel. Interval ini dibentuk dari estimasi titik, seperti mean atau proporsi, kemudian ditambahkan batas bawah dan batas atas yang dihitung dari data.
+
+Prinsip dasarnya adalah memberikan gambaran bahwa parameter populasi tidak dinyatakan sebagai satu angka pasti, tetapi berada dalam suatu rentang yang masuk akal menurut data yang dikumpulkan. Dengan menggunakan *CI*, peneliti dapat menyampaikan hasil estimasi secara lebih informatif dan transparan, karena selain nilai estimasi, juga disertakan rentang ketidakpastian yang menyertainya.
+
+Tingkat kesahihan dan keterpercayaan sebuah hasil riset bergantung pada seberapa representatif data yang diperoleh dari sampel dan seberapa yakin bahwa hasil analisis data yang dilakukan menggambarkan kondisi populasi yang sebenarnya. Oleh karena itu, pembahasan mengenai *CI* tidak dapat dilepaskan dari dua konsep yang terkait, yaitu *Margin of Error* (*MoE*) dan derajat keyakinan (*Level of Confidence*).
+
+## *Margin of Error*
+
+*Margin of error* adalah batas toleransi kesalahan yang menunjukkan seberapa jauh nilai estimasi sampel dapat berbeda dari nilai sebenarnya di populasi. Dalam konteks *CI*, *MoE* menentukan jarak antara estimasi titik (misalnya *mean* sampel) dan batas atas atau batas bawah interval kepercayaan. Semakin kecil *MoE*, semakin sempit intervalnya, yang berarti estimasi lebih presisi.
+
+Besarnya *MoE* dipengaruhi oleh *level of confidence* (*LoC*) yang dipilih (misalnya 95%), ukuran sampel, dan variasi data. Pada *LoC* yang sama, ukuran sampel yang lebih besar atau variasi data yang lebih kecil akan menghasilkan *MoE* yang lebih kecil, sehingga interval kepercayaan menjadi lebih akurat.
+
+## *Level of Confidence*
+
+*LoC* adalah tingkat keyakinan yang digunakan untuk menyatakan seberapa besar kemungkinan *CI* mencakup nilai parameter sebenarnya di populasi. Misalnya, *LoC* 95% berarti jika penelitian yang sama diulang berkali-kali dengan metode yang sama, sekitar 95% dari *CI* yang dihasilkan akan mengandung nilai parameter populasi. Semakin tinggi *LoC*, semakin besar jaminan bahwa interval mencakup parameter yang benar, namun konsekuensinya interval akan menjadi lebih lebar. Sebaliknya, level yang lebih rendah menghasilkan interval yang lebih sempit tetapi meningkatkan risiko parameter sebenarnya berada di luar interval tersebut.
+
+Mari kita gunakan analogi untuk dapat lebih mudah memahaminya. Misalnya, Anda diminta untuk mengestimasi jarak antara Jakarta (dihitung dari lokasi Monumen Nasional) dan Yogyakarta (dihitung dari lokasi Monumen Yogya Kembali). Jika Anda bukan orang yang terbiasa bepergian Jakarta-Yogyakarta, Anda bisa menjawab bahwa jarak keduanya antara 550-600 KM (rentang sempit) dengan derajat keyakinan 45% (level rendah) karena Anda tidak terlalu yakin bahwa jarak sebenarnya ada di antara rentang tersebut.
+
+Atau, Anda bisa menjawab dengan tingkat keyakinan yang jauh lebih tinggi (misalnya 99%) bahwa jaraknya antara 100-800KM (rentang sangat lebar). Memang, hampir pasti jawabannya ada di dalam rentang tersebut, tetapi kemampuan estimasi Anda menjadi sangat diragukan karena rentangnya sangat lebar (700 KM), sehingga sulit untuk memperkirakan berapa jarak sebenarnya (menurut perhitungan *Google Maps* dengan mode kendaraan roda 4, jaraknya adalah 578 KM).
+
+## Menginterpretasi *CI*, *MoE*, & *LoC*
+
+Rentang keyakinan atau *CI* diperoleh dengan cara sebagai berikut:
+
+$$\text{CI} = \bar{x} \;\pm\; \text{MoE}
+$$
+
+$$
+\text{di mana MoE} = z \times \frac{s}{\sqrt{n}}
+$$
+
+Ket.: $\bar{x}$ = rata-rata (*mean*) sampel; $z$ = nilai *z-score* yang sesuai dengan tingkat kepercayaan yang dipilih (misalnya, 1,96 untuk *LoC* 95% dan 2,58 untuk *LoC* 99%); $s$ = standar deviasi sampel; $n$ = ukuran sampel
+
+Jika *mean* dari data adalah 25 dan *MoE* (LoC 95%) = 4, maka *CI* = 25 ± 4 = 21–29, yang artinya bahwa nilai populasi diestimasi berada pada kisaran 21 hingga 29. Dengan menggunakan *LoC* yang lebih tinggi (99%), maka *MoE* = 5,25, sehingga *CI* = 25 ± 5,25 = 19,75–30,25. Dengan kata lain, dengan tingkat keyakinan 99%, nilai *mean* populasi berada di antara 19,75 hingga 30,25. Kita dapat melihat bahwa semakin tinggi *LoC* maka semakin lebar rentang keyakinannya, begitu pula sebaliknya.
+
+Pemahaman mengenai *CI* dan *MoE* ini sangat penting bagi peneliti untuk mengambil kesimpulan dan keputusan dari data yang telah dianalisis. Kesalahan atau kurangnya pemahaman dapat membawa peneliti pada penyimpulan yang keliru. Sebagai ilustrasi, di masa Pemilu sebuah lembaga survei politik melakukan riset tingkat keterpilihan (elektabilitas) para pasangan kandidat presiden dan wakil presiden. Dari dua pasang kandidat, berdasarkan risetnya lembaga survei tersebut menemukan bahwa elektabilitas pasangan A mencapai 48% dan pasangan B 52% dengan *MoE* 3% pada *LoC* 95%.
+
+Jika tidak memahami bagaimana hasil ini seharusnya diinterpretasikan, maka mereka dapat berkesimpulan bahwa pasangan B unggul dan akan memenangi persaingan dengan pasangan A. Padahal, jika memperhitungkan *MoE* dalam memahami hasil tersebut, kita akan menemukan bahwa pada kondisi aktualnya, elektabilitas A berada di antara 45–51%, sedangkan B 49–55%. Artinya, masih ada kemungkinan bahwa pasangan A meraih skor lebih tinggi (misalnya 51%) dibandingkan B (misalnya 49%). Oleh karena itu, kemenangan di antara kedua pasangan tersebut masih belum dapat diestimasi secara meyakinkan karena ada area skor elektabilitas yang beririsan. Terlebih lagi jika penghitungannya menggunakan *LoC* 99%, maka irisan skornya akan makin besar, sehingga makin sulit menentukan siapa di antara mereka yang secara aktual lebih unggul.

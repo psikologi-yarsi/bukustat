@@ -49,6 +49,13 @@ book:
         - 3_3_distribusi.qmd
       
     - part: 4_inferensial.qmd
+      chapters: 
+        - 4_1_parametrik.qmd
+        - 4_2_power.qmd
+        - 4_3_hipotesis.qmd
+        - 4_4_signifikansi.qmd
+        - 4_5_confidence.qmd
+        - 4_6_effect_size.qmd
 
     - part: 5_t-test.qmd
       

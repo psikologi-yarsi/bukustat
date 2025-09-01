@@ -67,5 +67,23 @@
   },
   "3_3_distribusi.qmd": {
     "3_3_distribusi.html": "089c90ec"
+  },
+  "4_1_parametrik.qmd": {
+    "4_1_parametrik.html": "0aeccce6"
+  },
+  "4_2_power.qmd": {
+    "4_2_power.html": "0545435a"
+  },
+  "4_3_hipotesis.qmd": {
+    "4_3_hipotesis.html": "dede5d20"
+  },
+  "4_4_signifikansi.qmd": {
+    "4_4_signifikansi.html": "5b01e75c"
+  },
+  "4_5_confidence.qmd": {
+    "4_5_confidence.html": "5d236436"
+  },
+  "4_6_effect_size.qmd": {
+    "4_6_effect_size.html": "3a1da087"
   }
 }

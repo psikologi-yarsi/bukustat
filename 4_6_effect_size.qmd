@@ -1,0 +1,89 @@
+# *Effect Size* {#sec-effect}
+
+***Effect size*** adalah ukuran yang menunjukkan **seberapa besar perbedaan atau hubungan yang benar-benar berarti dalam penelitian**, melampaui sekadar signifikansi statistik. Jika nilai *p* hanya memberi tahu apakah suatu efek ada, maka *effect size* menjelaskan seberapa kuat atau penting efek tersebut secara praktis. Dengan demikian, memahami *effect size* menjadi penting agar peneliti tidak hanya tahu “ada atau tidaknya perbedaan”, tetapi juga “seberapa besar perbedaan itu” dalam konteks nyata. Dari titik inilah pembahasan dapat diarahkan pada prinsip dasar *effect size* yang menjelaskan konsep, jenis, hingga cara menghitungnya.
+
+## Prinsip Dasar
+
+*Effect size* berangkat dari gagasan bahwa *signifikansi statistik* saja tidak cukup untuk menjawab apakah suatu temuan penelitian benar-benar penting secara praktis. Sebuah hasil bisa saja signifikan karena ukuran sampelnya besar, padahal perbedaan yang ditemukan sebenarnya sangat kecil dan tidak relevan dalam praktik. Di sinilah *effect size* berperan, karena ia memberi informasi mengenai **kekuatan hubungan antar variabel** atau **besarnya perbedaan antar kelompok** dengan satuan yang lebih mudah dipahami secara kuantitatif.
+
+Secara prinsip, *effect size* mengukur seberapa besar “efek nyata” yang terjadi dalam sebuah studi. Efek ini bisa berupa perbedaan rata-rata antar kelompok, kekuatan korelasi antara dua variabel, atau besarnya varians yang dapat dijelaskan oleh suatu model. Dengan demikian, *effect size* menjadi jembatan penting yang menghubungkan antara hasil analisis statistik dan implikasi praktis dari penelitian. Ia membantu peneliti untuk tidak hanya menjawab *“apakah ada efek?”* tetapi juga *“seberapa besar efek itu?”*.
+
+Pelaporan *effect size* penting karena melengkapi informasi yang tidak diberikan oleh *p-value*. Nilai signifikansi hanya menunjukkan apakah hasil mungkin terjadi karena kebetulan atau tidak, tetapi tidak menjelaskan seberapa besar pengaruh yang sebenarnya. Dengan menyertakan *effect size*, peneliti dapat menilai apakah temuan yang signifikan juga memiliki arti praktis, serta memungkinkan perbandingan lintas penelitian secara lebih adil, misalnya dalam *meta-analisis*. Hal ini mencegah kesalahpahaman bahwa hasil signifikan selalu berarti penting, padahal efeknya bisa saja sangat kecil dan kurang relevan secara praktis.
+
+## Klasifikasi *Effect Size*
+
+*Effect size* dapat dinyatakan dalam beberapa bentuk tergantung pada teknik analisis statistik yang digunakan. Secara umum, ada dua kategori utama:
+
+-   **Perbedaan *mean* yang distandarisasi**
+
+    Ukuran ini digunakan untuk membandingkan rata-rata dua kelompok atau lebih. Rumus yang paling populer adalah *Cohen’s d*:
+
+    $$
+    d = \frac{M_{1} - M_{2}}{SD_{\text{pooled}}}
+    $$
+
+    dengan
+
+    $$
+    SD_{\text{pooled}} = 
+    \sqrt{ \frac{(n_{1}-1)SD_{1}^{2} + (n_{2}-1)SD_{2}^{2}}{\,n_{1} + n_{2} - 2} }
+    $$
+
+**Proporsi varians yang dapat dijelaskan**
+
+Ukuran ini menjawab pertanyaan: seberapa besar varians pada suatu variabel dapat dijelaskan oleh varians variabel lain. Bentuk yang sering digunakan antara lain:
+
+-   ***r²*** **untuk uji beda *mean***
+
+    Dari uji t, *effect size* dapat dihitung dengan:
+
+$$
+r^{2} = \frac{t^{2}}{t^{2} + \text{df}}
+$$
+
+-   ***r²*** **untuk korelasi**
+
+    Jika analisis berupa korelasi, *effect size* dihitung dengan menguadratkan koefisien korelasi:
+
+$$
+r^{2} = \left(r_{xy}\right)^{2}
+$$
+
+Semakin besar nilai *r*², semakin banyak varians satu variabel yang dapat dijelaskan oleh variabel lain.
+
+-   ***R*****² dalam regresi**
+
+    Dalam analisis regresi, *effect size* dinyatakan dengan proporsi varians total yang dijelaskan oleh model:
+
+    $$
+    R^{2} = \frac{JK_{\text{reg}}}{JK_{\text{tot}}}
+    $$Nilai *R²* berkisar antara 0–1, dengan interpretasi bahwa semakin tinggi *R²*, semakin baik model regresi menjelaskan varians variabel dependen.
+
+## Ukuran *Effect Size* Lainnya
+
+Selain *Cohen’s* *d* dan korelasi (*r*), terdapat ukuran *effect size* lain yang digunakan sesuai jenis analisis. Setiap ukuran ini membantu peneliti membaca makna praktis hasil penelitian dalam konteks yang lebih spesifik (lihat @tbl-effect).
+
+1.  ***Cramer’s V*****/*Phi coefficient***
+
+    Digunakan pada uji *chi-square* atau tabel kontingensi untuk melihat kekuatan hubungan antar variabel kategorikal. Nilainya mirip dengan korelasi, semakin mendekati 1 berarti hubungan semakin kuat.
+
+2.  ***Eta squared*** **(*η*²)/*Partial eta squared* (*ηp*²)**
+
+    Sering digunakan pada *ANOVA*. Menunjukkan proporsi varians yang dijelaskan oleh faktor independen. *Partial eta squared* lebih umum dipakai dalam penelitian psikologi karena memperhitungkan pengaruh faktor lain.
+
+3.  ***Odds ratio***
+
+    Digunakan dalam penelitian dengan data kategorikal (terutama di ilmu kesehatan). Menggambarkan seberapa besar peluang suatu kejadian terjadi pada satu kelompok dibandingkan kelompok lain.
+
+::: {tbl-effect}
+| Ukuran | Kecil | Sedang | Besar |
+|------------------|:----------------:|:----------------:|:----------------:|
+| ***Cohen’s d*** | 0.2 | 0.5 | 0.8 |
+| ***r/r²*** | *r* = 0.1 (*r*² ≈ 0.01) | *r* = 0.3 (*r*² ≈ 0.09) | *r* = 0.5 (*r*² ≈ 0.25) |
+| ***Cramer’s V/Phi*** | 0.1 | 0.3 | 0.5 |
+| ***Eta squared (η²)*** | 0.01 | 0.06 | 0.14 |
+| ***Partial eta squared (ηp²)*** | 0.01 | 0.06 | 0.14 |
+| ***Odds ratio (OR)*** | \~1.2 | \~1.5 | ≥2.0 |
+
+: Tabel interpretasi *effect size* [@Cumming2011]
+:::

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Tentang Penulis – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>15&nbsp; Effect Size – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,8 +51,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1_pengantar.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./5_t-test.html" rel="next">
+<link href="./4_5_confidence.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -72,6 +92,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.scss">
 </head>
@@ -85,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">Tentang Penulis</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4_inferensial.html">STATISTIK INFERENSIAL</a></li><li class="breadcrumb-item"><a href="./4_6_effect_size.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><em>Effect Size</em></span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -97,8 +146,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Tentang Penulis</h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4_inferensial.html">STATISTIK INFERENSIAL</a></li><li class="breadcrumb-item"><a href="./4_6_effect_size.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><em>Effect Size</em></span></a></li></ol></nav>
+      <h1 class="title"><span id="sec-effect" class="quarto-section-identifier"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><em>Effect Size</em></span></span></h1>
                       </div>
   </div>
     
@@ -141,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tentang Penulis</span></a>
   </div>
 </li>
@@ -265,6 +314,30 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><em>Statistical Power</em></span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_3_hipotesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pengujian Hipotesis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_4_signifikansi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Signifikansi Statistik &amp; *p-value*</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_5_confidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Confidence Interval</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_6_effect_size.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><em>Effect Size</em></span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -294,8 +367,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#prinsip-dasar" id="toc-prinsip-dasar" class="nav-link active" data-scroll-target="#prinsip-dasar"><span class="header-section-number">15.1</span> Prinsip Dasar</a></li>
+  <li><a href="#klasifikasi-effect-size" id="toc-klasifikasi-effect-size" class="nav-link" data-scroll-target="#klasifikasi-effect-size"><span class="header-section-number">15.2</span> Klasifikasi <em>Effect Size</em></a></li>
+  <li><a href="#ukuran-effect-size-lainnya" id="toc-ukuran-effect-size-lainnya" class="nav-link" data-scroll-target="#ukuran-effect-size-lainnya"><span class="header-section-number">15.3</span> Ukuran <em>Effect Size</em> Lainnya</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -304,27 +385,128 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="dr.-sunu-bagaskara" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="dr.-sunu-bagaskara">Dr.&nbsp;Sunu Bagaskara <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan peneliti di bidang Psikologi dengan latar belakang pendidikan S1 hingga S3 di Fakultas Psikologi Universitas Indonesia. Ia berpengalaman mengajar Psikologi Sosial, Metode Penelitian Kuantitatif dan Statistik, serta Konstruksi Alat Ukur Psikologi. Minat penelitiannya mencakup kognisi sosial, psikologi lalu lintas, dan penerapan statistik dalam psikologi, dengan berbagai publikasi di jurnal ilmiah nasional dan internasional yang mencerminkan dedikasinya pada pengembangan ilmu psikologi dan keselamatan masyarakat.</p>
+<p><strong><em>Effect size</em></strong> adalah ukuran yang menunjukkan <strong>seberapa besar perbedaan atau hubungan yang benar-benar berarti dalam penelitian</strong>, melampaui sekadar signifikansi statistik. Jika nilai <em>p</em> hanya memberi tahu apakah suatu efek ada, maka <em>effect size</em> menjelaskan seberapa kuat atau penting efek tersebut secara praktis. Dengan demikian, memahami <em>effect size</em> menjadi penting agar peneliti tidak hanya tahu “ada atau tidaknya perbedaan”, tetapi juga “seberapa besar perbedaan itu” dalam konteks nyata. Dari titik inilah pembahasan dapat diarahkan pada prinsip dasar <em>effect size</em> yang menjelaskan konsep, jenis, hingga cara menghitungnya.</p>
+<section id="prinsip-dasar" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="prinsip-dasar"><span class="header-section-number">15.1</span> Prinsip Dasar</h2>
+<p><em>Effect size</em> berangkat dari gagasan bahwa <em>signifikansi statistik</em> saja tidak cukup untuk menjawab apakah suatu temuan penelitian benar-benar penting secara praktis. Sebuah hasil bisa saja signifikan karena ukuran sampelnya besar, padahal perbedaan yang ditemukan sebenarnya sangat kecil dan tidak relevan dalam praktik. Di sinilah <em>effect size</em> berperan, karena ia memberi informasi mengenai <strong>kekuatan hubungan antar variabel</strong> atau <strong>besarnya perbedaan antar kelompok</strong> dengan satuan yang lebih mudah dipahami secara kuantitatif.</p>
+<p>Secara prinsip, <em>effect size</em> mengukur seberapa besar “efek nyata” yang terjadi dalam sebuah studi. Efek ini bisa berupa perbedaan rata-rata antar kelompok, kekuatan korelasi antara dua variabel, atau besarnya varians yang dapat dijelaskan oleh suatu model. Dengan demikian, <em>effect size</em> menjadi jembatan penting yang menghubungkan antara hasil analisis statistik dan implikasi praktis dari penelitian. Ia membantu peneliti untuk tidak hanya menjawab <em>“apakah ada efek?”</em> tetapi juga <em>“seberapa besar efek itu?”</em>.</p>
+<p>Pelaporan <em>effect size</em> penting karena melengkapi informasi yang tidak diberikan oleh <em>p-value</em>. Nilai signifikansi hanya menunjukkan apakah hasil mungkin terjadi karena kebetulan atau tidak, tetapi tidak menjelaskan seberapa besar pengaruh yang sebenarnya. Dengan menyertakan <em>effect size</em>, peneliti dapat menilai apakah temuan yang signifikan juga memiliki arti praktis, serta memungkinkan perbandingan lintas penelitian secara lebih adil, misalnya dalam <em>meta-analisis</em>. Hal ini mencegah kesalahpahaman bahwa hasil signifikan selalu berarti penting, padahal efeknya bisa saja sangat kecil dan kurang relevan secara praktis.</p>
 </section>
-<section id="dr.-entin-nurhayati" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="dr.-entin-nurhayati">Dr.&nbsp;Entin Nurhayati <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>berpengalaman mengajar kurang lebih selama 20 tahun. Pernah mengajar berbagai mata kuliah, seperti Faal, Psi Perkembangan, Psikodiagnosis (TAT/CAT, Rorschach) hingga beberapa tahun terakhir fokus di rumpun penelitian, khususnya mata kuliah metodologi penelitian dan statistik. Berdasar pengalaman mengajar ini serta membimbing penelitian mahasiswa, penulis memahami berbagai kesulitan yang dihadapi mahasiswa dalam memahami metopen dan statistik. Bersama sejawat, penulis berusaha melahirkan rangkaian buku praktis, agar mahasiswa dapat dengan mudah dan cepat memahami ilmu alat mengembangkan pengetahuan ini. Buku ini merupakan buku pertama yang dirancang untuk keperluan tersebut.</p>
+<section id="klasifikasi-effect-size" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="klasifikasi-effect-size"><span class="header-section-number">15.2</span> Klasifikasi <em>Effect Size</em></h2>
+<p><em>Effect size</em> dapat dinyatakan dalam beberapa bentuk tergantung pada teknik analisis statistik yang digunakan. Secara umum, ada dua kategori utama:</p>
+<ul>
+<li><p><strong>Perbedaan <em>mean</em> yang distandarisasi</strong></p>
+<p>Ukuran ini digunakan untuk membandingkan rata-rata dua kelompok atau lebih. Rumus yang paling populer adalah <em>Cohen’s d</em>:</p>
+<p><span class="math display">\[
+d = \frac{M_{1} - M_{2}}{SD_{\text{pooled}}}
+\]</span></p>
+<p>dengan</p>
+<p><span class="math display">\[
+SD_{\text{pooled}} =
+\sqrt{ \frac{(n_{1}-1)SD_{1}^{2} + (n_{2}-1)SD_{2}^{2}}{\,n_{1} + n_{2} - 2} }
+\]</span></p></li>
+</ul>
+<p><strong>Proporsi varians yang dapat dijelaskan</strong></p>
+<p>Ukuran ini menjawab pertanyaan: seberapa besar varians pada suatu variabel dapat dijelaskan oleh varians variabel lain. Bentuk yang sering digunakan antara lain:</p>
+<ul>
+<li><p><strong><em>r²</em></strong> <strong>untuk uji beda <em>mean</em></strong></p>
+<p>Dari uji t, <em>effect size</em> dapat dihitung dengan:</p></li>
+</ul>
+<p><span class="math display">\[
+r^{2} = \frac{t^{2}}{t^{2} + \text{df}}
+\]</span></p>
+<ul>
+<li><p><strong><em>r²</em></strong> <strong>untuk korelasi</strong></p>
+<p>Jika analisis berupa korelasi, <em>effect size</em> dihitung dengan menguadratkan koefisien korelasi:</p></li>
+</ul>
+<p><span class="math display">\[
+r^{2} = \left(r_{xy}\right)^{2}
+\]</span></p>
+<p>Semakin besar nilai <em>r</em>², semakin banyak varians satu variabel yang dapat dijelaskan oleh variabel lain.</p>
+<ul>
+<li><p><strong><em>R</em>² dalam regresi</strong></p>
+<p>Dalam analisis regresi, <em>effect size</em> dinyatakan dengan proporsi varians total yang dijelaskan oleh model:</p>
+<p><span class="math display">\[
+R^{2} = \frac{JK_{\text{reg}}}{JK_{\text{tot}}}
+\]</span>Nilai <em>R²</em> berkisar antara 0–1, dengan interpretasi bahwa semakin tinggi <em>R²</em>, semakin baik model regresi menjelaskan varians variabel dependen.</p></li>
+</ul>
 </section>
-<section id="sari-zakiah-akmal-ph.d.-psikolog" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="sari-zakiah-akmal-ph.d.-psikolog">Sari Zakiah Akmal, Ph.D., Psikolog <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan peneliti di bidang Psikologi Pendidikan. Ia lulusan dari program Sarjana dan Magister Profesi Psikologi Pendidikan, Fakultas Psikologi Universitas Indonesia dan program doktoral dari School of Applied Psychology, Griffith University, Australia. Sebagai dosen psikologi, ia pernah mengampu matakuliah terkait Metode Penelitian Kuantitatif, Statistik, Logika – Penulisan Ilmiah, Konstruksi Alat Ukur Psikologi, Asesmen Inteligensi, dan Pengembangan Diri dan Karier. Ia juga aktif dalam melakukan penelitian dan pengabdian masyarakat dengan fokus utama pada pengambilan keputusan karier, adaptabilitas karier, ketahanan akademik di kalangan mahasiswa, dan berbagai permasalahan terkait pendidikan siswa SMA/SMK dan mahasiswa di perguruan tinggi. Karya-karyanya telah dipublikasikan dalam berbagai jurnal akademik dan konferensi, mencerminkan komitmennya dalam mengembangkan penelitian dan pendidikan psikologi.</p>
-</section>
-<section id="titi-sahidah-m.psi-m.sc.-ph.d.-psikolog" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="titi-sahidah-m.psi-m.sc.-ph.d.-psikolog">Titi Sahidah, M.Psi, M.Sc., Ph.D., Psikolog <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah pengajar di Fakultas Psikologi Universitas YARSI, Jakarta. Sejak memulai karier akademiknya pada tahun 2012, ia secara konsisten mengampu mata kuliah Psikometri dan Konstruksi Alat Ukur, yang menjadi bidang minat dan keahliannya. Ia melanjutkan studi doktoralnya di bidang Psikologi Medis di Erasmus MC, Rotterdam, Belanda. Di bawah bimbingan ahli dalam bidang psikometri, Titi menulis disertasi mengenai validitas, reliabilitas dan norma alat ukur EQ-5D-Y di Indonesia. Karya-karya publikasinya, khususnya dalam pengembangan alat ukur psikologi kesehatan yang dipresentasikan di berbagai konferensi dan diterbitkan di jurnal internasional, menjadikannya salah satu pakar dalam bidang pengukuran psikologi kesehatan di Indonesia.</p>
-</section>
-<section id="aswin-januarsjaf-s.psi.-m.m" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="aswin-januarsjaf-s.psi.-m.m">Aswin Januarsjaf, S.Psi., M.M <a href="#0"><img src="images/li.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan praktisi di bidang Psikologi serta Manajemen Sumber Daya Manusia. Lulusan Psikologi Universitas Padjadjaran dan Magister Manajemen PPM School of Management ini memiliki pengalaman lebih dari dua dekade di berbagai industri, khususnya dalam bidang rekrutmen, asesmen, dan pengembangan SDM. Ia mendirikan Talentlytica, sebuah platform asesmen berbasis data, serta aktif mengajar statistik psikologi dan melatih topik manajemen SDM di berbagai institusi. Karya-karya dan inovasi perangkat asesmennya mencerminkan komitmennya untuk menghubungkan ilmu psikologi dengan praktik manajemen modern di Indonesia.</p>
+<section id="ukuran-effect-size-lainnya" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="ukuran-effect-size-lainnya"><span class="header-section-number">15.3</span> Ukuran <em>Effect Size</em> Lainnya</h2>
+<p>Selain <em>Cohen’s</em> <em>d</em> dan korelasi (<em>r</em>), terdapat ukuran <em>effect size</em> lain yang digunakan sesuai jenis analisis. Setiap ukuran ini membantu peneliti membaca makna praktis hasil penelitian dalam konteks yang lebih spesifik (lihat <span class="quarto-unresolved-ref">?tbl-effect</span>).</p>
+<ol type="1">
+<li><p><strong><em>Cramer’s V</em>/<em>Phi coefficient</em></strong></p>
+<p>Digunakan pada uji <em>chi-square</em> atau tabel kontingensi untuk melihat kekuatan hubungan antar variabel kategorikal. Nilainya mirip dengan korelasi, semakin mendekati 1 berarti hubungan semakin kuat.</p></li>
+<li><p><strong><em>Eta squared</em></strong> <strong>(<em>η</em>²)/<em>Partial eta squared</em> (<em>ηp</em>²)</strong></p>
+<p>Sering digunakan pada <em>ANOVA</em>. Menunjukkan proporsi varians yang dijelaskan oleh faktor independen. <em>Partial eta squared</em> lebih umum dipakai dalam penelitian psikologi karena memperhitungkan pengaruh faktor lain.</p></li>
+<li><p><strong><em>Odds ratio</em></strong></p>
+<p>Digunakan dalam penelitian dengan data kategorikal (terutama di ilmu kesehatan). Menggambarkan seberapa besar peluang suatu kejadian terjadi pada satu kelompok dibandingkan kelompok lain.</p></li>
+</ol>
+<div class="{tbl-effect}">
+<table class="caption-top table">
+<caption>Tabel interpretasi <em>effect size</em> <span class="citation" data-cites="Cumming2011">(<a href="references.html#ref-Cumming2011" role="doc-biblioref">Cumming, 2011</a>)</span></caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ukuran</th>
+<th style="text-align: center;">Kecil</th>
+<th style="text-align: center;">Sedang</th>
+<th style="text-align: center;">Besar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong><em>Cohen’s d</em></strong></td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">0.8</td>
+</tr>
+<tr class="even">
+<td><strong><em>r/r²</em></strong></td>
+<td style="text-align: center;"><em>r</em> = 0.1 (<em>r</em>² ≈ 0.01)</td>
+<td style="text-align: center;"><em>r</em> = 0.3 (<em>r</em>² ≈ 0.09)</td>
+<td style="text-align: center;"><em>r</em> = 0.5 (<em>r</em>² ≈ 0.25)</td>
+</tr>
+<tr class="odd">
+<td><strong><em>Cramer’s V/Phi</em></strong></td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.5</td>
+</tr>
+<tr class="even">
+<td><strong><em>Eta squared (η²)</em></strong></td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">0.06</td>
+<td style="text-align: center;">0.14</td>
+</tr>
+<tr class="odd">
+<td><strong><em>Partial eta squared (ηp²)</em></strong></td>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;">0.06</td>
+<td style="text-align: center;">0.14</td>
+</tr>
+<tr class="even">
+<td><strong><em>Odds ratio (OR)</em></strong></td>
+<td style="text-align: center;">~1.2</td>
+<td style="text-align: center;">~1.5</td>
+<td style="text-align: center;">≥2.0</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Cumming2011" class="csl-entry" role="listitem">
+Cumming, G. (2011). <em>Understanding the New Statistics: Effect Sizes, Confidence Intervals, and Meta-Analysis</em>. Routledge.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -729,13 +911,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Selamat Datang!">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Selamat Datang!</span>
+      <a href="./4_5_confidence.html" class="pagination-link" aria-label="Confidence Interval">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Confidence Interval</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1_pengantar.html" class="pagination-link" aria-label="PENGANTAR STATISTIK">
-        <span class="nav-page-text">PENGANTAR STATISTIK</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./5_t-test.html" class="pagination-link" aria-label="PERBEDAAN RATA-RATA DUA KELOMPOK">
+        <span class="nav-page-text">PERBEDAAN RATA-RATA DUA KELOMPOK</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

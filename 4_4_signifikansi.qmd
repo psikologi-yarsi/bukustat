@@ -1,0 +1,47 @@
+# Signifikansi Statistik & *p-value* {#sec-signifikansi}
+
+**Signifikansi** **statistik** dan ***p-value*** merupakan dua konsep yang saling terkait dan sangat penting dalam pengujian hipotesis. Keduanya membantu peneliti menentukan apakah hasil penelitian cukup kuat untuk menolak hipotesis nol atau tidak. Pemahaman yang tepat mengenai kedua konsep ini tidak hanya mencegah kesalahan interpretasi, melainkan juga memastikan bahwa keputusan yang diambil mempertimbangkan konteks penelitian, ukuran efek, dan *statistical power*, sehingga hasil yang diperoleh lebih akurat dan bermakna secara praktis.
+
+## Signifikansi
+
+Dalam statistik, **signifikansi** merujuk pada **tingkat keyakinan** bahwa suatu hasil penelitian bukan semata-mata disebabkan oleh kebetulan. Tingkat signifikansi biasanya dinyatakan dengan simbol *α* (alpha), yang mewakili probabilitas melakukan kesalahan tipe I — yaitu menolak hipotesis nol (H₀) padahal H₀ benar. Nilai *α* yang umum digunakan adalah 0,05 (5%) atau 0,01 (1%). Pemilihan nilai ini merupakan batas yang ditetapkan peneliti sebelum analisis, untuk mengontrol risiko salah menolak H₀.
+
+Tingkat signifikansi berfungsi sebagai **ambang batas** untuk memutuskan apakah bukti yang diperoleh dari data cukup kuat untuk menolak H₀. Semakin kecil nilai α, semakin ketat kriteria yang digunakan, sehingga peluang membuat kesalahan tipe I menjadi lebih kecil, tetapi sekaligus meningkatkan risiko kesalahan tipe II (gagal menolak H₀ padahal H₀ salah). Oleh karena itu, penentuan nilai α harus mempertimbangkan keseimbangan antara ketelitian statistik dan kebutuhan praktis penelitian, termasuk konteks bidang ilmu, risiko kesalahan yang dapat ditoleransi, dan implikasi keputusan yang akan diambil berdasarkan hasil analisis [@Moore2018] .
+
+Ilmu sosial umumnya menggunakan tingkat signifikansi 0,05 karena fenomena yang diteliti sering kali melibatkan variabilitas tinggi dan faktor-faktor yang sulit dikendalikan sepenuhnya, seperti perilaku, persepsi, atau interaksi sosial (Gravetter & Wallnau, 2017). Variabilitas ini membuat data cenderung mengandung banyak *noise*, sehingga menetapkan ambang yang terlalu ketat (misalnya 0,01) dapat meningkatkan risiko kesalahan tipe II — gagal mendeteksi efek yang sebenarnya ada. Dengan α = 0,05, peneliti di ilmu sosial masih memiliki keseimbangan yang cukup baik antara menghindari kesalahan tipe I dan tetap sensitif terhadap efek yang relevan.
+
+Sebaliknya, di ilmu eksak seperti fisika, kimia, atau teknik, eksperimen biasanya dilakukan dalam kondisi yang lebih terkontrol, dengan variabel-variabel yang dapat diukur secara presisi dan replikasi yang konsisten. Karena kontrol yang ketat ini, tingkat kesalahan acak (*random*) lebih rendah, sehingga dimungkinkan untuk menetapkan α lebih kecil (misalnya 0,01 atau 0,001) tanpa mengorbankan terlalu banyak sensitivitas. Di bidang ini, kesalahan tipe I sering kali memiliki konsekuensi besar — misalnya, klaim penemuan efektivitas obat baru — sehingga diperlukan standar bukti yang lebih kuat sebelum menolak H₀.
+
+## *p-value*
+
+***p-value*** atau *probability value* adalah **probabilitas** mendapatkan hasil pengamatan, atau hasil yang lebih ekstrem, jika H₀ benar. Nilai ini digunakan untuk menilai apakah hasil yang diperoleh cukup kuat untuk menolak H₀ berdasarkan tingkat signifikansi yang ditetapkan.
+
+Aturan pengambilan keputusan:
+
+-   *p-value* ≤ *α* → **Hasil signifikan secara statistik**, H₀ ditolak, artinya data memberikan bukti yang cukup untuk mendukung H₁.
+
+-   *p-value* \> *α* → **Hasil tidak signifikan secara statistik**, H₀ tidak ditolak, artinya data tidak memberikan bukti yang cukup untuk menolak H₀.
+
+Mari kita gunakan ilustrasi sederhana untuk dapat lebih memahami mengenai konsep *p-value* ini. Bayangkan Anda sedang bermain permainan melempar koin yang menurut klaim teman Anda adalah koin normal (punya peluang 50% muncul gambar dan 50% muncul angka). Jika diterjemahkan ke dalam istilah hipotesis, maka:
+
+(a) Hipotesis nol (H₀): Koin itu seimbang (tidak curang)
+
+(b) Hipotesis alternatif (H₁): Koin itu tidak seimbang (curang)
+
+Lalu Anda melempar koin 10 kali dan hasilnya 9 kali gambar, 1 kali angka. Sekarang Anda bertanya: *“Kalau koin ini benar-benar seimbang (H₀ benar), seberapa besar kemungkinan saya mendapatkan hasil yang ekstrem seperti ini atau lebih ekstrem?”*
+
+Di sinilah *p-value* berperan, yaitu menghitung peluang mendapatkan hasil se-ekstrem ini jika H₀ benar:
+
+-   Jika peluangnya sangat kecil (misalnya \< 5%), maka hasil yang Anda dapatkan tidak cocok dengan asumsi bahwa koin seimbang, sehingga Anda punya alasan kuat untuk menolak H₀ dan curiga koinnya curang.
+
+-   Jika peluangnya masih cukup besar (misalnya 30%), maka hasil yang Anda dapatkan masih wajar untuk koin seimbang, sehingga Anda tidak punya cukup alasan untuk menolak H₀.
+
+Jadi, *p-value* bukanlah peluang koin curang atau tidak curang, melainkan peluang mendapatkan data yang Anda lihat jika koin benar-benar seimbang.
+
+## Interpretasi Signifikansi & *p-value*
+
+Terdapat dua hal penting yang perlu diingat diingat dalam menginterpretasi signifikansi statistik dan *p-value*. Pertama, signifikan secara statistik tidak selalu berarti signifikan secara praktis; ukuran efek (*effect size*) perlu dipertimbangkan (lihat @sec-effect). Misalnya, ditemukan perbedaan skor ujian antara kelas yang menggunakan metode pembelajaran daring (*Mean* = 78,2) dan metode pembelajaran hibrid (*Mean* = 79,2). Meskipun secara statistik perbedaan kedua skor tersebut ditemukan signifikan (kemungkinan karena jumlah sampel yang besar), belum tentu memiliki nilai praktis yang bermakna. Dalam hal ini, perbedaan nilai 1 poin nampaknya terlalu “mahal” untuk dibayar dengan kerumitan dalam pelaksanaan dan pengelolaan metode belajar hibrid.
+
+Kedua, *p-value* tidak menunjukkan peluang hipotesis benar atau salah, dan tidak membuktikan H₀ atau H₁ secara mutlak. *p-value* kecil menunjukkan bahwa jika H₀ benar, peluang memperoleh data seperti yang diamati sangat kecil; *p-value* besar menunjukkan data konsisten dengan H₀, tetapi bukan bukti bahwa H₀ benar.
+
+Dengan memahami hubungan antara signifikansi dan *p-value*, peneliti dapat membuat keputusan yang lebih tepat dalam pengujian hipotesis, sekaligus menghindari kesalahan interpretasi yang umum terjadi.

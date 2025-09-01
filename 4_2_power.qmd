@@ -1,0 +1,13 @@
+# *Statistical Power*
+
+***Statistical power***, atau **tingkat sensitivitas**, adalah kemampuan suatu pengujian statistik untuk mendeteksi adanya efek suatu variabel terhadap variabel lain atau perbedaan antar kelompok jika efek atau perbedaan tersebut memang benar-benar ada. Studi dengan *power* yang tinggi memiliki peluang besar untuk menemukan efek, bahkan jika efek tersebut kecil, selama efek itu memang nyata. Sebaliknya, studi dengan *power* yang rendah cenderung gagal mendeteksi perbedaan atau hubungan yang sebenarnya ada, dan hasil signifikansinya lebih rentan dipengaruhi oleh *error*, baik yang bersifat sistematik maupun acak.
+
+Konsep ini sangat penting karena berkaitan langsung dengan risiko melakukan **kesalahan dalam pengujian hipotesis**, khususnya **kesalahan tipe II (*β*)**. Dalam statistik, terdapat dua jenis kesalahan:
+
+1.  **Kesalahan tipe I (*α*)**: Menolak hipotesis nol padahal sebenarnya tidak ada perbedaan atau hubungan.
+
+2.  **Kesalahan tipe II (*β*)**: Gagal menolak hipotesis nol padahal sebenarnya ada perbedaan atau hubungan.
+
+*Power* penelitian dihitung sebagai **1 – *β***, sehingga semakin kecil *β*, semakin besar *power*. Misalnya, *power* sebesar 80% berarti penelitian memiliki peluang 80% untuk mendeteksi perbedaan atau hubungan yang sebenarnya ada di populasi.
+
+Menentukan tingkat *power* biasanya dilakukan sebelum pengambilan data agar peneliti dapat memperkirakan ukuran sampel yang memadai. Tingkat *power* yang umum digunakan adalah 80%, 90%, atau 95%. Penentuan ini mempertimbangkan beberapa faktor utama: ukuran sampel, besaran efek (*effect size*), tingkat signifikansi (*α*), dan variabilitas data. Dengan perencanaan yang baik, peneliti dapat meminimalkan risiko kesalahan tipe II dan meningkatkan peluang memperoleh hasil yang akurat dan dapat diandalkan.

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Tentang Penulis – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>10&nbsp; Statistik Parametrik dan Non-Parametrik – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,8 +51,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1_pengantar.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./4_2_power.html" rel="next">
+<link href="./4_inferensial.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -85,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">Tentang Penulis</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4_inferensial.html">STATISTIK INFERENSIAL</a></li><li class="breadcrumb-item"><a href="./4_1_parametrik.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Statistik Parametrik dan Non-Parametrik</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -97,8 +117,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Tentang Penulis</h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4_inferensial.html">STATISTIK INFERENSIAL</a></li><li class="breadcrumb-item"><a href="./4_1_parametrik.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Statistik Parametrik dan Non-Parametrik</span></a></li></ol></nav>
+      <h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Statistik Parametrik dan Non-Parametrik</span></h1>
                       </div>
   </div>
     
@@ -141,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tentang Penulis</span></a>
   </div>
 </li>
@@ -255,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4_1_parametrik.html" class="sidebar-item-text sidebar-link">
+  <a href="./4_1_parametrik.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Statistik Parametrik dan Non-Parametrik</span></span></a>
   </div>
 </li>
@@ -294,8 +314,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#asumsi-parametrik" id="toc-asumsi-parametrik" class="nav-link active" data-scroll-target="#asumsi-parametrik"><span class="header-section-number">10.1</span> Asumsi Parametrik</a></li>
+  <li><a href="#metode-parametrik" id="toc-metode-parametrik" class="nav-link" data-scroll-target="#metode-parametrik"><span class="header-section-number">10.2</span> Metode Parametrik</a></li>
+  <li><a href="#metode-non-parametrik" id="toc-metode-non-parametrik" class="nav-link" data-scroll-target="#metode-non-parametrik"><span class="header-section-number">10.3</span> Metode Non-Parametrik</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -304,27 +332,122 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="dr.-sunu-bagaskara" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="dr.-sunu-bagaskara">Dr.&nbsp;Sunu Bagaskara <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan peneliti di bidang Psikologi dengan latar belakang pendidikan S1 hingga S3 di Fakultas Psikologi Universitas Indonesia. Ia berpengalaman mengajar Psikologi Sosial, Metode Penelitian Kuantitatif dan Statistik, serta Konstruksi Alat Ukur Psikologi. Minat penelitiannya mencakup kognisi sosial, psikologi lalu lintas, dan penerapan statistik dalam psikologi, dengan berbagai publikasi di jurnal ilmiah nasional dan internasional yang mencerminkan dedikasinya pada pengembangan ilmu psikologi dan keselamatan masyarakat.</p>
+<p>Dalam statistik inferensial, metode analisis dapat dibedakan menjadi dua kelompok besar, yaitu statistik <strong>parametrik</strong> dan statistik <strong>non-parametrik</strong>. Pemilihan metode ini berpengaruh pada validitas hasil analisis karena masing-masing memiliki asumsi dan prinsip kerja yang berbeda. Meskipun keduanya bertujuan untuk menarik kesimpulan dari data sampel ke populasi, perbedaan pendekatan dapat memengaruhi akurasi dan kekuatan analisis.</p>
+<section id="asumsi-parametrik" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="asumsi-parametrik"><span class="header-section-number">10.1</span> Asumsi Parametrik</h2>
+<p>Metode analisis parametrik bekerja dengan optimal jika data memiliki distribusi normal (lihat <a href="3_3_distribusi.html" class="quarto-xref"><span>Bab 9</span></a>). Karena berbagai prosedur parametrik—seperti estimasi parameter dan pengujian hipotesis—mengandalkan sifat distribusi normal, penyimpangan yang besar dari normalitas dapat membuat hasil analisis menjadi bias atau kurang akurat. Oleh karena itu, sebelum menggunakan metode parametrik, peneliti perlu memeriksa apakah data mendekati distribusi normal melalui uji statistik maupun pemeriksaan visual.</p>
+<p>Pemeriksaan melalui <strong>metode visual</strong> bisa dilihat berdasarkan kurva sebaran data. Salah satu yang paling umum digunakan adalah grafik histogram. Jika histogram tampak seperti lonceng, maka distribusi data tersebut dikatakan normal. Sebaliknya, jika terdapat kemiringan sehingga kurva terlihat jelas tidak simetris, maka data tidak terdistribusi dengan normal (lihat <a href="#fig-normal" class="quarto-xref">Gambar&nbsp;<span>10.1</span></a>).</p>
+<p>Metode <strong>pengujian statsitik</strong> dapat menjadi cara yang paling akurat untuk menentukan normalitas distribusi data. Terdapat dua uji statistik yang cukup umum digunakan digunakan dalam konteks riset ilmu sosial, yaitu <strong><em>Kolmogorov-Smirnov</em></strong> (KS) dan <strong><em>Shapiro-Wilk</em></strong> (SW). Sejumlah studi mengungkapkan bahwa uji SW lebih andal dibanding KS karena memiliki daya uji (<em>power</em>) yang lebih tinggi dalam mendeteksi berbagai bentuk penyimpangan dari normalitas, baik akibat <em>skewness</em> maupun <em>kurtosis</em>, pada hampir semua ukuran sampel dan jenis distribusi <span class="citation" data-cites="Oktaviani2014 Razali2011 Yap2011">(<a href="references.html#ref-Oktaviani2014" role="doc-biblioref">M. A., 2014</a>; <a href="references.html#ref-Razali2011" role="doc-biblioref">Razali &amp; Wah, 2011</a>; <a href="references.html#ref-Yap2011" role="doc-biblioref">Yap &amp; Sim, 2011</a>)</span>. Oleh karena itu, tes SW lebih disarankan untuk digunakan dalam pengujian normalitas distribusi data.</p>
+<div id="fig-normal" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-normal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-normal" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-neg" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-neg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/4_1_a_normal.png" class="img-fluid figure-img" data-ref-parent="fig-normal" width="270">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-neg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Distribusi normal
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-normal" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-pos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-pos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/4_1_b_nnormal.png" class="img-fluid figure-img" data-ref-parent="fig-normal" width="270">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Distribusi tidak normal
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-normal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;10.1: Kurva distribusi data
+</figcaption>
+</figure>
+</div>
+<p>Data yang memenuhi asumsi parametrik dapat dianalisis lebih lanjut dengan statistik parametrik, sedangkan data yang tidak memenuhi asumsi dianalisis dengan menggunakan teknik statistik non-parametrik. Konsekuensi hasil analisisnya adalah pada generalisasi hasil analsis data. Pada statistik parameterik — karena data sampel terdistibusi normal — maka data tersebut dianggap mewakili populasi, sehingga setiap hasil analisis data tersebut dapat digenerasilasikan kepada populasinya. Dengan kata lain, hasil analisis data dianggap mencerminkan populasinya. Sedangkan jika data tidak memenuhi asumsi dan kemudian dianalisis dengan statistik non-parametrik, maka hasilnya tidak dapat disebut mencerminkan populasi, melainkan hanya menggambarkan sekelompok partisipan penelitian tersebut.</p>
 </section>
-<section id="dr.-entin-nurhayati" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="dr.-entin-nurhayati">Dr.&nbsp;Entin Nurhayati <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>berpengalaman mengajar kurang lebih selama 20 tahun. Pernah mengajar berbagai mata kuliah, seperti Faal, Psi Perkembangan, Psikodiagnosis (TAT/CAT, Rorschach) hingga beberapa tahun terakhir fokus di rumpun penelitian, khususnya mata kuliah metodologi penelitian dan statistik. Berdasar pengalaman mengajar ini serta membimbing penelitian mahasiswa, penulis memahami berbagai kesulitan yang dihadapi mahasiswa dalam memahami metopen dan statistik. Bersama sejawat, penulis berusaha melahirkan rangkaian buku praktis, agar mahasiswa dapat dengan mudah dan cepat memahami ilmu alat mengembangkan pengetahuan ini. Buku ini merupakan buku pertama yang dirancang untuk keperluan tersebut.</p>
+<section id="metode-parametrik" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="metode-parametrik"><span class="header-section-number">10.2</span> Metode Parametrik</h2>
+<p>Metode <strong>parametrik</strong> adalah pendekatan analisis statistik yang mendasarkan perhitungannya pada <strong>parameter populasi</strong> yang diestimasi dari data sampel, seperti <em>mean</em>, varians, dan standar deviasi. Metode ini beroperasi di bawah asumsi bahwa data berasal dari populasi dengan distribusi tertentu, umumnya distribusi normal, sehingga sifat-sifat distribusi tersebut dapat digunakan untuk membangun <strong>model matematis yang akurat</strong>. Proses analisis dalam metode parametrik biasanya melibatkan penggunaan rumus yang memanfaatkan parameter-parameter ini untuk menghitung ukuran efek, menguji hipotesis, atau membuat estimasi terhadap populasi.</p>
+<p>Kelebihan utama metode parametrik adalah <strong>presisi</strong> dan <strong>kekuatan statistik yang tinggi</strong>, artinya metode ini lebih mampu mendeteksi perbedaan atau hubungan yang benar-benar ada dalam data, asalkan asumsi normalitas terpenuhi. Hal ini karena informasi yang digunakan berasal dari seluruh nilai data, bukan hanya peringkat atau kategori. Akan tetapi, jika asumsi distribusi dilanggar—misalnya data tidak normal atau mengandung outlier ekstrem—maka metode parametrik bisa menghasilkan estimasi yang bias dan kesimpulan yang menyesatkan. Oleh sebab itu, pengujian asumsi, khususnya normalitas, menjadi langkah krusial sebelum memilih metode ini.</p>
 </section>
-<section id="sari-zakiah-akmal-ph.d.-psikolog" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="sari-zakiah-akmal-ph.d.-psikolog">Sari Zakiah Akmal, Ph.D., Psikolog <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan peneliti di bidang Psikologi Pendidikan. Ia lulusan dari program Sarjana dan Magister Profesi Psikologi Pendidikan, Fakultas Psikologi Universitas Indonesia dan program doktoral dari School of Applied Psychology, Griffith University, Australia. Sebagai dosen psikologi, ia pernah mengampu matakuliah terkait Metode Penelitian Kuantitatif, Statistik, Logika – Penulisan Ilmiah, Konstruksi Alat Ukur Psikologi, Asesmen Inteligensi, dan Pengembangan Diri dan Karier. Ia juga aktif dalam melakukan penelitian dan pengabdian masyarakat dengan fokus utama pada pengambilan keputusan karier, adaptabilitas karier, ketahanan akademik di kalangan mahasiswa, dan berbagai permasalahan terkait pendidikan siswa SMA/SMK dan mahasiswa di perguruan tinggi. Karya-karyanya telah dipublikasikan dalam berbagai jurnal akademik dan konferensi, mencerminkan komitmennya dalam mengembangkan penelitian dan pendidikan psikologi.</p>
-</section>
-<section id="titi-sahidah-m.psi-m.sc.-ph.d.-psikolog" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="titi-sahidah-m.psi-m.sc.-ph.d.-psikolog">Titi Sahidah, M.Psi, M.Sc., Ph.D., Psikolog <a href="#0"><img src="images/gs.png" class="img-fluid" style="vertical-align:middle;" width="22"></a> <a href="#0"><img src="images/orcid.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah pengajar di Fakultas Psikologi Universitas YARSI, Jakarta. Sejak memulai karier akademiknya pada tahun 2012, ia secara konsisten mengampu mata kuliah Psikometri dan Konstruksi Alat Ukur, yang menjadi bidang minat dan keahliannya. Ia melanjutkan studi doktoralnya di bidang Psikologi Medis di Erasmus MC, Rotterdam, Belanda. Di bawah bimbingan ahli dalam bidang psikometri, Titi menulis disertasi mengenai validitas, reliabilitas dan norma alat ukur EQ-5D-Y di Indonesia. Karya-karya publikasinya, khususnya dalam pengembangan alat ukur psikologi kesehatan yang dipresentasikan di berbagai konferensi dan diterbitkan di jurnal internasional, menjadikannya salah satu pakar dalam bidang pengukuran psikologi kesehatan di Indonesia.</p>
-</section>
-<section id="aswin-januarsjaf-s.psi.-m.m" class="level3 unnumbered unlisted">
-<h3 class="unnumbered unlisted anchored" data-anchor-id="aswin-januarsjaf-s.psi.-m.m">Aswin Januarsjaf, S.Psi., M.M <a href="#0"><img src="images/li.png" class="img-fluid" style="vertical-align:middle;" width="22"></a></h3>
-<p>adalah akademisi dan praktisi di bidang Psikologi serta Manajemen Sumber Daya Manusia. Lulusan Psikologi Universitas Padjadjaran dan Magister Manajemen PPM School of Management ini memiliki pengalaman lebih dari dua dekade di berbagai industri, khususnya dalam bidang rekrutmen, asesmen, dan pengembangan SDM. Ia mendirikan Talentlytica, sebuah platform asesmen berbasis data, serta aktif mengajar statistik psikologi dan melatih topik manajemen SDM di berbagai institusi. Karya-karya dan inovasi perangkat asesmennya mencerminkan komitmennya untuk menghubungkan ilmu psikologi dengan praktik manajemen modern di Indonesia.</p>
+<section id="metode-non-parametrik" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="metode-non-parametrik"><span class="header-section-number">10.3</span> Metode Non-Parametrik</h2>
+<p>Metode <strong>non-parametrik</strong> adalah pendekatan analisis statistik yang <strong>tidak bergantung pada asumsi</strong> bentuk distribusi tertentu dan tidak secara langsung menggunakan parameter populasi seperti <em>mean</em> atau varians dalam perhitungannya. Metode ini sering digunakan ketika data tidak memenuhi asumsi normalitas atau ketika data yang dimiliki berskala ordinal dan nominal, di mana informasi yang tersedia hanya berupa urutan atau kategori. Dalam praktiknya, metode non-parametrik banyak mengandalkan <strong>peringkat</strong> (<em>ranking</em>) untuk melakukan perbandingan antar kelompok atau mengukur hubungan antar variabel.</p>
+<p>Kelebihan metode non-parametrik terletak pada <strong>fleksibilitasnya</strong> terhadap bentuk data —metode ini tetap dapat digunakan meskipun data terdistribusi miring, memiliki <em>outlier</em>, atau jumlah sampel relatif kecil. Selain itu, metode ini lebih “aman” digunakan jika peneliti tidak yakin bahwa asumsi parametrik terpenuhi. Namun, konsekuensi dari fleksibilitas ini adalah <strong>kekuatan statistik yang umumnya lebih rendah</strong> dibandingkan metode parametrik ketika asumsi normalitas sebenarnya terpenuhi. Artinya, metode non-parametrik mungkin <strong>kurang sensitif</strong> dalam mendeteksi perbedaan atau hubungan yang ada, sehingga hasil yang signifikan memerlukan efek yang lebih besar atau jumlah sampel yang lebih banyak.</p>
+<p>Rangkuman perbandingan secara umum antara kedua metode analisis (parametrik vs.&nbsp;non-parametrik) dapat dilihat di <a href="#tbl-parametrik" class="quarto-xref">Tabel&nbsp;<span>10.1</span></a>.</p>
+<div id="tbl-parametrik" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-parametrik-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;10.1: Perbandingan metode statistik parametrik dan non-parametrik
+</figcaption>
+<div aria-describedby="tbl-parametrik-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspek</th>
+<th>Statistik Parametrik</th>
+<th>Statistik Non-parametrik</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Asumsi utama</td>
+<td>Data berasal dari populasi yang berdistribusi normal.</td>
+<td>Tidak memerlukan asumsi distribusi normal</td>
+</tr>
+<tr class="even">
+<td>Jenis data yang cocok</td>
+<td>Data berskala interval atau rasio</td>
+<td>Data berskala ordinal atau nominal, atau data interval/rasio yang tidak normal</td>
+</tr>
+<tr class="odd">
+<td>Kelebihan</td>
+<td>Memiliki daya statistik lebih tinggi jika asumsi normalitas terpenuhi</td>
+<td>Lebih fleksibel terhadap pelanggaran asumsi dan dapat digunakan pada data yang tidak normal</td>
+</tr>
+<tr class="even">
+<td>Kekurangan</td>
+<td>Data harus memenuhi asumsi-asumsi yang ketat</td>
+<td>Umumnya memiliki kekuatan statistik lebih rendah</td>
+</tr>
+<tr class="odd">
+<td>Konsekuensi praktis</td>
+<td>Memberikan hasil yang lebih presisi pada data yang memenuhi asumsi normalitas</td>
+<td>Memberikan hasil yang kurang sensitif dalam mendeteksi perbedaan atau hubungan yang ada</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Oktaviani2014" class="csl-entry" role="listitem">
+M. A., H. B. O., Notobroto. (2014). Perbandingan tingkat konsistensi normalitas distribusi metode kolmogorov-smirnov, lilliefors, shapiro-wilk, dan skewness-kurtosis. <em>Jurnal Biometrika dan kependudukan</em>, <em>3</em>, 127–135.
+</div>
+<div id="ref-Razali2011" class="csl-entry" role="listitem">
+Razali, N., &amp; Wah, Y. (2011). Power comparisons of Shapiro-Wilk , Kolmogorov-Smirnov , Lilliefors and Anderson-Darling test. <em>Journal of Statistical Modeling and Analytics</em>, <em>2</em>, 21–33.
+</div>
+<div id="ref-Yap2011" class="csl-entry" role="listitem">
+Yap, B. W., &amp; Sim, C. H. (2011). Comparisons of various types of normality tests. <em>Journal of Statistical Computation and Simulation</em>, <em>81</em>, 2141–2155. <a href="https://doi.org/10.1080/00949655.2010.520163">https://doi.org/10.1080/00949655.2010.520163</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -729,13 +852,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Selamat Datang!">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Selamat Datang!</span>
+      <a href="./4_inferensial.html" class="pagination-link" aria-label="STATISTIK INFERENSIAL">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">STATISTIK INFERENSIAL</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1_pengantar.html" class="pagination-link" aria-label="PENGANTAR STATISTIK">
-        <span class="nav-page-text">PENGANTAR STATISTIK</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./4_2_power.html" class="pagination-link" aria-label="*Statistical Power*">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><em>Statistical Power</em></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

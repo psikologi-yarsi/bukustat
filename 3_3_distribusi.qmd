@@ -1,4 +1,4 @@
-# Bentuk Distribusi Data
+# Bentuk Distribusi Data {#sec-distribusi}
 
 Setiap nilai dalam sekumpulan data memiliki frekuensi kemunculan yang berbeda-beda; nilai ekstrem biasanya muncul lebih jarang, sedangkan nilai yang mendekati *mean* lebih sering muncul. Pola ini membentuk **distribusi data**, yang jika digambarkan dalam grafik seperti poligon frekuensi, akan membentuk kurva. Pada distribusi yang ideal, yaitu **distribusi normal**, kurva berbentuk lonceng (***bell-shaped***) dan **simetris** di sekitar nilai ukuran pemusatan data seperti *mean* atau median. Namun, pada kenyataannya, data bisa saja miring (*skewed*) jika nilai-nilai terkonsentrasi di satu sisi, atau memiliki kurtosis jika kurvanya lebih runcing atau lebih datar dari distribusi normal. Pemahaman tentang bentuk distribusi ini penting karena banyak analisis statistik, terutama yang bersifat inferensial, mengasumsikan bahwa data terdistribusi normal. Untuk itu, bagian-bagian berikut akan membahas lebih lanjut mengenai **kurva normal**, ***skewness***, **kurtosis**, dan ***z-score*** sebagai alat untuk menstandarkan data.
 

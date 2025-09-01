@@ -1,0 +1,31 @@
+# Pengujian Hipotesis
+
+Secara etimologi, hipotesis berasal dari dua kata, yaitu *hipo* yang berarti “di bawah” dan *thesa* yang berarti “kebenaran”. Secara harfiah, hipotesis dapat diartikan “di bawah kebenaran” atau **kebenaran sementara** yang masih harus diuji kesahihannya. Dalam penelitian, hipotesis adalah jawaban sementara terhadap pertanyaan penelitian yang disusun berdasarkan teori, temuan penelitian sebelumnya, maupun logika dan akal sehat peneliti.
+
+Hipotesis dibuat untuk dikonfirmasikan kepada data lapangan; jika terkonfirmasi, maka hipotesis diterima sebagai kebenaran berdasarkan data penelitian. Dalam analisis statistik, terdapat dua macam hipotesis yang wajib dipahami:
+
+1.  **Hipotesis nol (H₀)**, yaitu hipotesis yang menyatakan ketiadaan perbedaan antara dua keadaan atau ketiadaan hubungan antar variabel yang diamati. Sebagai contoh:
+
+    -   Tidak ada perbedaan tingkat konsentrasi belajar antara kelas A yang diberi sarapan dan kelas B yang tidak diberi sarapan.
+    -   Tidak ada hubungan antara tingkat pemahaman bahaya merokok dengan kecenderungan merokok di kalangan remaja perokok.
+
+2.  **Hipotesis alternatif (H₁)**, yaitu hipotesis yang menyatakan adanya perbedaan atau hubungan antar variabel yang diamati. Contohnya:
+
+    -   Terdapat perbedaan gaya *parenting* berdasarkan tingkat pendidikan orang tua.
+    -   Terdapat hubungan antara tingkat keyakinan pada akhirat dengan ketaatan menjalankan sholat lima waktu.
+
+Hipotesis juga dapat diklasifikasikan berdasarkan tujuan dan teknik analisis data yang dibutuhkan:
+
+1.  **Hipotesis deskriptif**: digunakan pada penelitian yang hanya melibatkan satu variabel. Misalnya: “*Terdapat kesadaran yang tinggi pada remaja usia belasan terhadap merek sabun ‘X’*”. Analisisnya meliputi statistik deskriptif, tendensi sentral, dispersi, dan uji normalitas.
+
+2.  **Hipotesis komparatif**: digunakan untuk membandingkan dua atau lebih keadaan. Misalnya: “*Terdapat perbedaan konsentrasi belajar antara kelas A yang diberi sarapan dan kelas B yang tidak*”. Analisisnya dapat menggunakan uji-t atau *ANOVA* untuk data parametrik, dan uji *Wilcoxon* atau *Kruskal-Wallis* untuk data non-parametrik.
+
+3.  **Hipotesis asosiatif**: digunakan untuk menilai keterhubungan antara dua peristiwa atau variabel. Misalnya: “*Terdapat hubungan antara tingkat ekspose isu di media sosial dengan literasi masyarakat terhadap isu tersebut*”. Analisisnya dapat menggunakan korelasi *Pearson* untuk data parametrik, dan korelasi *Spearman* untuk data non-parametrik.
+
+Dalam pengujian hipotesis, **arah pengujian** menentukan di sisi mana peneliti mencari bukti untuk menolak hipotesis nol. Uji satu arah (***one-tailed test***) digunakan jika hipotesis alternatif memprediksi arah perbedaan atau hubungan yang diharapkan, misalnya rata-rata nilai kelas A lebih tinggi daripada kelas B. Seluruh tingkat signifikansi ditempatkan pada satu sisi distribusi sehingga lebih sensitif untuk mendeteksi perbedaan ke arah tersebut, namun tidak dapat menangkap perbedaan ke arah sebaliknya.
+
+Sebaliknya, uji dua arah (***two-tailed test***) digunakan jika hipotesis alternatif tidak menentukan arah perbedaan, misalnya hanya ingin mengetahui apakah dua rata-rata berbeda tanpa memprediksi lebih tinggi atau lebih rendah. Dalam uji ini, tingkat signifikansi dibagi pada kedua sisi distribusi sehingga dapat mendeteksi perbedaan di kedua arah. Pemilihan jenis uji sebaiknya ditentukan sejak awal penelitian untuk menjaga validitas hasil.
+
+Proses pengujian hipotesis dilakukan secara sistematis. Langkah pertama adalah merumuskan H₀ dan H₁, kemudian menetapkan tingkat signifikansi (α), umumnya 0,05, untuk membatasi risiko kesalahan tipe I. Selanjutnya, peneliti memilih uji statistik yang sesuai dengan jenis data dan desain penelitian, lalu mengumpulkan dan menganalisis data untuk mendapatkan nilai statistik uji. Nilai ini dibandingkan dengan nilai kritis atau diinterpretasikan menggunakan ***p-value***. Jika *p-value* ≤ α, maka H₀ ditolak; jika *p-value* \> α, maka H₀ tidak dapat ditolak. Penjelasan lebih lanjut mengenai signifikansi dan *p-value* akan diuraikan pada @sec-signifikansi.
+
+Penting dipahami bahwa menolak H₀ tidak berarti H₀ salah secara mutlak, melainkan data memberikan bukti cukup untuk mendukung H₁ dalam batas risiko yang ditetapkan. Sebaliknya, gagal menolak H₀ tidak berarti H₀ benar, tetapi menunjukkan bukti yang ada belum cukup untuk mendukung H₁. Dengan pemahaman ini, pengujian hipotesis menjadi alat penting untuk menarik kesimpulan ilmiah yang terukur, transparan, dan dapat dipertanggungjawabkan.
