@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>21&nbsp; Prinsip-prinsip Dasar dan Asumsi-asumsi ANOVA – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./about.html" rel="next">
+<link href="./6_3_jenis_anova.html" rel="next">
+<link href="./6_1_tujuan_anova.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -71,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.scss">
 </head>
@@ -84,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Selamat Datang!</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./6_anova.html">MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK</a></li><li class="breadcrumb-item"><a href="./6_2_prinsip_anova.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Prinsip-prinsip Dasar dan Asumsi-asumsi <em>ANOVA</em></span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -96,32 +126,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Statistik untuk Psikologi dan Ilmu Sosial</h1>
-            <p class="subtitle lead">Buku Panduan Praktis untuk Mahasiswa dan Peneliti Muda</p>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./6_anova.html">MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK</a></li><li class="breadcrumb-item"><a href="./6_2_prinsip_anova.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Prinsip-prinsip Dasar dan Asumsi-asumsi <em>ANOVA</em></span></a></li></ol></nav>
+      <h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Prinsip-prinsip Dasar dan Asumsi-asumsi <em>ANOVA</em></span></h1>
                       </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Penulis</div>
-      <div class="quarto-title-meta-contents">
-               <p>Sunu Bagaskara </p>
-               <p>Entin Nurhayati </p>
-               <p>Sari Zakiah Akmal </p>
-               <p>Titi Sahidah Fitriana </p>
-               <p>Aswin Januarsjaf </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Diterbitkan</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">30 Agustus 2025</p>
-      </div>
-    </div>
     
       
     </div>
@@ -151,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Selamat Datang!</span></a>
   </div>
 </li>
@@ -377,7 +390,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./6_2_prinsip_anova.html" class="sidebar-item-text sidebar-link">
+  <a href="./6_2_prinsip_anova.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Prinsip-prinsip Dasar dan Asumsi-asumsi <em>ANOVA</em></span></span></a>
   </div>
 </li>
@@ -413,7 +426,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Daftar Isi</h2>
    
   <ul>
-  <li><a href="#selamat-datang" id="toc-selamat-datang" class="nav-link active" data-scroll-target="#selamat-datang">Selamat Datang!</a></li>
+  <li><a href="#statistik-f-rasio-variabilitas" id="toc-statistik-f-rasio-variabilitas" class="nav-link active" data-scroll-target="#statistik-f-rasio-variabilitas"><span class="header-section-number">21.1</span> Statistik f: Rasio Variabilitas</a></li>
+  <li><a href="#asumsi-asumsi-dasar-anova" id="toc-asumsi-asumsi-dasar-anova" class="nav-link" data-scroll-target="#asumsi-asumsi-dasar-anova"><span class="header-section-number">21.2</span> Asumsi-asumsi Dasar <em>ANOVA</em></a></li>
   </ul>
 </nav>
     </div>
@@ -424,16 +438,34 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-
-<section id="selamat-datang" class="level1 unnumbered">
-<h1 class="unnumbered">Selamat Datang!</h1><p><img src="coverv3.jpg" title="Statistik untuk Psikologi dan Ilmu Sosial" class="quarto-cover-image nolightbox img-fluid"></p>
-<p>Alhamdulillah, akhirnya buku <em>Statistik untuk Psikologi dan Ilmu Sosial</em> ini bisa sampai ke tangan Anda. Buku ini lahir dari pengalaman sehari-hari di kelas, saat mendampingi mahasiswa yang sering kali merasa “alergi” begitu mendengar kata <em>statistik</em>. Padahal, kalau dipahami dengan cara yang tepat, statistik bukan sesuatu yang menakutkan. Justru ia adalah alat yang sangat membantu kita untuk membaca, memahami, dan menjelaskan fenomena psikologi secara lebih objektif.</p>
-<p>Dalam buku ini, kami mencoba menyajikan konsep-konsep statistik dengan bahasa yang sederhana, runtut, dan dekat dengan dunia psikologi. Setiap bab tidak hanya berisi teori, tetapi juga contoh nyata serta latihan soal yang bisa membantu pembaca melatih pemahaman. Harapannya, buku ini bisa menjadi jembatan agar mahasiswa lebih percaya diri ketika berhadapan dengan data penelitian.</p>
-<p>Kami menyadari buku ini masih jauh dari sempurna. Kritik dan saran dari para pembaca tentu sangat kami nantikan, agar pada edisi-edisi berikutnya buku ini bisa semakin baik.</p>
-<p>Akhir kata, semoga buku ini tidak hanya menjadi pegangan dalam belajar, tetapi juga menjadi sahabat yang menemani perjalanan Anda meneliti, menulis, dan memahami psikologi dengan lebih ilmiah.</p>
-<p>Jakarta, Agustus 2025<br>
-</p>
-<p>Tim Penulis</p>
+<p>Analisis Varians, atau <em>ANOVA</em>, adalah metode statistik yang digunakan untuk menentukan apakah terdapat <strong>perbedaan yang signifikan secara statistik antara rata-rata tiga atau lebih kelompok</strong> penelitian. Teknik ini sangat berguna dalam penelitian eksperimental di mana beberapa kelompok dibandingkan dalam kondisi atau perlakuan yang berbeda. Dengan menganalisis varians dalam dan antar kelompok, <em>ANOVA</em> membantu peneliti memahami bagaimana faktor-faktor berbeda memengaruhi hasil tertentu, memberikan informasi penting tentang hubungan antar variabel.</p>
+<p><em>ANOVA</em> didasarkan pada prinsip <strong>membandingkan variasi yang terjadi antar kelompok dengan variasi yang terjadi di dalam kelompok</strong>. Ketika perbedaan antar kelompok lebih besar dibandingkan variasi di dalam kelompok, hal ini mengindikasikan bahwa ada kemungkinan rata-rata kelompok memang berbeda secara nyata. Dengan kata lain, <em>ANOVA</em> menilai apakah variabilitas yang diamati dalam data lebih banyak dijelaskan oleh perbedaan antar kelompok (<em>true variance</em>) daripada oleh variasi acak di dalam kelompok (<em>error variance</em>).</p>
+<section id="statistik-f-rasio-variabilitas" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="statistik-f-rasio-variabilitas"><span class="header-section-number">21.1</span> Statistik f: Rasio Variabilitas</h2>
+<p>Ide utama <em>ANOVA</em> adalah untuk membandingkan kedua jenis variabilitas ini melalui rasio yang disebut <strong>Statistik F</strong> (<em>F statistics</em>), yang dapat digambarkan dalam persamaan berikut:</p>
+<p><span class="math display">\[
+F = \frac{\text{varians antar kelompok}}{\text{varians dalam kelompok}}
+\]</span></p>
+<p>Jika <strong>nilai F besar</strong>, ini berarti perbedaan antar kelompok lebih besar dibandingkan variasi dalam kelompok. Artinya, perbedaan rata-rata kelompok bukan kebetulan dan kemungkinan disebabkan oleh variabel independen. Dengan kata lain, efek perlakuan lebih kuat daripada variasi acak. Jika nilai F melebihi nilai kritis dari tabel distribusi F, hipotesis nol dapat ditolak.</p>
+<p>Jika <strong>statistik F kecil</strong> (mendekati 1 atau kurang), ini berarti variabilitas antar kelompok serupa dengan variabilitas dalam kelompok. Ini menunjukkan bahwa perbedaan antara rata-rata kelompok mungkin hanya disebabkan oleh kebetulan atau variasi acak, dan variabel independen mungkin tidak memiliki efek yang signifikan.</p>
+</section>
+<section id="asumsi-asumsi-dasar-anova" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="asumsi-asumsi-dasar-anova"><span class="header-section-number">21.2</span> Asumsi-asumsi Dasar <em>ANOVA</em></h2>
+<p>Untuk memastikan hasil <em>ANOVA</em> valid dan dapat diandalkan, terdapat beberapa asumsi dasar yang perlu dipenuhi (<a href="#fig-asumsi-anova" class="quarto-xref">Gambar&nbsp;<span>21.1</span></a>). Pertama, data dari setiap kelompok yang dibandingkan harus saling <strong>independen</strong>, artinya nilai-nilai dari satu kelompok tidak boleh memengaruhi nilai-nilai dari kelompok lain. Independensi ini biasanya dijaga melalui prosedur pengambilan sampel yang tepat atau penugasan acak dalam eksperimen.</p>
+<p>Kedua, <em>ANOVA</em> mengasumsikan bahwa data dalam setiap kelompok mengikuti <strong>distribusi normal</strong>. Meskipun <em>ANOVA</em> cukup <em>robust</em> terhadap pelanggaran normalitas pada ukuran sampel besar, penyimpangan yang berat dari normalitas dapat mengurangi keakuratan hasil. Oleh karena itu, sebelum melakukan analisis, sebaiknya dilakukan pemeriksaan normalitas melalui visualisasi data, seperti histogram atau plot Q-Q, ataupun menggunakan uji statistik seperti <em>Shapiro-Wilk</em>.</p>
+<p>Ketiga, variansi antar kelompok yang dibandingkan diharapkan <strong>homogen</strong> atau seragam. Homogenitas varians ini penting karena <em>ANOVA</em> membandingkan rata-rata dengan memperhitungkan variabilitas dalam kelompok. Apabila variansi antar kelompok sangat berbeda, maka kesimpulan yang dihasilkan dari <em>ANOVA</em> bisa menjadi bias. Untuk menguji asumsi ini, dapat digunakan uji <em>Levene</em> atau uji <em>Bartlett</em>. Uji <em>Levene</em> sering digunakan untuk menilai homogenitas ini.</p>
+<p>Apabila asumsi-asumsi tersebut tidak sepenuhnya terpenuhi, ada beberapa strategi yang bisa ditempuh. Transformasi data, penggunaan <em>ANOVA</em> varian <em>robust</em> seperti <em>ANOVA Welch</em>, atau beralih ke pendekatan non-parametrik menjadi pilihan <em>untuk</em> menjaga validitas hasil analisis. Penting untuk diingat bahwa pengecekan asumsi bukan sekadar prosedur teknis, melainkan bagian integral dari proses analisis yang memastikan bahwa interpretasi hasil <em>ANOVA</em> merefleksikan kondisi data dengan akurat.</p>
+<div id="fig-asumsi-anova" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-asumsi-anova-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/6_1_asumsi_anova.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="620">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-asumsi-anova-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;21.1: Asumsi-asumsi <em>ANOVA</em>
+</figcaption>
+</figure>
+</div>
+<p>Dengan memahami prinsip-prinsip dasar ini dan memastikan terpenuhinya asumsi-asumsi yang mendasarinya serta peran <em>plannedcontrasts</em> dan uji <em>post-hoc</em>, kita dapat menggunakan <em>ANOVA</em> secara efektif untuk menganalisis perbedaan antar kelompok dalam berbagai konteks penelitian. Prinsip-prinsip ini menjadi fondasi penting sebelum melangkah lebih jauh ke dalam ragam jenis <em>ANOVA</em> yang lebih kompleks.</p>
 
 
 </section>
@@ -840,10 +872,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./6_1_tujuan_anova.html" class="pagination-link" aria-label="Tujuan Perbandingan Tiga Kelompok atau Lebih">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Tujuan Perbandingan Tiga Kelompok atau Lebih</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./about.html" class="pagination-link" aria-label="Tentang Penulis">
-        <span class="nav-page-text">Tentang Penulis</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./6_3_jenis_anova.html" class="pagination-link" aria-label="Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Jenis-jenis <em>ANOVA</em> dan Interpretasi Hasil Analisis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

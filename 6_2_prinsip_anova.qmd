@@ -1,0 +1,31 @@
+# Prinsip-prinsip Dasar dan Asumsi-asumsi *ANOVA*
+
+Analisis Varians, atau *ANOVA*, adalah metode statistik yang digunakan untuk menentukan apakah terdapat **perbedaan yang signifikan secara statistik antara rata-rata tiga atau lebih kelompok** penelitian. Teknik ini sangat berguna dalam penelitian eksperimental di mana beberapa kelompok dibandingkan dalam kondisi atau perlakuan yang berbeda. Dengan menganalisis varians dalam dan antar kelompok, *ANOVA* membantu peneliti memahami bagaimana faktor-faktor berbeda memengaruhi hasil tertentu, memberikan informasi penting tentang hubungan antar variabel.
+
+*ANOVA* didasarkan pada prinsip **membandingkan variasi yang terjadi antar kelompok dengan variasi yang terjadi di dalam kelompok**. Ketika perbedaan antar kelompok lebih besar dibandingkan variasi di dalam kelompok, hal ini mengindikasikan bahwa ada kemungkinan rata-rata kelompok memang berbeda secara nyata. Dengan kata lain, *ANOVA* menilai apakah variabilitas yang diamati dalam data lebih banyak dijelaskan oleh perbedaan antar kelompok (*true variance*) daripada oleh variasi acak di dalam kelompok (*error variance*).
+
+## Statistik f: Rasio Variabilitas
+
+Ide utama *ANOVA* adalah untuk membandingkan kedua jenis variabilitas ini melalui rasio yang disebut **Statistik F** (*F statistics*), yang dapat digambarkan dalam persamaan berikut:
+
+$$
+F = \frac{\text{varians antar kelompok}}{\text{varians dalam kelompok}}
+$$
+
+Jika **nilai F besar**, ini berarti perbedaan antar kelompok lebih besar dibandingkan variasi dalam kelompok. Artinya, perbedaan rata-rata kelompok bukan kebetulan dan kemungkinan disebabkan oleh variabel independen. Dengan kata lain, efek perlakuan lebih kuat daripada variasi acak. Jika nilai F melebihi nilai kritis dari tabel distribusi F, hipotesis nol dapat ditolak.
+
+Jika **statistik F kecil** (mendekati 1 atau kurang), ini berarti variabilitas antar kelompok serupa dengan variabilitas dalam kelompok. Ini menunjukkan bahwa perbedaan antara rata-rata kelompok mungkin hanya disebabkan oleh kebetulan atau variasi acak, dan variabel independen mungkin tidak memiliki efek yang signifikan.
+
+## Asumsi-asumsi Dasar *ANOVA*
+
+Untuk memastikan hasil *ANOVA* valid dan dapat diandalkan, terdapat beberapa asumsi dasar yang perlu dipenuhi (@fig-asumsi-anova). Pertama, data dari setiap kelompok yang dibandingkan harus saling **independen**, artinya nilai-nilai dari satu kelompok tidak boleh memengaruhi nilai-nilai dari kelompok lain. Independensi ini biasanya dijaga melalui prosedur pengambilan sampel yang tepat atau penugasan acak dalam eksperimen.
+
+Kedua, *ANOVA* mengasumsikan bahwa data dalam setiap kelompok mengikuti **distribusi normal**. Meskipun *ANOVA* cukup *robust* terhadap pelanggaran normalitas pada ukuran sampel besar, penyimpangan yang berat dari normalitas dapat mengurangi keakuratan hasil. Oleh karena itu, sebelum melakukan analisis, sebaiknya dilakukan pemeriksaan normalitas melalui visualisasi data, seperti histogram atau plot Q-Q, ataupun menggunakan uji statistik seperti *Shapiro-Wilk*.
+
+Ketiga, variansi antar kelompok yang dibandingkan diharapkan **homogen** atau seragam. Homogenitas varians ini penting karena *ANOVA* membandingkan rata-rata dengan memperhitungkan variabilitas dalam kelompok. Apabila variansi antar kelompok sangat berbeda, maka kesimpulan yang dihasilkan dari *ANOVA* bisa menjadi bias. Untuk menguji asumsi ini, dapat digunakan uji *Levene* atau uji *Bartlett*. Uji *Levene* sering digunakan untuk menilai homogenitas ini.
+
+Apabila asumsi-asumsi tersebut tidak sepenuhnya terpenuhi, ada beberapa strategi yang bisa ditempuh. Transformasi data, penggunaan *ANOVA* varian *robust* seperti *ANOVA Welch*, atau beralih ke pendekatan non-parametrik menjadi pilihan *untuk* menjaga validitas hasil analisis. Penting untuk diingat bahwa pengecekan asumsi bukan sekadar prosedur teknis, melainkan bagian integral dari proses analisis yang memastikan bahwa interpretasi hasil *ANOVA* merefleksikan kondisi data dengan akurat.
+
+![Asumsi-asumsi *ANOVA*](images/6_1_asumsi_anova.png){#fig-asumsi-anova fig-align="center" width="620"}
+
+Dengan memahami prinsip-prinsip dasar ini dan memastikan terpenuhinya asumsi-asumsi yang mendasarinya serta peran *plannedcontrasts* dan uji *post-hoc*, kita dapat menggunakan *ANOVA* secara efektif untuk menganalisis perbedaan antar kelompok dalam berbagai konteks penelitian. Prinsip-prinsip ini menjadi fondasi penting sebelum melangkah lebih jauh ke dalam ragam jenis *ANOVA* yang lebih kompleks.

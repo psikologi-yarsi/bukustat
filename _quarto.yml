@@ -68,6 +68,12 @@ book:
         - 5_latihan.qmd
       
     - part: 6_anova.qmd
+      chapters: 
+        - 6_1_tujuan_anova.qmd
+        - 6_2_prinsip_anova.qmd
+        - 6_3_jenis_anova.qmd
+        - 6_4_anova_nonpar.qmd
+        - 6_latihan.qmd
       
     - part: 7_korelasi.qmd
     

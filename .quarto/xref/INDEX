@@ -106,5 +106,20 @@
   },
   "5_latihan.qmd": {
     "5_latihan.html": "1bbcfa03"
+  },
+  "6_1_tujuan_anova.qmd": {
+    "6_1_tujuan_anova.html": "e421a0bf"
+  },
+  "6_2_prinsip_anova.qmd": {
+    "6_2_prinsip_anova.html": "4e04971d"
+  },
+  "6_3_jenis_anova.qmd": {
+    "6_3_jenis_anova.html": "6ac54d52"
+  },
+  "6_4_anova_nonpar.qmd": {
+    "6_4_anova_nonpar.html": "fc88db04"
+  },
+  "6_latihan.qmd": {
+    "6_latihan.html": "7a6904ff"
   }
 }

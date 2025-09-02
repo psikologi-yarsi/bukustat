@@ -1,0 +1,47 @@
+# Alternatif Non-Parametrik untuk *ANOVA*
+
+Ketika data tidak memenuhi asumsi-asumsi parametrik dalam pengujian *ANOVA*, atau memiliki skala pengukuran yang berbeda, pendekatan non-parametrik menjadi alternatif yang tepat. Uji non-parametrik tidak memerlukan asumsi distribusi data yang ketat dan cocok untuk data ordinal atau nominal. Oleh karena itu, teknik ini memungkinkan analisis yang lebih fleksibel tanpa mengorbankan validitas hasil.
+
+## Uji *Kruskal-Wallis*: Alternatif Non-Parametrik untuk *ANOVA* Satu Arah
+
+Salah satu uji non-parametrik yang paling umum digunakan untuk menggantikan *ANOVA* Satu Arah adalah **Uji *Kruskal-Wallis***. Uji ini digunakan untuk menguji apakah ada perbedaan yang signifikan dalam median antar tiga kelompok atau lebih. Berbeda dengan *ANOVA* yang membandingkan rata-rata, uji *Kruskal-Wallis* membandingkan peringkat data dalam setiap kelompok.
+
+Kapan menggunakan *Kruskal-Wallis*?
+
+-   Data variabel dependen tidak terdistribusi normal di setiap kelompok.
+
+-   Ukuran sampel kecil dan data menunjukkan penyimpangan yang jelas dari normalitas.
+
+-   Variabel dependen adalah ordinal (misalnya, peringkat, skala *Likert* yang dianggap ordinal).
+
+Prosedur analisis:
+
+1.  Data diurutkan dan diberi peringkat (*ranking*).
+
+2.  Uji ini menguji apakah distribusi peringkat antar kelompok berbeda secara signifikan.
+
+3.  Jika *p-value* dari uji *Kruskal-Wallis* lebih kecil dari tingkat signifikansi (biasanya 0,05), kita menolak hipotesis nol, yang berarti ada perbedaan yang signifikan antar kelompok.
+
+4.  Jika uji *Kruskal-Wallis* signifikan, Anda perlu melakukan perbandingan berpasangan (*post-hoc*) untuk mengidentifikasi kelompok mana yang berbeda. Namun, tidak ada uji *post-hoc* standar tunggal seperti *Tukey* untuk *Kruskal-Wallis*. Umumnya, Anda dapat melakukan **uji *Mann-Whitney U*** secara berpasangan untuk setiap kombinasi kelompok, dan menerapkan koreksi Bonferroni untuk mengontrol kesalahan Tipe I.
+
+Dalam penulisan laporan, hasil uji non-parametrik harus dilaporkan dengan cara yang jelas dan sistematis. Contoh penulisan laporan untuk uji *Kruskal-Wallis*:
+
+"Uji *Kruskal-Wallis* menunjukkan bahwa terdapat perbedaan yang signifikan dalam peringkat antara kelompok, *H*(2) = 6,32, *p* = 0,042. *Post-hoc* dengan uji *Mann-Whitney* menunjukkan bahwa kelompok A memiliki peringkat yang lebih tinggi dibandingkan kelompok B (*p* = 0,012)."
+
+## Uji *Friedman*: Alternatif Non-Parametrik untuk *ANOVA* Pengukuran Berulang
+
+Untuk desain eksperimen dengan pengukuran berulang yang tidak memenuhi asumsi normalitas, **Uji *Friedman*** dapat digunakan sebagai alternatif non-parametrik untuk *Repeated Measures ANOVA*. Uji *Friedman* membandingkan peringkat data pada lebih dari dua kondisi pengukuran yang dilakukan pada subjek yang sama.
+
+Uji *Friedman* adalah perpanjangan non-parametrik dari uji *Wilcoxon Signed-Rank* untuk lebih dari dua pengukuran. Prosedur analisisnya meliputi:
+
+-   Memberikan peringkat pada observasi dalam setiap subjek di antara kondisi/titik waktu.
+
+-   Menjumlahkan peringkat untuk setiap kondisi/titik waktu.
+
+-   Menghitung statistik *Friedman* (*χ*^2^​), yang membandingkan jumlah peringkat yang diamati dengan jumlah peringkat yang diharapkan jika tidak ada perbedaan antar kondisi.
+
+Jika uji *Friedman* signifikan, Anda perlu melakukan uji *post hoc* untuk mengidentifikasi pasangan kondisi/titik waktu mana yang berbeda secara signifikan. Anda dapat menggunakan **uji *Wilcoxon Signed-Rank*** berpasangan untuk setiap kombinasi dan menerapkan koreksi *Bonferroni* untuk mengontrol kesalahan Tipe I.
+
+Contoh penulisan hasil (non-parametrik):
+
+"Karena asumsi normalitas dilanggar, uji *Friedman* dilakukan untuk membandingkan peringkat kinerja tugas siswa pada tiga sesi pelatihan yang berbeda (Sesi 1, Sesi 2, Sesi 3). Ditemukan perbedaan yang signifikan secara statistik di antara sesi-sesi pelatihan, *χ*^2^​(2) =9 .87, *p* = .007. Uji *post-hoc* *Wilcoxon Signed-Rank* dengan koreksi *Bonferroni* menunjukkan bahwa kinerja meningkat secara signifikan dari Sesi 1 ke Sesi 2 (*p* = .008) dan dari Sesi 2 ke Sesi 3 (*p* = .015)."

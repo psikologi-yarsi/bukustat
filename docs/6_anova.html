@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./7_korelasi.html" rel="next">
-<link href="./5_3_independent_ttest.html" rel="prev">
+<link href="./5_latihan.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d36a7ee5124569eb73bf79d7278ce6fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6b4f28d27a1e04389c1d4e93975f0e3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -330,6 +330,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis <em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_4_paired_ttest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis Paired Samples t-test: Parametrik dan Non-Parametrik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -365,6 +377,41 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>Pada bab sebelumnya, kita telah mempelajari bagaimana membandingkan rata-rata dua kelompok menggunakan uji-t dan uji Mann-Whitney. Namun, dalam banyak situasi penelitian, kita dihadapkan pada lebih dari dua kelompok yang perlu dibandingkan sekaligus. Misalnya, seorang peneliti ingin mengetahui apakah tingkat stres berbeda antara mahasiswa tahun pertama, kedua, dan ketiga. Untuk keperluan ini, menggunakan serangkaian uji-t antar pasangan kelompok bukanlah pilihan yang tepat, karena meningkatkan risiko kesalahan Tipe I. Di sinilah Analisis Varians (ANOVA) menjadi penting. ANOVA memungkinkan kita membandingkan rata-rata tiga kelompok atau lebih secara serempak dalam satu kerangka uji statistik, sambil menjaga tingkat kesalahan tetap terkendali. Pendekatan ini jauh lebih efisien dan akurat dibandingkan mengandalkan uji-t berulang-ulang.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="*Tujuan Pembelajaran*">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<em>Tujuan Pembelajaran</em>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Bab 20. Tujuan Perbandingan Tiga Kelompok atau Lebih:</strong></p>
+<ul>
+<li>Memahami alasan mengapa perbandingan rata-rata tiga kelompok atau lebih diperlukan dalam penelitian.</li>
+</ul>
+<p><strong>Bab 21. Prinsip-prinsip Dasar dan Asumsi-Asumsi <em>ANOVA</em></strong> <strong>:</strong></p>
+<ul>
+<li>Menjelaskan prinsip kerja <em>ANOVA</em> dalam membandingkan variasi antar dan dalam kelompok.</li>
+<li>Memahami dan mengenali asumsi-asumsi dasar <em>ANOVA</em> yang harus dipenuhi untuk analisis yang valid.</li>
+<li>Memahami perbedaan antara <em>planned contrasts</em> dan uji <em>post-hoc</em> dalam analisis data.</li>
+</ul>
+<p><strong>Bab 22. Jenis-Jenis <em>ANOVA</em>:</strong></p>
+<ul>
+<li>Mengenali berbagai jenis <em>ANOVA</em> (<em>one-way</em>, <em>two-way</em>, <em>repeated measures</em>, dan <em>mixed-design</em>) serta aplikasinya.</li>
+</ul>
+<p><strong>Bab 23. Interpretasi Hasil Analisis:</strong></p>
+<ul>
+<li>Membaca, menginterpretasikan, dan menuliskan hasil analisis <em>ANOVA</em> sesuai kaidah akademik.</li>
+</ul>
+<p><strong>Bab 24. Alternatif Non-Parametrik untuk <em>ANOVA</em>:</strong></p>
+<ul>
+<li>Menginterpretasikan dan menuliskan hasil uji non-parametrik sebagai alternatif <em>ANOVA</em>.</li>
+</ul>
+</div>
+</div>
 
 
 
@@ -770,8 +817,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./5_3_independent_ttest.html" class="pagination-link" aria-label="Asumsi, Interpretasi, dan Pelaporan Analisis *Independent Samples t-test*: Parametrik dan Non-Parametrik">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis <em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span>
+      <a href="./5_latihan.html" class="pagination-link" aria-label="Soal Latihan">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Soal Latihan</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

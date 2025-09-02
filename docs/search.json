@@ -639,5 +639,180 @@
       "PERBEDAAN RATA-RATA DUA KELOMPOK",
       "Soal Latihan"
     ]
+  },
+  {
+    "objectID": "6_anova.html",
+    "href": "6_anova.html",
+    "title": "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+    "section": "",
+    "text": "Pada bab sebelumnya, kita telah mempelajari bagaimana membandingkan rata-rata dua kelompok menggunakan uji-t dan uji Mann-Whitney. Namun, dalam banyak situasi penelitian, kita dihadapkan pada lebih dari dua kelompok yang perlu dibandingkan sekaligus. Misalnya, seorang peneliti ingin mengetahui apakah tingkat stres berbeda antara mahasiswa tahun pertama, kedua, dan ketiga. Untuk keperluan ini, menggunakan serangkaian uji-t antar pasangan kelompok bukanlah pilihan yang tepat, karena meningkatkan risiko kesalahan Tipe I. Di sinilah Analisis Varians (ANOVA) menjadi penting. ANOVA memungkinkan kita membandingkan rata-rata tiga kelompok atau lebih secara serempak dalam satu kerangka uji statistik, sambil menjaga tingkat kesalahan tetap terkendali. Pendekatan ini jauh lebih efisien dan akurat dibandingkan mengandalkan uji-t berulang-ulang.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 20. Tujuan Perbandingan Tiga Kelompok atau Lebih:\n\nMemahami alasan mengapa perbandingan rata-rata tiga kelompok atau lebih diperlukan dalam penelitian.\n\nBab 21. Prinsip-prinsip Dasar dan Asumsi-Asumsi ANOVA :\n\nMenjelaskan prinsip kerja ANOVA dalam membandingkan variasi antar dan dalam kelompok.\nMemahami dan mengenali asumsi-asumsi dasar ANOVA yang harus dipenuhi untuk analisis yang valid.\nMemahami perbedaan antara planned contrasts dan uji post-hoc dalam analisis data.\n\nBab 22. Jenis-Jenis ANOVA:\n\nMengenali berbagai jenis ANOVA (one-way, two-way, repeated measures, dan mixed-design) serta aplikasinya.\n\nBab 23. Interpretasi Hasil Analisis:\n\nMembaca, menginterpretasikan, dan menuliskan hasil analisis ANOVA sesuai kaidah akademik.\n\nBab 24. Alternatif Non-Parametrik untuk ANOVA:\n\nMenginterpretasikan dan menuliskan hasil uji non-parametrik sebagai alternatif ANOVA.",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK"
+    ]
+  },
+  {
+    "objectID": "6_1_tujuan_anova.html",
+    "href": "6_1_tujuan_anova.html",
+    "title": "20  Tujuan Perbandingan Tiga Kelompok atau Lebih",
+    "section": "",
+    "text": "Dalam penelitian di bidang sosial dan perilaku, kita sering kali menghadapi kebutuhan untuk mengetahui apakah rata-rata suatu variabel berbeda di antara beberapa kelompok. Misalnya, seorang peneliti mungkin ingin mengetahui apakah tingkat stres mahasiswa berbeda antara tahun pertama, kedua, dan ketiga. Dalam situasi seperti ini, membandingkan rata-rata menggunakan uji-t berulang-ulang tidaklah efisien, karena dapat meningkatkan risiko kesalahan Tipe I. Oleh karena itu, analisis varians (ANOVA) digunakan sebagai pendekatan yang lebih tepat.\nTujuan utama dari membandingkan tiga kelompok atau lebih adalah untuk menguji apakah terdapat perbedaan rata-rata yang signifikan di antara kelompok-kelompok tersebut, tanpa meningkatkan tingkat kesalahan statistik. Dengan menggunakan ANOVA, peneliti dapat menganalisis variasi yang terjadi antara kelompok serta variasi yang terjadi di dalam kelompok, sehingga memungkinkan pengambilan kesimpulan yang lebih akurat. Teknik ini juga membantu menghindari kesalahan dalam interpretasi data yang dapat terjadi bila banyak uji-t dilakukan secara terpisah.\nSebagai contoh, seorang peneliti pendidikan dapat menggunakan ANOVA untuk membandingkan nilai rata-rata siswa yang mengikuti tiga metode pengajaran berbeda, yaitu metode konvensional, blended learning, dan pembelajaran daring penuh. Demikian pula, seorang psikolog klinis dapat menggunakan ANOVA untuk menguji perbedaan tingkat kecemasan antara pasien yang menjalani terapi kognitif, terapi perilaku, dan terapi kombinasi. Dalam kedua contoh tersebut, ANOVA memberikan cara yang terstruktur untuk menguji satu pertanyaan penting: apakah rata-rata dari setidaknya satu kelompok berbeda secara signifikan dibandingkan dengan kelompok lain.\nJika hasil ANOVA menunjukkan adanya perbedaan yang signifikan, langkah selanjutnya adalah melakukan analisis lanjutan, seperti uji post-hoc atau planned contrasts (Bagian 22.5), untuk mengidentifikasi kelompok mana yang berbeda. Dengan demikian, memahami tujuan perbandingan tiga kelompok atau lebih merupakan landasan penting sebelum mempelajari prinsip-prinsip, jenis-jenis, serta cara penulisan laporan hasil analisis varians.",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Tujuan Perbandingan Tiga Kelompok atau Lebih</span>"
+    ]
+  },
+  {
+    "objectID": "6_2_prinsip_anova.html",
+    "href": "6_2_prinsip_anova.html",
+    "title": "21  Prinsip-prinsip Dasar dan Asumsi-asumsi ANOVA",
+    "section": "",
+    "text": "21.1 Statistik f: Rasio Variabilitas\nAnalisis Varians, atau ANOVA, adalah metode statistik yang digunakan untuk menentukan apakah terdapat perbedaan yang signifikan secara statistik antara rata-rata tiga atau lebih kelompok penelitian. Teknik ini sangat berguna dalam penelitian eksperimental di mana beberapa kelompok dibandingkan dalam kondisi atau perlakuan yang berbeda. Dengan menganalisis varians dalam dan antar kelompok, ANOVA membantu peneliti memahami bagaimana faktor-faktor berbeda memengaruhi hasil tertentu, memberikan informasi penting tentang hubungan antar variabel.\nANOVA didasarkan pada prinsip membandingkan variasi yang terjadi antar kelompok dengan variasi yang terjadi di dalam kelompok. Ketika perbedaan antar kelompok lebih besar dibandingkan variasi di dalam kelompok, hal ini mengindikasikan bahwa ada kemungkinan rata-rata kelompok memang berbeda secara nyata. Dengan kata lain, ANOVA menilai apakah variabilitas yang diamati dalam data lebih banyak dijelaskan oleh perbedaan antar kelompok (true variance) daripada oleh variasi acak di dalam kelompok (error variance).\nIde utama ANOVA adalah untuk membandingkan kedua jenis variabilitas ini melalui rasio yang disebut Statistik F (F statistics), yang dapat digambarkan dalam persamaan berikut:\n\\[\nF = \\frac{\\text{varians antar kelompok}}{\\text{varians dalam kelompok}}\n\\]\nJika nilai F besar, ini berarti perbedaan antar kelompok lebih besar dibandingkan variasi dalam kelompok. Artinya, perbedaan rata-rata kelompok bukan kebetulan dan kemungkinan disebabkan oleh variabel independen. Dengan kata lain, efek perlakuan lebih kuat daripada variasi acak. Jika nilai F melebihi nilai kritis dari tabel distribusi F, hipotesis nol dapat ditolak.\nJika statistik F kecil (mendekati 1 atau kurang), ini berarti variabilitas antar kelompok serupa dengan variabilitas dalam kelompok. Ini menunjukkan bahwa perbedaan antara rata-rata kelompok mungkin hanya disebabkan oleh kebetulan atau variasi acak, dan variabel independen mungkin tidak memiliki efek yang signifikan.",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Prinsip-prinsip Dasar dan Asumsi-asumsi *ANOVA*</span>"
+    ]
+  },
+  {
+    "objectID": "6_2_prinsip_anova.html#asumsi-asumsi-dasar-anova",
+    "href": "6_2_prinsip_anova.html#asumsi-asumsi-dasar-anova",
+    "title": "21  Prinsip-prinsip Dasar dan Asumsi-asumsi ANOVA",
+    "section": "21.2 Asumsi-asumsi Dasar ANOVA",
+    "text": "21.2 Asumsi-asumsi Dasar ANOVA\nUntuk memastikan hasil ANOVA valid dan dapat diandalkan, terdapat beberapa asumsi dasar yang perlu dipenuhi (Gambar 21.1). Pertama, data dari setiap kelompok yang dibandingkan harus saling independen, artinya nilai-nilai dari satu kelompok tidak boleh memengaruhi nilai-nilai dari kelompok lain. Independensi ini biasanya dijaga melalui prosedur pengambilan sampel yang tepat atau penugasan acak dalam eksperimen.\nKedua, ANOVA mengasumsikan bahwa data dalam setiap kelompok mengikuti distribusi normal. Meskipun ANOVA cukup robust terhadap pelanggaran normalitas pada ukuran sampel besar, penyimpangan yang berat dari normalitas dapat mengurangi keakuratan hasil. Oleh karena itu, sebelum melakukan analisis, sebaiknya dilakukan pemeriksaan normalitas melalui visualisasi data, seperti histogram atau plot Q-Q, ataupun menggunakan uji statistik seperti Shapiro-Wilk.\nKetiga, variansi antar kelompok yang dibandingkan diharapkan homogen atau seragam. Homogenitas varians ini penting karena ANOVA membandingkan rata-rata dengan memperhitungkan variabilitas dalam kelompok. Apabila variansi antar kelompok sangat berbeda, maka kesimpulan yang dihasilkan dari ANOVA bisa menjadi bias. Untuk menguji asumsi ini, dapat digunakan uji Levene atau uji Bartlett. Uji Levene sering digunakan untuk menilai homogenitas ini.\nApabila asumsi-asumsi tersebut tidak sepenuhnya terpenuhi, ada beberapa strategi yang bisa ditempuh. Transformasi data, penggunaan ANOVA varian robust seperti ANOVA Welch, atau beralih ke pendekatan non-parametrik menjadi pilihan untuk menjaga validitas hasil analisis. Penting untuk diingat bahwa pengecekan asumsi bukan sekadar prosedur teknis, melainkan bagian integral dari proses analisis yang memastikan bahwa interpretasi hasil ANOVA merefleksikan kondisi data dengan akurat.\n\n\n\n\n\n\nGambar 21.1: Asumsi-asumsi ANOVA\n\n\n\nDengan memahami prinsip-prinsip dasar ini dan memastikan terpenuhinya asumsi-asumsi yang mendasarinya serta peran plannedcontrasts dan uji post-hoc, kita dapat menggunakan ANOVA secara efektif untuk menganalisis perbedaan antar kelompok dalam berbagai konteks penelitian. Prinsip-prinsip ini menjadi fondasi penting sebelum melangkah lebih jauh ke dalam ragam jenis ANOVA yang lebih kompleks.",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Prinsip-prinsip Dasar dan Asumsi-asumsi *ANOVA*</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html",
+    "href": "6_3_jenis_anova.html",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "",
+    "text": "22.1 ANOVA Satu Arah\nJenis-jenis ANOVA mengacu pada model statistik berbeda yang digunakan untuk menganalisis varians di antara rata-rata kelompok dalam berbagai desain eksperimental. Jenis yang paling umum digunakan adalah ANOVA Satu Arah (One-Way ANOVA) dan ANOVA Dua Arah (Two-Way ANOVA). Setiap jenis memiliki tujuan berbeda dan sesuai untuk skenario penelitian tertentu. Memahami jenis-jenis ini sangat penting untuk memilih metode analisis yang tepat berdasarkan struktur data dan desain eksperimen Anda.\nPemilihan jenis ANOVA yang akan digunakan bergantung pada desain penelitian dan sifat data yang dianalisis. Pemahaman menyeluruh tentang jenis-jenis yang berbeda memungkinkan peneliti untuk membuat keputusan yang terinformasi, memastikan bahwa analisis statistik secara akurat mencerminkan hubungan dan perbedaan yang ada dalam data. Landasan ini penting tidak hanya untuk melakukan analisis statistik yang efektif tetapi juga untuk menafsirkan hasil dengan cara yang bermakna yang berkontribusi pada bidang studi yang lebih luas.\nANOVA Satu Arah digunakan ketika peneliti ingin membandingkan rata-rata tiga atau lebih kelompok independen berdasarkan satu variabel independen. Misalnya, jika seorang peneliti sedang memeriksa dampak metode pengajaran yang berbeda terhadap kinerja siswa, mereka dapat mengelompokkan siswa ke dalam tiga kelompok berdasarkan metode yang digunakan. ANOVA Satu Arah membantu menentukan apakah ada perbedaan yang signifikan secara statistik dalam skor kinerja rata-rata di antara kelompok-kelompok ini. Jenis ANOVA ini menjawab pertanyaan mendasar tentang apakah setidaknya satu rata-rata kelompok berbeda dari yang lain tanpa mendalami interaksi antara beberapa variabel.\nMenghitung hasil dalam ANOVA satu arah melibatkan beberapa langkah kunci yang memungkinkan peneliti untuk menarik kesimpulan bermakna dari data yang diperoleh. Tujuan utama ANOVA satu arah adalah untuk menentukan apakah ada perbedaan yang signifikan secara statistik di antara rata-rata tiga atau lebih kelompok independen. Proses ini dimulai dengan perumusan hipotesis nol, yang menyatakan bahwa semua rata-rata kelompok adalah sama, dan hipotesis alternatif, yang menunjukkan bahwa setidaknya satu rata-rata kelompok berbeda. Dengan menggunakan perangkat lunak statistik atau perhitungan manual, Anda dapat memperoleh statistik F, yang membandingkan varians antar kelompok dengan varians dalam kelompok. Tabel 22.1 memuat contoh hasil analisis ANOVA satu-arah dengan menggunakan perangkat lunak JASP.\nPada ANOVA satu arah, interpretasi dimulai dengan menilai nilai F dan p-value. Jika p-value lebih kecil dari batas signifikansi, misalnya 0,05, maka dapat disimpulkan bahwa ada perbedaan signifikan di antara kelompok yang dibandingkan. Interpretasi ANOVA satu arah hanya berfokus pada satu variabel independen sehingga lebih sederhana, namun penting untuk memperhatikan ukuran efek seperti eta-squared untuk memahami seberapa besar pengaruh faktor tersebut terhadap variabel dependen. Dalam pelaporan, hasil ANOVA satu arah disusun dengan mencantumkan nilai F, derajat kebebasan antar dan dalam kelompok, nilai p, dan ukuran efek. Misalnya: “Analisis varians satu arah menunjukkan perbedaan signifikan antara kelompok, F(2, 87) = 4,76, p = 0,011, η² = 0,098.”",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html#anova-dua-arah",
+    "href": "6_3_jenis_anova.html#anova-dua-arah",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "22.2 ANOVA Dua Arah",
+    "text": "22.2 ANOVA Dua Arah\nANOVA Dua Arah memungkinkan pengujian dua variabel independen secara bersamaan dan efek interaksi kedua variabel tersebut terhadap variabel dependen. Misalnya, sebuah penelitian bertujuan mengeksplorasi bagaimana metode pengajaran dan jenis kelamin siswa memengaruhi kinerja. Dengan menggunakan ANOVA dua arah, peneliti dapat menilai tidak hanya efek utama dari setiap variabel independen tetapi juga apakah efek dari satu variabel berbeda tergantung pada tingkat variabel lainnya. Jenis ini sangat berguna dalam desain eksperimental yang lebih kompleks di mana interaksi antar faktor diharapkan memainkan peran penting.\nDalam ANOVA Dua Arah, interpretasi mencakup dua komponen utama: efek utama dari masing-masing variabel independen dan efek interaksi antara keduanya. Peneliti perlu menilai apakah setiap efek utama dan interaksi menunjukkan signifikansi. Memahami efek interaksi sangat penting untuk menginterpretasikan hasil ANOVA dua arah. Ketika peneliti menyelidiki pengaruh dua variabel independen terhadap variabel dependen, mereka tidak hanya tertarik pada efek utama dari masing-masing variabel independen tetapi juga bagaimana variabel-variabel ini dapat berinteraksi satu sama lain. Efek interaksi terjadi ketika pengaruh satu variabel independen terhadap variabel dependen berubah tergantung pada level variabel independen lainnya. Ini berarti bahwa pengaruh gabungan dari variabel-variabel tersebut tidak hanya bersifat aditif; sebaliknya, hubungannya lebih kompleks dan memerlukan pemeriksaan yang cermat.\n\n\n\n\n\n\nANOVA desain faktorial\n\n\n\nPenelitian yang melibatkan lebih dari satu variabel independen (faktor) untuk melihat pengaruhnya terhadap variabel dependen disebut juga sebagai ANOVA desain faktorial. Umumnya, desain ini dituliskan dalam bentuk “faktorial 2x2” (atau 3x2, 2x4, dan seterusnya). Notasi tersebut menunjukkan jumlah level dari masing-masing faktor; misalnya, desain 2x2 berarti ada dua faktor, dan masing-masing faktor memiliki dua level.\n\n\nUntuk mengilustrasikan efek interaksi, perhatikan sebuah penelitian yang menguji pengaruh metode pengajaran dan jenis kelamin siswa terhadap kinerja akademik. Jika kinerja siswa laki-laki dan perempuan berbeda secara signifikan berdasarkan metode pengajaran yang digunakan, ini menunjukkan efek interaksi (lihat Tabel 22.2). Misalnya, metode pengajaran tertentu mungkin lebih efektif untuk siswa perempuan sementara metode lain mungkin menguntungkan siswa laki-laki. Memahami interaksi ini memungkinkan peneliti untuk menyesuaikan strategi pendidikan untuk meningkatkan hasil bagi kelompok siswa yang berbeda, menekankan pentingnya mempertimbangkan bagaimana variabel-variabel bekerja bersama daripada secara terpisah.\nPenulisan hasil mengikuti urutan pelaporan efek utama terlebih dahulu, baru kemudian efek interaksi. Sebagai contoh: “Terdapat efek utama yang signifikan dari metode pengajaran terhadap prestasi siswa, F(2, 84) = 5,23, p = 0,007, η² = 0,111, namun tidak ditemukan interaksi yang signifikan antara metode pengajaran dan jenis kelamin, F(2, 84) = 1,04, p = 0,358.”\n\n\n\nTabel 22.2: Contoh tabel output hasil ANOVA dua-arah\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSum of Squares\ndf\nMean Square\nF\np\nη²\n\n\n\n\nMetode\n11.341\n2\n4.341\n5.232\n.007\n.111\n\n\nJenis kelamin\n2.234\n1\n0.653\n2.331\n.105\n.012\n\n\nMetode ✻ Jenis kelamin\n0.351\n2\n0.121\n1.042\n.358\n.008\n\n\nResiduals\n6.748\n84\n2.548",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html#anova-pengukuran-berulang",
+    "href": "6_3_jenis_anova.html#anova-pengukuran-berulang",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "22.3 ANOVA Pengukuran Berulang",
+    "text": "22.3 ANOVA Pengukuran Berulang\nSelain Satu Arah dan Dua Arah, ada bentuk khusus ANOVA seperti ANOVA Pengukuran Berulang (Repeated Measures ANOVA), yang digunakan ketika partisipan yang sama diukur beberapa kali dalam kondisi berbeda. Metode ini dapat terjadi dalam studi longitudinal atau eksperimen di mana individu terpapar pada semua tingkat variabel independen.\nPada ANOVA Pengukuran Berulang, interpretasi memperhatikan signifikansi perubahan antar kondisi atau waktu. Karena pengukuran dilakukan berulang pada individu yang sama, penyesuaian untuk sphericity sering diperlukan, misalnya menggunakan koreksi Greenhouse-Geisser.\nSphericity mengacu pada kondisi di mana varians perbedaan antara setiap pasangan tingkat pengukuran berulang adalah sama. Dengan kata lain, kovarians antara setiap pasangan pengukuran berulang harus sama. Pelanggaran sphericity dapat menyebabkan peningkatan risiko kesalahan Tipe I (menolak H0​ padahal benar) dan Tipe II (gagal menolak H0​ padahal salah), sehingga hasil F-statistik menjadi tidak akurat.\nTabel 22.3 menunjukkan contoh hasil ANOVA pengukuran berulang mengenai efektivitas terapi meditasi dalam mengurangi kecemasan Penulisan hasil mencantumkan statistik F, derajat kebebasan yang telah disesuaikan (jika perlu), nilai p, dan ukuran efek, misalnya: “Analisis pengukuran berulang menunjukkan perubahan signifikan tingkat kecemasan antar sesi terapi, F(2, 29) = 8,57, p = 0,006, η²partial = 0,228. Uji post-hoc dengan koreksi Bonferroni mengungkapkan bahwa tingkat kecemasan menurun secara signifikan dari awal (M = 35.2, SD = 5.1) ke tengah (M = 28.9, SD = 4.8, p = .002) dan dari tengah ke akhir (M = 22.5, SD = 4.5, p = .001).”\n\n\n\nTabel 22.3: Contoh tabel output hasil ANOVA pengukuran berulang\n\n\nWithin-subjects effects\n\n\n\n\n\n\n\n\n\n\n\n\n\nSum of squares\ndf1\nMean square\nF\np\nη²p\n\n\n\n\nKecemasan\n19.443\n2\n5.341\n8.567\n.006\n.228\n\n\nResiduals\n8.458\n29\n2.547\n\n\n\n\n\n\nGroup Descriptives\n\n\n\nWaktu pengukuran\nN\nMean\nSD\nSE\n\n\n\n\nAwal\n30\n35.212\n5.125\n1.123\n\n\nTengah\n30\n28.871\n4.756\n1.031\n\n\nAkhir\n30\n22.534\n4.531\n.0902",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html#anova-desain-campuran",
+    "href": "6_3_jenis_anova.html#anova-desain-campuran",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "22.4 ANOVA Desain Campuran",
+    "text": "22.4 ANOVA Desain Campuran\nVariasi lainnya adalah ANOVA Desain Campuran (Mixed-Design ANOVA), yang menggabungkan faktor independen dan pengukuran berulang, memungkinkan analisis data yang lebih terperinci. Memahami variasi-variasi ini memungkinkan peneliti untuk memilih metode statistik yang paling efektif untuk pertanyaan penelitian mereka yang spesifik.\nInterpretasi hasil analisis ANOVA Desain Campuran lebih kompleks karena mencakup efek utama untuk faktor between-subjects, faktor within-subjects, serta interaksi keduanya. Peneliti perlu mengevaluasi apakah ada perbedaan antar kelompok, perubahan dalam kelompok dari waktu ke waktu, dan apakah pola perubahan berbeda antar kelompok. Contoh hasil analisisnya dapat dilihat di Tabel 22.4. Penulisan hasil memuat masing-masing efek secara sistematis. Misalnya: “Terdapat efek utama yang signifikan dari kelompok perlakuan terhadap tingkat stres, F(1, 58) = 10,12, p = 0,002, serta efek waktu yang signifikan, F(2, 116) = 6,87, p = 0,002. Interaksi antara kelompok dan waktu juga signifikan, F(2, 116) = 4,21, p = 0,017, menunjukkan bahwa perubahan stres antar waktu berbeda berdasarkan kelompok perlakuan.”\n\n\n\nTabel 22.4: Contoh tabel output hasil ANOVA campuran\n\n\nWithin-subjects effects\n\n\n\n\n\n\n\n\n\n\n\n\nCases\nSum of squares\ndf\nMean square\nF\np\nη²p\n\n\n\n\nWaktu\n28.212\n1\n7.311\n6.871\n.002\n.311\n\n\nWaktu ✻ Treatment\n23.553\n2\n6.431\n4.212\n.017\n.124\n\n\nResiduals\n29.221\n116\n7.531\n\n\n\n\n\n\nBetween-subjects effects\n\n\n\n\n\n\n\n\n\n\n\n\n\nSum of squares\ndf\nMean square\nF\np\nη²\n\n\n\n\nTreatment\n45.112\n1\n12.477\n10.124\n.002\n.398\n\n\nResiduals\n60.211\n58\n13.415",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html#uji-post-hoc-vs.-planned-contrasts",
+    "href": "6_3_jenis_anova.html#uji-post-hoc-vs.-planned-contrasts",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "22.5 Uji Post-hoc vs. Planned Contrasts",
+    "text": "22.5 Uji Post-hoc vs. Planned Contrasts\nSetelah uji ANOVA menunjukkan adanya perbedaan rata-rata yang signifikan, peneliti perlu mengidentifikasi lebih jauh kelompok mana yang berbeda. Di sinilah planned contrasts dan uji post-hoc berperan. Planned contrasts digunakan ketika peneliti sejak awal telah menetapkan hipotesis spesifik mengenai kelompok mana yang diharapkan berbeda. Misalnya, dalam studi tentang efektivitas tiga metode pengajaran, seorang peneliti mungkin sejak awal ingin menguji apakah metode A lebih efektif dibandingkan metode B dan C secara gabungan.\nSementara itu, uji post-hoc digunakan ketika peneliti tidak memiliki prediksi spesifik tentang kelompok mana yang berbeda sebelum analisis dilakukan. Setelah menemukan hasil ANOVA yang signifikan, uji post-hoc dijalankan untuk mengeksplorasi semua kemungkinan perbedaan antar pasangan kelompok.\nBeberapa uji post-hoc yang umum meliputi:\n\nUji Tukey HSD: Uji ini digunakan ketika varians kelompok sama dan ukuran sampel sama.\nUji Bonferroni: Uji ini digunakan ketika varians kelompok tidak sama atau ukuran sampel tidak sama.\nUji Scheffe: Uji ini adalah uji yang paling konservatif dan digunakan ketika ada banyak perbandingan yang dibuat.\n\nMemahami perbedaan antara planned contrasts dan uji post-hoc penting dalam desain analisis, karena keduanya menjadi metode yang menjawab kebutuhan penelitian yang berbeda. Planned contrasts lebih terfokus dan lebih kuat secara statistik untuk hipotesis yang sudah direncanakan, sedangkan uji post-hoc memberikan fleksibilitas eksploratif dalam menganalisis data setelah hasil utama ditemukan.",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html#effect-size-dan-visualisasi-hasil-analisis",
+    "href": "6_3_jenis_anova.html#effect-size-dan-visualisasi-hasil-analisis",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "22.6 Effect Size dan Visualisasi Hasil Analisis",
+    "text": "22.6 Effect Size dan Visualisasi Hasil Analisis\nDalam semua jenis ANOVA, ukuran efek seperti eta-squared atau partial eta-squared sangat dianjurkan untuk dilaporkan karena memberikan informasi tambahan tentang besarnya pengaruh yang ditemukan. Selain itu, visualisasi hasil menggunakan diagram batang atau plot garis dapat memperjelas interpretasi perbedaan antar kelompok atau perubahan dalam waktu, seperti yang ditampilkan dalam Gambar 22.1.\n\n\n\n\n\n\nGambar 22.1: Contoh penggunaan visualisasi hasil analisis",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html#sec-posthoc",
+    "href": "6_3_jenis_anova.html#sec-posthoc",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "22.5 Uji Post-hoc vs. Planned Contrasts",
+    "text": "22.5 Uji Post-hoc vs. Planned Contrasts\nSetelah uji ANOVA menunjukkan adanya perbedaan rata-rata yang signifikan, peneliti perlu mengidentifikasi lebih jauh kelompok mana yang berbeda. Di sinilah planned contrasts dan uji post-hoc berperan. Planned contrasts digunakan ketika peneliti sejak awal telah menetapkan hipotesis spesifik mengenai kelompok mana yang diharapkan berbeda. Misalnya, dalam studi tentang efektivitas tiga metode pengajaran, seorang peneliti mungkin sejak awal ingin menguji apakah metode A lebih efektif dibandingkan metode B dan C secara gabungan.\nSementara itu, uji post-hoc digunakan ketika peneliti tidak memiliki prediksi spesifik tentang kelompok mana yang berbeda sebelum analisis dilakukan. Setelah menemukan hasil ANOVA yang signifikan, uji post-hoc dijalankan untuk mengeksplorasi semua kemungkinan perbedaan antar pasangan kelompok.\nMisalnya, kita melakukan uji post hoc dari data Tabel 22.1. Hasil ANOVA menunjukkan adanya perbedaan yang signifikan antar kelompok metode terapi, F(2, 87) = 4,76, p = 0,011. Namun, dari hasil tersebut kita belum bisa mengidentifikasi antar kelompok mana yang berbeda. Uji post hoc bisa membantu kita menyimpulkan perbedaan dari masing-masing kelompok yang diteliti. Dari hasil yang dipaparkan pada Tabel 22.5, data menunjukkan bahwa terdapat perbedaan yang signifikan antara kelompok CBT dan Journaling (t(87) = 4.360, ptukey = .002). Begitu juga dengan perbedaan antara Journaling dan Placebo (t(87) = 5.876, ptukey &lt; .001). Namun, tidak ditemukan adanya perbedaan antara kelompok CBT dan Placebo (t(87) = 1.516, ptukey = .012). Dari hasil ini kita dapat menyimpulkan bahwa metode Journaling adalah metode yang paling efektif dalam mereduksi stres pada partisipan, sedangkan metode CBT dan Placebo menunjukkan efek yang tidak berbeda.\n\n\n\nTabel 22.5: Contoh hasil uji post hoc\n\n\nPost hoc comparisons: Metode terapi\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMean difference\nSE\ndf\nt\nptukey\n\n\n\n\nCBT\nJournaling\n-0.766\n0.176\n87\n-4.360\n.002\n\n\n\nPlacebo\n0.267\n0.176\n87\n1.516\n.012\n\n\nJournaling\nPlacebo\n1.033\n0.176\n87\n5.876\n&lt;.001\n\n\n\n\n\n\nBeberapa uji post-hoc yang umum meliputi:\n\nUji Tukey HSD: Uji ini digunakan ketika varians kelompok sama dan ukuran sampel sama.\nUji Bonferroni: Uji ini digunakan ketika varians kelompok tidak sama atau ukuran sampel tidak sama.\nUji Scheffe: Uji ini adalah uji yang paling konservatif dan digunakan ketika ada banyak perbandingan yang dibuat.\n\nMemahami perbedaan antara planned contrasts dan uji post-hoc penting dalam desain analisis, karena keduanya menjadi metode yang menjawab kebutuhan penelitian yang berbeda. Planned contrasts lebih terfokus dan lebih kuat secara statistik untuk hipotesis yang sudah direncanakan, sedangkan uji post-hoc memberikan fleksibilitas eksploratif dalam menganalisis data setelah hasil utama ditemukan.",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_3_jenis_anova.html#anova-satu-arah",
+    "href": "6_3_jenis_anova.html#anova-satu-arah",
+    "title": "22  Jenis-jenis ANOVA dan Interpretasi Hasil Analisis",
+    "section": "",
+    "text": "Tabel 22.1: Contoh tabel output hasil ANOVA satu-arah\n\n\nOne-Way ANOVA\n\n\n\n\n\n\n\n\n\n\n\n\n\nSum of squares\ndf1\nMean square\nF\np\nη²\n\n\n\n\nMetode terapi\n24.420\n2\n8.140\n4.761\n.011\n.098\n\n\nResiduals\n613.139\n87\n2.813\n\n\n\n\n\n\nGroup Descriptives\n\n\n\nMetode terapi\nN\nMean\nSD\nSE\n\n\n\n\nCBT\n30\n0.717\n0.392\n0.160\n\n\nJournaling\n31\n1.483\n0.214\n0.087\n\n\nPlacebo\n29\n0.450\n0.281\n0.115",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Jenis-jenis *ANOVA* dan Interpretasi Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "6_4_anova_nonpar.html",
+    "href": "6_4_anova_nonpar.html",
+    "title": "23  Alternatif Non-Parametrik untuk ANOVA",
+    "section": "",
+    "text": "23.1 Uji Kruskal-Wallis: Alternatif Non-Parametrik untuk ANOVA Satu Arah\nKetika data tidak memenuhi asumsi-asumsi parametrik dalam pengujian ANOVA, atau memiliki skala pengukuran yang berbeda, pendekatan non-parametrik menjadi alternatif yang tepat. Uji non-parametrik tidak memerlukan asumsi distribusi data yang ketat dan cocok untuk data ordinal atau nominal. Oleh karena itu, teknik ini memungkinkan analisis yang lebih fleksibel tanpa mengorbankan validitas hasil.\nSalah satu uji non-parametrik yang paling umum digunakan untuk menggantikan ANOVA Satu Arah adalah Uji Kruskal-Wallis. Uji ini digunakan untuk menguji apakah ada perbedaan yang signifikan dalam median antar tiga kelompok atau lebih. Berbeda dengan ANOVA yang membandingkan rata-rata, uji Kruskal-Wallis membandingkan peringkat data dalam setiap kelompok.\nKapan menggunakan Kruskal-Wallis?\nProsedur analisis:\nDalam penulisan laporan, hasil uji non-parametrik harus dilaporkan dengan cara yang jelas dan sistematis. Contoh penulisan laporan untuk uji Kruskal-Wallis:\n“Uji Kruskal-Wallis menunjukkan bahwa terdapat perbedaan yang signifikan dalam peringkat antara kelompok, H(2) = 6,32, p = 0,042. Post-hoc dengan uji Mann-Whitney menunjukkan bahwa kelompok A memiliki peringkat yang lebih tinggi dibandingkan kelompok B (p = 0,012).”",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Alternatif Non-Parametrik untuk *ANOVA*</span>"
+    ]
+  },
+  {
+    "objectID": "6_4_anova_nonpar.html#uji-kruskal-wallis-alternatif-non-parametrik-untuk-anova-satu-arah",
+    "href": "6_4_anova_nonpar.html#uji-kruskal-wallis-alternatif-non-parametrik-untuk-anova-satu-arah",
+    "title": "23  Alternatif Non-Parametrik untuk ANOVA",
+    "section": "",
+    "text": "Data variabel dependen tidak terdistribusi normal di setiap kelompok.\nUkuran sampel kecil dan data menunjukkan penyimpangan yang jelas dari normalitas.\nVariabel dependen adalah ordinal (misalnya, peringkat, skala Likert yang dianggap ordinal).\n\n\n\nData diurutkan dan diberi peringkat (ranking).\nUji ini menguji apakah distribusi peringkat antar kelompok berbeda secara signifikan.\nJika p-value dari uji Kruskal-Wallis lebih kecil dari tingkat signifikansi (biasanya 0,05), kita menolak hipotesis nol, yang berarti ada perbedaan yang signifikan antar kelompok.\nJika uji Kruskal-Wallis signifikan, Anda perlu melakukan perbandingan berpasangan (post-hoc) untuk mengidentifikasi kelompok mana yang berbeda. Namun, tidak ada uji post-hoc standar tunggal seperti Tukey untuk Kruskal-Wallis. Umumnya, Anda dapat melakukan uji Mann-Whitney U secara berpasangan untuk setiap kombinasi kelompok, dan menerapkan koreksi Bonferroni untuk mengontrol kesalahan Tipe I.",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Alternatif Non-Parametrik untuk *ANOVA*</span>"
+    ]
+  },
+  {
+    "objectID": "6_4_anova_nonpar.html#uji-friedman-alternatif-non-parametrik-untuk-anova-pengukuran-berulang",
+    "href": "6_4_anova_nonpar.html#uji-friedman-alternatif-non-parametrik-untuk-anova-pengukuran-berulang",
+    "title": "23  Alternatif Non-Parametrik untuk ANOVA",
+    "section": "23.2 Uji Friedman: Alternatif Non-Parametrik untuk ANOVA Pengukuran Berulang",
+    "text": "23.2 Uji Friedman: Alternatif Non-Parametrik untuk ANOVA Pengukuran Berulang\nUntuk desain eksperimen dengan pengukuran berulang yang tidak memenuhi asumsi normalitas, Uji Friedman dapat digunakan sebagai alternatif non-parametrik untuk Repeated Measures ANOVA. Uji Friedman membandingkan peringkat data pada lebih dari dua kondisi pengukuran yang dilakukan pada subjek yang sama.\nUji Friedman adalah perpanjangan non-parametrik dari uji Wilcoxon Signed-Rank untuk lebih dari dua pengukuran. Prosedur analisisnya meliputi:\n\nMemberikan peringkat pada observasi dalam setiap subjek di antara kondisi/titik waktu.\nMenjumlahkan peringkat untuk setiap kondisi/titik waktu.\nMenghitung statistik Friedman (χ2​), yang membandingkan jumlah peringkat yang diamati dengan jumlah peringkat yang diharapkan jika tidak ada perbedaan antar kondisi.\n\nJika uji Friedman signifikan, Anda perlu melakukan uji post hoc untuk mengidentifikasi pasangan kondisi/titik waktu mana yang berbeda secara signifikan. Anda dapat menggunakan uji Wilcoxon Signed-Rank berpasangan untuk setiap kombinasi dan menerapkan koreksi Bonferroni untuk mengontrol kesalahan Tipe I.\nContoh penulisan hasil (non-parametrik):\n“Karena asumsi normalitas dilanggar, uji Friedman dilakukan untuk membandingkan peringkat kinerja tugas siswa pada tiga sesi pelatihan yang berbeda (Sesi 1, Sesi 2, Sesi 3). Ditemukan perbedaan yang signifikan secara statistik di antara sesi-sesi pelatihan, χ2​(2) =9 .87, p = .007. Uji post-hoc Wilcoxon Signed-Rank dengan koreksi Bonferroni menunjukkan bahwa kinerja meningkat secara signifikan dari Sesi 1 ke Sesi 2 (p = .008) dan dari Sesi 2 ke Sesi 3 (p = .015).”",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Alternatif Non-Parametrik untuk *ANOVA*</span>"
+    ]
+  },
+  {
+    "objectID": "6_latihan.html",
+    "href": "6_latihan.html",
+    "title": "Soal Latihan",
+    "section": "",
+    "text": "Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bagian 6 ini dengan menjawab sejumlah pertanyaan di bawah ini:",
+    "crumbs": [
+      "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "Soal Latihan"
+    ]
   }
 ]
