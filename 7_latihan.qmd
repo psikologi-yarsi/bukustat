@@ -1,0 +1,17 @@
+# Soal Latihan {.unnumbered}
+
+::: {.content-visible when-format="html"}
+Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bagian 7 ini dengan menjawab sejumlah pertanyaan di bawah ini:
+
+```{=html}
+<iframe src="https://www.yarsi.ac.id/fakultas-psikologi/wp-admin/admin-ajax.php?action=h5p_embed&id=7" width="1138" height="435" frameborder="0" allowfullscreen="allowfullscreen" title="7. Korelasi"></iframe><script src="https://www.yarsi.ac.id/fakultas-psikologi/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+```
+:::
+
+::: {.content-visible when-format="pdf"}
+Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bagian 7 ini dengan menjawab sejumlah pertanyaan pada link di bawah ini:
+
+\qrcode[height=3.0cm]{https://www.yarsi.ac.id/fakultas-psikologi/bukustatistik/latihan7/}
+
+\small\textit{Scan QR untuk membuka versi interaktif: \url{https://www.yarsi.ac.id/fakultas-psikologi/bukustatistik/latihan7/}}
+:::

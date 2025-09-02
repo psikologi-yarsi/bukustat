@@ -645,7 +645,7 @@
     "href": "6_anova.html",
     "title": "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
     "section": "",
-    "text": "Pada bab sebelumnya, kita telah mempelajari bagaimana membandingkan rata-rata dua kelompok menggunakan uji-t dan uji Mann-Whitney. Namun, dalam banyak situasi penelitian, kita dihadapkan pada lebih dari dua kelompok yang perlu dibandingkan sekaligus. Misalnya, seorang peneliti ingin mengetahui apakah tingkat stres berbeda antara mahasiswa tahun pertama, kedua, dan ketiga. Untuk keperluan ini, menggunakan serangkaian uji-t antar pasangan kelompok bukanlah pilihan yang tepat, karena meningkatkan risiko kesalahan Tipe I. Di sinilah Analisis Varians (ANOVA) menjadi penting. ANOVA memungkinkan kita membandingkan rata-rata tiga kelompok atau lebih secara serempak dalam satu kerangka uji statistik, sambil menjaga tingkat kesalahan tetap terkendali. Pendekatan ini jauh lebih efisien dan akurat dibandingkan mengandalkan uji-t berulang-ulang.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 20. Tujuan Perbandingan Tiga Kelompok atau Lebih:\n\nMemahami alasan mengapa perbandingan rata-rata tiga kelompok atau lebih diperlukan dalam penelitian.\n\nBab 21. Prinsip-prinsip Dasar dan Asumsi-Asumsi ANOVA :\n\nMenjelaskan prinsip kerja ANOVA dalam membandingkan variasi antar dan dalam kelompok.\nMemahami dan mengenali asumsi-asumsi dasar ANOVA yang harus dipenuhi untuk analisis yang valid.\nMemahami perbedaan antara planned contrasts dan uji post-hoc dalam analisis data.\n\nBab 22. Jenis-Jenis ANOVA:\n\nMengenali berbagai jenis ANOVA (one-way, two-way, repeated measures, dan mixed-design) serta aplikasinya.\n\nBab 23. Interpretasi Hasil Analisis:\n\nMembaca, menginterpretasikan, dan menuliskan hasil analisis ANOVA sesuai kaidah akademik.\n\nBab 24. Alternatif Non-Parametrik untuk ANOVA:\n\nMenginterpretasikan dan menuliskan hasil uji non-parametrik sebagai alternatif ANOVA.",
+    "text": "Pada bab sebelumnya, kita telah mempelajari bagaimana membandingkan rata-rata dua kelompok menggunakan uji-t dan uji Mann-Whitney. Namun, dalam banyak situasi penelitian, kita dihadapkan pada lebih dari dua kelompok yang perlu dibandingkan sekaligus. Misalnya, seorang peneliti ingin mengetahui apakah tingkat stres berbeda antara mahasiswa tahun pertama, kedua, dan ketiga. Untuk keperluan ini, menggunakan serangkaian uji-t antar pasangan kelompok bukanlah pilihan yang tepat, karena meningkatkan risiko kesalahan Tipe I. Di sinilah Analisis Varians (ANOVA) menjadi penting. ANOVA memungkinkan kita membandingkan rata-rata tiga kelompok atau lebih secara serempak dalam satu kerangka uji statistik, sambil menjaga tingkat kesalahan tetap terkendali. Pendekatan ini jauh lebih efisien dan akurat dibandingkan mengandalkan uji-t berulang-ulang.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 20. Tujuan Perbandingan Tiga Kelompok atau Lebih:\n\nMemahami alasan mengapa perbandingan rata-rata tiga kelompok atau lebih diperlukan dalam penelitian.\n\nBab 21. Prinsip-prinsip Dasar dan Asumsi-Asumsi ANOVA:\n\nMenjelaskan prinsip kerja ANOVA dalam membandingkan variasi antar dan dalam kelompok.\nMemahami dan mengenali asumsi-asumsi dasar ANOVA yang harus dipenuhi untuk analisis yang valid.\nMemahami perbedaan antara planned contrasts dan uji post-hoc dalam analisis data.\n\nBab 22. Jenis-Jenis ANOVA:\n\nMengenali berbagai jenis ANOVA (one-way, two-way, repeated measures, dan mixed-design) serta aplikasinya.\n\nBab 23. Interpretasi Hasil Analisis:\n\nMembaca, menginterpretasikan, dan menuliskan hasil analisis ANOVA sesuai kaidah akademik.\n\nBab 24. Alternatif Non-Parametrik untuk ANOVA:\n\nMenginterpretasikan dan menuliskan hasil uji non-parametrik sebagai alternatif ANOVA.",
     "crumbs": [
       "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK"
     ]
@@ -812,6 +812,104 @@
     "text": "Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bagian 6 ini dengan menjawab sejumlah pertanyaan di bawah ini:",
     "crumbs": [
       "MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK",
+      "Soal Latihan"
+    ]
+  },
+  {
+    "objectID": "7_1_karakteristik_korelasi.html",
+    "href": "7_1_karakteristik_korelasi.html",
+    "title": "24  Karakteristik Hubungan Antara Dua Variabel",
+    "section": "",
+    "text": "24.1 Arah Hubungan Korelasi\nHubungan antara dua variabel dalam statistik dapat dilihat dari uji korelasi, yaitu suatu teknik yang digunakan untuk mengukur dan menggambarkan sebuah keterkaitan antara dua variabel. Dalam uji korelasi, terdapat tiga karakteristik hubungan antara variabel X dan Y yaitu arah hubungan (positif atau negatif), bentuk hubungan (linear atau non linear) dan kekuatan hubungan.\nBerdasarkan arah hubungan, korelasi dapat dibedakan menjadi korelasi positif dan negatif. Korelasi positif (+) adalah ketika kedua variabel berubah dengan arah yang sama (X dan Y sama-sama naik/ meningkat atau X dan Y sama-sama turun). Dengan kata lain, jika variabel X mengalami peningkatan skor, maka variabel Y juga mengalami peningkatan skor. Atau, jika variabel X mengalami penurunan skor, maka variabel Y juga menurun. Misalnya, jika suhu di luar panas (terik), penjualan es teh manis meningkat; sedangkan jika cuaca mendung (suhu lebih dingin), penjualan es teh manis menurun. Hal ini menunjukkan bahwa suhu berkorelasi positif dengan penjualan es teh manis. Sementara itu, korelasi negatif (-) terjadi ketika kedua variabel berubah dengan arah yang berlawanan (X naik maka Y turun, atau X turun maka Y naik). Peningkatan skor pada variabel X diikuti dengan penurunan skor pada variabel Y. Misalnya, seorang dengan tingkat stres yang tinggi cenderung memiliki tingkat kebahagiaan yang rendah; stres berkorelasi negatif dengan kebahagiaan. Arah hubungan dapat divisualisasikan dalam scatter plot (lihat Gambar 24.1).",
+    "crumbs": [
+      "ANALISIS KORELASI",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Karakteristik Hubungan Antara Dua Variabel</span>"
+    ]
+  },
+  {
+    "objectID": "7_1_karakteristik_korelasi.html#arah-hubungan-korelasi",
+    "href": "7_1_karakteristik_korelasi.html#arah-hubungan-korelasi",
+    "title": "24  Karakteristik Hubungan Antara Dua Variabel",
+    "section": "",
+    "text": "Gambar 24.1: Visualisasi arah korelasi",
+    "crumbs": [
+      "ANALISIS KORELASI",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Karakteristik Hubungan Antara Dua Variabel</span>"
+    ]
+  },
+  {
+    "objectID": "7_1_karakteristik_korelasi.html#bentuk-hubungan-korelasi",
+    "href": "7_1_karakteristik_korelasi.html#bentuk-hubungan-korelasi",
+    "title": "24  Karakteristik Hubungan Antara Dua Variabel",
+    "section": "24.2 Bentuk Hubungan Korelasi",
+    "text": "24.2 Bentuk Hubungan Korelasi\nBentuk hubungan antara dua variabel  dibedakan menjadi hubungan linear dan non linear. Bentuk hubungan ini akan terlihat lebih jelas ketika data kedua variabel divisualisasikan dalam sebuah plot. Hubungan linear adalah ketika titik-titik dalam scatter plot cenderung membentuk garis lurus. Sedangkan, hubungan non linear terjadi jika titik-titik dalam scatter plot cenderung membentuk garis lengkung. Visualisasi hubungan linear dapat dilihat pada Gambar 7.1., sedangkan hubungan non linear dapat dilihat pada Gambar 24.2.\n\n\n\n\n\n\nGambar 24.2: Visualisasi korelasi non-linear",
+    "crumbs": [
+      "ANALISIS KORELASI",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Karakteristik Hubungan Antara Dua Variabel</span>"
+    ]
+  },
+  {
+    "objectID": "7_1_karakteristik_korelasi.html#besaran-hubungan-korelasi",
+    "href": "7_1_karakteristik_korelasi.html#besaran-hubungan-korelasi",
+    "title": "24  Karakteristik Hubungan Antara Dua Variabel",
+    "section": "24.3 Besaran Hubungan Korelasi",
+    "text": "24.3 Besaran Hubungan Korelasi\nBesarnya kekuatan korelasi ditentukan oleh angka hasil pengujian korelasi atau disebut dengan koefisien korelasi. Koefisien korelasi mencerminkan tingkat konsistensi hubungan antara dua variabel. Koefisien korelasi berada pada rentang 0.00 (tidak berkorelasi) dan 1.00 (korelasi sempurna), semakin mendekati 1.00 menunjukkan derajat hubungan yang semakin kuat. Koefisien korelasi .72 memiliki hubungan yang lebih kuat dibandingkan .55. Ketika divisualisasikan dalam scatter plot, kuat atau lemahnya korelasi dapat dilihat dari kepadatan sebaran data di sekitar garis korelasi. Visualisasi dapat dilihat pada Gambar 24.3, sedangkan kekuatan korelasi dapat diinterpretasikan dengan mengacu pada Tabel 24.1.\n\n\n\n\n\n\nGambar 24.3: Visualisasi kekuatan korelasi\n\n\n\n\n\n\nTabel 24.1: Kekuatan koefisien korelasi\n\n\n\n\n\n\n\n\n\n\nKekuatan korelasi\nKoefisien korelasi Positif\nKoefisien korelasi Negatif\n\n\n\n\nLemah\n0 – .30\n0 – -.30\n\n\nSedang\n.31 – .50\n-.31 – -.50\n\n\nKuat\n.51 – .70\n-.51 – -.70\n\n\nSangat kuat\n.71 – 1.00\n-.71 – -1.00",
+    "crumbs": [
+      "ANALISIS KORELASI",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Karakteristik Hubungan Antara Dua Variabel</span>"
+    ]
+  },
+  {
+    "objectID": "7_korelasi.html",
+    "href": "7_korelasi.html",
+    "title": "ANALISIS KORELASI",
+    "section": "",
+    "text": "Pada bagian ini akan dibahas mengenai hubungan atau korelasi antara dua variabel penelitian, yaitu melihat apakah dua variabel mengalami perubahan secara bersama-sama. Untuk melihat hubungan ini, setiap individu yang menjadi sampel atau yang diukur, harus memiliki skor kedua variabel (Variabel X dan Y). Uji korelasi umumnya digunakan untuk uji validitas alat ukur, reliabilitas aitem dalam sebuah alat ukur, dan untuk verifikasi atau menguji keterhubungan variabel-variabel dalam teori yang dikembangkan.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 25. Karakteristik Hubungan Antara Dua Variabel:\n\nMemahami konsep-konsep dasar analisis korelasi.\nMemahami arah, bentuk, dan besaran hubungan antar variabel.\n\nBab 26. Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis:\n\nMemahami asumsi yang perlu dipenuhi dalam hubungan antara dua variabel\nMampu menginterpretasikan hasil analisis dan menulis laporan hasil korelasi sesuai standar akademik.",
+    "crumbs": [
+      "ANALISIS KORELASI"
+    ]
+  },
+  {
+    "objectID": "7_2_asumsi_korelasi.html",
+    "href": "7_2_asumsi_korelasi.html",
+    "title": "25  Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis",
+    "section": "",
+    "text": "25.1 Asumsi dalam Hubungan Antara Dua Variabel\nTujuan analisis korelasi utamanya adalah untuk mengukur kekuatan dan arah hubungan antara dua variabel. Meskipun metode ini sering digunakan dalam berbagai disiplin ilmu, agar hasilnya valid, ada beberapa asumsi dasar yang harus dipenuhi, seperti normalitas distribusi data. Memahami asumsi-asumsi ini sangat penting agar peneliti dapat menarik kesimpulan yang akurat dan tidak bias. Selain itu, interpretasi hasil analisis korelasi perlu dilakukan dengan hati-hati, mengingat korelasi tidak membuktikan sebab-akibat, melainkan hanya mengukur derajat hubungan antar variabel. Sub-bab ini akan membahas asumsi-asumsi yang perlu dipenuhi dalam analisis korelasi, serta bagaimana menginterpretasikan hasil korelasi dan menuliskan laporan hasil analisis dengan cara yang jelas dan sistematis.\nUji asumsi hubungan antara dua variabel digunakan untuk menentukan teknik statistik yang digunakan dalam menghitung koefisien korelasi, apakah akan menggunakan uji korelasi parametrik (Pearson correlation; r) atau non-parametrik (Spearman correlation; rs). Terdapat empat asumsi yang perlu dipenuhi jika ingin menggunakan uji korelasi parametrik (Pearson correlation), yaitu:\nJika terdapat asumsi yang tidak terpenuhi, maka dilakukan uji korelasi non-parametrik menggunakan analisis korelasi Spearman.",
+    "crumbs": [
+      "ANALISIS KORELASI",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "7_2_asumsi_korelasi.html#asumsi-dalam-hubungan-antara-dua-variabel",
+    "href": "7_2_asumsi_korelasi.html#asumsi-dalam-hubungan-antara-dua-variabel",
+    "title": "25  Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis",
+    "section": "",
+    "text": "Kedua variabel yang diteliti atau yang ingin dikorelasikan harus berupa skala kontinum.\nKedua variabel memiliki hubungan yang linear yang dapat dipastikan dengan menggunakan scatter plot.\nData tidak memiliki banyak outliers.\nData terdistribusi dengan normal.",
+    "crumbs": [
+      "ANALISIS KORELASI",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "7_2_asumsi_korelasi.html#interpretasi-dan-penulisan-hasil-uji-korelasi",
+    "href": "7_2_asumsi_korelasi.html#interpretasi-dan-penulisan-hasil-uji-korelasi",
+    "title": "25  Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis",
+    "section": "25.2 Interpretasi dan Penulisan Hasil Uji Korelasi",
+    "text": "25.2 Interpretasi dan Penulisan Hasil Uji Korelasi\nDalam melakukan interpretasi, hal pertama yang perlu dilihat adalah nilai signifikansi (p-value). Uji hubungan antara dua variabel dikatakan signifikan jika nilai p-value lebih kecil dari .05 (p &lt; .05), artinya terdapat hubungan yang signifikan antara variabel X dan variabel Y. Jika terdapat hubungan, maka interpretasi dilanjutkan dengan melihat arah korelasi (positif atau negatif) dan besaran koefisien korelasi. Jika tidak terdapat hubungan yang signifikan (p &gt; .05), maka interpretasi terkait arah dan derajat korelasi tidak perlu dilanjutkan. Interpretasi hasil uji korelasi dapat lebih dipahami melalui output dari analisis JASP (Gambar 25.1).\n\n\n\n\n\n\nGambar 25.1: Output hasil uji korelasi\n\n\n\nDari output yang ditampilkan pada Gambar 25.1 diketahui bahwa well-being berkorelasi secara signifikan dengan learning engagement dan aspek kepribadian neuroticism (p &lt; .001), namun tidak berkorelasi dengan aspek kepribadian opennes to experiences, karena p value lebih besar dari .05 (p = .052). Interpretasi terkait arah dan besaran korelasi dapat dilanjutkan pada hasil yang signifikan, diketahui terdapat hubungan positif antara well-being dan learning engagement (rs = .669), sementara itu, hubungan antara well-being dan neuroticism berkorelasi negatif (rs = -.396). Derajat kekuatan korelasi antara antara well-being dan learning engagement tergolong kuat (rentang .51 hingga .70), dan korelasi antara well-being dan neuroticism tergolong sedang/cukup kuat (rentang .31 hingga .50).\nHasil uji korelasi umumnya dilaporkan dalam bentuk tabel, jika peneliti melakukan uji korelasi beberapa variabel sekaligus, atau dalam bentuk kalimat naratif. Pelaporan hasil uji korelasi dengan menggunakan tabel dan narasi merujuk kepada gaya penulisan Publication Manual of the APA edisi ke-7. Berikut adalah contoh pelaporan hasil uji korelasi menggunakan tabel (Tabel 25.1).\n\n\n\nTabel 25.1: Koefisien korelasi variabel penelitian (N = 267)\n\n\n\n\n\n\n\n1\n2\n3\n\n\n\n\n1.\nWll-being\n-\n\n\n\n\n2.\nLearning engagement\n.669**\n-\n\n\n\n3.\nNeuroticism\n-.396**\n-.384**\n-\n\n\n4.\nOpennes to experience\n.119\n1.89**\n-.128\n\n\n\n\n\n\nCatatan: *p &lt; .05, **p &lt; .01, ***p &lt; .001\nPelaporan hasil uji korelasi dalam bentuk naratif perlu mencantumkan beberapa unsur penting, yaitu: jenis uji korelasi yang digunakan (Pearson correlation – r, atau Spearman correlation – rs), degree of freedom (n-2), nilai signifikansi, arah dan besaran korelasi. Format penulisannya adalah:\nr(df) = “koefisien korelasi”, “p-value”\nContoh:\nTerdapat hubungan positif yang sangat kuat antara learning engagment dengan well-being pada mahasiswa, rs(265) = .669, p &lt;.001.\nFormulasi dan redaksi kalimat dalam menyampaikan hasil korelasi dapat disesuaikan dengan gaya bahasa peneliti, dengan memastikan bahwa seluruh unsur penting tetap disertakan dalam pelaporan. Hasil uji korelasi dapat dibuat dalam bentuk narasi seperti berikut:\n“Hasil uji korelasi Pearson menunjukkan bahwa terdapat hubungan positif yang sangat kuat antara learning engagement dengan well-being pada mahasiswa (rs(265) = .669, p &lt;.001). Selain itu, semakin tinggi karakteristik kepribadian neuroticism yang dimiliki individu, semakin rendah well-being yang dimiliki. Korelasi antara kedua variabel tergolong sedang (rs(265) = -.396, p &lt;.001). Sementara itu, karakteristik kepribadian opennes to experiences tidak berkorelasi dengan well-being individu (rs(265) = .119, p = .052).”",
+    "crumbs": [
+      "ANALISIS KORELASI",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis</span>"
+    ]
+  },
+  {
+    "objectID": "7_latihan.html",
+    "href": "7_latihan.html",
+    "title": "Soal Latihan",
+    "section": "",
+    "text": "Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bagian 7 ini dengan menjawab sejumlah pertanyaan di bawah ini:",
+    "crumbs": [
+      "ANALISIS KORELASI",
       "Soal Latihan"
     ]
   }

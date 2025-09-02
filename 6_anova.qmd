@@ -7,7 +7,7 @@ Pada bab sebelumnya, kita telah mempelajari bagaimana membandingkan rata-rata du
 
 -   Memahami alasan mengapa perbandingan rata-rata tiga kelompok atau lebih diperlukan dalam penelitian.
 
-**Bab 21. Prinsip-prinsip Dasar dan Asumsi-Asumsi *ANOVA*** **:**
+**Bab 21. Prinsip-prinsip Dasar dan Asumsi-Asumsi *ANOVA*:**
 
 -   Menjelaskan prinsip kerja *ANOVA* dalam membandingkan variasi antar dan dalam kelompok.
 -   Memahami dan mengenali asumsi-asumsi dasar *ANOVA* yang harus dipenuhi untuk analisis yang valid.

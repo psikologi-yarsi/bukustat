@@ -1,1 +1,15 @@
 # ANALISIS KORELASI {#sec-korelasi}
+
+Pada bagian ini akan dibahas mengenai hubungan atau korelasi antara dua variabel penelitian, yaitu melihat apakah dua variabel mengalami perubahan secara bersama-sama. Untuk melihat hubungan ini, setiap individu yang menjadi sampel atau yang diukur, harus memiliki skor kedua variabel (Variabel X dan Y). Uji korelasi umumnya digunakan untuk uji validitas alat ukur, reliabilitas aitem dalam sebuah alat ukur, dan untuk verifikasi atau menguji keterhubungan variabel-variabel dalam teori yang dikembangkan.
+
+::: {.callout-note title="*Tujuan Pembelajaran*"}
+**Bab 25. Karakteristik Hubungan Antara Dua Variabel:**
+
+-   Memahami konsep-konsep dasar analisis korelasi.
+-   Memahami arah, bentuk, dan besaran hubungan antar variabel.
+
+**Bab 26. Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis**:
+
+-   Memahami asumsi yang perlu dipenuhi dalam hubungan antara dua variabel
+-   Mampu menginterpretasikan hasil analisis dan menulis laporan hasil korelasi sesuai standar akademik.
+:::

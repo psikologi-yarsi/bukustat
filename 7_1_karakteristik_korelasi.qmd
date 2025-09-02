@@ -1,0 +1,32 @@
+# Karakteristik Hubungan Antara Dua Variabel
+
+Hubungan antara dua variabel dalam statistik dapat dilihat dari uji korelasi, yaitu suatu teknik yang digunakan untuk mengukur dan menggambarkan sebuah keterkaitan antara dua variabel. Dalam uji korelasi, terdapat tiga karakteristik hubungan antara variabel X dan Y yaitu arah hubungan (positif atau negatif), bentuk hubungan (linear atau non linear) dan kekuatan hubungan.
+
+## Arah Hubungan Korelasi
+
+Berdasarkan arah hubungan, korelasi dapat dibedakan menjadi korelasi positif dan negatif. **Korelasi positif (+)** adalah ketika kedua variabel berubah dengan arah yang sama (X dan Y sama-sama naik/ meningkat atau X dan Y sama-sama turun). Dengan kata lain, jika variabel X mengalami peningkatan skor, maka variabel Y juga mengalami peningkatan skor. Atau, jika variabel X mengalami penurunan skor, maka variabel Y juga menurun. Misalnya, jika suhu di luar panas (terik), penjualan es teh manis meningkat; sedangkan jika cuaca mendung (suhu lebih dingin), penjualan es teh manis menurun. Hal ini menunjukkan bahwa suhu berkorelasi positif dengan penjualan es teh manis. Sementara itu, **korelasi negatif (-)** terjadi ketika kedua variabel berubah dengan arah yang berlawanan (X naik maka Y turun, atau X turun maka Y naik). Peningkatan skor pada variabel X diikuti dengan penurunan skor pada variabel Y. Misalnya, seorang dengan tingkat stres yang tinggi cenderung memiliki tingkat kebahagiaan yang rendah; stres berkorelasi negatif dengan kebahagiaan. Arah hubungan dapat divisualisasikan dalam *scatter plot* (lihat @fig-korelasi-linear).
+
+![Visualisasi arah korelasi](images/7_1_korelasi_linear.png){#fig-korelasi-linear fig-align="center"}
+
+## Bentuk Hubungan Korelasi
+
+**Bentuk hubungan** antara dua variabel  dibedakan menjadi hubungan linear dan non linear. Bentuk hubungan ini akan terlihat lebih jelas ketika data kedua variabel divisualisasikan dalam sebuah plot. **Hubungan linear** adalah ketika titik-titik dalam *scatter plot* cenderung membentuk garis lurus. Sedangkan, **hubungan non linear** terjadi jika titik-titik dalam *scatter plot* cenderung membentuk garis lengkung. Visualisasi hubungan linear dapat dilihat pada Gambar 7.1., sedangkan hubungan non linear dapat dilihat pada @fig-korelasi-nonlinear.
+
+![Visualisasi korelasi non-linear](images/7_2_korelasi_nonlinear.png){#fig-korelasi-nonlinear fig-align="center"}
+
+## Besaran Hubungan Korelasi
+
+**Besarnya kekuatan korelasi** ditentukan oleh angka hasil pengujian korelasi atau disebut dengan koefisien korelasi. Koefisien korelasi mencerminkan tingkat konsistensi hubungan antara dua variabel. Koefisien korelasi berada pada rentang 0.00 (tidak berkorelasi) dan 1.00 (korelasi sempurna), semakin mendekati 1.00 menunjukkan derajat hubungan yang semakin kuat. Koefisien korelasi .72 memiliki hubungan yang lebih kuat dibandingkan .55. Ketika divisualisasikan dalam *scatter plot*, kuat atau lemahnya korelasi dapat dilihat dari kepadatan sebaran data di sekitar garis korelasi. Visualisasi dapat dilihat pada @fig-magnitude, sedangkan kekuatan korelasi dapat diinterpretasikan dengan mengacu pada @tbl-koefisien.
+
+![Visualisasi kekuatan korelasi](images/7_3_magnitude.png){#fig-magnitude}
+
+::: {#tbl-koefisien}
+| Kekuatan korelasi | Koefisien korelasi Positif | Koefisien korelasi Negatif |
+|------------------|:-------------------------:|:-------------------------:|
+| Lemah             |          0 – .30           |          0 – -.30          |
+| Sedang            |         .31 – .50          |        -.31 – -.50         |
+| Kuat              |         .51 – .70          |        -.51 – -.70         |
+| Sangat kuat       |         .71 – 1.00         |        -.71 – -1.00        |
+
+: Kekuatan koefisien korelasi
+:::

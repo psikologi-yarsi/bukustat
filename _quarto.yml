@@ -76,6 +76,10 @@ book:
         - 6_latihan.qmd
       
     - part: 7_korelasi.qmd
+      chapters: 
+        - 7_1_karakteristik_korelasi.qmd
+        - 7_2_asumsi_korelasi.qmd
+        - 7_latihan.qmd
     
     - part: 8_regresi.qmd
     
