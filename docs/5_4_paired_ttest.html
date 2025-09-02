@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Daftar Pustaka – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>19&nbsp; Asumsi, Interpretasi, dan Pelaporan Analisis Paired Samples t-test: Parametrik dan Non-Parametrik – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,26 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,7 +31,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./8_regresi.html" rel="prev">
+<link href="./6_anova.html" rel="next">
+<link href="./5_3_independent_ttest.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -103,7 +85,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Daftar Pustaka</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5_t-test.html">PERBEDAAN RATA-RATA DUA KELOMPOK</a></li><li class="breadcrumb-item"><a href="./5_4_paired_ttest.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis Paired Samples t-test: Parametrik dan Non-Parametrik</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -115,8 +97,8 @@ div.csl-indent {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Daftar Pustaka</h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5_t-test.html">PERBEDAAN RATA-RATA DUA KELOMPOK</a></li><li class="breadcrumb-item"><a href="./5_4_paired_ttest.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis Paired Samples t-test: Parametrik dan Non-Parametrik</span></a></li></ol></nav>
+      <h1 class="title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis Paired Samples t-test: Parametrik dan Non-Parametrik</span></h1>
                       </div>
   </div>
     
@@ -350,7 +332,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./5_4_paired_ttest.html" class="sidebar-item-text sidebar-link">
+  <a href="./5_4_paired_ttest.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis Paired Samples t-test: Parametrik dan Non-Parametrik</span></span></a>
   </div>
 </li>
@@ -370,7 +352,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Daftar Pustaka</span></a>
   </div>
 </li>
@@ -389,67 +371,178 @@ div.csl-indent {
 
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-vanBuuren2018" class="csl-entry" role="listitem">
-Buuren, S. van. (2018). <em>Flexible imputation of missing data</em>.
-CRC Press.
+<p>Asumsi dasar yang perlu dipenuhi untuk melakukan uji beda menggunakan <em>paired samples t-test</em> adalah:</p>
+<ul>
+<li><em>Dependent Variable</em> berupa data kontinum (data interval atau rasio).</li>
+<li><em>Independent Variable</em> adalah dua kelompok partisipan yang sama dan memiliki data berpasangan (misalnya: <em>pre-test</em> dan <em>post-test</em>). Dengan kata lain, pengukuran dilakukan pada orang yang sama sebanyak dua kali.</li>
+<li>Data harus terdistribusi normal. Gunakan uji beda non parametrik jika data tidak terdistribusi dengan normal.</li>
+<li>Tidak ada <em>outliers</em>.</li>
+</ul>
+<p>Uji <em>paired samples t-test</em> digunakan untuk menganalisis perbedaan dalam satu kelompok yang sama. Responden untuk kedua pengukuran dalam pasangan adalah orang yang sama, sehingga skor pada kedua pengukuran tersebut saling berkaitan. Bentuk yang umum ditemui adalah partisipan yang sama, memiliki dua skor atau hasil pengukuran yang dilakukan pada waktu yang berbeda. Misalnya, skor saat sebelum dan sesudah mendapatkan <em>treatment</em>, pengukuran pada pagi dan malam hari, dan sebagainya.</p>
+<p>Interpretasi dari hasil uji beda menggunakan <em>paired samples t-test</em> juga perlu dilakukan secara bertahap. Misalnya, peneliti ingin mengetahui perbedaan waktu reaksi partisipan ketika melihat tulisan berwarna hitam dan kuning. Tahapan interpretasi hasil <em>paired samples t-test</em> dapat dipahami dengan mempelajari contoh berikut:</p>
+<ol type="1">
+<li><p>Uji asumsi</p>
+<p>Hal pertama yang perlu dilihat adalah uji asumsi terkait distribusi data; data harus terdistribusi normal. <a href="#tbl-normal-paired" class="quarto-xref">Tabel&nbsp;<span>19.1</span></a> menunjukkan hasil uji normalitas data (<em>Shapiro-Wilk</em>). Diketahui bahwa skor waktu reaksi partisipan terdistribusi normal (<em>p</em> = .34; <em>p</em> &gt; .05). Artinya, sebaran data waktu reaksi pada kedua kondisi (stimulus hitam dan kuning) tidak berbeda secara signifikan dibandingkan sebaran data kurva normal. Dengan demikian, uji beda dapat dilakukan dengan statistik parametrik, <em>paired samples t-test.</em> Jika data tidak memenuhi uji asumsi normalitas data, maka uji parametrik tidak dapat dilanjutkan, perlu dilakukan uji non parametrik <em>(Wilcoxon signed-rank).</em></p>
+<div id="tbl-normal-paired" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-normal-paired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;19.1: Contoh hasil uji normalitas normalitas sampel berpasangan
+</figcaption>
+<div aria-describedby="tbl-normal-paired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th><em>W</em></th>
+<th><em>p</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hitam</td>
+<td>Kuning</td>
+<td>0.974</td>
+<td>0.344</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="ref-Coolican2014" class="csl-entry" role="listitem">
-Coolican, H. (2014). <em>Research methods and statistics in
-psychology</em> (p. 773). Psychology Press, Taylor &amp; Francis Group.
+</figure>
+</div></li>
+<li><p>Uji Hipotesis</p>
+<p>Selanjutnya, hal yang perlu dilihat adalah nilai p pada tabel <em>paired samples t-test</em>. Nilai <em>p</em> &lt; .001 (<em>p</em> &lt; .05) menunjukkan terdapat perbedaan signifikan waktu reaksi antara stimulus berwarna hitam dan kuning (lihat <a href="#tbl-paired-ttest" class="quarto-xref">Tabel&nbsp;<span>19.2</span></a>). Pada tabel <em>output</em> uji <em>paired samples t-test</em> juga dapat dilihat nilai <em>Cohen’s d</em> yang menunjukkan seberapa besar efek dari perbedaan warna stimulus terhadap perbedaan waktu reaksi pada kedua kelompok (<em>effect size</em>). Nilai <em>t, df, p</em> dan <em>Cohen’s d</em> diperlukan dalam penulisan interpretasi hasil uji beda antar kelompok, yang dapat dilihat pada contoh interpretasi hasil uji <em>paired samples t-test.</em></p>
+<div id="tbl-paired-ttest" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-paired-ttest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;19.2: Contoh hasil analisis <em>paired samples t-test</em>
+</figcaption>
+<div aria-describedby="tbl-paired-ttest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 16%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pengukuran 1</th>
+<th>Pengukuran 2</th>
+<th><em>t</em></th>
+<th><em>df</em></th>
+<th><em>p</em></th>
+<th><em>Cohen’s d</em></th>
+<th><em>SE Cohen’s d</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hitam</td>
+<td>Kuning</td>
+<td>5.546</td>
+<td>49</td>
+<td>&lt; .001</td>
+<td>0.784</td>
+<td>0.224</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="ref-Cowles2000" class="csl-entry" role="listitem">
-Cowles, M. (2000). <em>Statistics in psychology: An historical
-perspective</em>. Psychology Press.
+</figure>
+</div></li>
+<li><p>Data deskriptif</p>
+<p>Terakhir, informasi mengenai <em>Mean</em> dan <em>SD</em> diperlukan untuk mengetahui kelompok mana yang menunjukkan rata-rata skor paling tinggi. Contoh <a href="#tbl-desk-paired" class="quarto-xref">Tabel&nbsp;<span>19.3</span></a> menunjukkan stimulus hitam memiliki rata-rata waktu reaksi yang lebih lama dibandingkan stimulus kuning.</p>
+<div id="tbl-desk-paired" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-desk-paired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;19.3: Contoh statistik deskriptif <em>paired samples t-test</em>
+</figcaption>
+<div aria-describedby="tbl-desk-paired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><em>N</em></th>
+<th><em>Mean</em></th>
+<th><em>SD</em></th>
+<th><em>SE</em></th>
+<th><em>Coefficient of Variation</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hitam</td>
+<td>50</td>
+<td>67.840</td>
+<td>9.303</td>
+<td>1.316</td>
+<td>0.137</td>
+</tr>
+<tr class="even">
+<td>Kuning</td>
+<td>50</td>
+<td>58.560</td>
+<td>7.680</td>
+<td>1.086</td>
+<td>0.131</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="ref-Cumming2011" class="csl-entry" role="listitem">
-Cumming, G. (2011). <em>Understanding the new statistics: Effect sizes,
-confidence intervals, and meta-analysis</em>. Routledge.
+</figure>
+</div></li>
+</ol>
+<p>Pelaporan hasil uji beda <em>paired samples t-test</em> dengan mengikuti format penulisan APA, sama dengan pelaporan uji <em>independent samples t-test</em>. Hasil <em>paired samples t-test</em> menunjukkan terdapat perbedaan waktu reaksi yang signifikan (<em>t</em> (49) = 5.55, <em>p</em> &lt; .001, <em>d</em> = .78) antara stimulus berwarna hitam (<em>M</em> = 67.84, <em>SD</em> = 9.30) dan stimulus kuning (<em>M</em> = 58.56, <em>SD</em> = 7.68). Atau, waktu reaksi partisipan (<em>t</em> (49) = 5.55, <em>p</em> &lt; .001, <em>d</em> = .78) ketika melihat stimulus hitam (<em>M</em> = 67.84, <em>SD</em> = 9.30) lebih lama dibandingkan ketika melihat stimulus kuning (<em>M</em> = 58.56, <em>SD</em> = 7.68).</p>
+<p>Prinsip yang sama juga dapat diterapkan untuk interpretasi dan melaporkan hasil uji beda non parametrik, dengan melihat hasil uji <em>Wilcoxon signed-rank</em>, seperti pada contoh di <a href="#tbl-wilcoxon" class="quarto-xref">Tabel&nbsp;<span>19.4</span></a>.</p>
+<p>Hasil uji <em>Wilcoxon signed-rank</em> menunjukkan bahwa partisipan menunjukkan perbedaan waktu reaksi yang signifikan antara stimulus berwarna hitam dan kuning (<em>z</em>= 4.45, <em>p</em> &lt; .001). Output JASP uji <em>Wilcoxon signed-rank</em> tidak menampilkan secara otomatis Median (Mdn) masing-masing kelompok, sehingga jika diperlukan Median masing-masing kelompok, dapat dihitung dengan menggunakan menu Descriptive pada <em>software</em> JASP.</p>
+<div id="tbl-wilcoxon" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wilcoxon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;19.4: Contoh hasil analisis <em>Wilcoxon signed-rank</em>
+</figcaption>
+<div aria-describedby="tbl-wilcoxon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pengukuran 1</th>
+<th>Pengukuran 2</th>
+<th><em>W</em></th>
+<th><em>z</em></th>
+<th><em>df</em></th>
+<th><em>p</em></th>
+<th><em>Rank-Biserial Correlation</em></th>
+<th><em>SE Rank-Biserial Correlation</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hitam</td>
+<td>Kuning</td>
+<td>1021.5</td>
+<td>4.446</td>
+<td></td>
+<td>&lt; .001</td>
+<td>0.737</td>
+<td>0.164</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="ref-Dancey2017" class="csl-entry" role="listitem">
-Dancey, C. P., &amp; Reidy, J. (2017). <em>Statistics without maths for
-psychology</em> (7th ed.). Pearson Education Limited.
-</div>
-<div id="ref-Gelfond2014" class="csl-entry" role="listitem">
-Gelfond, J. A. L., Klugman, C. M., Welty, L. J., Heitman, E., Louden,
-C., &amp; Pollock, B. H. (2014). <a href="https://www.ncbi.nlm.nih.gov/pubmed/26290897">How to tell the
-truth with statistics: The case for accountable data analyses in
-team-based science.</a> <em>Journal of Translational Medicine &amp;
-Epidemiology</em>, <em>2</em>.
-</div>
-<div id="ref-Gravetter2017" class="csl-entry" role="listitem">
-Gravetter, F. J., &amp; Wallnau, L. B. (2017). <em>Statistics for the
-behavioral sciences</em>. Cengage Learning.
-</div>
-<div id="ref-Moore2018" class="csl-entry" role="listitem">
-Moore, D. S., Notz, W., &amp; Flinger, A. (2018). <em>The basic practice
-of statistics</em> (7th ed.). W.H. Freeman.
-</div>
-<div id="ref-Oktaviani2014" class="csl-entry" role="listitem">
-Oktaviani, M. A., &amp; Notobroto, H. B. (2014). Perbandingan tingkat
-konsistensi normalitas distribusi metode kolmogorov-smirnov, lilliefors,
-shapiro-wilk, dan skewness-kurtosis. <em>Jurnal Biometrika Dan
-Kependudukan</em>, <em>3</em>, 127–135.
-</div>
-<div id="ref-Razali2011" class="csl-entry" role="listitem">
-Razali, N., &amp; Wah, Y. (2011). Power comparisons of shapiro-wilk ,
-kolmogorov-smirnov , lilliefors and anderson-darling test. <em>Journal
-of Statistical Modeling and Analytics</em>, <em>2</em>, 21–33.
-</div>
-<div id="ref-Salsburg2002" class="csl-entry" role="listitem">
-Salsburg, D. (2002). <em>The lady tasting tea: How statistics
-revolutionized science in the twentieth century</em>. Henry Holt;
-Company.
-</div>
-<div id="ref-Tabachnick2014" class="csl-entry" role="listitem">
-Tabachnick, B. G., &amp; Fidell, L. S. (2014). <em>Using multivariate
-statistics</em> (6th ed.). Pearson Education Limited.
-</div>
-<div id="ref-Yap2011" class="csl-entry" role="listitem">
-Yap, B. W., &amp; Sim, C. H. (2011). Comparisons of various types of
-normality tests. <em>Journal of Statistical Computation and
-Simulation</em>, <em>81</em>, 2141–2155. <a href="https://doi.org/10.1080/00949655.2010.520163">https://doi.org/10.1080/00949655.2010.520163</a>
-</div>
+</figure>
 </div>
 
 
@@ -856,11 +949,14 @@ Simulation</em>, <em>81</em>, 2141–2155. <a href="https://doi.org/10.1080/0094
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./8_regresi.html" class="pagination-link" aria-label="MODEL REGRESI LINEAR">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">MODEL REGRESI LINEAR</span>
+      <a href="./5_3_independent_ttest.html" class="pagination-link" aria-label="Asumsi, Interpretasi, dan Pelaporan Analisis *Independent Samples t-test*: Parametrik dan Non-Parametrik">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis <em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./6_anova.html" class="pagination-link" aria-label="MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK">
+        <span class="nav-page-text">MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

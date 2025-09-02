@@ -100,5 +100,11 @@
   },
   "5_3_independent_ttest.qmd": {
     "5_3_independent_ttest.html": "aebfa28a"
+  },
+  "5_4_paired_ttest.qmd": {
+    "5_4_paired_ttest.html": "d93095ea"
+  },
+  "5_latihan.qmd": {
+    "5_latihan.html": "1bbcfa03"
   }
 }

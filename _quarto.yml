@@ -64,6 +64,8 @@ book:
         - 5_1_perbedaan.qmd
         - 5_2_between_within.qmd
         - 5_3_independent_ttest.qmd
+        - 5_4_paired_ttest.qmd
+        - 5_latihan.qmd
       
     - part: 6_anova.qmd
       
