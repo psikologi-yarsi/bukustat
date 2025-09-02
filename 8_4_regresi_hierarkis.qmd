@@ -1,0 +1,43 @@
+# Regresi Linear Hierarkis
+
+Analisis regresi hierarkis digunakan untuk memodelkan hubungan antara satu variabel luaran dan lebih dari satu variabel prediktor, dengan memeriksa kontribusi tambahan dari variabel prediktor yang dimasukkan secara bertahap ke dalam model. Metode ini memungkinkan peneliti untuk mengevaluasi bagaimana faktor-faktor tertentu berkontribusi terhadap variabel luaran setelah mempertimbangkan variabel-variabel lain yang lebih dahulu dimasukkan.
+
+## Konsep Dasar
+
+Dalam regresi hierarkis, analisis dilakukan dalam beberapa langkah. Pada setiap langkah, sejumlah variabel prediktor ditambahkan ke dalam model untuk menguji seberapa besar kontribusi tambahan yang diberikan oleh variabel tersebut terhadap variabilitas variabel luaran. Model pertama biasanya dimulai dengan satu atau lebih variabel kontrol (mis., data demografi, seperti jenis kelamin dan usia) yang dianggap penting, sementara variabel prediktor utama dimasukkan pada langkah berikutnya.
+
+Contoh persamaan regresi hierarkis untuk dua langkah adalah:
+
+$$
+Y = \alpha + \beta_{1}X_{1} + \varepsilon
+\qquad \text{(Model 1: variabel kontrol $X_{1}$)}
+$$
+
+$$
+Y = \alpha + \beta_{1}X_{1} + \beta_{2}X_{2} + \varepsilon
+\qquad \text{(Model 2: variabel prediktor $X_{2}$ ditambahkan)}
+$$
+
+Sama seperti pada regresi majemuk, pada analisis regresi hierarkis, yang penting adalah memeriksa apakah penambahan setiap variabel prediktor memberikan kontribusi yang signifikan terhadap model, yang diuji dengan uji F dan perubahan dalam nilai *R^2^*.
+
+## Asumsi-asumsi dalam Regresi Hierarkis
+
+Asumsi-asumsi dalam analisis regresi hierarkis pada dasarnya sama dengan asumsi dalam regresi sederhana dan regresi majemuk, yaitu linearitas, independensi residual, normalitas residual, dan homoskedastisitas, serta multikolinearitas. Namun, regresi hierarkis juga memerlukan perhatian khusus terhadap urutan variabel yang dimasukkan ke dalam model, yang harus didasarkan pada teori atau logika yang kuat. Dengan memasukkan variabel secara bertahap, peneliti dapat menguji kontribusi tambahan dari setiap variabel terhadap model.
+
+## Interpretasi Hasil Analisis Regresi Hierarkis: *Delta* (Δ) *R^2^*
+
+Proses analisis dimulai dengan memasukkan variabel kontrol (jika ada) ke dalam model pada langkah pertama. Model kemudian diperluas dengan menambahkan variabel prediktor lainnya secara bertahap. Setelah setiap langkah, perubahan dalam nilai *R^2^* dihitung untuk menilai apakah variabel tambahan memberikan kontribusi signifikan terhadap model.
+
+Kontribusi tambahan dari variabel-variabel yang dimasukkan ke dalam model secara bertahap ditunjukkan sebagai *delta* *R^2^* (Δ*R^2^*). Setiap kali variabel baru ditambahkan, kita menghitung perubahan dalam *R^2^* untuk menilai seberapa banyak variabilitas variabel prediktor yang dapat dijelaskan oleh variabel tersebut setelah mempertimbangkan variabel lain yang sudah ada.
+
+*Delta* *R^2^* yang signifikan menunjukkan bahwa variabel yang ditambahkan memberikan kontribusi yang bermakna dalam meningkatkan kemampuan model untuk menjelaskan variasi pada variabel luaran. Pengujian *delta* *R^2^* dilakukan dengan menggunakan uji *F* untuk perubahan *R^2^*, yang menguji apakah peningkatan dalam *R^2^* setelah penambahan variabel baru cukup besar dan signifikan secara statistik (@fig-regresi-hierarkis).
+
+![Contoh output hasil analisis regresi hierarkis](images/8_3_regresi_hierarkis.png){#fig-regresi-hierarkis fig-align="center"}
+
+Sebagai contoh, jika perubahan dalam *R^2^* antara dua model adalah 0.12, ini berarti bahwa variabel yang ditambahkan dalam model kedua menjelaskan tambahan 12% variabilitas dalam variabel luaran. Jika perubahan tersebut diuji dengan uji *F* dan hasilnya signifikan (*p* \< .05), maka kita dapat menyimpulkan bahwa penambahan variabel tersebut memperbaiki model secara signifikan.
+
+## Penulisan Laporan Hasil Regresi Hierarkis
+
+Pelaporan hasil analisis regresi hierarkis mengikuti struktur yang jelas dan sistematis. Penulis harus menyajikan informasi tentang kontribusi setiap variabel prediktor, perubahan dalam *R^2^*, dan hasil uji F serta uji-t. Sebagai contoh, laporan hasil regresi hierarkis bisa disusun sebagai berikut:
+
+“Analisis regresi hierarkis menunjukkan bahwa model pertama, dengan memasukkan pengalaman kerja sebagai variabel kontrol, tidak memberikan perubahan signifikan dalam *R^2^* = .12, *F*(1, 150) = 3.56, *p* = .062. Namun, setelah menambahkan stres kerja dan dukungan sosial sebagai variabel prediktor, Δ*R^2^* menjadi .45, *F*(3, 148) = 15.89, *p* \< .001, yang menunjukkan bahwa kedua variabel ini memberikan kontribusi signifikan terhadap tingkat kepuasan kerja. Stres kerja (*β* = .65, *t*(148) = 4.22, *p* \<.001) dan dukungan sosial (*β* = −.35, *t*(148) = 2.94, *p* = .004) berperan signifikan dalam meningkatkan kepuasan kerja, sementara pengalaman kerja (*β* = .15, *t*(148) = 1.01, *p* = .31) tidak menunjukkan kontribusi signifikan.”

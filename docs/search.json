@@ -912,5 +912,202 @@
       "ANALISIS KORELASI",
       "Soal Latihan"
     ]
+  },
+  {
+    "objectID": "8_regresi.html",
+    "href": "8_regresi.html",
+    "title": "Model Regresi Linear",
+    "section": "",
+    "text": "Pada bab sebelumnya, kita telah mempelajari analisis korelasi yang menunjukkan hubungan antara dua variabel. Di bab ini kita akan membahas analisis regresi linear yang juga digunakan untuk memahami hubungan antar variabel. Namun, analisis regresi memungkinkan kita untuk tidak hanya mengukur hubungan, tetapi juga memodelkan hubungan tersebut dan memprediksi nilai variabel luaran (variabel dependen) berdasarkan variabel prediktor (variabel bebas).\nDalam regresi linear, kita akan fokus pada tiga jenis model regresi utama yang digunakan untuk menguji hubungan antara variabel-variabel ini:\n\nRegresi linear sederhana (simple linear regression)\nRegresi majemuk (multiple linear regression)\nRegresi hirarkis (hierarchical regression)\n\nBab ini akan memperkenalkan Anda pada prinsip dasar regresi linear, menjelaskan asumsi yang perlu dipenuhi, serta bagaimana menginterpretasikan hasil analisis dan menuliskan laporan regresi. Dengan memahami teknik-teknik ini, Anda akan siap untuk mengaplikasikan regresi linear dalam berbagai konteks penelitian untuk menggali hubungan yang lebih kompleks antar variabel.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 26. Prinsip Dasar Model Regresi Linear:\n\nMemahami prinsip dasar model regresi linear dan perbedaannya dengan analisis korelasi.\n\nBab 27. Regresi Linear Sederhana:\n\nMemahami konsep regresi sederhana.\nMampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi sederhana sesuai standar akademik.\n\nBab 28. Prinsip Dasar Model Regresi Linear:\n\nMemahami konsep regresi majemuk.\nMampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi majemuk sesuai standar akademik.\n\nBab 29. Regresi Linear Hierarkis:\n\nMemahami konsep regresi hierarkis.\nMampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi hierarkis sesuai standar akademik.",
+    "crumbs": [
+      "Model Regresi Linear"
+    ]
+  },
+  {
+    "objectID": "8_1_prinsip_regresi.html",
+    "href": "8_1_prinsip_regresi.html",
+    "title": "26  Prinsip Dasar Model Regresi Linear",
+    "section": "",
+    "text": "26.1 Regresi vs. Korelasi\nDalam analisis statistik, kita sering kali tertarik untuk memahami hubungan antara dua variabel atau lebih. Korelasi adalah salah satu teknik yang digunakan untuk mengukur seberapa kuat dan sejauh mana dua variabel berhubungan. Namun, korelasi hanya mengukur sejauh mana dua variabel saling terkait tanpa membedakan mana yang berdampak terhadap mana. Misalnya, dalam studi pendidikan, kita bisa mengukur korelasi antara jumlah jam belajar dan skor ujian siswa untuk melihat apakah semakin banyak jam belajar, semakin tinggi skor ujian.\nDalam hal ini, korelasi tidak memberi kita gambaran tentang dampak atau arah hubungan. Di sinilah regresi linear menjadi lebih berguna. Regresi memungkinkan kita untuk memodelkan hubungan fungsional antara satu variabel prediktor (atau variabel independen) dengan satu variabel luaran (atau variabel dependen). Dengan kata lain, regresi memungkinkan kita untuk memprediksi nilai variabel luaran berdasarkan nilai variabel prediktor. Sebagai contoh, regresi dapat digunakan untuk memprediksi skor ujian berdasarkan jumlah jam belajar.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Prinsip Dasar Model Regresi Linear</span>"
+    ]
+  },
+  {
+    "objectID": "8_1_prinsip_regresi.html#persamaan-dan-garis-regresi-linear",
+    "href": "8_1_prinsip_regresi.html#persamaan-dan-garis-regresi-linear",
+    "title": "26  Prinsip Dasar Model Regresi Linear",
+    "section": "26.2 Persamaan dan Garis Regresi Linear",
+    "text": "26.2 Persamaan dan Garis Regresi Linear\nDalam regresi linear sederhana, kita menganalisis hubungan antara satu variabel prediktor dan satu variabel outcome, menggunakan persamaan garis regresi untuk menggambarkan hubungan tersebut. Persamaan regresi biasanya berbentuk:\n\\[\nY = \\alpha + \\beta X + \\varepsilon\n\\]\ndi mana:\n\nY adalah variabel luaran (terikat),\nX adalah variabel prediktor (bebas),\nα adalah intercept atau konstanta (nilai Y saat X = 0),\nβ adalah koefisien regresi yang menunjukkan perubahan rata-rata Y untuk setiap unit perubahan X,\nε adalah residu, yang menggambarkan perbedaan antara nilai yang diprediksi oleh model dan nilai observasi sebenarnya.\n\nGaris persamaan regresi (Gambar 26.1) adalah representasi grafis dari persamaan regresi ini, di mana sumbu horizontal (X) mewakili variabel prediktor dan sumbu vertikal (Y) mewakili variabel luaran. Garis regresi menggambarkan hubungan linear antara X dan Y, dengan koefisien β₁ mengukur kemiringan garis tersebut. Semakin besar nilai β₁, semakin curam garis regresi, menunjukkan hubungan yang lebih kuat antara X dan Y.\n\n\n\n\n\n\nGambar 26.1: Garis persamaan regresi\n\n\n\nSementara itu, residu adalah perbedaan antara nilai observasi dan nilai yang diprediksi oleh model regresi. Dalam kata lain, residu mengukur seberapa baik model regresi dapat memprediksi nilai variabel luaran untuk setiap pengamatan. Residu yang besar menunjukkan bahwa model kurang akurat dalam memprediksi nilai-nilai tersebut, sedangkan residu yang kecil menunjukkan model yang lebih akurat.\nRegresi linear tidak hanya memberikan informasi tentang kekuatan hubungan, tetapi juga memberikan model prediktif yang dapat digunakan untuk memperkirakan nilai variabel outcome berdasarkan nilai variabel prediktor. Ini berbeda dengan korelasi yang hanya menunjukkan hubungan antara dua variabel tanpa memprediksi nilai-nilai spesifik.\nSebagai contoh lainnya, dalam dunia bisnis, kita dapat menggunakan regresi untuk memprediksi penjualan (variabel outcome) berdasarkan pengeluaran iklan (variabel prediktor). Regresi memberikan model prediktif yang dapat diterapkan dalam perencanaan dan pengambilan keputusan, sementara korelasi hanya menunjukkan apakah ada hubungan antara dua variabel tanpa memberikan model prediksi yang jelas.\nDengan regresi, kita juga bisa menganalisis hubungan lebih kompleks, seperti menguji peran beberapa variabel prediktor terhadap satu variabel luaran, yang dikenal dengan regresi majemuk. Hal ini membuka banyak peluang untuk menganalisis data yang lebih kompleks, baik dalam penelitian sosial, ekonomi, maupun ilmu kesehatan.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Prinsip Dasar Model Regresi Linear</span>"
+    ]
+  },
+  {
+    "objectID": "8_2_regresi_sederhana.html",
+    "href": "8_2_regresi_sederhana.html",
+    "title": "27  Regresi Linear Sederhana",
+    "section": "",
+    "text": "27.1 Asumsi-asumsi dalam Regresi Sederhana\nRegresi sederhana adalah model analisis yang menguji hubungan antara satu variabel prediktor (X) dan satu variabel luaran (Y). Dalam regresi linear sederhana, kita berusaha memprediksi nilai Y berdasarkan nilai X, dengan anggapan bahwa hubungan di antara keduanya dapat digambarkan dengan garis lurus. Untuk dapat melakukan analisis regresi linear sederhana dengan tapat, penting untuk memahami asumsi dasar, bagaimana menginterpretasi hasilnya, dan cara melaporkan hasil analisisnya.\nRegresi sederhana didasarkan pada beberapa asumsi yang harus dipenuhi agar hasil analisis dapat diandalkan:\nJika asumsi-asumsi ini tidak terpenuhi, analisis regresi dapat menghasilkan kesimpulan yang bias. Dalam hal ini, peneliti bisa mempertimbangkan untuk menggunakan transformasi data atau beralih ke model regresi yang lebih robust.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Regresi Linear Sederhana</span>"
+    ]
+  },
+  {
+    "objectID": "8_2_regresi_sederhana.html#asumsi-asumsi-dalam-regresi-sederhana",
+    "href": "8_2_regresi_sederhana.html#asumsi-asumsi-dalam-regresi-sederhana",
+    "title": "27  Regresi Linear Sederhana",
+    "section": "",
+    "text": "Linieritas: Asumsi pertama adalah hubungan antara variabel prediktor (X) dan variabel luaran (Y) harus linear, yang berarti hubungan dapat digambarkan dengan garis lurus. Untuk memeriksa linieritas, dapat digunakan scatter plot antara X dan Y, yang sebaiknya menunjukkan pola garis lurus.\nIndependensi: Data antar observasi harus independen, artinya nilai variabel pada satu pengamatan (misalnya, respons dari satu individu) tidak boleh bergantung atau dipengaruhi oleh pengamatan lainnya. Uji independensi bisa dilakukan dengan menggunakan uji Durbin-Watson.\nNormalitas residual: Residual (selisih antara nilai yang diprediksi dan nilai observasi) harus terdistribusi normal. Pelanggaran normalitas dapat memengaruhi hasil uji statistik dan kesimpulan yang diambil. Normalitas dapat diuji dengan uji Shapiro-Wilk atau dengan melihat Q-Q plot residual.\nHomoskedastisitas: Variabilitas residual harus seragam di sepanjang garis regresi. Jika residu lebih besar pada nilai-nilai prediktor tertentu, ini menunjukkan pelanggaran homoskedastisitas. Uji untuk homoskedastisitas dapat dilakukan dengan melihat plot residual vs. prediktor.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Regresi Linear Sederhana</span>"
+    ]
+  },
+  {
+    "objectID": "8_2_regresi_sederhana.html#interpretasi-hasil-regresi-sederhana",
+    "href": "8_2_regresi_sederhana.html#interpretasi-hasil-regresi-sederhana",
+    "title": "27  Regresi Linear Sederhana",
+    "section": "27.2 Interpretasi Hasil Regresi Sederhana",
+    "text": "27.2 Interpretasi Hasil Regresi Sederhana\nSetelah menjalankan analisis regresi, hasil yang diperoleh harus diinterpretasikan untuk memahami hubungan antara X dan Y (lihat Gambar 27.1). Hal-hal yang perlu diperhatikan dalam interpretasi hasil adalah:\n\nKoefisien Regresi (β): Koefisien regresi menunjukkan seberapa besar perubahan rata-rata Y untuk setiap perubahan satu unit pada X. Interpretasi ini memberikan gambaran tentang peran variabel prediktor terhadap variabel luaran.\nIntercept (a): Intercept menunjukkan nilai Y ketika X = 0. Dalam beberapa kasus, intercept mungkin tidak memiliki makna praktis, terutama jika X = 0 tidak realistis dalam konteks penelitian.\nNilai p: Nilai p digunakan untuk menguji apakah koefisien regresi signifikan secara statistik. Jika nilai p lebih kecil dari 0,05 (nilai signifikansi standar), maka kita dapat menyimpulkan bahwa peran X terhadap Y signifikan. Sebaliknya, jika nilai p lebih besar dari 0,05, maka kita tidak dapat menolak hipotesis nol (bahwa ada peran yang signifikan).\nR-squared (R²): Nilai R² menunjukkan seberapa besar proporsi variabilitas dalam variabel outcome yang dapat dijelaskan oleh variabel prediktor. R² berkisar antara 0 dan 1, di mana semakin mendekati 1, semakin baik model regresi dalam memprediksi variabel outcome. R² yang rendah menunjukkan bahwa model tidak dapat menjelaskan variabilitas Y secara signifikan.\n\n\n\n\n\n\n\nGambar 27.1: Contoh output hasil analisis regresi sederhana",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Regresi Linear Sederhana</span>"
+    ]
+  },
+  {
+    "objectID": "8_2_regresi_sederhana.html#penulisan-laporan-hasil-regresi-sederhana",
+    "href": "8_2_regresi_sederhana.html#penulisan-laporan-hasil-regresi-sederhana",
+    "title": "27  Regresi Linear Sederhana",
+    "section": "27.3 Penulisan Laporan Hasil Regresi Sederhana",
+    "text": "27.3 Penulisan Laporan Hasil Regresi Sederhana\nDalam laporan hasil regresi sederhana, peneliti harus menyajikan hasil regresi secara sistematis dan jelas. Sebagai contoh:\n\nLaporan koefisien: “Analisis regresi linear menunjukkan bahwa jumlah jam belajar berpengaruh signifikan terhadap skor ujian, β = 2,45, p &lt; 0,001. Setiap tambahan satu jam belajar berhubungan dengan peningkatan skor ujian sebesar 2,45 poin.”\nLaporan R² dan nilai-p: “Model regresi sederhana memiliki nilai R² sebesar 0,35, yang menunjukkan bahwa 35% variasi dalam skor ujian dapat dijelaskan oleh jumlah jam belajar.”\n\nLaporan seperti ini memberikan informasi yang jelas tentang hubungan antara variabel serta seberapa kuat model regresi dalam menjelaskan variabilitas data.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Regresi Linear Sederhana</span>"
+    ]
+  },
+  {
+    "objectID": "8_3_regresi_majemuk.html",
+    "href": "8_3_regresi_majemuk.html",
+    "title": "28  Regresi Linear Majemuk",
+    "section": "",
+    "text": "28.1 Konsep Dasar\nAnalisis regresi majemuk digunakan untuk memodelkan hubungan antara satu variabel outcome dan lebih dari satu variabel prediktor. Regresi majemuk memungkinkan kita untuk mengevaluasi bagaimana beberapa faktor berkontribusi terhadap variabel yang ingin diprediksi, dengan mengontrol pengaruh variabel lain dalam model.\nPersamaan dalam regresi majemuk adalah sebagai berikut:\n\\[\nY = \\alpha + \\beta_{1}X_{1} + \\beta_{2}X_{2} + \\cdots + \\beta_{n}X_{n} + \\varepsilon\n\\]\ndi mana:\nDalam regresi majemuk, yang paling penting adalah apakah nilai β masing-masing variabel prediktor signifikan atau tidak dalam model. Signifikansi ini diuji menggunakan uji t untuk menentukan apakah peran variabel prediktor tersebut cukup kuat untuk diterima sebagai kontribusi yang bermakna terhadap perubahan variabel luaran.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Regresi Linear Majemuk</span>"
+    ]
+  },
+  {
+    "objectID": "8_3_regresi_majemuk.html#konsep-dasar",
+    "href": "8_3_regresi_majemuk.html#konsep-dasar",
+    "title": "28  Regresi Linear Majemuk",
+    "section": "",
+    "text": "Y adalah variabel luaran,\nX1, X2, dan Xn adalah skor pada variabel-variabel prediktor,\nα adalah intersep atau konstanta (nilai Y saat semua variabel prediktor bernilai nol),\nβ1, β2, βn adalah koefisien regresi yangmenunjukkan seberapa besar peran masing-masing variabel prediktor terhadap variabel luaran, dengan asumsi bahwa variabel lain tetap konstan\nε (error) adalah residu, yang menggambarkan perbedaan antara nilai yang diprediksi oleh model dan nilai observasi sebenarnya.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Regresi Linear Majemuk</span>"
+    ]
+  },
+  {
+    "objectID": "8_3_regresi_majemuk.html#asumsi-asumsi-dalam-regresi-majemuk",
+    "href": "8_3_regresi_majemuk.html#asumsi-asumsi-dalam-regresi-majemuk",
+    "title": "28  Regresi Linear Majemuk",
+    "section": "28.2 Asumsi-asumsi dalam Regresi Majemuk",
+    "text": "28.2 Asumsi-asumsi dalam Regresi Majemuk\nAsumsi-asumsi dalam analisis regresi majemuk pada dasarnya sama dengan asumsi-asumsi dalam regresi sederhana, yaitu linearitas, independensiresidual, normalitas residual, dan homoskedastisitas. Namun, dalam regresi majemuk, terdapat sebuah asumsi lainnya yang perlu diperhatikan, yaitu multikolinearitas. Multikolinearitas terjadi ketika dua atau lebih variabel prediktor sangat berkorelasi satu sama lain, yang dapat mengganggu interpretasi koefisien regresi dan memengaruhi keakuratan hasil analisis. Kondisi ini dapat menyebabkan kesulitan dalam mengidentifikasi pengaruh individual masing-masing variabel prediktor terhadap variabel luaran, karena estimasi koefisien regresi menjadi tidak stabil dan sulit diinterpretasikan. Akibatnya, koefisien regresi dapat menjadi tidak signifikan meskipun secara teoritis seharusnya signifikan.\nCara untuk menguji multikolinearitas adalah dengan menggunakan Variance Inflation Factor (VIF). VIF mengukur sejauh mana variabilitas koefisien regresi meningkat karena adanya multikolinearitas. Nilai VIF yang tinggi (umumnya lebih besar dari 5) menunjukkan adanya multikolinearitas yang signifikan antara variabel-variabel independen dalam model, yang perlu diperbaiki untuk memastikan kestabilan dan akurasi estimasi regresi.\nSelain VIF, indikator lain yang dapat digunakan untuk mendeteksi multikolinearitas adalah Tolerance. Tolerance adalah kebalikan dari VIF, dihitung sebagai 1 dibagi dengan VIF (Tolerance = 1/VIF). Tolerance yang rendah (biasanya kurang dari 0,1) menunjukkan adanya multikolinearitas yang signifikan. Semakin rendah nilai Tolerance, semakin tinggi kemungkinan adanya multikolinearitas antara variabel prediktor.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Regresi Linear Majemuk</span>"
+    ]
+  },
+  {
+    "objectID": "8_3_regresi_majemuk.html#interpretasi-hasil-analisis-regresi-majemuk",
+    "href": "8_3_regresi_majemuk.html#interpretasi-hasil-analisis-regresi-majemuk",
+    "title": "28  Regresi Linear Majemuk",
+    "section": "28.3 Interpretasi Hasil Analisis Regresi Majemuk",
+    "text": "28.3 Interpretasi Hasil Analisis Regresi Majemuk\nDalam regresi majemuk, evaluasi dimulai dengan uji F, yang menguji signifikansi model secara keseluruhan. Jika nilai p &lt; .05, model regresi dianggap signifikan. Selanjutnya, koefisien regresi (b) masing-masing variabel prediktor diuji menggunakan uji t. Koefisien yang signifikan (nilai p &lt; .05) menunjukkan bahwa variabel tersebut memiliki peran yang bermakna terhadap variabel luaran. Selain itu, nilai R2 menggambarkan seberapa banyak variabilitas variabel luaran yang dapat dijelaskan oleh variabel prediktor dalam model. Semakin tinggi nilai R2, semakin baik model dalam menjelaskan variasi data. Interpretasi hasil uji ini membantu menentukan apakah model regresi memberikan prediksi yang valid dan apakah setiap variabel prediktor berkontribusi signifikan terhadap variabel luaran.\nMeskipun model regresi secara keseluruhan dapat menunjukkan kemampuan prediksi yang signifikan berdasarkan hasil uji F dan nilai R2, tidak berarti bahwa semua variabel prediktor berkontribusi secara signifikan. Beberapa variabel mungkin tidak menunjukkan peran yang signifikan terhadap variabel luaran meskipun dimasukkan dalam model. Hal ini dapat dilihat dari hasil uji t untuk koefisien regresi, di mana variabel yang memiliki nilai p &gt; .05 dianggap tidak berkontribusi secara signifikan. Oleh karena itu, meskipun model secara keseluruhan berhasil menjelaskan variasi dalam variabel luaran, tidak semua prediktor dalam model tersebut selalu memiliki peran yang berarti secara statistik.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Regresi Linear Majemuk</span>"
+    ]
+  },
+  {
+    "objectID": "8_3_regresi_majemuk.html#penulisan-laporan-hasil-regresi-majemuk",
+    "href": "8_3_regresi_majemuk.html#penulisan-laporan-hasil-regresi-majemuk",
+    "title": "28  Regresi Linear Majemuk",
+    "section": "28.4 Penulisan Laporan Hasil Regresi Majemuk",
+    "text": "28.4 Penulisan Laporan Hasil Regresi Majemuk\nMeskipun tidak wajib dilaporkan dalam detail, penting untuk menyebutkan bahwa asumsi-asumsi regresi majemuk (seperti normalitas residual, homoskedastisitas, dan independensi residual) telah diperiksa dan tidak ada pelanggaran yang signifikan. Contoh: “Pemeriksaan residual menunjukkan bahwa asumsi normalitas dan homoskedastisitas terpenuhi, dan tidak ada bukti multikolinearitas yang signifikan antara variabel independen.”\nDalam pelaporan hasil analisis regresi majemuk, penting untuk menyajikan informasi secara jelas dan sistematis agar pembaca dapat memahami bagaimana analisis dilakukan dan hasil yang diperoleh (Gambar 28.1). Berikut adalah format umum untuk menulis laporan hasil analisis regresi majemuk:\n“Analisis regresi majemuk menunjukkan bahwa model secara keseluruhan signifikan, F(3, 220) = 9.237, p &lt; 0.001, dengan R2 = .205, yang berarti 20% variabilitas tingkat stres dapat dijelaskan oleh jam kerja, dukungan sosial, dan kecemasan. Hasil regresi menunjukkan bahwa jam kerja (b = .354, t(220) = 4.48, p &lt; .001) memiliki peran signifikan terhadap tingkat stres, sementara kecemasan (b = .09, t(220) = 1.17, p = .25) dan dukungan sosial (b = .08, t(220) = .91, p = .362) tidak signifikan.”\n\n\n\n\n\n\nGambar 28.1: Contoh output hasil analisis regresi majemuk",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Regresi Linear Majemuk</span>"
+    ]
+  },
+  {
+    "objectID": "8_4_regresi_hierarkis.html",
+    "href": "8_4_regresi_hierarkis.html",
+    "title": "29  Regresi Linear Hierarkis",
+    "section": "",
+    "text": "29.1 Konsep Dasar\nAnalisis regresi hierarkis digunakan untuk memodelkan hubungan antara satu variabel luaran dan lebih dari satu variabel prediktor, dengan memeriksa kontribusi tambahan dari variabel prediktor yang dimasukkan secara bertahap ke dalam model. Metode ini memungkinkan peneliti untuk mengevaluasi bagaimana faktor-faktor tertentu berkontribusi terhadap variabel luaran setelah mempertimbangkan variabel-variabel lain yang lebih dahulu dimasukkan.\nDalam regresi hierarkis, analisis dilakukan dalam beberapa langkah. Pada setiap langkah, sejumlah variabel prediktor ditambahkan ke dalam model untuk menguji seberapa besar kontribusi tambahan yang diberikan oleh variabel tersebut terhadap variabilitas variabel luaran. Model pertama biasanya dimulai dengan satu atau lebih variabel kontrol (mis., data demografi, seperti jenis kelamin dan usia) yang dianggap penting, sementara variabel prediktor utama dimasukkan pada langkah berikutnya.\nContoh persamaan regresi hierarkis untuk dua langkah adalah:\n\\[\nY = \\alpha + \\beta_{1}X_{1} + \\varepsilon\n\\qquad \\text{(Model 1: variabel kontrol $X_{1}$)}\n\\]\n\\[\nY = \\alpha + \\beta_{1}X_{1} + \\beta_{2}X_{2} + \\varepsilon\n\\qquad \\text{(Model 2: variabel prediktor $X_{2}$ ditambahkan)}\n\\]\nSama seperti pada regresi majemuk, pada analisis regresi hierarkis, yang penting adalah memeriksa apakah penambahan setiap variabel prediktor memberikan kontribusi yang signifikan terhadap model, yang diuji dengan uji F dan perubahan dalam nilai R2.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Regresi Linear Hierarkis</span>"
+    ]
+  },
+  {
+    "objectID": "8_4_regresi_hierarkis.html#asumsi-asumsi-dalam-regresi-hierarkis",
+    "href": "8_4_regresi_hierarkis.html#asumsi-asumsi-dalam-regresi-hierarkis",
+    "title": "29  Regresi Linear Hierarkis",
+    "section": "29.2 Asumsi-asumsi dalam Regresi Hierarkis",
+    "text": "29.2 Asumsi-asumsi dalam Regresi Hierarkis\nAsumsi-asumsi dalam analisis regresi hierarkis pada dasarnya sama dengan asumsi dalam regresi sederhana dan regresi majemuk, yaitu linearitas, independensi residual, normalitas residual, dan homoskedastisitas, serta multikolinearitas. Namun, regresi hierarkis juga memerlukan perhatian khusus terhadap urutan variabel yang dimasukkan ke dalam model, yang harus didasarkan pada teori atau logika yang kuat. Dengan memasukkan variabel secara bertahap, peneliti dapat menguji kontribusi tambahan dari setiap variabel terhadap model.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Regresi Linear Hierarkis</span>"
+    ]
+  },
+  {
+    "objectID": "8_4_regresi_hierarkis.html#interpretasi-hasil-analisis-regresi-hierarkis-delta-d-r2",
+    "href": "8_4_regresi_hierarkis.html#interpretasi-hasil-analisis-regresi-hierarkis-delta-d-r2",
+    "title": "29  Regresi Linear Hierarkis",
+    "section": "29.3 Interpretasi Hasil Analisis Regresi Hierarkis: Delta (D) R2",
+    "text": "29.3 Interpretasi Hasil Analisis Regresi Hierarkis: Delta (D) R2\nProses analisis dimulai dengan memasukkan variabel kontrol (jika ada) ke dalam model pada langkah pertama. Model kemudian diperluas dengan menambahkan variabel prediktor lainnya secara bertahap. Setelah setiap langkah, perubahan dalam nilai R2 dihitung untuk menilai apakah variabel tambahan memberikan kontribusi signifikan terhadap model.\nKontribusi tambahan dari variabel-variabel yang dimasukkan ke dalam model secara bertahap ditunjukkan sebagai delta R2 (DR2). Setiap kali variabel baru ditambahkan, kita menghitung perubahan dalam R2 untuk menilai seberapa banyak variabilitas variabel prediktor yang dapat dijelaskan oleh variabel tersebut setelah mempertimbangkan variabel lain yang sudah ada.\nDelta R2 yang signifikan menunjukkan bahwa variabel yang ditambahkan memberikan kontribusi yang bermakna dalam meningkatkan kemampuan model untuk menjelaskan variasi pada variabel luaran. Pengujian delta R2 dilakukan dengan menggunakan uji F untuk perubahan R2, yang menguji apakah peningkatan dalam R2 setelah penambahan variabel baru cukup besar dan signifikan secara statistik (?fig-8_regresi_hierarkis).\n\n\n\n\n\n\nGambar 29.1: Contoh output hasil analisis regresi hierarkis\n\n\n\nSebagai contoh, jika perubahan dalam R2 antara dua model adalah 0.12, ini berarti bahwa variabel yang ditambahkan dalam model kedua menjelaskan tambahan 12% variabilitas dalam variabel luaran. Jika perubahan tersebut diuji dengan uji F dan hasilnya signifikan (p &lt; .05), maka kita dapat menyimpulkan bahwa penambahan variabel tersebut memperbaiki model secara signifikan.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Regresi Linear Hierarkis</span>"
+    ]
+  },
+  {
+    "objectID": "8_4_regresi_hierarkis.html#penulisan-laporan-hasil-regresi-hierarkis",
+    "href": "8_4_regresi_hierarkis.html#penulisan-laporan-hasil-regresi-hierarkis",
+    "title": "29  Regresi Linear Hierarkis",
+    "section": "29.4 Penulisan Laporan Hasil Regresi Hierarkis",
+    "text": "29.4 Penulisan Laporan Hasil Regresi Hierarkis\nPelaporan hasil analisis regresi hierarkis mengikuti struktur yang jelas dan sistematis. Penulis harus menyajikan informasi tentang kontribusi setiap variabel prediktor, perubahan dalam R2, dan hasil uji F serta uji-t. Sebagai contoh, laporan hasil regresi hierarkis bisa disusun sebagai berikut:\n“Analisis regresi hierarkis menunjukkan bahwa model pertama, dengan memasukkan pengalaman kerja sebagai variabel kontrol, tidak memberikan perubahan signifikan dalam R2 = .12, F(1, 150) = 3.56, p = .062. Namun, setelah menambahkan stres kerja dan dukungan sosial sebagai variabel prediktor, ΔR2 menjadi .45, F(3, 148) = 15.89, p &lt; .001, yang menunjukkan bahwa kedua variabel ini memberikan kontribusi signifikan terhadap tingkat kepuasan kerja. Stres kerja (β = .65, t(148) = 4.22, p &lt;.001) dan dukungan sosial (β = −.35, t(148) = 2.94, p = .004) berperan signifikan dalam meningkatkan kepuasan kerja, sementara pengalaman kerja (β = .15, t(148) = 1.01, p = .31) tidak menunjukkan kontribusi signifikan.”",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Regresi Linear Hierarkis</span>"
+    ]
+  },
+  {
+    "objectID": "8_4_regresi_hierarkis.html#interpretasi-hasil-analisis-regresi-hierarkis-delta-δ-r2",
+    "href": "8_4_regresi_hierarkis.html#interpretasi-hasil-analisis-regresi-hierarkis-delta-δ-r2",
+    "title": "29  Regresi Linear Hierarkis",
+    "section": "29.3 Interpretasi Hasil Analisis Regresi Hierarkis: Delta (Δ) R2",
+    "text": "29.3 Interpretasi Hasil Analisis Regresi Hierarkis: Delta (Δ) R2\nProses analisis dimulai dengan memasukkan variabel kontrol (jika ada) ke dalam model pada langkah pertama. Model kemudian diperluas dengan menambahkan variabel prediktor lainnya secara bertahap. Setelah setiap langkah, perubahan dalam nilai R2 dihitung untuk menilai apakah variabel tambahan memberikan kontribusi signifikan terhadap model.\nKontribusi tambahan dari variabel-variabel yang dimasukkan ke dalam model secara bertahap ditunjukkan sebagai delta R2 (ΔR2). Setiap kali variabel baru ditambahkan, kita menghitung perubahan dalam R2 untuk menilai seberapa banyak variabilitas variabel prediktor yang dapat dijelaskan oleh variabel tersebut setelah mempertimbangkan variabel lain yang sudah ada.\nDelta R2 yang signifikan menunjukkan bahwa variabel yang ditambahkan memberikan kontribusi yang bermakna dalam meningkatkan kemampuan model untuk menjelaskan variasi pada variabel luaran. Pengujian delta R2 dilakukan dengan menggunakan uji F untuk perubahan R2, yang menguji apakah peningkatan dalam R2 setelah penambahan variabel baru cukup besar dan signifikan secara statistik (Gambar 29.1).\n\n\n\n\n\n\nGambar 29.1: Contoh output hasil analisis regresi hierarkis\n\n\n\nSebagai contoh, jika perubahan dalam R2 antara dua model adalah 0.12, ini berarti bahwa variabel yang ditambahkan dalam model kedua menjelaskan tambahan 12% variabilitas dalam variabel luaran. Jika perubahan tersebut diuji dengan uji F dan hasilnya signifikan (p &lt; .05), maka kita dapat menyimpulkan bahwa penambahan variabel tersebut memperbaiki model secara signifikan.",
+    "crumbs": [
+      "Model Regresi Linear",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Regresi Linear Hierarkis</span>"
+    ]
+  },
+  {
+    "objectID": "8_latihan.html",
+    "href": "8_latihan.html",
+    "title": "Soal Latihan",
+    "section": "",
+    "text": "Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bagian 8 ini dengan menjawab sejumlah pertanyaan di bawah ini:",
+    "crumbs": [
+      "Model Regresi Linear",
+      "Soal Latihan"
+    ]
   }
 ]

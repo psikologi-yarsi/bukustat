@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Model Regresi Linear – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>Soal Latihan – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./8_1_prinsip_regresi.html" rel="next">
-<link href="./7_latihan.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./8_4_regresi_hierarkis.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li><li class="breadcrumb-item"><a href="./8_latihan.html">Soal Latihan</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -97,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title"><span id="sec-regresi" class="quarto-section-identifier">Model Regresi Linear</span></h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li><li class="breadcrumb-item"><a href="./8_latihan.html">Soal Latihan</a></li></ol></nav>
+      <h1 class="title">Soal Latihan</h1>
                       </div>
   </div>
     
@@ -416,7 +416,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link active">
+            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Model Regresi Linear</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -433,6 +433,24 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./8_2_regresi_sederhana.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_3_regresi_majemuk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Regresi Linear Majemuk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_4_regresi_hierarkis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_latihan.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Soal Latihan</span></a>
   </div>
 </li>
       </ul>
@@ -458,45 +476,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Pada bab sebelumnya, kita telah mempelajari analisis korelasi yang menunjukkan hubungan antara dua variabel. Di bab ini kita akan membahas analisis regresi linear yang juga digunakan untuk memahami hubungan antar variabel. Namun, analisis regresi memungkinkan kita untuk tidak hanya mengukur hubungan, tetapi juga memodelkan hubungan tersebut dan memprediksi nilai variabel luaran (variabel dependen) berdasarkan variabel prediktor (variabel bebas).</p>
-<p>Dalam regresi linear, kita akan fokus pada tiga jenis model regresi utama yang digunakan untuk menguji hubungan antara variabel-variabel ini:</p>
-<ol type="1">
-<li><p>Regresi linear sederhana (<em>simple linear regression</em>)</p></li>
-<li><p>Regresi majemuk (<em>multiple linear regression</em>)</p></li>
-<li><p>Regresi hirarkis (<em>hierarchical regression</em>)</p></li>
-</ol>
-<p>Bab ini akan memperkenalkan Anda pada prinsip dasar regresi linear, menjelaskan asumsi yang perlu dipenuhi, serta bagaimana menginterpretasikan hasil analisis dan menuliskan laporan regresi. Dengan memahami teknik-teknik ini, Anda akan siap untuk mengaplikasikan regresi linear dalam berbagai konteks penelitian untuk menggali hubungan yang lebih kompleks antar variabel.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="*Tujuan Pembelajaran*">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<em>Tujuan Pembelajaran</em>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Bab 26. Prinsip Dasar Model Regresi Linear:</strong></p>
-<ul>
-<li>Memahami prinsip dasar model regresi linear dan perbedaannya dengan analisis korelasi.</li>
-</ul>
-<p><strong>Bab 27. Regresi Linear Sederhana:</strong></p>
-<ul>
-<li>Memahami konsep regresi sederhana.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi sederhana sesuai standar akademik.</li>
-</ul>
-<p><strong>Bab 28. Prinsip Dasar Model Regresi Linear:</strong></p>
-<ul>
-<li>Memahami konsep regresi majemuk.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi majemuk sesuai standar akademik.</li>
-</ul>
-<p><strong>Bab 29. Regresi Linear Hierarkis:</strong></p>
-<ul>
-<li>Memahami konsep regresi hierarkis.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi hierarkis sesuai standar akademik.</li>
-</ul>
-</div>
-</div>
+<p>Penilaian mengenai hasil belajar merupakan bagian penting dalam sebuah proses pembelajaran. Ujilah pengetahuan dan pemahaman Anda mengenai materi Bagian 8 ini dengan menjawab sejumlah pertanyaan di bawah ini:</p>
+<iframe src="https://www.yarsi.ac.id/fakultas-psikologi/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=8" width="1138" height="239" frameborder="0" allowfullscreen="allowfullscreen" title="8. Regresi"></iframe><script src="https://www.yarsi.ac.id/fakultas-psikologi/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 
 
@@ -902,13 +883,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./7_latihan.html" class="pagination-link" aria-label="Soal Latihan">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Soal Latihan</span>
+      <a href="./8_4_regresi_hierarkis.html" class="pagination-link" aria-label="Regresi Linear Hierarkis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./8_1_prinsip_regresi.html" class="pagination-link" aria-label="Prinsip Dasar Model Regresi Linear">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Prinsip Dasar Model Regresi Linear</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="Daftar Pustaka">
+        <span class="nav-page-text">Daftar Pustaka</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

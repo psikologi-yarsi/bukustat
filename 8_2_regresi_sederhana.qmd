@@ -1,0 +1,38 @@
+# Regresi Linear Sederhana
+
+Regresi sederhana adalah model analisis yang menguji hubungan antara satu variabel prediktor (X) dan satu variabel luaran (Y). Dalam regresi linear sederhana, kita berusaha memprediksi nilai Y berdasarkan nilai X, dengan anggapan bahwa hubungan di antara keduanya dapat digambarkan dengan garis lurus. Untuk dapat melakukan analisis regresi linear sederhana dengan tapat, penting untuk memahami asumsi dasar, bagaimana menginterpretasi hasilnya, dan cara melaporkan hasil analisisnya.
+
+## Asumsi-asumsi dalam Regresi Sederhana
+
+Regresi sederhana didasarkan pada beberapa asumsi yang harus dipenuhi agar hasil analisis dapat diandalkan:
+
+1.  **Linieritas**: Asumsi pertama adalah hubungan antara variabel prediktor (X) dan variabel luaran (Y) harus linear, yang berarti hubungan dapat digambarkan dengan garis lurus. Untuk memeriksa linieritas, dapat digunakan *scatter plot* antara X dan Y, yang sebaiknya menunjukkan pola garis lurus.
+2.  **Independensi**: Data antar observasi harus independen, artinya nilai variabel pada satu pengamatan (misalnya, respons dari satu individu) tidak boleh bergantung atau dipengaruhi oleh pengamatan lainnya. Uji independensi bisa dilakukan dengan menggunakan uji *Durbin-Watson*.
+3.  **Normalitas residual**: Residual (selisih antara nilai yang diprediksi dan nilai observasi) harus terdistribusi normal. Pelanggaran normalitas dapat memengaruhi hasil uji statistik dan kesimpulan yang diambil. Normalitas dapat diuji dengan uji *Shapiro-Wilk* atau dengan melihat *Q-Q plot* residual.
+4.  **Homoskedastisitas**: Variabilitas residual harus seragam di sepanjang garis regresi. Jika residu lebih besar pada nilai-nilai prediktor tertentu, ini menunjukkan pelanggaran homoskedastisitas. Uji untuk homoskedastisitas dapat dilakukan dengan melihat plot residual vs. prediktor.
+
+Jika asumsi-asumsi ini tidak terpenuhi, analisis regresi dapat menghasilkan kesimpulan yang bias. Dalam hal ini, peneliti bisa mempertimbangkan untuk menggunakan transformasi data atau beralih ke model regresi yang lebih *robust*.
+
+## Interpretasi Hasil Regresi Sederhana
+
+Setelah menjalankan analisis regresi, hasil yang diperoleh harus diinterpretasikan untuk memahami hubungan antara X dan Y (lihat @fig-regresi-sederhana). Hal-hal yang perlu diperhatikan dalam interpretasi hasil adalah:
+
+-   **Koefisien Regresi (*β*)**: Koefisien regresi menunjukkan seberapa besar perubahan **rata-rata Y** untuk setiap perubahan satu unit pada **X**. Interpretasi ini memberikan gambaran tentang peran variabel prediktor terhadap variabel luaran.
+
+-   ***Intercept*** **(*a*)**: *Intercept* menunjukkan nilai Y ketika X = 0. Dalam beberapa kasus, *intercept* mungkin tidak memiliki makna praktis, terutama jika X = 0 tidak realistis dalam konteks penelitian.
+
+-   **Nilai *p***: Nilai *p* digunakan untuk menguji apakah koefisien regresi signifikan secara statistik. Jika nilai *p* lebih kecil dari 0,05 (nilai signifikansi standar), maka kita dapat menyimpulkan bahwa peran X terhadap Y signifikan. Sebaliknya, jika nilai p lebih besar dari 0,05, maka kita tidak dapat menolak hipotesis nol (bahwa ada peran yang signifikan).
+
+-   ***R-squared*** **(*R²*)**: Nilai *R²* menunjukkan seberapa besar **proporsi variabilitas** dalam variabel *outcome* yang dapat dijelaskan oleh variabel prediktor. *R*² berkisar antara 0 dan 1, di mana semakin mendekati 1, semakin baik model regresi dalam memprediksi variabel *outcome*. R² yang rendah menunjukkan bahwa model tidak dapat menjelaskan variabilitas Y secara signifikan.
+
+![Contoh output hasil analisis regresi sederhana](images/8_1_regresi_sederhana.png){#fig-regresi-sederhana alt="Contoh output hasil analisis regresi sederhana" fig-align="center"}
+
+## Penulisan Laporan Hasil Regresi Sederhana
+
+Dalam laporan hasil regresi sederhana, peneliti harus menyajikan hasil regresi secara sistematis dan jelas. Sebagai contoh:
+
+-   **Laporan koefisien**: "Analisis regresi linear menunjukkan bahwa jumlah jam belajar berpengaruh signifikan terhadap skor ujian, *β* = 2,45, *p* \< 0,001. Setiap tambahan satu jam belajar berhubungan dengan peningkatan skor ujian sebesar 2,45 poin."
+
+-   **Laporan *R*² dan nilai-*p***: "Model regresi sederhana memiliki nilai *R*² sebesar 0,35, yang menunjukkan bahwa 35% variasi dalam skor ujian dapat dijelaskan oleh jumlah jam belajar."
+
+Laporan seperti ini memberikan informasi yang jelas tentang hubungan antara variabel serta seberapa kuat model regresi dalam menjelaskan variabilitas data.

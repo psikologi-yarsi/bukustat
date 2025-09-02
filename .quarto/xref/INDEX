@@ -130,5 +130,20 @@
   },
   "7_latihan.qmd": {
     "7_latihan.html": "1eafe9e9"
+  },
+  "8_1_prinsip_regresi.qmd": {
+    "8_1_prinsip_regresi.html": "00e39486"
+  },
+  "8_2_regresi_sederhana.qmd": {
+    "8_2_regresi_sederhana.html": "23f7bb3b"
+  },
+  "8_3_regresi_majemuk.qmd": {
+    "8_3_regresi_majemuk.html": "1ea2548c"
+  },
+  "8_4_regresi_hierarkis.qmd": {
+    "8_4_regresi_hierarkis.html": "bfd35e3b"
+  },
+  "8_latihan.qmd": {
+    "8_latihan.html": "4f56633f"
   }
 }

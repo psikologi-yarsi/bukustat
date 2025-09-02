@@ -1,1 +1,34 @@
-# MODEL REGRESI LINEAR {#sec-regresi}
+# Model Regresi Linear {#sec-regresi}
+
+Pada bab sebelumnya, kita telah mempelajari analisis korelasi yang menunjukkan hubungan antara dua variabel. Di bab ini kita akan membahas analisis regresi linear yang juga digunakan untuk memahami hubungan antar variabel. Namun, analisis regresi memungkinkan kita untuk tidak hanya mengukur hubungan, tetapi juga memodelkan hubungan tersebut dan memprediksi nilai variabel luaran (variabel dependen) berdasarkan variabel prediktor (variabel bebas).
+
+Dalam regresi linear, kita akan fokus pada tiga jenis model regresi utama yang digunakan untuk menguji hubungan antara variabel-variabel ini:
+
+1.  Regresi linear sederhana (*simple linear regression*)
+
+2.  Regresi majemuk (*multiple linear regression*)
+
+3.  Regresi hirarkis (*hierarchical regression*)
+
+Bab ini akan memperkenalkan Anda pada prinsip dasar regresi linear, menjelaskan asumsi yang perlu dipenuhi, serta bagaimana menginterpretasikan hasil analisis dan menuliskan laporan regresi. Dengan memahami teknik-teknik ini, Anda akan siap untuk mengaplikasikan regresi linear dalam berbagai konteks penelitian untuk menggali hubungan yang lebih kompleks antar variabel.
+
+::: {.callout-note title="*Tujuan Pembelajaran*"}
+**Bab 26. Prinsip Dasar Model Regresi Linear:**
+
+-   Memahami prinsip dasar model regresi linear dan perbedaannya dengan analisis korelasi.
+
+**Bab 27. Regresi Linear Sederhana:**
+
+-   Memahami konsep regresi sederhana.
+-   Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi sederhana sesuai standar akademik.
+
+**Bab 28. Prinsip Dasar Model Regresi Linear:**
+
+-   Memahami konsep regresi majemuk.
+-   Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi majemuk sesuai standar akademik.
+
+**Bab 29. Regresi Linear Hierarkis:**
+
+-   Memahami konsep regresi hierarkis.
+-   Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi hierarkis sesuai standar akademik.
+:::

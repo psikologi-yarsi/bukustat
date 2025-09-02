@@ -1,0 +1,35 @@
+# Prinsip Dasar Model Regresi Linear
+
+## Regresi *vs*. Korelasi
+
+Dalam analisis statistik, kita sering kali tertarik untuk memahami hubungan antara dua variabel atau lebih. Korelasi adalah salah satu teknik yang digunakan untuk mengukur seberapa kuat dan sejauh mana dua variabel berhubungan. Namun, korelasi hanya mengukur sejauh mana dua variabel saling terkait tanpa membedakan mana yang berdampak terhadap mana. Misalnya, dalam studi pendidikan, kita bisa mengukur korelasi antara jumlah jam belajar dan skor ujian siswa untuk melihat apakah semakin banyak jam belajar, semakin tinggi skor ujian.
+
+Dalam hal ini, korelasi tidak memberi kita gambaran tentang dampak atau arah hubungan. Di sinilah regresi linear menjadi lebih berguna. **Regresi** memungkinkan kita untuk **memodelkan hubungan** fungsional antara satu **variabel prediktor** (atau variabel independen) dengan satu **variabel luaran** (atau variabel dependen). Dengan kata lain, regresi memungkinkan kita untuk **memprediksi** nilai variabel luaran berdasarkan nilai variabel prediktor. Sebagai contoh, regresi dapat digunakan untuk memprediksi skor ujian berdasarkan jumlah jam belajar.
+
+## Persamaan dan Garis Regresi Linear
+
+Dalam regresi linear sederhana, kita menganalisis hubungan antara satu variabel prediktor dan satu variabel *outcome*, menggunakan persamaan garis regresi untuk menggambarkan hubungan tersebut. Persamaan regresi biasanya berbentuk:
+
+$$
+Y = \alpha + \beta X + \varepsilon
+$$
+
+di mana:
+
+-   ***Y*** adalah variabel luaran (terikat),
+-   ***X*** adalah variabel prediktor (bebas),
+-   ***α*** adalah intercept atau konstanta (nilai Y saat X = 0),
+-   ***β*** adalah koefisien regresi yang menunjukkan perubahan rata-rata Y untuk setiap unit perubahan X,
+-   ***ε*** adalah residu, yang menggambarkan perbedaan antara nilai yang diprediksi oleh model dan nilai observasi sebenarnya.
+
+**Garis persamaan regresi** (@fig-regresi) adalah representasi grafis dari persamaan regresi ini, di mana sumbu horizontal (X) mewakili variabel prediktor dan sumbu vertikal (Y) mewakili variabel luaran. Garis regresi menggambarkan hubungan linear antara X dan Y, dengan koefisien *β*₁ mengukur kemiringan garis tersebut. Semakin besar nilai β₁, semakin curam garis regresi, menunjukkan hubungan yang lebih kuat antara X dan Y.
+
+![Garis persamaan regresi](images/regresi.png){#fig-regresi fig-align="center" width="499"}
+
+Sementara itu, **residu** adalah perbedaan antara nilai observasi dan nilai yang diprediksi oleh model regresi. Dalam kata lain, residu mengukur seberapa baik model regresi dapat memprediksi nilai variabel luaran untuk setiap pengamatan. Residu yang besar menunjukkan bahwa model kurang akurat dalam memprediksi nilai-nilai tersebut, sedangkan residu yang kecil menunjukkan model yang lebih akurat.
+
+Regresi linear tidak hanya memberikan informasi tentang kekuatan hubungan, tetapi juga memberikan model prediktif yang dapat digunakan untuk memperkirakan nilai variabel *outcome* berdasarkan nilai variabel prediktor. Ini berbeda dengan korelasi yang hanya menunjukkan hubungan antara dua variabel tanpa memprediksi nilai-nilai spesifik.
+
+Sebagai contoh lainnya, dalam dunia bisnis, kita dapat menggunakan regresi untuk memprediksi penjualan (variabel *outcome*) berdasarkan pengeluaran iklan (variabel prediktor). Regresi memberikan model prediktif yang dapat diterapkan dalam perencanaan dan pengambilan keputusan, sementara korelasi hanya menunjukkan apakah ada hubungan antara dua variabel tanpa memberikan model prediksi yang jelas.
+
+Dengan regresi, kita juga bisa menganalisis hubungan lebih kompleks, seperti **menguji peran beberapa variabel prediktor** terhadap satu variabel luaran, yang dikenal dengan regresi majemuk. Hal ini membuka banyak peluang untuk menganalisis data yang lebih kompleks, baik dalam penelitian sosial, ekonomi, maupun ilmu kesehatan.

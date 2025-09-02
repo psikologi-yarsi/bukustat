@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Model Regresi Linear – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>29&nbsp; Regresi Linear Hierarkis – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./8_1_prinsip_regresi.html" rel="next">
-<link href="./7_latihan.html" rel="prev">
+<link href="./8_latihan.html" rel="next">
+<link href="./8_3_regresi_majemuk.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.scss">
 </head>
@@ -85,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li><li class="breadcrumb-item"><a href="./8_4_regresi_hierarkis.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -97,8 +126,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title"><span id="sec-regresi" class="quarto-section-identifier">Model Regresi Linear</span></h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li><li class="breadcrumb-item"><a href="./8_4_regresi_hierarkis.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></a></li></ol></nav>
+      <h1 class="title"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></h1>
                       </div>
   </div>
     
@@ -416,7 +445,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link active">
+            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Model Regresi Linear</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -435,6 +464,24 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_3_regresi_majemuk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Regresi Linear Majemuk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_4_regresi_hierarkis.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -448,8 +495,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#konsep-dasar" id="toc-konsep-dasar" class="nav-link active" data-scroll-target="#konsep-dasar"><span class="header-section-number">29.1</span> Konsep Dasar</a></li>
+  <li><a href="#asumsi-asumsi-dalam-regresi-hierarkis" id="toc-asumsi-asumsi-dalam-regresi-hierarkis" class="nav-link" data-scroll-target="#asumsi-asumsi-dalam-regresi-hierarkis"><span class="header-section-number">29.2</span> Asumsi-asumsi dalam Regresi Hierarkis</a></li>
+  <li><a href="#interpretasi-hasil-analisis-regresi-hierarkis-delta-δ-r2" id="toc-interpretasi-hasil-analisis-regresi-hierarkis-delta-δ-r2" class="nav-link" data-scroll-target="#interpretasi-hasil-analisis-regresi-hierarkis-delta-δ-r2"><span class="header-section-number">29.3</span> Interpretasi Hasil Analisis Regresi Hierarkis: <em>Delta</em> (Δ) <em>R<sup>2</sup></em></a></li>
+  <li><a href="#penulisan-laporan-hasil-regresi-hierarkis" id="toc-penulisan-laporan-hasil-regresi-hierarkis" class="nav-link" data-scroll-target="#penulisan-laporan-hasil-regresi-hierarkis"><span class="header-section-number">29.4</span> Penulisan Laporan Hasil Regresi Hierarkis</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -458,47 +514,49 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Pada bab sebelumnya, kita telah mempelajari analisis korelasi yang menunjukkan hubungan antara dua variabel. Di bab ini kita akan membahas analisis regresi linear yang juga digunakan untuk memahami hubungan antar variabel. Namun, analisis regresi memungkinkan kita untuk tidak hanya mengukur hubungan, tetapi juga memodelkan hubungan tersebut dan memprediksi nilai variabel luaran (variabel dependen) berdasarkan variabel prediktor (variabel bebas).</p>
-<p>Dalam regresi linear, kita akan fokus pada tiga jenis model regresi utama yang digunakan untuk menguji hubungan antara variabel-variabel ini:</p>
-<ol type="1">
-<li><p>Regresi linear sederhana (<em>simple linear regression</em>)</p></li>
-<li><p>Regresi majemuk (<em>multiple linear regression</em>)</p></li>
-<li><p>Regresi hirarkis (<em>hierarchical regression</em>)</p></li>
-</ol>
-<p>Bab ini akan memperkenalkan Anda pada prinsip dasar regresi linear, menjelaskan asumsi yang perlu dipenuhi, serta bagaimana menginterpretasikan hasil analisis dan menuliskan laporan regresi. Dengan memahami teknik-teknik ini, Anda akan siap untuk mengaplikasikan regresi linear dalam berbagai konteks penelitian untuk menggali hubungan yang lebih kompleks antar variabel.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="*Tujuan Pembelajaran*">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Analisis regresi hierarkis digunakan untuk memodelkan hubungan antara satu variabel luaran dan lebih dari satu variabel prediktor, dengan memeriksa kontribusi tambahan dari variabel prediktor yang dimasukkan secara bertahap ke dalam model. Metode ini memungkinkan peneliti untuk mengevaluasi bagaimana faktor-faktor tertentu berkontribusi terhadap variabel luaran setelah mempertimbangkan variabel-variabel lain yang lebih dahulu dimasukkan.</p>
+<section id="konsep-dasar" class="level2" data-number="29.1">
+<h2 data-number="29.1" class="anchored" data-anchor-id="konsep-dasar"><span class="header-section-number">29.1</span> Konsep Dasar</h2>
+<p>Dalam regresi hierarkis, analisis dilakukan dalam beberapa langkah. Pada setiap langkah, sejumlah variabel prediktor ditambahkan ke dalam model untuk menguji seberapa besar kontribusi tambahan yang diberikan oleh variabel tersebut terhadap variabilitas variabel luaran. Model pertama biasanya dimulai dengan satu atau lebih variabel kontrol (mis., data demografi, seperti jenis kelamin dan usia) yang dianggap penting, sementara variabel prediktor utama dimasukkan pada langkah berikutnya.</p>
+<p>Contoh persamaan regresi hierarkis untuk dua langkah adalah:</p>
+<p><span class="math display">\[
+Y = \alpha + \beta_{1}X_{1} + \varepsilon
+\qquad \text{(Model 1: variabel kontrol $X_{1}$)}
+\]</span></p>
+<p><span class="math display">\[
+Y = \alpha + \beta_{1}X_{1} + \beta_{2}X_{2} + \varepsilon
+\qquad \text{(Model 2: variabel prediktor $X_{2}$ ditambahkan)}
+\]</span></p>
+<p>Sama seperti pada regresi majemuk, pada analisis regresi hierarkis, yang penting adalah memeriksa apakah penambahan setiap variabel prediktor memberikan kontribusi yang signifikan terhadap model, yang diuji dengan uji F dan perubahan dalam nilai <em>R<sup>2</sup></em>.</p>
+</section>
+<section id="asumsi-asumsi-dalam-regresi-hierarkis" class="level2" data-number="29.2">
+<h2 data-number="29.2" class="anchored" data-anchor-id="asumsi-asumsi-dalam-regresi-hierarkis"><span class="header-section-number">29.2</span> Asumsi-asumsi dalam Regresi Hierarkis</h2>
+<p>Asumsi-asumsi dalam analisis regresi hierarkis pada dasarnya sama dengan asumsi dalam regresi sederhana dan regresi majemuk, yaitu linearitas, independensi residual, normalitas residual, dan homoskedastisitas, serta multikolinearitas. Namun, regresi hierarkis juga memerlukan perhatian khusus terhadap urutan variabel yang dimasukkan ke dalam model, yang harus didasarkan pada teori atau logika yang kuat. Dengan memasukkan variabel secara bertahap, peneliti dapat menguji kontribusi tambahan dari setiap variabel terhadap model.</p>
+</section>
+<section id="interpretasi-hasil-analisis-regresi-hierarkis-delta-δ-r2" class="level2" data-number="29.3">
+<h2 data-number="29.3" class="anchored" data-anchor-id="interpretasi-hasil-analisis-regresi-hierarkis-delta-δ-r2"><span class="header-section-number">29.3</span> Interpretasi Hasil Analisis Regresi Hierarkis: <em>Delta</em> (Δ) <em>R<sup>2</sup></em></h2>
+<p>Proses analisis dimulai dengan memasukkan variabel kontrol (jika ada) ke dalam model pada langkah pertama. Model kemudian diperluas dengan menambahkan variabel prediktor lainnya secara bertahap. Setelah setiap langkah, perubahan dalam nilai <em>R<sup>2</sup></em> dihitung untuk menilai apakah variabel tambahan memberikan kontribusi signifikan terhadap model.</p>
+<p>Kontribusi tambahan dari variabel-variabel yang dimasukkan ke dalam model secara bertahap ditunjukkan sebagai <em>delta</em> <em>R<sup>2</sup></em> (Δ<em>R<sup>2</sup></em>). Setiap kali variabel baru ditambahkan, kita menghitung perubahan dalam <em>R<sup>2</sup></em> untuk menilai seberapa banyak variabilitas variabel prediktor yang dapat dijelaskan oleh variabel tersebut setelah mempertimbangkan variabel lain yang sudah ada.</p>
+<p><em>Delta</em> <em>R<sup>2</sup></em> yang signifikan menunjukkan bahwa variabel yang ditambahkan memberikan kontribusi yang bermakna dalam meningkatkan kemampuan model untuk menjelaskan variasi pada variabel luaran. Pengujian <em>delta</em> <em>R<sup>2</sup></em> dilakukan dengan menggunakan uji <em>F</em> untuk perubahan <em>R<sup>2</sup></em>, yang menguji apakah peningkatan dalam <em>R<sup>2</sup></em> setelah penambahan variabel baru cukup besar dan signifikan secara statistik (<a href="#fig-regresi-hierarkis" class="quarto-xref">Gambar&nbsp;<span>29.1</span></a>).</p>
+<div id="fig-regresi-hierarkis" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-regresi-hierarkis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/8_3_regresi_hierarkis.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
-<div class="callout-title-container flex-fill">
-<em>Tujuan Pembelajaran</em>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-regresi-hierarkis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;29.1: Contoh output hasil analisis regresi hierarkis
+</figcaption>
+</figure>
 </div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Bab 26. Prinsip Dasar Model Regresi Linear:</strong></p>
-<ul>
-<li>Memahami prinsip dasar model regresi linear dan perbedaannya dengan analisis korelasi.</li>
-</ul>
-<p><strong>Bab 27. Regresi Linear Sederhana:</strong></p>
-<ul>
-<li>Memahami konsep regresi sederhana.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi sederhana sesuai standar akademik.</li>
-</ul>
-<p><strong>Bab 28. Prinsip Dasar Model Regresi Linear:</strong></p>
-<ul>
-<li>Memahami konsep regresi majemuk.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi majemuk sesuai standar akademik.</li>
-</ul>
-<p><strong>Bab 29. Regresi Linear Hierarkis:</strong></p>
-<ul>
-<li>Memahami konsep regresi hierarkis.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi hierarkis sesuai standar akademik.</li>
-</ul>
-</div>
-</div>
+<p>Sebagai contoh, jika perubahan dalam <em>R<sup>2</sup></em> antara dua model adalah 0.12, ini berarti bahwa variabel yang ditambahkan dalam model kedua menjelaskan tambahan 12% variabilitas dalam variabel luaran. Jika perubahan tersebut diuji dengan uji <em>F</em> dan hasilnya signifikan (<em>p</em> &lt; .05), maka kita dapat menyimpulkan bahwa penambahan variabel tersebut memperbaiki model secara signifikan.</p>
+</section>
+<section id="penulisan-laporan-hasil-regresi-hierarkis" class="level2" data-number="29.4">
+<h2 data-number="29.4" class="anchored" data-anchor-id="penulisan-laporan-hasil-regresi-hierarkis"><span class="header-section-number">29.4</span> Penulisan Laporan Hasil Regresi Hierarkis</h2>
+<p>Pelaporan hasil analisis regresi hierarkis mengikuti struktur yang jelas dan sistematis. Penulis harus menyajikan informasi tentang kontribusi setiap variabel prediktor, perubahan dalam <em>R<sup>2</sup></em>, dan hasil uji F serta uji-t. Sebagai contoh, laporan hasil regresi hierarkis bisa disusun sebagai berikut:</p>
+<p>“Analisis regresi hierarkis menunjukkan bahwa model pertama, dengan memasukkan pengalaman kerja sebagai variabel kontrol, tidak memberikan perubahan signifikan dalam <em>R<sup>2</sup></em> = .12, <em>F</em>(1, 150) = 3.56, <em>p</em> = .062. Namun, setelah menambahkan stres kerja dan dukungan sosial sebagai variabel prediktor, Δ<em>R<sup>2</sup></em> menjadi .45, <em>F</em>(3, 148) = 15.89, <em>p</em> &lt; .001, yang menunjukkan bahwa kedua variabel ini memberikan kontribusi signifikan terhadap tingkat kepuasan kerja. Stres kerja (<em>β</em> = .65, <em>t</em>(148) = 4.22, <em>p</em> &lt;.001) dan dukungan sosial (<em>β</em> = −.35, <em>t</em>(148) = 2.94, <em>p</em> = .004) berperan signifikan dalam meningkatkan kepuasan kerja, sementara pengalaman kerja (<em>β</em> = .15, <em>t</em>(148) = 1.01, <em>p</em> = .31) tidak menunjukkan kontribusi signifikan.”</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -902,13 +960,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./7_latihan.html" class="pagination-link" aria-label="Soal Latihan">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Soal Latihan</span>
+      <a href="./8_3_regresi_majemuk.html" class="pagination-link" aria-label="Regresi Linear Majemuk">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Regresi Linear Majemuk</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./8_1_prinsip_regresi.html" class="pagination-link" aria-label="Prinsip Dasar Model Regresi Linear">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Prinsip Dasar Model Regresi Linear</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./8_latihan.html" class="pagination-link" aria-label="Soal Latihan">
+        <span class="nav-page-text">Soal Latihan</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

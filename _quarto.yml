@@ -82,6 +82,12 @@ book:
         - 7_latihan.qmd
     
     - part: 8_regresi.qmd
+      chapters: 
+        - 8_1_prinsip_regresi.qmd
+        - 8_2_regresi_sederhana.qmd
+        - 8_3_regresi_majemuk.qmd
+        - 8_4_regresi_hierarkis.qmd
+        - 8_latihan.qmd
     
     - references.qmd
 

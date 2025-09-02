@@ -1,0 +1,49 @@
+# Regresi Linear Majemuk
+
+Analisis regresi majemuk digunakan untuk memodelkan hubungan antara satu variabel *outcome* dan lebih dari satu variabel prediktor. Regresi majemuk memungkinkan kita untuk mengevaluasi bagaimana beberapa faktor berkontribusi terhadap variabel yang ingin diprediksi, dengan mengontrol pengaruh variabel lain dalam model.
+
+## Konsep Dasar
+
+Persamaan dalam regresi majemuk adalah sebagai berikut:
+
+$$
+Y = \alpha + \beta_{1}X_{1} + \beta_{2}X_{2} + \cdots + \beta_{n}X_{n} + \varepsilon
+$$
+
+di mana:
+
+-   **Y** adalah variabel luaran,
+
+-   **X~1~, X~2~, dan X~n~** adalah skor pada variabel-variabel prediktor,
+
+-   ***α*** adalah intersep atau konstanta (nilai Y saat semua variabel prediktor bernilai nol),
+
+-   ***β~1~, β~2~, β~n~*** adalah koefisien regresi yangmenunjukkan seberapa besar peran masing-masing variabel prediktor terhadap variabel luaran, dengan asumsi bahwa variabel lain tetap konstan
+
+-   **ε** (*error*) adalah residu, yang menggambarkan perbedaan antara nilai yang diprediksi oleh model dan nilai observasi sebenarnya.
+
+Dalam regresi majemuk, yang paling penting adalah apakah nilai *β* masing-masing variabel prediktor signifikan atau tidak dalam model. Signifikansi ini diuji menggunakan uji *t* untuk menentukan apakah peran variabel prediktor tersebut cukup kuat untuk diterima sebagai kontribusi yang bermakna terhadap perubahan variabel luaran.
+
+## Asumsi-asumsi dalam Regresi Majemuk
+
+Asumsi-asumsi dalam analisis regresi majemuk pada dasarnya sama dengan asumsi-asumsi dalam regresi sederhana, yaitu linearitas, independensiresidual, normalitas residual, dan homoskedastisitas. Namun, dalam regresi majemuk, terdapat sebuah asumsi lainnya yang perlu diperhatikan, yaitu **multikolinearitas**. Multikolinearitas terjadi ketika dua atau lebih variabel prediktor sangat berkorelasi satu sama lain, yang dapat mengganggu interpretasi koefisien regresi dan memengaruhi keakuratan hasil analisis. Kondisi ini dapat menyebabkan kesulitan dalam mengidentifikasi pengaruh individual masing-masing variabel prediktor terhadap variabel luaran, karena estimasi koefisien regresi menjadi tidak stabil dan sulit diinterpretasikan. Akibatnya, koefisien regresi dapat menjadi tidak signifikan meskipun secara teoritis seharusnya signifikan.
+
+Cara untuk menguji multikolinearitas adalah dengan menggunakan ***Variance Inflation Factor*** **(VIF)**. VIF mengukur sejauh mana variabilitas koefisien regresi meningkat karena adanya multikolinearitas. Nilai VIF yang tinggi (umumnya lebih besar dari 5) menunjukkan adanya multikolinearitas yang signifikan antara variabel-variabel independen dalam model, yang perlu diperbaiki untuk memastikan kestabilan dan akurasi estimasi regresi.
+
+Selain *VIF*, indikator lain yang dapat digunakan untuk mendeteksi multikolinearitas adalah ***Tolerance***. *Tolerance* adalah kebalikan dari *VIF*, dihitung sebagai 1 dibagi dengan *VIF* (*Tolerance* = 1/VIF). *Tolerance* yang rendah (biasanya kurang dari 0,1) menunjukkan adanya multikolinearitas yang signifikan. Semakin rendah nilai *Tolerance*, semakin tinggi kemungkinan adanya multikolinearitas antara variabel prediktor.
+
+## Interpretasi Hasil Analisis Regresi Majemuk
+
+Dalam regresi majemuk, evaluasi dimulai dengan uji *F*, yang menguji signifikansi model secara keseluruhan. Jika nilai *p* \< .05, model regresi dianggap signifikan. Selanjutnya, koefisien regresi (*b*) masing-masing variabel prediktor diuji menggunakan uji *t*. Koefisien yang signifikan (nilai *p* \< .05) menunjukkan bahwa variabel tersebut memiliki peran yang bermakna terhadap variabel luaran. Selain itu, nilai *R^2^* menggambarkan seberapa banyak variabilitas variabel luaran yang dapat dijelaskan oleh variabel prediktor dalam model. Semakin tinggi nilai *R^2^*, semakin baik model dalam menjelaskan variasi data. Interpretasi hasil uji ini membantu menentukan apakah model regresi memberikan prediksi yang valid dan apakah setiap variabel prediktor berkontribusi signifikan terhadap variabel luaran.
+
+Meskipun model regresi secara keseluruhan dapat menunjukkan kemampuan prediksi yang signifikan berdasarkan hasil uji *F* dan nilai *R^2^*, tidak berarti bahwa semua variabel prediktor berkontribusi secara signifikan. Beberapa variabel mungkin tidak menunjukkan peran yang signifikan terhadap variabel luaran meskipun dimasukkan dalam model. Hal ini dapat dilihat dari hasil uji *t* untuk koefisien regresi, di mana variabel yang memiliki nilai *p* \> .05 dianggap tidak berkontribusi secara signifikan. Oleh karena itu, meskipun model secara keseluruhan berhasil menjelaskan variasi dalam variabel luaran, tidak semua prediktor dalam model tersebut selalu memiliki peran yang berarti secara statistik.
+
+## Penulisan Laporan Hasil Regresi Majemuk
+
+Meskipun tidak wajib dilaporkan dalam detail, penting untuk menyebutkan bahwa asumsi-asumsi regresi majemuk (seperti normalitas residual, homoskedastisitas, dan independensi residual) telah diperiksa dan tidak ada pelanggaran yang signifikan. Contoh: "Pemeriksaan residual menunjukkan bahwa asumsi normalitas dan homoskedastisitas terpenuhi, dan tidak ada bukti multikolinearitas yang signifikan antara variabel independen."
+
+Dalam pelaporan hasil analisis regresi majemuk, penting untuk menyajikan informasi secara jelas dan sistematis agar pembaca dapat memahami bagaimana analisis dilakukan dan hasil yang diperoleh (@fig-regresi-majemuk). Berikut adalah format umum untuk menulis laporan hasil analisis regresi majemuk:
+
+“Analisis regresi majemuk menunjukkan bahwa model secara keseluruhan signifikan, *F*(3, 220) = 9.237, *p* \< 0.001, dengan *R^2^* = .205, yang berarti 20% variabilitas tingkat stres dapat dijelaskan oleh jam kerja, dukungan sosial, dan kecemasan. Hasil regresi menunjukkan bahwa jam kerja (*b* = .354, *t*(220) = 4.48, p \< .001) memiliki peran signifikan terhadap tingkat stres, sementara kecemasan (*b* = .09, *t*(220) = 1.17, *p* = .25) dan dukungan sosial (*b* = .08, *t*(220) = .91, *p* = .362) tidak signifikan.”
+
+![Contoh *output* hasil analisis regresi majemuk](images/8_2_regresi_majemuk.png){#fig-regresi-majemuk}

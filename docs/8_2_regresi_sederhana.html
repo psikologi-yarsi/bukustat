@@ -8,7 +8,7 @@
 
 <meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
 
-<title>Model Regresi Linear – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<title>27&nbsp; Regresi Linear Sederhana – Statistik untuk Psikologi dan Ilmu Sosial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./8_1_prinsip_regresi.html" rel="next">
-<link href="./7_latihan.html" rel="prev">
+<link href="./8_3_regresi_majemuk.html" rel="next">
+<link href="./8_1_prinsip_regresi.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li><li class="breadcrumb-item"><a href="./8_2_regresi_sederhana.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
@@ -97,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title"><span id="sec-regresi" class="quarto-section-identifier">Model Regresi Linear</span></h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./8_regresi.html">Model Regresi Linear</a></li><li class="breadcrumb-item"><a href="./8_2_regresi_sederhana.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></a></li></ol></nav>
+      <h1 class="title"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></h1>
                       </div>
   </div>
     
@@ -416,7 +416,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link active">
+            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Model Regresi Linear</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -431,8 +431,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./8_2_regresi_sederhana.html" class="sidebar-item-text sidebar-link">
+  <a href="./8_2_regresi_sederhana.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_3_regresi_majemuk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Regresi Linear Majemuk</span></span></a>
   </div>
 </li>
       </ul>
@@ -448,8 +454,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#asumsi-asumsi-dalam-regresi-sederhana" id="toc-asumsi-asumsi-dalam-regresi-sederhana" class="nav-link active" data-scroll-target="#asumsi-asumsi-dalam-regresi-sederhana"><span class="header-section-number">27.1</span> Asumsi-asumsi dalam Regresi Sederhana</a></li>
+  <li><a href="#interpretasi-hasil-regresi-sederhana" id="toc-interpretasi-hasil-regresi-sederhana" class="nav-link" data-scroll-target="#interpretasi-hasil-regresi-sederhana"><span class="header-section-number">27.2</span> Interpretasi Hasil Regresi Sederhana</a></li>
+  <li><a href="#penulisan-laporan-hasil-regresi-sederhana" id="toc-penulisan-laporan-hasil-regresi-sederhana" class="nav-link" data-scroll-target="#penulisan-laporan-hasil-regresi-sederhana"><span class="header-section-number">27.3</span> Penulisan Laporan Hasil Regresi Sederhana</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -458,47 +472,49 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Pada bab sebelumnya, kita telah mempelajari analisis korelasi yang menunjukkan hubungan antara dua variabel. Di bab ini kita akan membahas analisis regresi linear yang juga digunakan untuk memahami hubungan antar variabel. Namun, analisis regresi memungkinkan kita untuk tidak hanya mengukur hubungan, tetapi juga memodelkan hubungan tersebut dan memprediksi nilai variabel luaran (variabel dependen) berdasarkan variabel prediktor (variabel bebas).</p>
-<p>Dalam regresi linear, kita akan fokus pada tiga jenis model regresi utama yang digunakan untuk menguji hubungan antara variabel-variabel ini:</p>
+<p>Regresi sederhana adalah model analisis yang menguji hubungan antara satu variabel prediktor (X) dan satu variabel luaran (Y). Dalam regresi linear sederhana, kita berusaha memprediksi nilai Y berdasarkan nilai X, dengan anggapan bahwa hubungan di antara keduanya dapat digambarkan dengan garis lurus. Untuk dapat melakukan analisis regresi linear sederhana dengan tapat, penting untuk memahami asumsi dasar, bagaimana menginterpretasi hasilnya, dan cara melaporkan hasil analisisnya.</p>
+<section id="asumsi-asumsi-dalam-regresi-sederhana" class="level2" data-number="27.1">
+<h2 data-number="27.1" class="anchored" data-anchor-id="asumsi-asumsi-dalam-regresi-sederhana"><span class="header-section-number">27.1</span> Asumsi-asumsi dalam Regresi Sederhana</h2>
+<p>Regresi sederhana didasarkan pada beberapa asumsi yang harus dipenuhi agar hasil analisis dapat diandalkan:</p>
 <ol type="1">
-<li><p>Regresi linear sederhana (<em>simple linear regression</em>)</p></li>
-<li><p>Regresi majemuk (<em>multiple linear regression</em>)</p></li>
-<li><p>Regresi hirarkis (<em>hierarchical regression</em>)</p></li>
+<li><strong>Linieritas</strong>: Asumsi pertama adalah hubungan antara variabel prediktor (X) dan variabel luaran (Y) harus linear, yang berarti hubungan dapat digambarkan dengan garis lurus. Untuk memeriksa linieritas, dapat digunakan <em>scatter plot</em> antara X dan Y, yang sebaiknya menunjukkan pola garis lurus.</li>
+<li><strong>Independensi</strong>: Data antar observasi harus independen, artinya nilai variabel pada satu pengamatan (misalnya, respons dari satu individu) tidak boleh bergantung atau dipengaruhi oleh pengamatan lainnya. Uji independensi bisa dilakukan dengan menggunakan uji <em>Durbin-Watson</em>.</li>
+<li><strong>Normalitas residual</strong>: Residual (selisih antara nilai yang diprediksi dan nilai observasi) harus terdistribusi normal. Pelanggaran normalitas dapat memengaruhi hasil uji statistik dan kesimpulan yang diambil. Normalitas dapat diuji dengan uji <em>Shapiro-Wilk</em> atau dengan melihat <em>Q-Q plot</em> residual.</li>
+<li><strong>Homoskedastisitas</strong>: Variabilitas residual harus seragam di sepanjang garis regresi. Jika residu lebih besar pada nilai-nilai prediktor tertentu, ini menunjukkan pelanggaran homoskedastisitas. Uji untuk homoskedastisitas dapat dilakukan dengan melihat plot residual vs.&nbsp;prediktor.</li>
 </ol>
-<p>Bab ini akan memperkenalkan Anda pada prinsip dasar regresi linear, menjelaskan asumsi yang perlu dipenuhi, serta bagaimana menginterpretasikan hasil analisis dan menuliskan laporan regresi. Dengan memahami teknik-teknik ini, Anda akan siap untuk mengaplikasikan regresi linear dalam berbagai konteks penelitian untuk menggali hubungan yang lebih kompleks antar variabel.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="*Tujuan Pembelajaran*">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<em>Tujuan Pembelajaran</em>
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Bab 26. Prinsip Dasar Model Regresi Linear:</strong></p>
+<p>Jika asumsi-asumsi ini tidak terpenuhi, analisis regresi dapat menghasilkan kesimpulan yang bias. Dalam hal ini, peneliti bisa mempertimbangkan untuk menggunakan transformasi data atau beralih ke model regresi yang lebih <em>robust</em>.</p>
+</section>
+<section id="interpretasi-hasil-regresi-sederhana" class="level2" data-number="27.2">
+<h2 data-number="27.2" class="anchored" data-anchor-id="interpretasi-hasil-regresi-sederhana"><span class="header-section-number">27.2</span> Interpretasi Hasil Regresi Sederhana</h2>
+<p>Setelah menjalankan analisis regresi, hasil yang diperoleh harus diinterpretasikan untuk memahami hubungan antara X dan Y (lihat <a href="#fig-regresi-sederhana" class="quarto-xref">Gambar&nbsp;<span>27.1</span></a>). Hal-hal yang perlu diperhatikan dalam interpretasi hasil adalah:</p>
 <ul>
-<li>Memahami prinsip dasar model regresi linear dan perbedaannya dengan analisis korelasi.</li>
+<li><p><strong>Koefisien Regresi (<em>β</em>)</strong>: Koefisien regresi menunjukkan seberapa besar perubahan <strong>rata-rata Y</strong> untuk setiap perubahan satu unit pada <strong>X</strong>. Interpretasi ini memberikan gambaran tentang peran variabel prediktor terhadap variabel luaran.</p></li>
+<li><p><strong><em>Intercept</em></strong> <strong>(<em>a</em>)</strong>: <em>Intercept</em> menunjukkan nilai Y ketika X = 0. Dalam beberapa kasus, <em>intercept</em> mungkin tidak memiliki makna praktis, terutama jika X = 0 tidak realistis dalam konteks penelitian.</p></li>
+<li><p><strong>Nilai <em>p</em></strong>: Nilai <em>p</em> digunakan untuk menguji apakah koefisien regresi signifikan secara statistik. Jika nilai <em>p</em> lebih kecil dari 0,05 (nilai signifikansi standar), maka kita dapat menyimpulkan bahwa peran X terhadap Y signifikan. Sebaliknya, jika nilai p lebih besar dari 0,05, maka kita tidak dapat menolak hipotesis nol (bahwa ada peran yang signifikan).</p></li>
+<li><p><strong><em>R-squared</em></strong> <strong>(<em>R²</em>)</strong>: Nilai <em>R²</em> menunjukkan seberapa besar <strong>proporsi variabilitas</strong> dalam variabel <em>outcome</em> yang dapat dijelaskan oleh variabel prediktor. <em>R</em>² berkisar antara 0 dan 1, di mana semakin mendekati 1, semakin baik model regresi dalam memprediksi variabel <em>outcome</em>. R² yang rendah menunjukkan bahwa model tidak dapat menjelaskan variabilitas Y secara signifikan.</p></li>
 </ul>
-<p><strong>Bab 27. Regresi Linear Sederhana:</strong></p>
-<ul>
-<li>Memahami konsep regresi sederhana.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi sederhana sesuai standar akademik.</li>
-</ul>
-<p><strong>Bab 28. Prinsip Dasar Model Regresi Linear:</strong></p>
-<ul>
-<li>Memahami konsep regresi majemuk.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi majemuk sesuai standar akademik.</li>
-</ul>
-<p><strong>Bab 29. Regresi Linear Hierarkis:</strong></p>
-<ul>
-<li>Memahami konsep regresi hierarkis.</li>
-<li>Mampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi hierarkis sesuai standar akademik.</li>
-</ul>
+<div id="fig-regresi-sederhana" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-regresi-sederhana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/8_1_regresi_sederhana.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-regresi-sederhana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;27.1: Contoh output hasil analisis regresi sederhana
+</figcaption>
+</figure>
 </div>
+</section>
+<section id="penulisan-laporan-hasil-regresi-sederhana" class="level2" data-number="27.3">
+<h2 data-number="27.3" class="anchored" data-anchor-id="penulisan-laporan-hasil-regresi-sederhana"><span class="header-section-number">27.3</span> Penulisan Laporan Hasil Regresi Sederhana</h2>
+<p>Dalam laporan hasil regresi sederhana, peneliti harus menyajikan hasil regresi secara sistematis dan jelas. Sebagai contoh:</p>
+<ul>
+<li><p><strong>Laporan koefisien</strong>: “Analisis regresi linear menunjukkan bahwa jumlah jam belajar berpengaruh signifikan terhadap skor ujian, <em>β</em> = 2,45, <em>p</em> &lt; 0,001. Setiap tambahan satu jam belajar berhubungan dengan peningkatan skor ujian sebesar 2,45 poin.”</p></li>
+<li><p><strong>Laporan <em>R</em>² dan nilai-<em>p</em></strong>: “Model regresi sederhana memiliki nilai <em>R</em>² sebesar 0,35, yang menunjukkan bahwa 35% variasi dalam skor ujian dapat dijelaskan oleh jumlah jam belajar.”</p></li>
+</ul>
+<p>Laporan seperti ini memberikan informasi yang jelas tentang hubungan antara variabel serta seberapa kuat model regresi dalam menjelaskan variabilitas data.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -902,13 +918,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./7_latihan.html" class="pagination-link" aria-label="Soal Latihan">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Soal Latihan</span>
+      <a href="./8_1_prinsip_regresi.html" class="pagination-link" aria-label="Prinsip Dasar Model Regresi Linear">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Prinsip Dasar Model Regresi Linear</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./8_1_prinsip_regresi.html" class="pagination-link" aria-label="Prinsip Dasar Model Regresi Linear">
-        <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Prinsip Dasar Model Regresi Linear</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./8_3_regresi_majemuk.html" class="pagination-link" aria-label="Regresi Linear Majemuk">
+        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Regresi Linear Majemuk</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
