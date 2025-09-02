@@ -1,4 +1,4 @@
-# Asumsi-asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis
+# Asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis
 
 Tujuan analisis korelasi utamanya adalah untuk mengukur kekuatan dan arah hubungan antara dua variabel. Meskipun metode ini sering digunakan dalam berbagai disiplin ilmu, agar hasilnya valid, ada beberapa **asumsi dasar** yang harus dipenuhi, seperti normalitas distribusi data. Memahami asumsi-asumsi ini sangat penting agar peneliti dapat menarik kesimpulan yang akurat dan tidak bias. Selain itu, interpretasi hasil analisis korelasi perlu dilakukan dengan hati-hati, mengingat korelasi tidak membuktikan sebab-akibat, melainkan hanya mengukur derajat hubungan antar variabel. Sub-bab ini akan membahas **asumsi-asumsi yang perlu dipenuhi** dalam analisis korelasi, serta bagaimana **menginterpretasikan** hasil korelasi dan **menuliskan laporan** hasil analisis dengan cara yang jelas dan sistematis.
 
@@ -17,7 +17,7 @@ Jika terdapat asumsi yang tidak terpenuhi, maka dilakukan uji korelasi non-param
 
 Dalam melakukan interpretasi, hal pertama yang perlu dilihat adalah nilai signifikansi (*p-value*). Uji hubungan antara dua variabel dikatakan signifikan jika nilai *p-value* lebih kecil dari .05 (*p* \< .05), artinya terdapat hubungan yang signifikan antara variabel X dan variabel Y. Jika terdapat hubungan, maka interpretasi dilanjutkan dengan melihat arah korelasi (positif atau negatif) dan besaran koefisien korelasi. Jika tidak terdapat hubungan yang signifikan (*p* \> .05), maka interpretasi terkait arah dan derajat korelasi tidak perlu dilanjutkan. Interpretasi hasil uji korelasi dapat lebih dipahami melalui *output* dari analisis JASP (@fig-matriks).
 
-![Output hasil uji korelasi](images/7_4_matriks.png){#fig-matriks width="698"}
+![Output hasil uji korelasi](images/7_4_matriks.png){#fig-matriks width="540"}
 
 Dari *output* yang ditampilkan pada @fig-matriks diketahui bahwa *well-being* berkorelasi secara signifikan dengan *learning engagement* dan aspek kepribadian *neuroticism* (*p* \< .001), namun tidak berkorelasi dengan aspek kepribadian *opennes to experiences*, karena *p valu*e lebih besar dari .05 (*p* = .052). Interpretasi terkait arah dan besaran korelasi dapat dilanjutkan pada hasil yang signifikan, diketahui terdapat hubungan positif antara *well-being* dan *learning engagement* (*r~s~* = .669), sementara itu, hubungan antara *well-being* dan *neuroticism* berkorelasi negatif (*r~s~* = -.396). Derajat kekuatan korelasi antara antara *well-being* dan *learning engagement* tergolong kuat (rentang .51 hingga .70), dan korelasi antara *well-being* dan *neuroticism* tergolong sedang/cukup kuat (rentang .31 hingga .50).
 

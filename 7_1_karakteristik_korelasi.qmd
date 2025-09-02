@@ -22,7 +22,7 @@ Berdasarkan arah hubungan, korelasi dapat dibedakan menjadi korelasi positif dan
 
 ::: {#tbl-koefisien}
 | Kekuatan korelasi | Koefisien korelasi Positif | Koefisien korelasi Negatif |
-|------------------|:-------------------------:|:-------------------------:|
+|-------------------|:--------------------------:|:--------------------------:|
 | Lemah             |          0 – .30           |          0 – -.30          |
 | Sedang            |         .31 – .50          |        -.31 – -.50         |
 | Kuat              |         .51 – .70          |        -.51 – -.70         |

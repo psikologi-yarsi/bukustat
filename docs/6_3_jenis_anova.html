@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./7_korelasi.html" rel="next">
+<link href="./6_4_anova_nonpar.html" rel="next">
 <link href="./6_2_prinsip_anova.html" rel="prev">
 <link href="./coverv3.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b4f28d27a1e04389c1d4e93975f0e3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d36a7ee5124569eb73bf79d7278ce6fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -327,13 +327,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./5_3_independent_ttest.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis <em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analisis <em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./5_4_paired_ttest.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Asumsi, Interpretasi, dan Pelaporan Analisis Paired Samples t-test: Parametrik dan Non-Parametrik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Analisis <em>Paired Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -371,15 +371,89 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Jenis-jenis <em>ANOVA</em> dan Interpretasi Hasil Analisis</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_4_anova_nonpar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alternatif Non-Parametrik untuk <em>ANOVA</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">ANALISIS KORELASI</span></span>
+      <div class="sidebar-item-container"> 
+            <a href="./7_korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANALISIS KORELASI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_1_karakteristik_korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Karakteristik Hubungan Antara Dua Variabel</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_2_asumsi_korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">MODEL REGRESI LINEAR</span></span>
+      <div class="sidebar-item-container"> 
+            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Model Regresi Linear</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_1_prinsip_regresi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Prinsip Dasar Model Regresi Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_2_regresi_sederhana.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_3_regresi_majemuk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Regresi Linear Majemuk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_4_regresi_hierarkis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -420,14 +494,13 @@ ul.task-list li input[type="checkbox"] {
 <p><strong><em>ANOVA</em></strong> <strong>Satu Arah</strong> digunakan ketika peneliti ingin membandingkan rata-rata tiga atau lebih kelompok independen berdasarkan satu variabel independen. Misalnya, jika seorang peneliti sedang memeriksa dampak metode pengajaran yang berbeda terhadap kinerja siswa, mereka dapat mengelompokkan siswa ke dalam tiga kelompok berdasarkan metode yang digunakan. <em>ANOVA</em> Satu Arah membantu menentukan apakah ada perbedaan yang signifikan secara statistik dalam skor kinerja rata-rata di antara kelompok-kelompok ini. Jenis <em>ANOVA</em> ini menjawab pertanyaan mendasar tentang apakah setidaknya satu rata-rata kelompok berbeda dari yang lain tanpa mendalami interaksi antara beberapa variabel.&nbsp;</p>
 <p><strong>Menghitung hasil dalam <em>ANOVA</em> satu arah</strong> melibatkan beberapa langkah kunci yang memungkinkan peneliti untuk menarik kesimpulan bermakna dari data yang diperoleh. Tujuan utama <em>ANOVA</em> satu arah adalah untuk menentukan apakah ada perbedaan yang signifikan secara statistik di antara rata-rata tiga atau lebih kelompok independen. Proses ini dimulai dengan perumusan hipotesis nol, yang menyatakan bahwa semua rata-rata kelompok adalah sama, dan hipotesis alternatif, yang menunjukkan bahwa setidaknya satu rata-rata kelompok berbeda. Dengan menggunakan perangkat lunak statistik atau perhitungan manual, Anda dapat memperoleh statistik F, yang membandingkan varians antar kelompok dengan varians dalam kelompok. <a href="#tbl-oneway" class="quarto-xref">Tabel&nbsp;<span>22.1</span></a> memuat contoh hasil analisis <em>ANOVA</em> satu-arah dengan menggunakan perangkat lunak JASP.</p>
 <p>Pada <em>ANOVA</em> satu arah, <strong>interpretasi</strong> dimulai dengan menilai nilai F dan <em>p-value</em>. Jika <em>p-value</em> lebih kecil dari batas signifikansi, misalnya 0,05, maka dapat disimpulkan bahwa ada perbedaan signifikan di antara kelompok yang dibandingkan. Interpretasi <em>ANOVA</em> satu arah hanya berfokus pada satu variabel independen sehingga lebih sederhana, namun penting untuk memperhatikan ukuran efek seperti <em>eta-squared</em> untuk memahami seberapa besar pengaruh faktor tersebut terhadap variabel dependen. Dalam pelaporan, hasil <em>ANOVA</em> satu arah disusun dengan mencantumkan nilai F, derajat kebebasan antar dan dalam kelompok, nilai <em>p</em>, dan ukuran efek. Misalnya: “Analisis varians satu arah menunjukkan perbedaan signifikan antara kelompok, <em>F</em>(2, 87) = 4,76, <em>p</em> = 0,011, <em>η²</em> = 0,098.”</p>
-<div id="tbl-oneway" class="two-tables quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-oneway" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oneway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabel&nbsp;22.1: Contoh tabel <em>output</em> hasil <em>ANOVA</em> satu-arah
 </figcaption>
 <div aria-describedby="tbl-oneway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><em>One-Way ANOVA</em></p>
-<table class="two-tables caption-top table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 24%">
@@ -469,41 +542,6 @@ Tabel&nbsp;22.1: Contoh tabel <em>output</em> hasil <em>ANOVA</em> satu-arah
 </tr>
 </tbody>
 </table>
-<p><em>Group Descriptives</em></p>
-<table class="two-tables caption-top table">
-<thead>
-<tr class="header">
-<th>Metode terapi</th>
-<th><em>N</em></th>
-<th><em>Mean</em></th>
-<th><em>SD</em></th>
-<th><em>SE</em></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CBT</td>
-<td>30</td>
-<td>0.717</td>
-<td>0.392</td>
-<td>0.160</td>
-</tr>
-<tr class="even">
-<td>Journaling</td>
-<td>31</td>
-<td>1.483</td>
-<td>0.214</td>
-<td>0.087</td>
-</tr>
-<tr class="odd">
-<td>Placebo</td>
-<td>29</td>
-<td>0.450</td>
-<td>0.281</td>
-<td>0.115</td>
-</tr>
-</tbody>
-</table>
 </div>
 </figure>
 </div>
@@ -530,7 +568,7 @@ ANOVA desain faktorial
 <div id="tbl-twoway" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-twoway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabel&nbsp;22.2: Contoh tabel <em>output</em> hasil ANOVA dua-arah
+Tabel&nbsp;22.2: Contoh tabel <em>output</em> hasil <em>ANOVA</em> dua-arah
 </figcaption>
 <div aria-describedby="tbl-twoway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -574,7 +612,7 @@ Tabel&nbsp;22.2: Contoh tabel <em>output</em> hasil ANOVA dua-arah
 <td>.012</td>
 </tr>
 <tr class="odd">
-<td>Metode ✻ Jenis kelamin</td>
+<td>Metode x Jenis kelamin</td>
 <td>0.351</td>
 <td>2</td>
 <td>0.121</td>
@@ -602,15 +640,14 @@ Tabel&nbsp;22.2: Contoh tabel <em>output</em> hasil ANOVA dua-arah
 <p>Selain Satu Arah dan Dua Arah, ada bentuk khusus <em>ANOVA</em> seperti <strong><em>ANOVA</em></strong> <strong>Pengukuran Berulang</strong> (<em>Repeated Measures ANOVA</em>), yang digunakan ketika partisipan yang sama diukur beberapa kali dalam kondisi berbeda. Metode ini dapat terjadi dalam studi longitudinal atau eksperimen di mana individu terpapar pada semua tingkat variabel independen.</p>
 <p>Pada <em>ANOVA</em> Pengukuran Berulang, <strong>interpretasi</strong> memperhatikan signifikansi perubahan antar kondisi atau waktu. Karena pengukuran dilakukan berulang pada individu yang sama, penyesuaian untuk <em>sphericity</em> sering diperlukan, misalnya menggunakan koreksi <em>Greenhouse-Geisser</em>.</p>
 <p><em>Sphericity</em> mengacu pada kondisi di mana varians perbedaan antara setiap pasangan tingkat pengukuran berulang adalah sama. Dengan kata lain, kovarians antara setiap pasangan pengukuran berulang harus sama. Pelanggaran <em>sphericity</em> dapat menyebabkan peningkatan risiko kesalahan Tipe I (menolak H<sub>0</sub>​ padahal benar) dan Tipe II (gagal menolak H<sub>0</sub>​ padahal salah), sehingga hasil F-statistik menjadi tidak akurat.</p>
-<p><a href="#tbl-repeated" class="quarto-xref">Tabel&nbsp;<span>22.3</span></a> menunjukkan contoh hasil <em>ANOVA</em> pengukuran berulang mengenai efektivitas terapi meditasi dalam mengurangi kecemasan Penulisan hasil mencantumkan statistik <em>F</em>, derajat kebebasan yang telah disesuaikan (jika perlu), nilai <em>p</em>, dan ukuran efek, misalnya: “Analisis pengukuran berulang menunjukkan perubahan signifikan tingkat kecemasan antar sesi terapi, <em>F</em>(2, 29) = 8,57, <em>p</em> = 0,006, <em>η²<sub>partial</sub></em> = 0,228. Uji <em>post-hoc</em> dengan koreksi Bonferroni mengungkapkan bahwa tingkat kecemasan menurun secara signifikan dari awal (<em>M</em> = 35.2, <em>SD</em> = 5.1) ke tengah (<em>M</em> = 28.9, <em>SD</em> = 4.8, <em>p</em> = .002) dan dari tengah ke akhir (<em>M</em> = 22.5, <em>SD</em> = 4.5, <em>p</em> = .001).”</p>
-<div id="tbl-repeated" class="two-tables quarto-float quarto-figure quarto-figure-center anchored">
+<p><a href="#tbl-repeated" class="quarto-xref">Tabel&nbsp;<span>22.3</span></a> menunjukkan contoh hasil <em>ANOVA</em> pengukuran berulang mengenai efektivitas terapi meditasi dalam mengurangi kecemasan Penulisan hasil mencantumkan statistik <em>F</em>, derajat kebebasan yang telah disesuaikan (jika perlu), nilai <em>p</em>, dan ukuran efek, misalnya: “Analisis pengukuran berulang menunjukkan perubahan signifikan tingkat kecemasan antar sesi terapi, <em>F</em>(2, 29) = 8,57, <em>p</em> = 0,006, <em>η²<sub>partial</sub></em> = 0,228.”</p>
+<div id="tbl-repeated" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-repeated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabel&nbsp;22.3: Contoh tabel <em>output</em> hasil <em>ANOVA</em> pengukuran berulang
 </figcaption>
 <div aria-describedby="tbl-repeated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><em>Within-subjects effects</em></p>
-<table class="two-tables caption-top table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 15%">
 <col style="width: 24%">
@@ -652,41 +689,6 @@ Tabel&nbsp;22.3: Contoh tabel <em>output</em> hasil <em>ANOVA</em> pengukuran be
 </tr>
 </tbody>
 </table>
-<p><em>Group Descriptives</em></p>
-<table class="two-tables caption-top table">
-<thead>
-<tr class="header">
-<th>Waktu pengukuran</th>
-<th><em>N</em></th>
-<th><em>Mean</em></th>
-<th><em>SD</em></th>
-<th><em>SE</em></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Awal</td>
-<td>30</td>
-<td>35.212</td>
-<td>5.125</td>
-<td>1.123</td>
-</tr>
-<tr class="even">
-<td>Tengah</td>
-<td>30</td>
-<td>28.871</td>
-<td>4.756</td>
-<td>1.031</td>
-</tr>
-<tr class="odd">
-<td>Akhir</td>
-<td>30</td>
-<td>22.534</td>
-<td>4.531</td>
-<td>.0902</td>
-</tr>
-</tbody>
-</table>
 </div>
 </figure>
 </div>
@@ -695,22 +697,21 @@ Tabel&nbsp;22.3: Contoh tabel <em>output</em> hasil <em>ANOVA</em> pengukuran be
 <h2 data-number="22.4" class="anchored" data-anchor-id="anova-desain-campuran"><span class="header-section-number">22.4</span> <em>ANOVA</em> Desain Campuran</h2>
 <p>Variasi lainnya adalah <strong><em>ANOVA</em></strong> <strong>Desain Campuran</strong> (<em>Mixed-Design ANOVA</em>), yang menggabungkan faktor independen dan pengukuran berulang, memungkinkan analisis data yang lebih terperinci. Memahami variasi-variasi ini memungkinkan peneliti untuk memilih metode statistik yang paling efektif untuk pertanyaan penelitian mereka yang spesifik.</p>
 <p><strong>Interpretasi</strong> hasil analisis <em>ANOVA</em> Desain Campuran lebih kompleks karena mencakup efek utama untuk faktor <em>between-subjects</em>, faktor <em>within-subjects</em>, serta interaksi keduanya. Peneliti perlu mengevaluasi apakah ada perbedaan antar kelompok, perubahan dalam kelompok dari waktu ke waktu, dan apakah pola perubahan berbeda antar kelompok. Contoh hasil analisisnya dapat dilihat di <a href="#tbl-mixed" class="quarto-xref">Tabel&nbsp;<span>22.4</span></a>. Penulisan hasil memuat masing-masing efek secara sistematis. Misalnya: “Terdapat efek utama yang signifikan dari kelompok perlakuan terhadap tingkat stres, <em>F</em>(1, 58) = 10,12, <em>p</em> = 0,002, serta efek waktu yang signifikan, <em>F</em>(2, 116) = 6,87, p = 0,002. Interaksi antara kelompok dan waktu juga signifikan, <em>F</em>(2, 116) = 4,21, <em>p</em> = 0,017, menunjukkan bahwa perubahan stres antar waktu berbeda berdasarkan kelompok perlakuan.”</p>
-<div id="tbl-mixed" class="two-tables quarto-float quarto-figure quarto-figure-center anchored">
+<div id="tbl-mixed" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mixed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabel&nbsp;22.4: Contoh tabel output hasil <em>ANOVA</em> campuran
 </figcaption>
 <div aria-describedby="tbl-mixed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<p><em>Within-subjects effects</em></p>
-<table class="two-tables caption-top table">
+<table class="caption-top table">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 22%">
-<col style="width: 7%">
-<col style="width: 18%">
-<col style="width: 8%">
-<col style="width: 7%">
-<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -734,7 +735,7 @@ Tabel&nbsp;22.4: Contoh tabel output hasil <em>ANOVA</em> campuran
 <td>.311</td>
 </tr>
 <tr class="even">
-<td>Waktu ✻ Treatment</td>
+<td>Waktu x Treatment</td>
 <td>23.553</td>
 <td>2</td>
 <td>6.431</td>
@@ -753,8 +754,11 @@ Tabel&nbsp;22.4: Contoh tabel output hasil <em>ANOVA</em> campuran
 </tr>
 </tbody>
 </table>
+</div>
+</figure>
+</div>
 <p><em>Between-subjects effects</em></p>
-<table class="two-tables caption-top table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 15%">
 <col style="width: 25%">
@@ -796,15 +800,12 @@ Tabel&nbsp;22.4: Contoh tabel output hasil <em>ANOVA</em> campuran
 </tr>
 </tbody>
 </table>
-</div>
-</figure>
-</div>
 </section>
 <section id="sec-posthoc" class="level2" data-number="22.5">
 <h2 data-number="22.5" class="anchored" data-anchor-id="sec-posthoc"><span class="header-section-number">22.5</span> Uji <em>Post-hoc</em> vs.&nbsp;<em>Planned Contrasts</em></h2>
 <p>Setelah uji <em>ANOVA</em> menunjukkan adanya perbedaan rata-rata yang signifikan, peneliti perlu mengidentifikasi lebih jauh kelompok mana yang berbeda. Di sinilah <em>planned contrasts</em> dan uji <em>post-hoc</em> berperan. <em>Planned contrasts</em> digunakan ketika peneliti sejak awal telah menetapkan hipotesis spesifik mengenai kelompok mana yang diharapkan berbeda. Misalnya, dalam studi tentang efektivitas tiga metode pengajaran, seorang peneliti mungkin sejak awal ingin menguji apakah metode A lebih efektif dibandingkan metode B dan C secara gabungan.</p>
 <p>Sementara itu, uji <em>post-hoc</em> digunakan ketika peneliti tidak memiliki prediksi spesifik tentang kelompok mana yang berbeda sebelum analisis dilakukan. Setelah menemukan hasil <em>ANOVA</em> yang signifikan, uji <em>post-hoc</em> dijalankan untuk mengeksplorasi semua kemungkinan perbedaan antar pasangan kelompok.</p>
-<p>Misalnya, kita melakukan uji <em>post hoc</em> dari data <a href="#tbl-oneway" class="quarto-xref">Tabel&nbsp;<span>22.1</span></a>. Hasil ANOVA menunjukkan adanya perbedaan yang signifikan antar kelompok metode terapi, <em>F</em>(2, 87) = 4,76, <em>p</em> = 0,011. Namun, dari hasil tersebut kita belum bisa mengidentifikasi antar kelompok mana yang berbeda. Uji post hoc bisa membantu kita menyimpulkan perbedaan dari masing-masing kelompok yang diteliti. Dari hasil yang dipaparkan pada <a href="#tbl-posthoc" class="quarto-xref">Tabel&nbsp;<span>22.5</span></a>, data menunjukkan bahwa terdapat perbedaan yang signifikan antara kelompok CBT dan Journaling (t(87) = 4.360, ptukey = .002). Begitu juga dengan perbedaan antara Journaling dan Placebo (t(87) = 5.876, ptukey &lt; .001). Namun, tidak ditemukan adanya perbedaan antara kelompok CBT dan Placebo (t(87) = 1.516, ptukey = .012). Dari hasil ini kita dapat menyimpulkan bahwa metode Journaling adalah metode yang paling efektif dalam mereduksi stres pada partisipan, sedangkan metode CBT dan Placebo menunjukkan efek yang tidak berbeda.</p>
+<p>Misalnya, kita melakukan uji <em>post hoc</em> dari data <a href="#tbl-oneway" class="quarto-xref">Tabel&nbsp;<span>22.1</span></a>. Hasil ANOVA menunjukkan adanya perbedaan yang signifikan antar kelompok metode terapi, <em>F</em>(2, 87) = 4,76, <em>p</em> = 0,011. Namun, dari hasil tersebut kita belum bisa mengidentifikasi antar kelompok mana yang berbeda. Uji post hoc bisa membantu kita menyimpulkan perbedaan dari masing-masing kelompok yang diteliti. Dari hasil yang dipaparkan pada <a href="#tbl-posthoc" class="quarto-xref">Tabel&nbsp;<span>22.5</span></a>, data menunjukkan bahwa terdapat perbedaan yang signifikan antara kelompok CBT dan Journaling (<em>t</em>(87) = 4.360, <em>p<sub>tukey</sub></em> = .002). Begitu juga dengan perbedaan antara Journaling dan Placebo (<em>t</em>(87) = 5.876, <em>p<sub>tukey</sub></em> &lt; .001). Namun, tidak ditemukan adanya perbedaan antara kelompok CBT dan Placebo (<em>t</em>(87) = 1.516, <em>p<sub>tukey</sub></em> = .012). Dari hasil ini kita dapat menyimpulkan bahwa metode Journaling adalah metode yang paling efektif dalam mereduksi stres pada partisipan, sedangkan metode CBT dan Placebo menunjukkan efek yang tidak berbeda.</p>
 <div id="tbl-posthoc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1298,8 +1299,8 @@ Gambar&nbsp;22.1: Contoh penggunaan visualisasi hasil analisis
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./7_korelasi.html" class="pagination-link" aria-label="ANALISIS KORELASI">
-        <span class="nav-page-text">ANALISIS KORELASI</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./6_4_anova_nonpar.html" class="pagination-link" aria-label="Alternatif Non-Parametrik untuk *ANOVA*">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alternatif Non-Parametrik untuk <em>ANOVA</em></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

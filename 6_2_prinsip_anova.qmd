@@ -26,6 +26,6 @@ Ketiga, variansi antar kelompok yang dibandingkan diharapkan **homogen** atau se
 
 Apabila asumsi-asumsi tersebut tidak sepenuhnya terpenuhi, ada beberapa strategi yang bisa ditempuh. Transformasi data, penggunaan *ANOVA* varian *robust* seperti *ANOVA Welch*, atau beralih ke pendekatan non-parametrik menjadi pilihan *untuk* menjaga validitas hasil analisis. Penting untuk diingat bahwa pengecekan asumsi bukan sekadar prosedur teknis, melainkan bagian integral dari proses analisis yang memastikan bahwa interpretasi hasil *ANOVA* merefleksikan kondisi data dengan akurat.
 
-![Asumsi-asumsi *ANOVA*](images/6_1_asumsi_anova.png){#fig-asumsi-anova fig-align="center" width="620"}
+![Asumsi-asumsi *ANOVA*](images/6_1_asumsi_anova.png){#fig-asumsi-anova fig-align="center" width="540"}
 
 Dengan memahami prinsip-prinsip dasar ini dan memastikan terpenuhinya asumsi-asumsi yang mendasarinya serta peran *plannedcontrasts* dan uji *post-hoc*, kita dapat menggunakan *ANOVA* secara efektif untuk menganalisis perbedaan antar kelompok dalam berbagai konteks penelitian. Prinsip-prinsip ini menjadi fondasi penting sebelum melangkah lebih jauh ke dalam ragam jenis *ANOVA* yang lebih kompleks.

@@ -12,21 +12,11 @@ Pemilihan jenis *ANOVA* yang akan digunakan bergantung pada desain penelitian da
 
 Pada *ANOVA* satu arah, **interpretasi** dimulai dengan menilai nilai F dan *p-value*. Jika *p-value* lebih kecil dari batas signifikansi, misalnya 0,05, maka dapat disimpulkan bahwa ada perbedaan signifikan di antara kelompok yang dibandingkan. Interpretasi *ANOVA* satu arah hanya berfokus pada satu variabel independen sehingga lebih sederhana, namun penting untuk memperhatikan ukuran efek seperti *eta-squared* untuk memahami seberapa besar pengaruh faktor tersebut terhadap variabel dependen. Dalam pelaporan, hasil *ANOVA* satu arah disusun dengan mencantumkan nilai F, derajat kebebasan antar dan dalam kelompok, nilai *p*, dan ukuran efek. Misalnya: "Analisis varians satu arah menunjukkan perbedaan signifikan antara kelompok, *F*(2, 87) = 4,76, *p* = 0,011, *η²* = 0,098."
 
-::: {#tbl-oneway .two-tables}
-*One-Way ANOVA*
-
+::: {#tbl-oneway}
 |               | *Sum of squares* | *df1* | *Mean square* | F     | *p*  | *η²* |
 |---------------|------------------|-------|---------------|-------|------|------|
 | Metode terapi | 24.420           | 2     | 8.140         | 4.761 | .011 | .098 |
 | Residuals     | 613.139          | 87    | 2.813         |       |      |      |
-
-*Group Descriptives*
-
-| Metode terapi | *N* | *Mean* | *SD*  | *SE*  |
-|---------------|-----|--------|-------|-------|
-| CBT           | 30  | 0.717  | 0.392 | 0.160 |
-| Journaling    | 31  | 1.483  | 0.214 | 0.087 |
-| Placebo       | 29  | 0.450  | 0.281 | 0.115 |
 
 : Contoh tabel *output* hasil *ANOVA* satu-arah
 :::
@@ -52,10 +42,10 @@ Untuk mengilustrasikan efek interaksi, perhatikan sebuah penelitian yang menguji
 |------------------------|----------------|-----|-------------|-------|------|------|
 | Metode                 | 11.341         | 2   | 4.341       | 5.232 | .007 | .111 |
 | Jenis kelamin          | 2.234          | 1   | 0.653       | 2.331 | .105 | .012 |
-| Metode ✻ Jenis kelamin | 0.351          | 2   | 0.121       | 1.042 | .358 | .008 |
+| Metode x Jenis kelamin | 0.351          | 2   | 0.121       | 1.042 | .358 | .008 |
 | Residuals              | 6.748          | 84  | 2.548       |       |      |      |
 
-: Contoh tabel *output* hasil ANOVA dua-arah
+: Contoh tabel *output* hasil *ANOVA* dua-arah
 :::
 
 ## *ANOVA* Pengukuran Berulang
@@ -66,23 +56,13 @@ Pada *ANOVA* Pengukuran Berulang, **interpretasi** memperhatikan signifikansi pe
 
 *Sphericity* mengacu pada kondisi di mana varians perbedaan antara setiap pasangan tingkat pengukuran berulang adalah sama. Dengan kata lain, kovarians antara setiap pasangan pengukuran berulang harus sama. Pelanggaran *sphericity* dapat menyebabkan peningkatan risiko kesalahan Tipe I (menolak H~0~​ padahal benar) dan Tipe II (gagal menolak H~0~​ padahal salah), sehingga hasil F-statistik menjadi tidak akurat.
 
-@tbl-repeated menunjukkan contoh hasil *ANOVA* pengukuran berulang mengenai efektivitas terapi meditasi dalam mengurangi kecemasan Penulisan hasil mencantumkan statistik *F*, derajat kebebasan yang telah disesuaikan (jika perlu), nilai *p*, dan ukuran efek, misalnya: "Analisis pengukuran berulang menunjukkan perubahan signifikan tingkat kecemasan antar sesi terapi, *F*(2, 29) = 8,57, *p* = 0,006, *η²~partial~* = 0,228. Uji *post-hoc* dengan koreksi Bonferroni mengungkapkan bahwa tingkat kecemasan menurun secara signifikan dari awal (*M* = 35.2, *SD* = 5.1) ke tengah (*M* = 28.9, *SD* = 4.8, *p* = .002) dan dari tengah ke akhir (*M* = 22.5, *SD* = 4.5, *p* = .001)."
+@tbl-repeated menunjukkan contoh hasil *ANOVA* pengukuran berulang mengenai efektivitas terapi meditasi dalam mengurangi kecemasan Penulisan hasil mencantumkan statistik *F*, derajat kebebasan yang telah disesuaikan (jika perlu), nilai *p*, dan ukuran efek, misalnya: "Analisis pengukuran berulang menunjukkan perubahan signifikan tingkat kecemasan antar sesi terapi, *F*(2, 29) = 8,57, *p* = 0,006, *η²~partial~* = 0,228."
 
-::: {#tbl-repeated .two-tables}
-*Within-subjects effects*
-
+::: {#tbl-repeated}
 |           | *Sum of squares* | *df1* | *Mean square* | F     | *p*  | *η²~p~* |
 |-----------|------------------|-------|---------------|-------|------|---------|
 | Kecemasan | 19.443           | 2     | 5.341         | 8.567 | .006 | .228    |
 | Residuals | 8.458            | 29    | 2.547         |       |      |         |
-
-*Group Descriptives*
-
-| Waktu pengukuran | *N* | *Mean* | *SD*  | *SE*  |
-|------------------|-----|--------|-------|-------|
-| Awal             | 30  | 35.212 | 5.125 | 1.123 |
-| Tengah           | 30  | 28.871 | 4.756 | 1.031 |
-| Akhir            | 30  | 22.534 | 4.531 | .0902 |
 
 : Contoh tabel *output* hasil *ANOVA* pengukuran berulang
 :::
@@ -93,14 +73,15 @@ Variasi lainnya adalah ***ANOVA*** **Desain Campuran** (*Mixed-Design ANOVA*), y
 
 **Interpretasi** hasil analisis *ANOVA* Desain Campuran lebih kompleks karena mencakup efek utama untuk faktor *between-subjects*, faktor *within-subjects*, serta interaksi keduanya. Peneliti perlu mengevaluasi apakah ada perbedaan antar kelompok, perubahan dalam kelompok dari waktu ke waktu, dan apakah pola perubahan berbeda antar kelompok. Contoh hasil analisisnya dapat dilihat di @tbl-mixed. Penulisan hasil memuat masing-masing efek secara sistematis. Misalnya: "Terdapat efek utama yang signifikan dari kelompok perlakuan terhadap tingkat stres, *F*(1, 58) = 10,12, *p* = 0,002, serta efek waktu yang signifikan, *F*(2, 116) = 6,87, p = 0,002. Interaksi antara kelompok dan waktu juga signifikan, *F*(2, 116) = 4,21, *p* = 0,017, menunjukkan bahwa perubahan stres antar waktu berbeda berdasarkan kelompok perlakuan."
 
-::: {#tbl-mixed .two-tables}
-*Within-subjects effects*
-
+::: {#tbl-mixed}
 | *Cases*           | *Sum of squares* | *df* | *Mean square* | F     | *p*  | *η²~p~* |
-|-------------------|------------------|------|---------------|-------|------|---------|
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | Waktu             | 28.212           | 1    | 7.311         | 6.871 | .002 | .311    |
-| Waktu ✻ Treatment | 23.553           | 2    | 6.431         | 4.212 | .017 | .124    |
+| Waktu x Treatment | 23.553           | 2    | 6.431         | 4.212 | .017 | .124    |
 | Residuals         | 29.221           | 116  | 7.531         |       |      |         |
+
+: Contoh tabel output hasil *ANOVA* campuran
+:::
 
 *Between-subjects effects*
 
@@ -109,16 +90,13 @@ Variasi lainnya adalah ***ANOVA*** **Desain Campuran** (*Mixed-Design ANOVA*), y
 | Treatment | 45.112           | 1    | 12.477        | 10.124 | .002 | .398 |
 | Residuals | 60.211           | 58   | 13.415        |        |      |      |
 
-: Contoh tabel output hasil *ANOVA* campuran
-:::
-
 ## Uji *Post-hoc* vs. *Planned Contrasts* {#sec-posthoc}
 
 Setelah uji *ANOVA* menunjukkan adanya perbedaan rata-rata yang signifikan, peneliti perlu mengidentifikasi lebih jauh kelompok mana yang berbeda. Di sinilah *planned contrasts* dan uji *post-hoc* berperan. *Planned contrasts* digunakan ketika peneliti sejak awal telah menetapkan hipotesis spesifik mengenai kelompok mana yang diharapkan berbeda. Misalnya, dalam studi tentang efektivitas tiga metode pengajaran, seorang peneliti mungkin sejak awal ingin menguji apakah metode A lebih efektif dibandingkan metode B dan C secara gabungan.
 
 Sementara itu, uji *post-hoc* digunakan ketika peneliti tidak memiliki prediksi spesifik tentang kelompok mana yang berbeda sebelum analisis dilakukan. Setelah menemukan hasil *ANOVA* yang signifikan, uji *post-hoc* dijalankan untuk mengeksplorasi semua kemungkinan perbedaan antar pasangan kelompok.
 
-Misalnya, kita melakukan uji *post hoc* dari data @tbl-oneway. Hasil ANOVA menunjukkan adanya perbedaan yang signifikan antar kelompok metode terapi, *F*(2, 87) = 4,76, *p* = 0,011. Namun, dari hasil tersebut kita belum bisa mengidentifikasi antar kelompok mana yang berbeda. Uji post hoc bisa membantu kita menyimpulkan perbedaan dari masing-masing kelompok yang diteliti. Dari hasil yang dipaparkan pada @tbl-posthoc, data menunjukkan bahwa terdapat perbedaan yang signifikan antara kelompok CBT dan Journaling (t(87) = 4.360, ptukey = .002). Begitu juga dengan perbedaan antara Journaling dan Placebo (t(87) = 5.876, ptukey \< .001). Namun, tidak ditemukan adanya perbedaan antara kelompok CBT dan Placebo (t(87) = 1.516, ptukey = .012). Dari hasil ini kita dapat menyimpulkan bahwa metode Journaling adalah metode yang paling efektif dalam mereduksi stres pada partisipan, sedangkan metode CBT dan Placebo menunjukkan efek yang tidak berbeda.
+Misalnya, kita melakukan uji *post hoc* dari data @tbl-oneway. Hasil ANOVA menunjukkan adanya perbedaan yang signifikan antar kelompok metode terapi, *F*(2, 87) = 4,76, *p* = 0,011. Namun, dari hasil tersebut kita belum bisa mengidentifikasi antar kelompok mana yang berbeda. Uji post hoc bisa membantu kita menyimpulkan perbedaan dari masing-masing kelompok yang diteliti. Dari hasil yang dipaparkan pada @tbl-posthoc, data menunjukkan bahwa terdapat perbedaan yang signifikan antara kelompok CBT dan Journaling (*t*(87) = 4.360, *p~tukey~* = .002). Begitu juga dengan perbedaan antara Journaling dan Placebo (*t*(87) = 5.876, *p~tukey~* \< .001). Namun, tidak ditemukan adanya perbedaan antara kelompok CBT dan Placebo (*t*(87) = 1.516, *p~tukey~* = .012). Dari hasil ini kita dapat menyimpulkan bahwa metode Journaling adalah metode yang paling efektif dalam mereduksi stres pada partisipan, sedangkan metode CBT dan Placebo menunjukkan efek yang tidak berbeda.
 
 ::: {#tbl-posthoc}
 *Post hoc comparisons: Metode terapi*
