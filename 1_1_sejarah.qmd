@@ -4,8 +4,10 @@ Sejarah statistik bermula dari kebutuhan memahami **variasi dalam ilmu hayati** 
 
 Pada abad ke-20, Ronald Fisher memperkenalkan **analisis varians** dan **metode eksperimental** untuk memperluas penerapan statistik, terutama dalam ilmu perilaku [@Cowles2000]. Fisher, bersama Pearson, menekankan pentingnya inferensi statistik untuk mengatasi variasi alami. Pada saat yang sama, probabilitas berkembang sebagai dasar teoretis statistik, berakar dari upaya menjawab masalah dunia nyata seperti perjudian dan prediksi aktuarial. Normalisasi distribusi data, yang diperkenalkan oleh Lambert Quetelet, menjadi inti statistik inferensial. Hingga kini, statistik terus berkembang dengan mengintegrasikan metode baru untuk menjawab tantangan dalam berbagai disiplin ilmu.
 
-## Linimasa Sejarah Statistik {.unnumbered}
-::: {.content-visible when-format="html"}
+:::: {.content-visible when-format="html"}
+::: callout-tip
+## Linimasa Sejarah Statistik
+
 ```{=html}
 <div class="timeline-embed">
   <iframe
@@ -30,15 +32,23 @@ Pada abad ke-20, Ronald Fisher memperkenalkan **analisis varians** dan **metode 
 }
 /* OPTIONAL: halaman full-bleed (hilangkan gutter tema) */
 </style>
-
 ```
 :::
-::: {.content-visible when-format="pdf"}
+::::
 
-\qrcode[height=3.0cm]{https://www.yarsi.ac.id/fakultas-psikologi/bukustatistik/latihan1/}
+:::: {.content-visible when-format="pdf"}
+::: callout-tip
+## Linimasa Sejarah Statistik
 
-\small\textit{Scan QR untuk membuka versi interaktif: \url{http://bit.ly/41CuC0i}}
+\qrcode[height=3.0cm]{http://bit.ly/41CuC0i}
+
+\vspace{1cm}
+
+\small\textit{Scan QR atau klik \href{http://bit.ly/41CuC0i}{link ini} untuk membuka simulasi interaktif.}
 :::
+::::
+
+
 ## Definisi Statistik
 
 Statistik\index{Statistik} adalah **kumpulan prosedur matematis** yang digunakan untuk **mengorganisasi**, **merangkum**, dan **menginterpretasi** informasi [@Gravetter2017]. Dalam konteks penelitian, statistik membantu para peneliti untuk memahami hasil studi dan menyampaikan informasi tersebut secara akurat dan informatif. Statistik juga menyediakan teknik-teknik standar yang diakui dalam komunitas ilmiah sehingga hasil analisis dapat diinterpretasikan dengan konsistensi yang tinggi oleh peneliti lainnya.

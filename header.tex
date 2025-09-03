@@ -60,3 +60,28 @@
 \newcommand{\boxnum}[1]{%
   \fbox{\rule{0pt}{1.2em}\rule{1.2em}{0pt}#1}%
 }
+
+\usepackage{fontspec}
+
+% Body menggunakan file lokal
+\setmainfont{Ubuntu-light.ttf}[
+  Path=fonts/,
+  Extension = .ttf,
+  BoldFont  = Ubuntu-Bold.ttf,
+  ItalicFont= Ubuntu-LightItalic.ttf,
+  Ligatures = TeX
+]
+
+% Sans menggunakan varian Light
+\setsansfont{Ubuntu-Light.ttf}[
+  Path=fonts/,
+  Extension = .ttf,
+  BoldFont  = Ubuntu-Bold.ttf,  % opsional: fallback bold
+  Ligatures = TeX
+]
+
+% Mono (opsional)
+\setmonofont{Ubuntu-Light.ttf}[
+  Path=fonts/,
+  Extension = .ttf
+]

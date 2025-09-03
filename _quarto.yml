@@ -116,6 +116,7 @@ format:
     title-block-banner: true
   pdf:
     documentclass: book
+    pdf-engine: lualatex
     lof: true     # aktifkan List of Figures
     lot: true     # aktifkan List of Tables (opsional)
     classoption: [openany]
