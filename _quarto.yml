@@ -17,6 +17,10 @@ book:
   language: id
   date: "8/30/2025"
   date-format: "D MMMM YYYY"
+  sidebar:
+    style: docked
+    search: true
+    collapse-level: 0
   page-footer:
     left: |
       Statistik untuk Psikologi & Ilmu Sosial
@@ -109,7 +113,7 @@ format:
     theme:
       - united
       - brand
-    css: styles.scss
+    css: styles2.scss
     code-link: true
     author-meta: "Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, & Aswin Januarsjaf"
     breadcrumb: true

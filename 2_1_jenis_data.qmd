@@ -9,7 +9,7 @@ Sebelum data dianalisis, peneliti perlu memahami terlebih dahulu **jenis data** 
 Data disebut dengan *raw score* (**data mentah**) apabila data tersebut adalah data langsung dari partisipan, tidak dimodifikasi, dan tidak dikonversi ke dalam nilai tertentu. Contoh data mentah:
 
 | ID Partisipan | Skor Mentah Matematika (jumlah menjawab benar dari 50 soal) | Skor Konversi dalam rentang 0-100 (*raw*/50 x 100) |
-|:----------------------:|:----------------------:|:----------------------:|
+|:--:|:--:|:--:|
 | 1 | 25 | 50 |
 | 2 | 35 | 70 |
 | 3 | 45 | 90 |
@@ -28,7 +28,7 @@ Data dapat memberikan berbagai jenis informasi yang berbeda. Misalnya, informasi
 
 3.  **Data interval**
 
-    Data interval adalah data yang memiliki makna, terdapat **informasi mengenai jarak** antara satu skor dengan skor lainnya namun tidak ada informasi mengenai seberapa mutlak nilai tersebut karena **titik 0 tidak definitif \[**@Field2018\]. Misalnya suhu udara 0^o^ Celsius tidak berarti ‘tidak ada temperatur’. Titik tersebut adalah definisi dari kondisi di mana air membeku. Perbedaan suhu antara 30^o^C dan 20^o^ C adalah 10^o^C. Namun, tidak dapat dikatakan bahwa 20^o^C adalah dua kali lebih panas daripada 10^o^C karena suhu tidak memiliki titik 0^o^C yang definitif.
+    Data interval adalah data yang memiliki makna, terdapat **informasi mengenai jarak** antara satu skor dengan skor lainnya namun tidak ada informasi mengenai seberapa mutlak nilai tersebut karena **titik 0 tidak definitif \[**\@Field2018\]. Misalnya suhu udara 0^o^ Celsius tidak berarti ‘tidak ada temperatur’. Titik tersebut adalah definisi dari kondisi di mana air membeku. Perbedaan suhu antara 30^o^C dan 20^o^ C adalah 10^o^C. Namun, tidak dapat dikatakan bahwa 20^o^C adalah dua kali lebih panas daripada 10^o^C karena suhu tidak memiliki titik 0^o^C yang definitif.
 
 4.  **Data rasio**
 
