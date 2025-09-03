@@ -20,19 +20,19 @@ Data dapat memberikan berbagai jenis informasi yang berbeda. Misalnya, informasi
 
 1.  **Data kategorikal atau nominal**
 
-    Data kategorikal atau nominal adalah penunjuk **karakteristik**, **label**, atau **golongan** pada subjek. Sebagai contoh: jenis kelamin (laki-laki dan perempuan), daerah tempat tinggal (Jakarta, Bekasi, Bogor) dan lain sebagainya. Pemberian kode pada data-data ini hanya bersifat *dummy* dan tidak memiliki makna apa-apa secara statistik.
+    Data kategorikal atau nominal adalah penunjuk **karakteristik**, **label**, atau **golongan** pada subjek. Sebagai contoh: jenis kelamin (laki-laki dan perempuan), daerah tempat tinggal (Jakarta, Bekasi, Bogor) dan lain sebagainya. Pemberian kode pada data-data ini hanya bersifat *dummy* dan tidak memiliki makna apa-apa secara statistik \[[@Field2018; @Stevens1946]. Sebagai contoh, pada sebuah data penelitian, laki-laki diberikan kode 0 dan perempuan kode 1. Hal ini tidak berarti perempuan memiliki nilai yang lebih tinggi daripada laki-laki, begitu pula sebaliknya. Pemberian kode ini hanya untuk kemudahan pengolahan data dan tidak berarti secara statistik. Misalnya pada jenis kelamin, nilai rata-rata (*mean*) tidak dapat dihitung meski laki-laki disematkan angka 0 dan perempuan disematkan angka 1.
 
 2.  **Data ordinal**
 
-    Sebagai contoh, pada sebuah data penelitian, laki-laki diberikan kode 0 dan perempuan kode 1. Hal ini tidak berarti perempuan memiliki nilai yang lebih tinggi daripada laki-laki, begitu pula sebaliknya. Pemberian kode ini hanya untuk kemudahan pengolahan data dan tidak berarti secara statistik. Misalnya pada jenis kelamin, nilai rata-rata (*mean*) tidak dapat dihitung meski laki-laki disematkan angka 0 dan perempuan disematkan angka 1.
+    Data ordinal adalah data yang bersifat kategorik dan diketahui urutannya dari yang paling atas hingga paling bawah [@Stevens1946]. Namun demikian, tidak diketahui jarak skor antara satu kategori dengan kategori lainnya dan seberapa besar jarak tersebut. Sebagai contoh, penggolongan status sosial ekonomi (SES) subjek berdasarkan kombinasi sejumlah indikator. SES dapat digolongkan menjadi rendah, sedang, dan tinggi. Kategori tinggi adalah mereka dengan SES yang lebih baik dari sedang dan rendah. Kategori rendah adalah mereka dengan SES yang lebih buruk daripada mereka dengan SES sedang. Tidak ada informasi lebih lanjut bagaimana perbedaan jarak situasi ekonomi antara satu level dengan level yang lain.
 
 3.  **Data interval**
 
-    Data interval adalah data yang memiliki makna, terdapat **informasi mengenai jarak** antara satu skor dengan skor lainnya namun tidak ada informasi mengenai seberapa mutlak nilai tersebut karena **titik 0 tidak definitif**. Misalnya suhu udara 0^o^ Celsius tidak berarti ‘tidak ada temperatur’. Titik tersebut adalah definisi dari kondisi di mana air membeku. Perbedaan suhu antara 30^o^C dan 20^o^ C adalah 10^o^C. Namun, tidak dapat dikatakan bahwa 20^o^C adalah dua kali lebih panas daripada 10^o^C karena suhu tidak memiliki titik 0^o^C yang definitif.
+    Data interval adalah data yang memiliki makna, terdapat **informasi mengenai jarak** antara satu skor dengan skor lainnya namun tidak ada informasi mengenai seberapa mutlak nilai tersebut karena **titik 0 tidak definitif \[**@Field2018\]. Misalnya suhu udara 0^o^ Celsius tidak berarti ‘tidak ada temperatur’. Titik tersebut adalah definisi dari kondisi di mana air membeku. Perbedaan suhu antara 30^o^C dan 20^o^ C adalah 10^o^C. Namun, tidak dapat dikatakan bahwa 20^o^C adalah dua kali lebih panas daripada 10^o^C karena suhu tidak memiliki titik 0^o^C yang definitif.
 
 4.  **Data rasio**
 
-    Data rasio adalah data yang memiliki **titik 0 yang mutlak** sehingga jarak antara satu skor dengan skor lainnya dapat dilakukan secara definit. Sebagai contoh, berat badan 100 kilogram dapat dikatakan lebih berat dua kali lipat dibandingkan seseorang dengan berat badan 50 kg.
+    Data rasio adalah data yang memiliki **titik 0 yang mutlak** sehingga jarak antara satu skor dengan skor lainnya dapat dilakukan secara definit [@Field2018; @Stevens1946]. Sebagai contoh, berat badan 100 kilogram dapat dikatakan lebih berat dua kali lipat dibandingkan seseorang dengan berat badan 50 kg.
 
 ## Penamaan dan Pengkodean Data/Variabel
 

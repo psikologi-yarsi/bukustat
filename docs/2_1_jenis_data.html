@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b4f28d27a1e04389c1d4e93975f0e3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d36a7ee5124569eb73bf79d7278ce6fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -532,13 +552,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Data dapat memberikan berbagai jenis informasi yang berbeda. Misalnya, informasi dasar seperti jenis kelamin, atau informasi lainnya yang lebih rumit seperti sikap atau perasaan seseorang. Terdapat berbagai jenis data di dalam penelitian psikologi, yaitu:</p>
 <ol type="1">
 <li><p><strong>Data kategorikal atau nominal</strong></p>
-<p>Data kategorikal atau nominal adalah penunjuk <strong>karakteristik</strong>, <strong>label</strong>, atau <strong>golongan</strong> pada subjek. Sebagai contoh: jenis kelamin (laki-laki dan perempuan), daerah tempat tinggal (Jakarta, Bekasi, Bogor) dan lain sebagainya. Pemberian kode pada data-data ini hanya bersifat <em>dummy</em> dan tidak memiliki makna apa-apa secara statistik.</p></li>
+<p>Data kategorikal atau nominal adalah penunjuk <strong>karakteristik</strong>, <strong>label</strong>, atau <strong>golongan</strong> pada subjek. Sebagai contoh: jenis kelamin (laki-laki dan perempuan), daerah tempat tinggal (Jakarta, Bekasi, Bogor) dan lain sebagainya. Pemberian kode pada data-data ini hanya bersifat <em>dummy</em> dan tidak memiliki makna apa-apa secara statistik [<span class="citation" data-cites="Field2018 Stevens1946">(<a href="references.html#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="references.html#ref-Stevens1946" role="doc-biblioref">Stevens, 1946</a>)</span>. Sebagai contoh, pada sebuah data penelitian, laki-laki diberikan kode 0 dan perempuan kode 1. Hal ini tidak berarti perempuan memiliki nilai yang lebih tinggi daripada laki-laki, begitu pula sebaliknya. Pemberian kode ini hanya untuk kemudahan pengolahan data dan tidak berarti secara statistik. Misalnya pada jenis kelamin, nilai rata-rata (<em>mean</em>) tidak dapat dihitung meski laki-laki disematkan angka 0 dan perempuan disematkan angka 1.</p></li>
 <li><p><strong>Data ordinal</strong></p>
-<p>Sebagai contoh, pada sebuah data penelitian, laki-laki diberikan kode 0 dan perempuan kode 1. Hal ini tidak berarti perempuan memiliki nilai yang lebih tinggi daripada laki-laki, begitu pula sebaliknya. Pemberian kode ini hanya untuk kemudahan pengolahan data dan tidak berarti secara statistik. Misalnya pada jenis kelamin, nilai rata-rata (<em>mean</em>) tidak dapat dihitung meski laki-laki disematkan angka 0 dan perempuan disematkan angka 1.</p></li>
+<p>Data ordinal adalah data yang bersifat kategorik dan diketahui urutannya dari yang paling atas hingga paling bawah <span class="citation" data-cites="Stevens1946">(<a href="references.html#ref-Stevens1946" role="doc-biblioref">Stevens, 1946</a>)</span>. Namun demikian, tidak diketahui jarak skor antara satu kategori dengan kategori lainnya dan seberapa besar jarak tersebut. Sebagai contoh, penggolongan status sosial ekonomi (SES) subjek berdasarkan kombinasi sejumlah indikator. SES dapat digolongkan menjadi rendah, sedang, dan tinggi. Kategori tinggi adalah mereka dengan SES yang lebih baik dari sedang dan rendah. Kategori rendah adalah mereka dengan SES yang lebih buruk daripada mereka dengan SES sedang. Tidak ada informasi lebih lanjut bagaimana perbedaan jarak situasi ekonomi antara satu level dengan level yang lain.</p></li>
 <li><p><strong>Data interval</strong></p>
-<p>Data interval adalah data yang memiliki makna, terdapat <strong>informasi mengenai jarak</strong> antara satu skor dengan skor lainnya namun tidak ada informasi mengenai seberapa mutlak nilai tersebut karena <strong>titik 0 tidak definitif</strong>. Misalnya suhu udara 0<sup>o</sup> Celsius tidak berarti ‘tidak ada temperatur’. Titik tersebut adalah definisi dari kondisi di mana air membeku. Perbedaan suhu antara 30<sup>o</sup>C dan 20<sup>o</sup> C adalah 10<sup>o</sup>C. Namun, tidak dapat dikatakan bahwa 20<sup>o</sup>C adalah dua kali lebih panas daripada 10<sup>o</sup>C karena suhu tidak memiliki titik 0<sup>o</sup>C yang definitif.</p></li>
+<p>Data interval adalah data yang memiliki makna, terdapat <strong>informasi mengenai jarak</strong> antara satu skor dengan skor lainnya namun tidak ada informasi mengenai seberapa mutlak nilai tersebut karena <strong>titik 0 tidak definitif [</strong>@Field2018]. Misalnya suhu udara 0<sup>o</sup> Celsius tidak berarti ‘tidak ada temperatur’. Titik tersebut adalah definisi dari kondisi di mana air membeku. Perbedaan suhu antara 30<sup>o</sup>C dan 20<sup>o</sup> C adalah 10<sup>o</sup>C. Namun, tidak dapat dikatakan bahwa 20<sup>o</sup>C adalah dua kali lebih panas daripada 10<sup>o</sup>C karena suhu tidak memiliki titik 0<sup>o</sup>C yang definitif.</p></li>
 <li><p><strong>Data rasio</strong></p>
-<p>Data rasio adalah data yang memiliki <strong>titik 0 yang mutlak</strong> sehingga jarak antara satu skor dengan skor lainnya dapat dilakukan secara definit. Sebagai contoh, berat badan 100 kilogram dapat dikatakan lebih berat dua kali lipat dibandingkan seseorang dengan berat badan 50 kg.</p></li>
+<p>Data rasio adalah data yang memiliki <strong>titik 0 yang mutlak</strong> sehingga jarak antara satu skor dengan skor lainnya dapat dilakukan secara definit <span class="citation" data-cites="Field2018 Stevens1946">(<a href="references.html#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="references.html#ref-Stevens1946" role="doc-biblioref">Stevens, 1946</a>)</span>. Sebagai contoh, berat badan 100 kilogram dapat dikatakan lebih berat dua kali lipat dibandingkan seseorang dengan berat badan 50 kg.</p></li>
 </ol>
 </section>
 <section id="penamaan-dan-pengkodean-datavariabel" class="level2" data-number="4.2">
@@ -559,6 +579,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Pola penamaan yang konsisten seperti ini akan mempermudah proses analisis, mengurangi risiko kesalahan, serta meningkatkan transparansi dan akuntabilitas, khususnya jika pengolahan data dilakukan oleh pihak lain atau pada proyek penelitian berskala besar.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Field2018" class="csl-entry" role="listitem">
+Field, A. (2018). <em>Discovering Statistics Using IBM SPSS Statistics</em> (5th ed.). Sage.
+</div>
+<div id="ref-Stevens1946" class="csl-entry" role="listitem">
+Stevens, S. S. (1946). On the theory of scales of measurement. <em>Science</em>, <em>103</em>(2684), 677–680. <a href="https://doi.org/10.1126/science.103.2684.677">https://doi.org/10.1126/science.103.2684.677</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

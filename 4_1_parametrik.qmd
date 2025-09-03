@@ -8,7 +8,7 @@ Metode analisis parametrik bekerja dengan optimal jika data memiliki distribusi 
 
 Pemeriksaan melalui **metode visual** bisa dilihat berdasarkan kurva sebaran data. Salah satu yang paling umum digunakan adalah grafik histogram. Jika histogram tampak seperti lonceng, maka distribusi data tersebut dikatakan normal. Sebaliknya, jika terdapat kemiringan sehingga kurva terlihat jelas tidak simetris, maka data tidak terdistribusi dengan normal (lihat @fig-normal).
 
-Metode **pengujian statsitik** dapat menjadi cara yang paling akurat untuk menentukan normalitas distribusi data. Terdapat dua uji statistik yang cukup umum digunakan digunakan dalam konteks riset ilmu sosial, yaitu ***Kolmogorov-Smirnov*** (KS) dan ***Shapiro-Wilk*** (SW). Sejumlah studi mengungkapkan bahwa uji SW lebih andal dibanding KS karena memiliki daya uji (*power*) yang lebih tinggi dalam mendeteksi berbagai bentuk penyimpangan dari normalitas, baik akibat *skewness* maupun *kurtosis*, pada hampir semua ukuran sampel dan jenis distribusi [@Oktaviani2014; @Razali2011; @Yap2011]. Oleh karena itu, tes SW lebih disarankan untuk digunakan dalam pengujian normalitas distribusi data.
+Metode **pengujian statsitik** dapat menjadi cara yang paling akurat untuk menentukan normalitas distribusi data. Terdapat dua uji statistik yang cukup umum digunakan digunakan dalam konteks riset ilmu sosial, yaitu ***Kolmogorov-Smirnov*** (KS) dan ***Shapiro-Wilk*** (SW). Sejumlah studi mengungkapkan bahwa uji SW lebih andal dibanding KS karena memiliki daya uji (*power*) yang lebih tinggi dalam mendeteksi berbagai bentuk penyimpangan dari normalitas, baik akibat *skewness* maupun *kurtosis*, pada hampir semua ukuran sampel dan jenis distribusi [@Oktaviani2014; @Razali2011; @Yap2011]. Selain itu, KS cenderung kurang *powerful* untuk sampel kecil [@Ghasemi2012]. Oleh karena itu, tes SW lebih disarankan untuk digunakan dalam pengujian normalitas distribusi data.
 
 ::: {#fig-normal layout-ncol="2"}
 ![Distribusi normal](images/4_1_a_normal.png){#fig-neg width="270"}
@@ -36,7 +36,7 @@ Rangkuman perbandingan secara umum antara kedua metode analisis (parametrik vs. 
 
 ::: {#tbl-parametrik}
 | Aspek | Statistik Parametrik | Statistik Non-parametrik |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Asumsi utama | Data berasal dari populasi yang berdistribusi normal. | Tidak memerlukan asumsi distribusi normal |
 | Jenis data yang cocok | Data berskala interval atau rasio | Data berskala ordinal atau nominal, atau data interval/rasio yang tidak normal |
 | Kelebihan | Memiliki daya statistik lebih tinggi jika asumsi normalitas terpenuhi | Lebih fleksibel terhadap pelanggaran asumsi dan dapat digunakan pada data yang tidak normal |

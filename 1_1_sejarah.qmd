@@ -6,10 +6,11 @@ Pada abad ke-20, Ronald Fisher memperkenalkan **analisis varians** dan **metode 
 
 :::: {.content-visible when-format="html"}
 ::: callout-tip
-## Linimasa Sejarah Statistik
+## Simulasi Interaktif
 
 ```{=html}
 <div class="timeline-embed">
+  <p><h3><b>Linimasa Sejarah Statistik</b></h3></p>
   <iframe
     src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=https://docs.google.com/spreadsheets/d/e/2PACX-1vSs5Ee7keGswcAuZkhvXNCYY2xf8WdycslXG89eGrMZOCvlafXwfzrHODI2ZxADWoaee622MxKsrapM/pubhtml&lang=id&initial_zoom=2&timenav_position=bottom&timenav_height=110&hash_bookmark=true"
     loading="lazy" allowfullscreen>
@@ -38,7 +39,9 @@ Pada abad ke-20, Ronald Fisher memperkenalkan **analisis varians** dan **metode 
 
 :::: {.content-visible when-format="pdf"}
 ::: callout-tip
-## Linimasa Sejarah Statistik
+## Simulasi Interaktif
+
+### Linimasa Sejarah Statistik {.unnumbered}
 
 \qrcode[height=3.0cm]{http://bit.ly/41CuC0i}
 
@@ -48,14 +51,13 @@ Pada abad ke-20, Ronald Fisher memperkenalkan **analisis varians** dan **metode 
 :::
 ::::
 
-
 ## Definisi Statistik
 
-Statistik\index{Statistik} adalah **kumpulan prosedur matematis** yang digunakan untuk **mengorganisasi**, **merangkum**, dan **menginterpretasi** informasi [@Gravetter2017]. Dalam konteks penelitian, statistik membantu para peneliti untuk memahami hasil studi dan menyampaikan informasi tersebut secara akurat dan informatif. Statistik juga menyediakan teknik-teknik standar yang diakui dalam komunitas ilmiah sehingga hasil analisis dapat diinterpretasikan dengan konsistensi yang tinggi oleh peneliti lainnya.
+Statistik\index{Statistik} adalah **kumpulan prosedur matematis** yang digunakan untuk **mengorganisasi**, **merangkum**, dan **menginterpretasi** informasi [@Gravetter2017; @Sugiyono2015]. Dalam konteks penelitian, statistik membantu para peneliti untuk memahami hasil studi dan menyampaikan informasi tersebut secara akurat dan informatif. Statistik juga menyediakan teknik-teknik standar yang diakui dalam komunitas ilmiah sehingga hasil analisis dapat diinterpretasikan dengan konsistensi yang tinggi oleh peneliti lainnya.
 
 ## Sampel dan Populasi
 
-**Populasi** adalah **keseluruhan individu** atau elemen yang menjadi fokus penelitian. Karena populasi biasanya terlalu besar untuk dianalisis secara langsung, peneliti memilih **sampel**, yaitu **sekelompok individu yang mewakili populasi**. Sampel bertujuan untuk menyederhanakan penelitian sambil tetap memungkinkan penarikan kesimpulan yang dapat digeneralisasi ke populasi. Hubungan antara sampel dan populasi bersifat dua arah: sampel diambil dari populasi, dan hasil penelitian pada sampel digeneralisasikan kembali ke populasi.
+**Populasi** adalah **keseluruhan individu** atau elemen yang menjadi fokus penelitian. Karena populasi biasanya terlalu besar untuk dianalisis secara langsung, peneliti memilih **sampel**, yaitu **sekelompok individu yang mewakili populasi**. Sampel bertujuan untuk menyederhanakan penelitian sambil tetap memungkinkan penarikan kesimpulan yang dapat digeneralisasi ke populasi. Hubungan antara sampel dan populasi bersifat dua arah: sampel diambil dari populasi, dan hasil penelitian pada sampel digeneralisasikan kembali ke populasi [@Azwar2019; @Moore2018].
 
 ## Parameter dan Statistik
 

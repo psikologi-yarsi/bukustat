@@ -2,7 +2,7 @@ project:
   type: book
   output-dir: docs
 
-site-url: https://sunubagaskara.github.io/bukustat/
+site-url: https://yarsi-psikologi.github.io/bukustat/
   
 book:
   title: "Statistik untuk Psikologi dan Ilmu Sosial"
@@ -116,14 +116,19 @@ format:
     title-block-banner: true
   pdf:
     documentclass: book
-    pdf-engine: lualatex
+    pdf-engine: xelatex
     lof: true     # aktifkan List of Figures
     lot: true     # aktifkan List of Tables (opsional)
     classoption: [openany]
     papersize: a4
-    mainfont: "Ubuntu-Light"
-    sansfont: "Ubuntu-Light"
-    monofont: "Ubuntu-Light"
+    mainfont: "Ubuntu Light"
+    mainfontoptions: 
+      - UprightFont=Ubuntu Light      
+      - ItalicFont=Ubuntu Italic
+      - BoldFont=Ubuntu Bold
+      - BoldItalicFont=Ubuntu Bold Italic
+    sansfont: "Ubuntu Light"
+    monofont: "Ubuntu Light"
     geometry: 
       - paperwidth=8.0000000000000in
       - paperheight=10.000000000000in
