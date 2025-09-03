@@ -7,13 +7,30 @@ Pada abad ke-20, Ronald Fisher memperkenalkan **analisis varians** dan **metode 
 ## Linimasa Sejarah Statistik {.unnumbered}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 65%;">
-  <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=https://docs.google.com/spreadsheets/d/e/2PACX-1vSs5Ee7keGswcAuZkhvXNCYY2xf8WdycslXG89eGrMZOCvlafXwfzrHODI2ZxADWoaee622MxKsrapM/pubhtml&lang=id&initial_zoom=2&start_at_end=false&timenav_position=bottom"
-    style="position: absolute; top:0; left:0; width:100%; height:100%;"
-    frameborder="0"
-    allowfullscreen>
+<div class="timeline-embed">
+  <iframe
+    src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=https://docs.google.com/spreadsheets/d/e/2PACX-1vSs5Ee7keGswcAuZkhvXNCYY2xf8WdycslXG89eGrMZOCvlafXwfzrHODI2ZxADWoaee622MxKsrapM/pubhtml&lang=id&initial_zoom=2&timenav_position=bottom&timenav_height=110&hash_bookmark=true"
+    loading="lazy" allowfullscreen>
   </iframe>
 </div>
+
+<style>
+/* container fleksibel */
+.timeline-embed { width:100%; margin:0; }
+/* tinggi cukup besar agar panel media+teks terlihat di HP */
+.timeline-embed iframe {
+  width:100%;
+  height:80vh;     /* kunci: pakai vh, bukan px */
+  border:0;
+  display:block;
+}
+/* di layar kecil, beri ruang lebih */
+@media (max-width: 768px) {
+  .timeline-embed iframe { height:88vh; }
+}
+/* OPTIONAL: halaman full-bleed (hilangkan gutter tema) */
+</style>
+
 ```
 :::
 ::: {.content-visible when-format="pdf"}
