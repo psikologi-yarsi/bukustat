@@ -16,7 +16,7 @@ Bab ini terdiri dari tiga bagian utama. Pertama, pembahasan mengenai ukuran pemu
 -   Melakukan analisis deskriptif awal untuk mengevaluasi distribusi dan karakteristik dasar data.
 -   Mengidentifikasi dan menangani data hilang (*missing value*) serta *outlier* secara tepat untuk memastikan keakuratan analisis lanjutan.
 
-**Bab 6. Akuntabilitas Data:**
+**Bab 9. Akuntabilitas Data:**
 
 -   Menjelaskan pentingnya pencatatan proses analisis statistik sebagai bentuk akuntabilitas ilmiah.
 -   Memahami pentingnya transparansi dalam meningkatkan kualitas dan integritas penelitian psikologi.
