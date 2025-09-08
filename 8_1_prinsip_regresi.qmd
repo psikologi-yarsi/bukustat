@@ -4,7 +4,7 @@
 
 Dalam analisis statistik, kita sering kali tertarik untuk memahami hubungan antara dua variabel atau lebih. Korelasi adalah salah satu teknik yang digunakan untuk mengukur seberapa kuat dan sejauh mana dua variabel berhubungan. Namun, korelasi hanya mengukur sejauh mana dua variabel saling terkait tanpa membedakan mana yang berdampak terhadap mana. Misalnya, dalam studi pendidikan, kita bisa mengukur korelasi antara jumlah jam belajar dan skor ujian siswa untuk melihat apakah semakin banyak jam belajar, semakin tinggi skor ujian.
 
-Dalam hal ini, korelasi tidak memberi kita gambaran tentang dampak atau arah hubungan. Di sinilah regresi linear menjadi lebih berguna. **Regresi** memungkinkan kita untuk **memodelkan hubungan** fungsional antara satu **variabel prediktor** (atau variabel independen) dengan satu **variabel luaran** (atau variabel dependen). Dengan kata lain, regresi memungkinkan kita untuk **memprediksi** nilai variabel luaran berdasarkan nilai variabel prediktor. Sebagai contoh, regresi dapat digunakan untuk memprediksi skor ujian berdasarkan jumlah jam belajar.
+Dalam hal ini, korelasi tidak memberi kita gambaran tentang dampak atau arah hubungan. Di sinilah regresi linear menjadi lebih berguna. **Regresi** memungkinkan kita untuk **memodelkan hubungan** fungsional antara satu **variabel prediktor** (atau variabel independen) dengan satu **variabel luaran** (atau variabel dependen) [@Aiken1991; @Gravetter2017]. Dengan kata lain, regresi memungkinkan kita untuk **memprediksi** nilai variabel luaran berdasarkan nilai variabel prediktor. Sebagai contoh, regresi dapat digunakan untuk memprediksi skor ujian berdasarkan jumlah jam belajar.
 
 ## Persamaan dan Garis Regresi Linear
 

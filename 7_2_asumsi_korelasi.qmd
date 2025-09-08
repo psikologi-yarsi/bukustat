@@ -4,7 +4,7 @@ Tujuan analisis korelasi utamanya adalah untuk mengukur kekuatan dan arah hubung
 
 ## Asumsi dalam Hubungan Antara Dua Variabel
 
-Uji asumsi hubungan antara dua variabel digunakan untuk menentukan teknik statistik yang digunakan dalam menghitung koefisien korelasi, apakah akan menggunakan uji korelasi parametrik (*Pearson correlation*; *r*) atau non-parametrik (*Spearman correlation*; *r~s~*). Terdapat empat asumsi yang perlu dipenuhi jika ingin menggunakan uji korelasi parametrik (*Pearson correlation*), yaitu:
+Uji asumsi hubungan antara dua variabel digunakan untuk menentukan teknik statistik yang digunakan dalam menghitung koefisien korelasi, apakah akan menggunakan uji korelasi parametrik (*Pearson correlation*; *r*) atau non-parametrik (*Spearman correlation*; *r~s~*) [@Howell2013; @Azwar2019]. Terdapat empat asumsi yang perlu dipenuhi jika ingin menggunakan uji korelasi parametrik (*Pearson correlation*), yaitu:
 
 a.  Kedua variabel yang diteliti atau yang ingin dikorelasikan harus berupa skala kontinum.
 b.  Kedua variabel memiliki hubungan yang linear yang dapat dipastikan dengan menggunakan *scatter plot*.

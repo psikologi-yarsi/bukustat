@@ -16,7 +16,7 @@ Pelaporan *effect size* penting karena melengkapi informasi yang tidak diberikan
 
 -   **Perbedaan *mean* yang distandarisasi**
 
-    Ukuran ini digunakan untuk membandingkan rata-rata dua kelompok atau lebih. Rumus yang paling populer adalah *Cohen’s d*:
+    Ukuran ini digunakan untuk membandingkan rata-rata dua kelompok atau lebih. Rumus yang paling populer adalah *Cohen’s d* [@Cohan1988; @Lakens2013]:
 
     $$
     d = \frac{M_{1} - M_{2}}{SD_{\text{pooled}}}

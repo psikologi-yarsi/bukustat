@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d36a7ee5124569eb73bf79d7278ce6fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dc7150d250c5e3e4b9474a80f1fc7934.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,10 +122,10 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.scss">
+<link rel="stylesheet" href="styles2.scss">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -142,7 +162,7 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Statistik untuk Psikologi dan Ilmu Sosial</a> 
@@ -514,7 +534,7 @@ window.Quarto = {
 
 
 
-<p>Analisis regresi hierarkis digunakan untuk memodelkan hubungan antara satu variabel luaran dan lebih dari satu variabel prediktor, dengan memeriksa kontribusi tambahan dari variabel prediktor yang dimasukkan secara bertahap ke dalam model. Metode ini memungkinkan peneliti untuk mengevaluasi bagaimana faktor-faktor tertentu berkontribusi terhadap variabel luaran setelah mempertimbangkan variabel-variabel lain yang lebih dahulu dimasukkan.</p>
+<p>Analisis regresi hierarkis digunakan untuk memodelkan hubungan antara satu variabel luaran dan lebih dari satu variabel prediktor, dengan memeriksa kontribusi tambahan dari variabel prediktor yang dimasukkan secara bertahap ke dalam model <span class="citation" data-cites="Aiken1991 Hayes2022">(<a href="references.html#ref-Aiken1991" role="doc-biblioref">Aiken &amp; West, 1991</a>; <a href="references.html#ref-Hayes2022" role="doc-biblioref">Hayes, 2022</a>)</span>. Metode ini memungkinkan peneliti untuk mengevaluasi bagaimana faktor-faktor tertentu berkontribusi terhadap variabel luaran setelah mempertimbangkan variabel-variabel lain yang lebih dahulu dimasukkan.</p>
 <section id="konsep-dasar" class="level2" data-number="29.1">
 <h2 data-number="29.1" class="anchored" data-anchor-id="konsep-dasar"><span class="header-section-number">29.1</span> Konsep Dasar</h2>
 <p>Dalam regresi hierarkis, analisis dilakukan dalam beberapa langkah. Pada setiap langkah, sejumlah variabel prediktor ditambahkan ke dalam model untuk menguji seberapa besar kontribusi tambahan yang diberikan oleh variabel tersebut terhadap variabilitas variabel luaran. Model pertama biasanya dimulai dengan satu atau lebih variabel kontrol (mis., data demografi, seperti jenis kelamin dan usia) yang dianggap penting, sementara variabel prediktor utama dimasukkan pada langkah berikutnya.</p>
@@ -556,6 +576,14 @@ Gambar&nbsp;29.1: Contoh output hasil analisis regresi hierarkis
 <p>“Analisis regresi hierarkis menunjukkan bahwa model pertama, dengan memasukkan pengalaman kerja sebagai variabel kontrol, tidak memberikan perubahan signifikan dalam <em>R<sup>2</sup></em> = .12, <em>F</em>(1, 150) = 3.56, <em>p</em> = .062. Namun, setelah menambahkan stres kerja dan dukungan sosial sebagai variabel prediktor, Δ<em>R<sup>2</sup></em> menjadi .45, <em>F</em>(3, 148) = 15.89, <em>p</em> &lt; .001, yang menunjukkan bahwa kedua variabel ini memberikan kontribusi signifikan terhadap tingkat kepuasan kerja. Stres kerja (<em>β</em> = .65, <em>t</em>(148) = 4.22, <em>p</em> &lt;.001) dan dukungan sosial (<em>β</em> = −.35, <em>t</em>(148) = 2.94, <em>p</em> = .004) berperan signifikan dalam meningkatkan kepuasan kerja, sementara pengalaman kerja (<em>β</em> = .15, <em>t</em>(148) = 1.01, <em>p</em> = .31) tidak menunjukkan kontribusi signifikan.”</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Aiken1991" class="csl-entry" role="listitem">
+Aiken, L. S., &amp; West, S. G. (1991). <em>Multiple Regression: Testing and Interpreting Interactions</em>. Sage.
+</div>
+<div id="ref-Hayes2022" class="csl-entry" role="listitem">
+Hayes, A. F. (2022). <em>Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach</em> (3rd ed.). Guilford Press.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

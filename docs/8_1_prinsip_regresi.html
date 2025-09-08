@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -43,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d36a7ee5124569eb73bf79d7278ce6fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dc7150d250c5e3e4b9474a80f1fc7934.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,10 +122,10 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.scss">
+<link rel="stylesheet" href="styles2.scss">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -142,7 +162,7 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Statistik untuk Psikologi dan Ilmu Sosial</a> 
@@ -515,7 +535,7 @@ window.Quarto = {
 <section id="regresi-vs.-korelasi" class="level2" data-number="26.1">
 <h2 data-number="26.1" class="anchored" data-anchor-id="regresi-vs.-korelasi"><span class="header-section-number">26.1</span> Regresi <em>vs</em>. Korelasi</h2>
 <p>Dalam analisis statistik, kita sering kali tertarik untuk memahami hubungan antara dua variabel atau lebih. Korelasi adalah salah satu teknik yang digunakan untuk mengukur seberapa kuat dan sejauh mana dua variabel berhubungan. Namun, korelasi hanya mengukur sejauh mana dua variabel saling terkait tanpa membedakan mana yang berdampak terhadap mana. Misalnya, dalam studi pendidikan, kita bisa mengukur korelasi antara jumlah jam belajar dan skor ujian siswa untuk melihat apakah semakin banyak jam belajar, semakin tinggi skor ujian.</p>
-<p>Dalam hal ini, korelasi tidak memberi kita gambaran tentang dampak atau arah hubungan. Di sinilah regresi linear menjadi lebih berguna. <strong>Regresi</strong> memungkinkan kita untuk <strong>memodelkan hubungan</strong> fungsional antara satu <strong>variabel prediktor</strong> (atau variabel independen) dengan satu <strong>variabel luaran</strong> (atau variabel dependen). Dengan kata lain, regresi memungkinkan kita untuk <strong>memprediksi</strong> nilai variabel luaran berdasarkan nilai variabel prediktor. Sebagai contoh, regresi dapat digunakan untuk memprediksi skor ujian berdasarkan jumlah jam belajar.</p>
+<p>Dalam hal ini, korelasi tidak memberi kita gambaran tentang dampak atau arah hubungan. Di sinilah regresi linear menjadi lebih berguna. <strong>Regresi</strong> memungkinkan kita untuk <strong>memodelkan hubungan</strong> fungsional antara satu <strong>variabel prediktor</strong> (atau variabel independen) dengan satu <strong>variabel luaran</strong> (atau variabel dependen) <span class="citation" data-cites="Aiken1991 Gravetter2017">(<a href="references.html#ref-Aiken1991" role="doc-biblioref">Aiken &amp; West, 1991</a>; <a href="references.html#ref-Gravetter2017" role="doc-biblioref">Gravetter &amp; Wallnau, 2017</a>)</span>. Dengan kata lain, regresi memungkinkan kita untuk <strong>memprediksi</strong> nilai variabel luaran berdasarkan nilai variabel prediktor. Sebagai contoh, regresi dapat digunakan untuk memprediksi skor ujian berdasarkan jumlah jam belajar.</p>
 </section>
 <section id="persamaan-dan-garis-regresi-linear" class="level2" data-number="26.2">
 <h2 data-number="26.2" class="anchored" data-anchor-id="persamaan-dan-garis-regresi-linear"><span class="header-section-number">26.2</span> Persamaan dan Garis Regresi Linear</h2>
@@ -548,6 +568,14 @@ Gambar&nbsp;26.1: Garis persamaan regresi
 <p>Dengan regresi, kita juga bisa menganalisis hubungan lebih kompleks, seperti <strong>menguji peran beberapa variabel prediktor</strong> terhadap satu variabel luaran, yang dikenal dengan regresi majemuk. Hal ini membuka banyak peluang untuk menganalisis data yang lebih kompleks, baik dalam penelitian sosial, ekonomi, maupun ilmu kesehatan.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-Aiken1991" class="csl-entry" role="listitem">
+Aiken, L. S., &amp; West, S. G. (1991). <em>Multiple Regression: Testing and Interpreting Interactions</em>. Sage.
+</div>
+<div id="ref-Gravetter2017" class="csl-entry" role="listitem">
+Gravetter, F. J., &amp; Wallnau, L. B. (2017). <em>Statistics for the Behavioral Sciences</em>. Cengage Learning.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
