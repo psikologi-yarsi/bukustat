@@ -1,4 +1,4 @@
-# Analisis *Independent Samples t-test*: Parametrik dan Non-Parametrik
+# *Independent Samples t-test*: Parametrik dan Non-Parametrik
 
 Asumsi dasar yang perlu dipenuhi untuk melakukan uji beda menggunakan *independent t-test* adalah:
 

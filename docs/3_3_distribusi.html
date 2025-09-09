@@ -63,7 +63,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d36a7ee5124569eb73bf79d7278ce6fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-db4dcd9e87272a6facc5817869e84da1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -122,10 +122,10 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.scss">
+<link rel="stylesheet" href="styles2.scss">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -162,7 +162,7 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Statistik untuk Psikologi dan Ilmu Sosial</a> 
@@ -370,19 +370,19 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./5_2_between_within.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Analisis Perbedaan Rata-rata Antar Kelompok vs.&nbsp;Dalam Kelompok</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Perbedaan Rata-rata Antar Kelompok vs.&nbsp;Dalam Kelompok</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./5_3_independent_ttest.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analisis <em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./5_4_paired_ttest.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Analisis <em>Paired Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><em>Paired Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -541,7 +541,7 @@ window.Quarto = {
 <div id="fig-kurva" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-kurva-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/3_2_kurva_normal.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="406">
+<img src="images/3_2_kurva_normal.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="380">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kurva-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Gambar&nbsp;9.1: Bentuk kurva normal
@@ -573,30 +573,30 @@ Gambar&nbsp;9.2: Proporsi sebaran data pada kurva normal
 <section id="skewness" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="skewness"><span class="header-section-number">9.2</span> <em>Skewness</em></h2>
 <p>Data pada sampel yang diambil dari populasi penelitian tidak selalu terdistribusi secara normal. Sebaran yang tidak normal ini seringnya terjadi pada sekumpulan data yang memiliki nilai ekstrem (<em>outlier</em>) yang proporsinya cukup jauh melebihi data yang tersebar secara normal. Besarnya <em>outlier</em> ini membuat sebaran data seolah-olah terpusat di bawah nilai tengah, atau sebaliknya terpusat di atas nilai tengah.</p>
-<p>Jika data yang tersebar secara normal membentuk kurva berbentuk lonceng yang simetris, maka <strong>data yang tidak normal</strong> tersebut bisa membentuk <strong>kurva yang miring</strong> atau juling (<em>skewed</em>). Arah kemiringan (<em>skewness</em>) kurva bergantung pada besaran frekuensi data yang menyimpang dari nilai tengah <span class="citation" data-cites="Cumming2011">(<a href="references.html#ref-Cumming2011" role="doc-biblioref">Cumming, 2011</a>)</span>. Jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih kecil daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kanan, yang disebut sebagai <em>skew</em> negatif (<a href="4_1_parametrik.html#fig-neg" class="quarto-xref">Gambar&nbsp;<span>10.1 (a)</span></a>). Sebaliknya, jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih besar daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kiri, yang disebut sebagai <em>skew</em> positif (<a href="4_1_parametrik.html#fig-pos" class="quarto-xref">Gambar&nbsp;<span>10.1 (b)</span></a>).</p>
+<p>Jika data yang tersebar secara normal membentuk kurva berbentuk lonceng yang simetris, maka <strong>data yang tidak normal</strong> tersebut bisa membentuk <strong>kurva yang miring</strong> atau juling (<em>skewed</em>). Arah kemiringan (<em>skewness</em>) kurva bergantung pada besaran frekuensi data yang menyimpang dari nilai tengah <span class="citation" data-cites="Cumming2011">(<a href="references.html#ref-Cumming2011" role="doc-biblioref">Cumming, 2011</a>)</span>. Jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih kecil daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kanan, yang disebut sebagai <em>skew</em> negatif (<a href="#fig-negs" class="quarto-xref">Gambar&nbsp;<span>9.3 (a)</span></a>). Sebaliknya, jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih besar daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kiri, yang disebut sebagai <em>skew</em> positif (<a href="#fig-poss" class="quarto-xref">Gambar&nbsp;<span>9.3 (b)</span></a>).</p>
 <div id="fig-skewness" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-skewness-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-skewness" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-neg" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-negs" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-neg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-negs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/3_4_a_skew_neg.png" class="img-fluid figure-img" data-ref-parent="fig-skewness" width="270">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-neg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-negs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) Skew negatif
 </figcaption>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-skewness" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-pos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-poss" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-pos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-poss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/3_4_a_skew_pos.png" class="img-fluid figure-img" data-ref-parent="fig-skewness" width="270">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-poss-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) Skew positif
 </figcaption>
 </figure>

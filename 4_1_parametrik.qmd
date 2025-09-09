@@ -36,7 +36,7 @@ Rangkuman perbandingan secara umum antara kedua metode analisis (parametrik vs. 
 
 ::: {#tbl-parametrik}
 | Aspek | Statistik Parametrik | Statistik Non-parametrik |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Asumsi utama | Data berasal dari populasi yang berdistribusi normal. | Tidak memerlukan asumsi distribusi normal |
 | Jenis data yang cocok | Data berskala interval atau rasio | Data berskala ordinal atau nominal, atau data interval/rasio yang tidak normal |
 | Kelebihan | Memiliki daya statistik lebih tinggi jika asumsi normalitas terpenuhi | Lebih fleksibel terhadap pelanggaran asumsi dan dapat digunakan pada data yang tidak normal |

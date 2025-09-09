@@ -126,6 +126,7 @@ format:
     classoption: [openany]
     papersize: a4
     mainfont: "Ubuntu Light"
+    fontsize: 10pt
     mainfontoptions: 
       - UprightFont=Ubuntu Light      
       - ItalicFont=Ubuntu Italic
@@ -146,5 +147,8 @@ format:
         \printindex
     toc: true
     toc-title: "Daftar Isi"
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
 
 editor: visual
