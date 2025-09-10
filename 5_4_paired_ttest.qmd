@@ -1,4 +1,4 @@
-# Analisis *Paired Samples t-test*: Parametrik dan Non-Parametrik
+# *Paired Samples t-test*: Parametrik dan Non-Parametrik
 
 Asumsi dasar yang perlu dipenuhi untuk melakukan uji beda menggunakan *paired samples t-test* adalah:
 

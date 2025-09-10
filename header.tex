@@ -44,6 +44,10 @@
 % ============ Kontrol page break yang konsisten ============
 \usepackage{etoolbox}
 \makeatletter
+% sebelum judul part dieksekusi, jaga ukuran normal
+\pretocmd{\part}{\normalsize}{}{}
+% setelah blok part selesai, pastikan kembali normal
+\apptocmd{\@endpart}{\par\normalsize}{}{}
 \AtBeginDocument{%
   % 1) Pastikan PART berakhir dengan vfill + newpage (judul tetap center-middle)
   \renewcommand\@endpart{\vfil\newpage}

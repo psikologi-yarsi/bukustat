@@ -7,16 +7,16 @@ Pada bagian ini akan dibahas mengenai perbedaan *mean* variabel yang sama antara
 
 -   Memahami perbedaan antara kelompok eksperimen dan kelompok kontrol.
 
-**Bab 17. Analisis Perbedaan Rata-rata Antar Kelompok vs. Dalam Kelompok:**
+**Bab 17. Perbedaan Rata-rata Antar Kelompok vs. Dalam Kelompok:**
 
 -   Mengidentifikasi perbedaan penggunaan uji beda antar kelompok dan dalam kelompok.
 -   Memahami makna perbedaan rata-rata dalam konteks analisa statistik.
 
-**Bab 18. Asumsi, Interpretasi, dan Pelaporan Analisis *Independent Samples t-test*: Parametrik dan Non-Parametrik:**
+**Bab 18. *Independent Samples t-test*: Parametrik dan Non-Parametrik:**
 
 -   Menjelaskan asumsi yang perlu dipenuhi dalam uji *independent samples t-test* (parametrik dan non-parametrik), interpretasi dan cara penulisannya dalam laporan.
 
-**Bab 19. Asumsi, Interpretasi, dan Pelaporan Analisis *Paired Samples t-test*: Parmetrik dan Non-Parametrik:**
+**Bab 19. *Paired Samples t-test*: Parmetrik dan Non-Parametrik:**
 
 -   Menjelaskan asumsi yang perlu dipenuhi dalam uji *paired samples t-test test* (parametrik dan non-parametrik), interpretasi dan cara penulisannya dalam laporan.
 :::

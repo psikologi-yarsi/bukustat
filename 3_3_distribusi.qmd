@@ -6,7 +6,7 @@ Setiap nilai dalam sekumpulan data memiliki frekuensi kemunculan yang berbeda-be
 
 Seperti telah disampaikan sebelumnya, distribusi data dapat dikatakan normal jika kurvanya membentuk lonceng dan simetris. Pada distribusi data yang demikian, frekuensi dari setiap nilai **data tersebar secara simetris** antara yang terletak di atas tendensi sentral dan yang di bawah tendensi sentral. Data tersebar 50% di atas dan 50% di bawah tendensi sentral, dengan frekuensi yang semakin mengecil pada nilai data yang semakin ekstrem, baik yang kecil maupun yang besar (lihat @fig-kurva).
 
-![Bentuk kurva normal](images/3_2_kurva_normal.png){#fig-kurva fig-align="center" width="406"}
+![Bentuk kurva normal](images/3_2_kurva_normal.png){#fig-kurva fig-align="center" width="380"}
 
 Pada kurva normal, tiga pengukuran data terpusat (*mean*, median, dan modus) berada pada satu titik atau nilai yang relatif sama. Dari @fig-kurva dapat lebih terlihat jelas bahwa 50% data tersebar di atas tendensi sentral dan 50% data tersebar di bawah tendensi sentral, di mana semakin jauh dari tendensi sentral maka semakin sedikit frekuensinya.
 
@@ -36,12 +36,12 @@ Sehingga, jumlah mahasiswa dengan skor antara 70 – 85 = 81,8% × 250 orang = 2
 
 Data pada sampel yang diambil dari populasi penelitian tidak selalu terdistribusi secara normal. Sebaran yang tidak normal ini seringnya terjadi pada sekumpulan data yang memiliki nilai ekstrem (*outlier*) yang proporsinya cukup jauh melebihi data yang tersebar secara normal. Besarnya *outlier* ini membuat sebaran data seolah-olah terpusat di bawah nilai tengah, atau sebaliknya terpusat di atas nilai tengah.
 
-Jika data yang tersebar secara normal membentuk kurva berbentuk lonceng yang simetris, maka **data yang tidak normal** tersebut bisa membentuk **kurva yang miring** atau juling (*skewed*). Arah kemiringan (*skewness*) kurva bergantung pada besaran frekuensi data yang menyimpang dari nilai tengah [@Cumming2011]. Jika frekuensi nilai yang berada di bawah *mean* jauh lebih kecil daripada frekuensi nilai di atas *mean*, maka puncak kurva akan condong ke kanan, yang disebut sebagai *skew* negatif (@fig-neg). Sebaliknya, jika frekuensi nilai yang berada di bawah *mean* jauh lebih besar daripada frekuensi nilai di atas *mean*, maka puncak kurva akan condong ke kiri, yang disebut sebagai *skew* positif (@fig-pos).
+Jika data yang tersebar secara normal membentuk kurva berbentuk lonceng yang simetris, maka **data yang tidak normal** tersebut bisa membentuk **kurva yang miring** atau juling (*skewed*). Arah kemiringan (*skewness*) kurva bergantung pada besaran frekuensi data yang menyimpang dari nilai tengah [@Cumming2011]. Jika frekuensi nilai yang berada di bawah *mean* jauh lebih kecil daripada frekuensi nilai di atas *mean*, maka puncak kurva akan condong ke kanan, yang disebut sebagai *skew* negatif (@fig-negs). Sebaliknya, jika frekuensi nilai yang berada di bawah *mean* jauh lebih besar daripada frekuensi nilai di atas *mean*, maka puncak kurva akan condong ke kiri, yang disebut sebagai *skew* positif (@fig-poss).
 
 ::: {#fig-skewness layout-ncol="2"}
-![Skew negatif](images/3_4_a_skew_neg.png){#fig-neg width="270"}
+![Skew negatif](images/3_4_a_skew_neg.png){#fig-negs width="270"}
 
-![Skew positif](images/3_4_a_skew_pos.png){#fig-pos width="270"}
+![Skew positif](images/3_4_a_skew_pos.png){#fig-poss width="270"}
 
 Distribusi skewed
 :::
