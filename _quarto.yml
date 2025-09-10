@@ -120,20 +120,20 @@ format:
     title-block-banner: true
   pdf:
     documentclass: book
-    pdf-engine: xelatex
+    pdf-engine: lualatex
     lof: true     # aktifkan List of Figures
     lot: true     # aktifkan List of Tables (opsional)
     classoption: [openany]
     papersize: a4
-    mainfont: "Ubuntu Light"
+    mainfont: "Ubuntu light"
     fontsize: 10pt
     mainfontoptions: 
-      - UprightFont=Ubuntu Light      
-      - ItalicFont=Ubuntu Italic
-      - BoldFont=Ubuntu Bold
-      - BoldItalicFont=Ubuntu Bold Italic
-    sansfont: "Ubuntu Light"
-    monofont: "Ubuntu Light"
+      - UprightFont=Ubuntu light      
+      - ItalicFont=Ubuntu italic
+      - BoldFont=Ubuntu bold
+      - BoldItalicFont=Ubuntu bold italic
+    #sansfont: "Ubuntu Light"
+    #monofont: "Ubuntu Light"
     geometry: 
       - paperwidth=8.0000000000000in
       - paperheight=10.000000000000in
