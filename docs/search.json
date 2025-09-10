@@ -895,11 +895,11 @@
   {
     "objectID": "8_regresi.html",
     "href": "8_regresi.html",
-    "title": "Model Regresi Linear",
+    "title": "MODEL REGRESI LINEAR",
     "section": "",
     "text": "Pada bab sebelumnya, kita telah mempelajari analisis korelasi yang menunjukkan hubungan antara dua variabel. Di bab ini kita akan membahas analisis regresi linear yang juga digunakan untuk memahami hubungan antar variabel. Namun, analisis regresi memungkinkan kita untuk tidak hanya mengukur hubungan, tetapi juga memodelkan hubungan tersebut dan memprediksi nilai variabel luaran (variabel dependen) berdasarkan variabel prediktor (variabel bebas).\nDalam regresi linear, kita akan fokus pada tiga jenis model regresi utama yang digunakan untuk menguji hubungan antara variabel-variabel ini:\n\nRegresi linear sederhana (simple linear regression)\nRegresi majemuk (multiple linear regression)\nRegresi hirarkis (hierarchical regression)\n\nBab ini akan memperkenalkan Anda pada prinsip dasar regresi linear, menjelaskan asumsi yang perlu dipenuhi, serta bagaimana menginterpretasikan hasil analisis dan menuliskan laporan regresi. Dengan memahami teknik-teknik ini, Anda akan siap untuk mengaplikasikan regresi linear dalam berbagai konteks penelitian untuk menggali hubungan yang lebih kompleks antar variabel.\n\n\n\n\n\n\nTujuan Pembelajaran\n\n\n\nBab 26. Prinsip Dasar Model Regresi Linear:\n\nMemahami prinsip dasar model regresi linear dan perbedaannya dengan analisis korelasi.\n\nBab 27. Regresi Linear Sederhana:\n\nMemahami konsep regresi sederhana.\nMampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi sederhana sesuai standar akademik.\n\nBab 28. Prinsip Dasar Model Regresi Linear:\n\nMemahami konsep regresi majemuk.\nMampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi majemuk sesuai standar akademik.\n\nBab 29. Regresi Linear Hierarkis:\n\nMemahami konsep regresi hierarkis.\nMampu menginterpretasikan hasil analisis dan menulis laporan hasil regresi hierarkis sesuai standar akademik.",
     "crumbs": [
-      "Model Regresi Linear"
+      "MODEL REGRESI LINEAR"
     ]
   },
   {
