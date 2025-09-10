@@ -29,7 +29,7 @@ Interpretasi dari hasil uji beda menggunakan *paired samples t-test* juga perlu 
 
     ::: {#tbl-paired-ttest}
     | Pengukuran 1 | Pengukuran 2 | *t*   | *df* | *p*     | *Cohen's d* | *SE Cohen's d* |
-    |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+    |--------------|--------------|-------|------|---------|-------------|----------------|
     | Hitam        | Kuning       | 5.546 | 49   | \< .001 | 0.784       | 0.224          |
 
     : Contoh hasil analisis *paired samples t-test*
@@ -56,7 +56,7 @@ Hasil uji *Wilcoxon signed-rank* menunjukkan bahwa partisipan menunjukkan perbed
 
 ::: {#tbl-wilcoxon}
 | Pengukuran 1 | Pengukuran 2 | *W* | *z* | *df* | *p* | *Rank-Biserial Correlation* | *SE Rank-Biserial Correlation* |
-|---------|---------|---------|---------|---------|---------|---------|---------|
+|----|----|----|----|----|----|----|----|
 | Hitam | Kuning | 1021.5 | 4.446 |  | \< .001 | 0.737 | 0.164 |
 
 : Contoh hasil analisis *Wilcoxon signed-rank*

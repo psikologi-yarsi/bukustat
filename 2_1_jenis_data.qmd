@@ -9,7 +9,7 @@ Sebelum data dianalisis, peneliti perlu memahami terlebih dahulu **jenis data** 
 Data disebut dengan *raw score* (**data mentah**) apabila data tersebut adalah data langsung dari partisipan, tidak dimodifikasi, dan tidak dikonversi ke dalam nilai tertentu. Contoh data mentah:
 
 | ID Partisipan | Skor Mentah Matematika (jumlah menjawab benar dari 50 soal) | Skor Konversi dalam rentang 0-100 (*raw*/50 x 100) |
-|:----------------------:|:----------------------:|:----------------------:|
+|:--:|:--:|:--:|
 | 1 | 25 | 50 |
 | 2 | 35 | 70 |
 | 3 | 45 | 90 |

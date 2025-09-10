@@ -52,7 +52,7 @@ Interpretasi dari hasil uji beda menggunakan *independent t-test* perlu dilakuka
 
 ::: {#tbl-deskriptif-ttest}
 | Variabel        | Kelompok  | *N* | *Mean* | *SD*  | *SE*  | *Coefficient of variation* |
-|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|-----------------|-----------|-----|--------|-------|-------|----------------------------|
 | *Self-efficacy* | Laki-laki | 43  | 8.209  | 1.922 | 0.293 | 0.234                      |
 |                 | Perempuan | 57  | 7.193  | 1.674 | 0.222 | 0.233                      |
 
@@ -65,7 +65,7 @@ Prinsip yang sama juga dapat diterapkan untuk interpretasi dan melaporkan hasil 
 
 ::: {#tbl-mann}
 | Variabel | *U* | *df* | *p* | *Rank-Biserial Correlation* | *SE Rank-Biserial Correlation* |
-|------------|------------|------------|------------|------------|------------|
+|----|----|----|----|----|----|
 | *Self-efficacy* | 1576.000 |  | 0.013 | 0.286 | 0.117 |
 
 : Contoh hasil analisis Mann-Whitney
@@ -75,7 +75,7 @@ Hasil *Mann-Whitney test* menunjukkan bahwa terdapat perbedaan tingkat *self-eff
 
 ::: {#tbl-desk-mann}
 | Variabel | Kelompok | *N* | *Mean* | *SD* | *SE* | *Coefficent of Variation* | *Mean Rank* | *Sum Rank* |
-|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+|----|----|----|----|----|----|----|----|----|
 | *Self-efficacy* | Laki-laki | 43 | 8.209 | 1.922 | 0.293 | 0.234 | 58.651 | 2522 |
 |  | Perempuan | 57 | 7.193 | 1.674 | 0.222 | 0.233 | 44.351 | 2528 |
 
