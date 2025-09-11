@@ -1,0 +1,155 @@
+# Glosarium {.unnumbered}
+
+## A {.unnumbered .unlisted}
+
+ANOVA (*Analysis of Variance*): Uji parametrik untuk membandingkan rata-rata tiga kelompok atau lebih.
+
+ANOVA Dua Arah: ANOVA dengan dua faktor/variabel bebas.
+
+ANOVA Pengukuran Berulang: ANOVA yang digunakan untuk data longitudinal atau *repeated measures*.
+
+ANOVA Satu Arah: ANOVA dengan satu faktor/variabel bebas.
+
+## C {.unnumbered .unlisted}
+
+*Central Limit Theorem*: Teorema yang menyatakan bahwa distribusi rata-rata sampel akan mendekati normal meski populasi asal tidak normal.
+
+*Chi-square* (*χ*²): Uji non-parametrik untuk menganalisis hubungan antar variabel kategorikal.
+
+*Cohen’s d*: Ukuran effect size untuk perbedaan rata-rata antar kelompok dalam satuan SD.
+
+*Confidence Interval* (CI): Rentang nilai yang mungkin mencakup parameter populasi dengan tingkat keyakinan tertentu.
+
+## D {.unnumbered .unlisted}
+
+Distribusi Normal: Distribusi data berbentuk lonceng simetris dengan mean = median = modus.
+
+## E {.unnumbered .unlisted}
+
+*Effect Size*: Ukuran kekuatan pengaruh atau perbedaan dalam analisis statistik.
+
+*Eta Squared* (*η*²): Ukuran effect size yang sering digunakan pada ANOVA.
+
+## F {.unnumbered .unlisted}
+
+*Friedman Test*: Uji non-parametrik untuk membandingkan tiga atau lebih kelompok berpasangan ordinal.
+
+## I {.unnumbered .unlisted}
+
+Interval: Skala pengukuran yang memiliki jarak sama antar satuan tetapi tanpa nol mutlak.
+
+## K {.unnumbered .unlisted}
+
+*Kolmogorov-Smirnov Test*: Uji statistik untuk menilai normalitas data, lebih cocok untuk sampel besar.
+
+Korelasi *Pearson*: Ukuran hubungan linear antara dua variabel interval/rasio yang normal.
+
+Korelasi *Spearman*: Ukuran hubungan monotonic antara dua variabel ordinal atau tidak normal.
+
+*Kruskal-Wallis Test*: Uji non-parametrik untuk membandingkan tiga atau lebih kelompok independen ordinal.
+
+Kuartil: Pembagian data menjadi empat bagian yang sama besar.
+
+Kurtosis: Ukuran kelancipan distribusi data dibanding distribusi normal.
+
+## L {.unnumbered .unlisted}
+
+*Levene Test*: Salah satu uji homogenitas varians yang umum digunakan.
+
+## M {.unnumbered .unlisted}
+
+*Mann-Whitney U Test*: Uji non-parametrik untuk membandingkan dua kelompok independen ordinal.
+
+*Mean*: Rata-rata aritmatika.
+
+Median: Nilai tengah dari data yang sudah diurutkan.
+
+Modus: Nilai yang paling sering muncul dalam distribusi data.
+
+## N {.unnumbered .unlisted}
+
+Nominal: Skala pengukuran yang hanya memberi label tanpa urutan atau jarak.
+
+## O {.unnumbered .unlisted}
+
+Ordinal: Skala pengukuran yang menunjukkan urutan, tetapi jarak antar kategori tidak sama.
+
+*Outlier*: Nilai data yang jauh berbeda dari sebagian besar data lain.
+
+## P {.unnumbered .unlisted}
+
+Parameter: Ukuran yang dihitung dari populasi, misalnya mean populasi.
+
+*Partial Eta Squared* (*η*²*p*): Ukuran effect size untuk desain ANOVA dengan beberapa faktor.
+
+Persentil: Posisi data tertentu dalam distribusi, dinyatakan dalam persentase.
+
+Populasi: Keseluruhan individu atau objek yang menjadi sasaran penelitian.
+
+*Post-hoc Test*: Uji lanjutan setelah ANOVA signifikan, misalnya Tukey atau Bonferroni.
+
+Probabilitas: Peluang terjadinya suatu peristiwa.
+
+## R {.unnumbered .unlisted}
+
+*r*² (Koefisien Determinasi): Proporsi varians pada variabel dependen yang dijelaskan oleh variabel independen.
+
+Randomisasi: Proses pengacakan dalam pembagian kelompok penelitian.
+
+*Range*: Selisih antara nilai maksimum dan minimum.
+
+Rasio: Skala pengukuran dengan jarak sama dan nol mutlak, memungkinkan perhitungan rasio.
+
+Regresi Hierarkis: Regresi dengan memasukkan variabel secara bertahap (blok).
+
+Regresi Linear Majemuk: Regresi dengan lebih dari satu variabel prediktor.
+
+Regresi Linear Sederhana: Regresi dengan satu variabel prediktor.
+
+Regresi Logistik: Regresi yang digunakan ketika variabel dependen bersifat kategorikal.
+
+Reliabilitas: Konsistensi hasil pengukuran jika diulang pada kondisi yang sama.
+
+## S {.unnumbered .unlisted}
+
+Sampel: Bagian dari populasi yang digunakan dalam penelitian untuk mewakili populasi.
+
+*Sampling Error*: Perbedaan antara parameter populasi dengan statistik sampel akibat pemilihan sampel.
+
+*Shapiro-Wilk Test*: Uji statistik untuk menilai normalitas data, lebih sensitif pada sampel kecil.
+
+*Skewness*: Ukuran kemencengan distribusi data; positif jika miring ke kanan, negatif jika miring ke kiri.
+
+Standar Deviasi (*SD*): Akar kuadrat dari varians, menunjukkan seberapa jauh data menyebar dari mean.
+
+Statistik Deskriptif: Teknik untuk meringkas dan menyajikan data dalam bentuk tabel, grafik, mean, median, modus, dsb.
+
+Statistik Inferensial: Teknik untuk membuat kesimpulan atau generalisasi dari sampel ke populasi.
+
+Statistik: Ukuran yang dihitung dari sampel, misalnya mean sampel.
+
+## T {.unnumbered .unlisted}
+
+*t-test*: Uji parametrik untuk membandingkan rata-rata dua kelompok atau satu kelompok dengan nilai tertentu.
+
+## U {.unnumbered .unlisted}
+
+Uji Homogenitas Varians: Uji untuk memeriksa kesamaan varians antar kelompok.
+
+Uji Normalitas: Uji untuk memeriksa apakah data mengikuti distribusi normal.
+
+## V {.unnumbered .unlisted}
+
+Validitas Konstruk: Sejauh mana alat ukur benar-benar mengukur konstruk yang dimaksud.
+
+Variabel: Karakteristik atau atribut yang dapat bervariasi, misalnya usia, jenis kelamin, skor tes.
+
+variabel dependen: Variabel yang dipengaruhi atau dijelaskan dalam penelitian.
+
+Variabel independen: Variabel atau kelompok yang tidak saling memengaruhi.
+
+Varians: Ukuran penyebaran data, dihitung sebagai rata-rata kuadrat deviasi dari mean.
+
+## W {.unnumbered .unlisted}
+
+Wilcoxon Signed-Rank Test: Uji non-parametrik untuk dua kelompok berpasangan ordinal.
