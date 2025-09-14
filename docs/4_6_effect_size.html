@@ -98,6 +98,28 @@ div.csl-indent {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -129,7 +151,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -561,7 +583,7 @@ window.Quarto = {
 <p><em>Effect size</em> dapat dinyatakan dalam beberapa bentuk tergantung pada teknik analisis statistik yang digunakan. Secara umum, ada dua kategori utama:</p>
 <ul>
 <li><p><strong>Perbedaan <em>mean</em> yang distandarisasi</strong></p>
-<p>Ukuran ini digunakan untuk membandingkan rata-rata dua kelompok atau lebih. Rumus yang paling populer adalah <em>Cohen’s d</em> <span class="citation" data-cites="Cohan1988 Lakens2013">(<a href="#ref-Cohan1988" role="doc-biblioref">Cohen, 1988</a>; <a href="#ref-Lakens2013" role="doc-biblioref">Lakens, 2013</a>)</span>:</p>
+<p>Ukuran ini digunakan untuk membandingkan rata-rata dua kelompok atau lebih. Rumus yang paling populer adalah <em>Cohen’s d</em> <span class="citation" data-cites="Cohan1988 Lakens2013">(<a href="references.html#ref-Cohan1988" role="doc-biblioref">Cohen, 1988</a>; <a href="references.html#ref-Lakens2013" role="doc-biblioref">Lakens, 2013</a>)</span>:</p>
 <p><span class="math display">\[
 d = \frac{M_{1} - M_{2}}{SD_{\text{pooled}}}
 \]</span></p>
@@ -598,7 +620,7 @@ R^{2} = \frac{JK_{\text{reg}}}{JK_{\text{tot}}}
 </section>
 <section id="ukuran-effect-size-lainnya" class="level2" data-number="15.3">
 <h2 data-number="15.3" class="anchored" data-anchor-id="ukuran-effect-size-lainnya"><span class="header-section-number">15.3</span> Ukuran <em>Effect Size</em> Lainnya</h2>
-<p>Selain <em>Cohen’s</em> <em>d</em> dan korelasi (<em>r</em>), terdapat ukuran <em>effect size</em> lain yang digunakan sesuai jenis analisis. Setiap ukuran ini membantu peneliti membaca makna praktis hasil penelitian dalam konteks yang lebih spesifik (lihat <a href="#tbl-effect" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-effect</span></a>).</p>
+<p>Selain <em>Cohen’s</em> <em>d</em> dan korelasi (<em>r</em>), terdapat ukuran <em>effect size</em> lain yang digunakan sesuai jenis analisis. Setiap ukuran ini membantu peneliti membaca makna praktis hasil penelitian dalam konteks yang lebih spesifik (lihat <a href="#tbl-effect" class="quarto-xref">Tabel&nbsp;<span>15.1</span></a>).</p>
 <ol type="1">
 <li><p><strong><em>Cramer’s V</em>/<em>Phi coefficient</em></strong></p>
 <p>Digunakan pada uji <em>chi-square</em> atau tabel kontingensi untuk melihat kekuatan hubungan antar variabel kategorikal. Nilainya mirip dengan korelasi, semakin mendekati 1 berarti hubungan semakin kuat.</p></li>
@@ -610,7 +632,7 @@ R^{2} = \frac{JK_{\text{reg}}}{JK_{\text{tot}}}
 <div id="tbl-effect" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-effect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabel&nbsp;15.1: Tabel interpretasi <em>effect size</em> <span class="citation" data-cites="Cumming2011">(<a href="#ref-Cumming2011" role="doc-biblioref">Cumming, 2011</a>)</span>
+Tabel&nbsp;15.1: Tabel interpretasi <em>effect size</em> <span class="citation" data-cites="Cumming2011">(<a href="references.html#ref-Cumming2011" role="doc-biblioref">Cumming, 2011</a>)</span>
 </figcaption>
 <div aria-describedby="tbl-effect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -672,7 +694,7 @@ Tabel&nbsp;15.1: Tabel interpretasi <em>effect size</em> <span class="citation" 
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-Cohan1988" class="csl-entry" role="listitem">
 Cohen, J. (1988). <em>Statistical power analysis for the behavioral sciences</em>. Lawrence Erlbaum Associates.
 </div>

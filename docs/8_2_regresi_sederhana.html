@@ -78,9 +78,31 @@ ul.task-list li input[type="checkbox"] {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -514,7 +536,7 @@ background-size: cover;
 </section>
 <section id="interpretasi-hasil-regresi-sederhana" class="level2" data-number="27.2">
 <h2 data-number="27.2" class="anchored" data-anchor-id="interpretasi-hasil-regresi-sederhana"><span class="header-section-number">27.2</span> Interpretasi Hasil Regresi Sederhana</h2>
-<p>Setelah menjalankan analisis regresi, hasil yang diperoleh harus diinterpretasikan untuk memahami hubungan antara X dan Y (lihat <a href="#fig-regresi-sederhana" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-regresi-sederhana</span></a>). Hal-hal yang perlu diperhatikan dalam interpretasi hasil adalah:</p>
+<p>Setelah menjalankan analisis regresi, hasil yang diperoleh harus diinterpretasikan untuk memahami hubungan antara X dan Y (lihat <a href="#fig-regresi-sederhana" class="quarto-xref">Gambar&nbsp;<span>27.1</span></a>). Hal-hal yang perlu diperhatikan dalam interpretasi hasil adalah:</p>
 <ul>
 <li><p><strong>Koefisien Regresi (<em>β</em>)</strong>: Koefisien regresi menunjukkan seberapa besar perubahan <strong>rata-rata Y</strong> untuk setiap perubahan satu unit pada <strong>X</strong>. Interpretasi ini memberikan gambaran tentang peran variabel prediktor terhadap variabel luaran.</p></li>
 <li><p><strong><em>Intercept</em></strong> <strong>(<em>a</em>)</strong>: <em>Intercept</em> menunjukkan nilai Y ketika X = 0. Dalam beberapa kasus, <em>intercept</em> mungkin tidak memiliki makna praktis, terutama jika X = 0 tidak realistis dalam konteks penelitian.</p></li>

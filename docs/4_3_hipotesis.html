@@ -78,9 +78,31 @@ ul.task-list li input[type="checkbox"] {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -514,7 +536,7 @@ background-size: cover;
 </ol>
 <p>Dalam pengujian hipotesis, <strong>arah pengujian</strong> menentukan di sisi mana peneliti mencari bukti untuk menolak hipotesis nol. Uji satu arah (<strong><em>one-tailed test</em></strong>) digunakan jika hipotesis alternatif memprediksi arah perbedaan atau hubungan yang diharapkan, misalnya rata-rata nilai kelas A lebih tinggi daripada kelas B. Seluruh tingkat signifikansi ditempatkan pada satu sisi distribusi sehingga lebih sensitif untuk mendeteksi perbedaan ke arah tersebut, namun tidak dapat menangkap perbedaan ke arah sebaliknya.</p>
 <p>Sebaliknya, uji dua arah (<strong><em>two-tailed test</em></strong>) digunakan jika hipotesis alternatif tidak menentukan arah perbedaan, misalnya hanya ingin mengetahui apakah dua rata-rata berbeda tanpa memprediksi lebih tinggi atau lebih rendah. Dalam uji ini, tingkat signifikansi dibagi pada kedua sisi distribusi sehingga dapat mendeteksi perbedaan di kedua arah. Pemilihan jenis uji sebaiknya ditentukan sejak awal penelitian untuk menjaga validitas hasil.</p>
-<p>Proses pengujian hipotesis dilakukan secara sistematis. Langkah pertama adalah merumuskan H₀ dan H₁, kemudian menetapkan tingkat signifikansi (α), umumnya 0,05, untuk membatasi risiko kesalahan tipe I. Selanjutnya, peneliti memilih uji statistik yang sesuai dengan jenis data dan desain penelitian, lalu mengumpulkan dan menganalisis data untuk mendapatkan nilai statistik uji. Nilai ini dibandingkan dengan nilai kritis atau diinterpretasikan menggunakan <strong><em>p-value</em></strong>. Jika <em>p-value</em> ≤ α, maka H₀ ditolak; jika <em>p-value</em> &gt; α, maka H₀ tidak dapat ditolak. Penjelasan lebih lanjut mengenai signifikansi dan <em>p-value</em> akan diuraikan pada <a href="#sec-signifikansi" class="quarto-xref"><span class="quarto-unresolved-ref">sec-signifikansi</span></a>.</p>
+<p>Proses pengujian hipotesis dilakukan secara sistematis. Langkah pertama adalah merumuskan H₀ dan H₁, kemudian menetapkan tingkat signifikansi (α), umumnya 0,05, untuk membatasi risiko kesalahan tipe I. Selanjutnya, peneliti memilih uji statistik yang sesuai dengan jenis data dan desain penelitian, lalu mengumpulkan dan menganalisis data untuk mendapatkan nilai statistik uji. Nilai ini dibandingkan dengan nilai kritis atau diinterpretasikan menggunakan <strong><em>p-value</em></strong>. Jika <em>p-value</em> ≤ α, maka H₀ ditolak; jika <em>p-value</em> &gt; α, maka H₀ tidak dapat ditolak. Penjelasan lebih lanjut mengenai signifikansi dan <em>p-value</em> akan diuraikan pada <a href="4_4_signifikansi.html" class="quarto-xref"><span>Bab 13</span></a>.</p>
 <p>Penting dipahami bahwa menolak H₀ tidak berarti H₀ salah secara mutlak, melainkan data memberikan bukti cukup untuk mendukung H₁ dalam batas risiko yang ditetapkan. Sebaliknya, gagal menolak H₀ tidak berarti H₀ benar, tetapi menunjukkan bukti yang ada belum cukup untuk mendukung H₁. Dengan pemahaman ini, pengujian hipotesis menjadi alat penting untuk menarik kesimpulan ilmiah yang terukur, transparan, dan dapat dipertanggungjawabkan.</p>
 
 

@@ -78,9 +78,31 @@ ul.task-list li input[type="checkbox"] {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -504,7 +526,7 @@ background-size: cover;
 <p>Interpretasi dari hasil uji beda menggunakan <em>independent t-test</em> perlu dilakukan secara bertahap. Misalnya, peneliti ingin mengetahui perbedaan <em>self-efficacy</em> berdasarkan&nbsp; jenis kelamin (laki-laki dan perempuan). Tahapan interpretasi hasil uji <em>independent t-test</em> dapat dipahami dengan mempelajari contoh <em>output</em> penghitungan <em>independent t-test</em> menggunakan <em>software</em> JASP berikut:</p>
 <ol type="1">
 <li><p>Uji asumsi</p>
-<p>Hal pertama yang perlu dilihat adalah uji asumsi terkait distribusi dan homogenitas data; data harus terdistribusi secara normal dan homogen. Pada contoh tabel hasil uji hipotesis yang diperlihatkan pada <a href="#tbl-normalitas-t-test" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-normalitas-t-test</span></a>, diketahui bahwa <em>self-efficacy</em> pada kedua kelompok terdistribusi normal (kelompok laki-laki <em>p</em> = .16; perempuan <em>p</em> = .07; <em>p</em> &gt; .05). Artinya, sebaran data <em>self-efficacy</em> partisipan pada kedua kelompok tidak berbeda secara signifikan dibandingkan sebaran data kurva normal.</p>
+<p>Hal pertama yang perlu dilihat adalah uji asumsi terkait distribusi dan homogenitas data; data harus terdistribusi secara normal dan homogen. Pada contoh tabel hasil uji hipotesis yang diperlihatkan pada <a href="#tbl-normalitas-t-test" class="quarto-xref">Tabel&nbsp;<span>18.1</span></a>, diketahui bahwa <em>self-efficacy</em> pada kedua kelompok terdistribusi normal (kelompok laki-laki <em>p</em> = .16; perempuan <em>p</em> = .07; <em>p</em> &gt; .05). Artinya, sebaran data <em>self-efficacy</em> partisipan pada kedua kelompok tidak berbeda secara signifikan dibandingkan sebaran data kurva normal.</p>
 <div id="tbl-normalitas-t-test" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-normalitas-t-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -538,7 +560,7 @@ Tabel&nbsp;18.1: Contoh hasil uji normalitas (<em>Shapiro-Wilk</em>)
 </div>
 </figure>
 </div>
-<p>Uji homogenitas berdasarkan skor <em>Levene’s</em> <em>test</em> juga tidak signifikan (<em>F</em> = 1.53, <em>p</em> = .22 &gt; .05), menunjukkan bahwa kedua kelompok tidak menunjukkan varians yang berbeda, atau data bersifat homogen (<a href="#tbl-levene" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-levene</span></a>). Dengan demikian, data penelitian memenuhi kedua uji asumsi sehingga dapat dilanjutkan untuk dianalisis dengan menggunakan <em>independent samples t-test.</em> Jika data tidak memenuhi uji asumsi tersebut, maka uji parametrik tidak dapat dilanjutkan, perlu dilakukan uji non-parametrik (<em>Mann-Withney test</em>).</p>
+<p>Uji homogenitas berdasarkan skor <em>Levene’s</em> <em>test</em> juga tidak signifikan (<em>F</em> = 1.53, <em>p</em> = .22 &gt; .05), menunjukkan bahwa kedua kelompok tidak menunjukkan varians yang berbeda, atau data bersifat homogen (<a href="#tbl-levene" class="quarto-xref">Tabel&nbsp;<span>18.2</span></a>). Dengan demikian, data penelitian memenuhi kedua uji asumsi sehingga dapat dilanjutkan untuk dianalisis dengan menggunakan <em>independent samples t-test.</em> Jika data tidak memenuhi uji asumsi tersebut, maka uji parametrik tidak dapat dilanjutkan, perlu dilakukan uji non-parametrik (<em>Mann-Withney test</em>).</p>
 <div id="tbl-levene" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-levene-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -569,7 +591,7 @@ Tabel&nbsp;18.2: Contoh hasil uji homogenitas <em>Levene</em>
 </figure>
 </div></li>
 <li><p>Uji Hipotesis</p>
-<p>Selanjutnya, hal yang perlu dilihat adalah nilai p pada tabel <em>independent samples t-test</em>. Nilai <em>p</em> = .006 (<em>p</em> &lt; .05) menunjukkan terdapat perbedaan signifikan tingkat <em>self-efficacy</em> yang dilaporkan oleh partisipan laki-laki dan perempuan. Pada tabel <em>output</em> uji <em>independent t-test</em> (lihat <a href="#tbl-independent-ttest" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-independent-ttest</span></a>) juga dapat dilihat nilai <em>Cohen’s d</em> yang menunjukkan seberapa besar efek dari perbedaan jenis kelamin terhadap perbedaan <em>self-efficacy</em> pada kedua kelompok (<em>effect size</em>). Nilai <em>t, df, p</em> dan <em>Cohen’s d</em> diperlukan dalam penulisan interpretasi hasil uji beda antar kelompok, yang dapat dilihat pada contoh interpretasi hasil <em>independent samples t-test.</em></p>
+<p>Selanjutnya, hal yang perlu dilihat adalah nilai p pada tabel <em>independent samples t-test</em>. Nilai <em>p</em> = .006 (<em>p</em> &lt; .05) menunjukkan terdapat perbedaan signifikan tingkat <em>self-efficacy</em> yang dilaporkan oleh partisipan laki-laki dan perempuan. Pada tabel <em>output</em> uji <em>independent t-test</em> (lihat <a href="#tbl-independent-ttest" class="quarto-xref">Tabel&nbsp;<span>18.3</span></a>) juga dapat dilihat nilai <em>Cohen’s d</em> yang menunjukkan seberapa besar efek dari perbedaan jenis kelamin terhadap perbedaan <em>self-efficacy</em> pada kedua kelompok (<em>effect size</em>). Nilai <em>t, df, p</em> dan <em>Cohen’s d</em> diperlukan dalam penulisan interpretasi hasil uji beda antar kelompok, yang dapat dilihat pada contoh interpretasi hasil <em>independent samples t-test.</em></p>
 <div id="tbl-independent-ttest" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-independent-ttest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -602,7 +624,7 @@ Tabel&nbsp;18.3: Contoh hasil analisis <em>independent samples t-test</em>
 </figure>
 </div></li>
 <li><p>Data Deskriptif Kelompok</p>
-<p>Terakhir, informasi mengenai <em>mean</em> dan <em>SD</em> diperlukan untuk mengetahui kelompok mana yang menunjukkan rata-rata skor paling tinggi (lihat <a href="#tbl-deskriptif-ttest" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-deskriptif-ttest</span></a>). Contoh tabel menunjukkan laki-laki memiliki rata-rata <em>self-efficacy</em> yang lebih tinggi dibandingkan perempuan.</p></li>
+<p>Terakhir, informasi mengenai <em>mean</em> dan <em>SD</em> diperlukan untuk mengetahui kelompok mana yang menunjukkan rata-rata skor paling tinggi (lihat <a href="#tbl-deskriptif-ttest" class="quarto-xref">Tabel&nbsp;<span>18.4</span></a>). Contoh tabel menunjukkan laki-laki memiliki rata-rata <em>self-efficacy</em> yang lebih tinggi dibandingkan perempuan.</p></li>
 </ol>
 <div id="tbl-deskriptif-ttest" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -656,7 +678,7 @@ Tabel&nbsp;18.4: Contoh statistik deskriptif <em>independent samples t-test</em>
 </figure>
 </div>
 <p>Pelaporan hasil uji beda <em>independent samples t-test</em> dengan mengikuti format penulisan APA, adalah: Hasil <em>independent samples t-test</em> menunjukkan terdapat perbedaan tingkat <em>self-efficacy</em> yang signifikan (<em>t</em> (98) = 2.82, <em>p</em> = .006, <em>d</em> = .57) antara kelompok partisipan laki-laki (<em>M</em> = 8.21, <em>SD</em> = 1.92) dan partisipan perempuan (<em>M</em> = 7.19, <em>SD</em> = 1.67). Atau, partisipan laki-laki (<em>M</em> = 8.21, <em>SD</em> = 1.92) memiliki <em>self-efficacy</em> yang lebih tinggi (<em>t</em> (98) = 2.82, <em>p</em> = .006, <em>d</em> = .57) dibandingkan partisipan perempuan (<em>M</em> = 7.19, <em>SD</em> = 1.67).</p>
-<p>Prinsip yang sama juga dapat diterapkan untuk interpretasi dan melaporkan hasil uji beda non-parametrik (lihat <a href="#tbl-mann" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-mann</span></a>), dengan melihat hasil uji <em>Mann-Whitney test (U),</em> dan <em>mean rank</em> sebagai pengganti <em>mean</em>.&nbsp;Berikut adalah contoh <em>output</em> <em>Mann-Whitney:</em></p>
+<p>Prinsip yang sama juga dapat diterapkan untuk interpretasi dan melaporkan hasil uji beda non-parametrik (lihat <a href="#tbl-mann" class="quarto-xref">Tabel&nbsp;<span>18.5</span></a>), dengan melihat hasil uji <em>Mann-Whitney test (U),</em> dan <em>mean rank</em> sebagai pengganti <em>mean</em>.&nbsp;Berikut adalah contoh <em>output</em> <em>Mann-Whitney:</em></p>
 <div id="tbl-mann" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mann-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -696,7 +718,7 @@ Tabel&nbsp;18.5: Contoh hasil analisis Mann-Whitney
 </div>
 </figure>
 </div>
-<p>Hasil <em>Mann-Whitney test</em> menunjukkan bahwa terdapat perbedaan tingkat <em>self-efficacy</em> yang signifikan (<em>U</em> = 1576, <em>p</em> = .013) antara kelompok partisipan laki-laki (<em>Mdn</em> = 58.65) dan partisipan perempuan (<em>Mdn</em> = 44.35). Atau, partisipan laki-laki (<em>Mdn</em> = 58.65) memiliki <em>self-efficacy</em> yang lebih tinggi (<em>U</em> = 1576, <em>p</em> = .013) dibandingkan partisipan perempuan (<em>Mdn</em> = 44.35) (lihat <a href="#tbl-desk-mann" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-desk-mann</span></a>).</p>
+<p>Hasil <em>Mann-Whitney test</em> menunjukkan bahwa terdapat perbedaan tingkat <em>self-efficacy</em> yang signifikan (<em>U</em> = 1576, <em>p</em> = .013) antara kelompok partisipan laki-laki (<em>Mdn</em> = 58.65) dan partisipan perempuan (<em>Mdn</em> = 44.35). Atau, partisipan laki-laki (<em>Mdn</em> = 58.65) memiliki <em>self-efficacy</em> yang lebih tinggi (<em>U</em> = 1576, <em>p</em> = .013) dibandingkan partisipan perempuan (<em>Mdn</em> = 44.35) (lihat <a href="#tbl-desk-mann" class="quarto-xref">Tabel&nbsp;<span>18.6</span></a>).</p>
 <div id="tbl-desk-mann" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-desk-mann-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">

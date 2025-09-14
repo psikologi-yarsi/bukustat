@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, &amp; Aswin Januarsjaf">
+
+<title>22&nbsp; Jenis-jenis ANOVA dan Interpretasi Hasil Analisis – Statistik untuk Psikologi dan Ilmu Sosial</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./6_4_anova_nonpar.html" rel="next">
+<link href="./6_2_prinsip_anova.html" rel="prev">
+<link href="./coverv3.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-db4dcd9e87272a6facc5817869e84da1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(banners.png);
+background-size: cover;
+      }
+</style>
+
+
+<link rel="stylesheet" href="styles2.scss">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./6_anova.html">MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK</a></li><li class="breadcrumb-item"><a href="./6_3_jenis_anova.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Jenis-jenis <em>ANOVA</em> dan Interpretasi Hasil Analisis</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alihkan bilah sisi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Mencari" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./6_anova.html">MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK</a></li><li class="breadcrumb-item"><a href="./6_3_jenis_anova.html"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Jenis-jenis <em>ANOVA</em> dan Interpretasi Hasil Analisis</span></a></li></ol></nav>
+      <h1 class="title"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Jenis-jenis <em>ANOVA</em> dan Interpretasi Hasil Analisis</span></h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./coverv3.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Statistik untuk Psikologi dan Ilmu Sosial</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alihkan mode pembaca">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Mencari"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prakata</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tentang Penulis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./1_pengantar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PENGANTAR STATISTIK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_1_sejarah.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Pengertian &amp; Sejarah Ringkas Statistik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_2_stat_psiko.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Statistik dalam Penelitian Psikologi</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_3_jenis_stat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Jenis-jenis Statistik: Deskriptif &amp; Inferensial</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./2_persiapan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PERSIAPAN DATA</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_1_jenis_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Jenis Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_2_cleaning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pembersihan Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_3_akuntabilitas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Akuntabilitas Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./3_deskriptif.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">STATISTIK DESKRIPTIF</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_1_sentral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ukuran Pemusatan Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_2_dispersi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Ukuran Penyebaran Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_3_distribusi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Bentuk Distribusi Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./4_inferensial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">STATISTIK INFERENSIAL</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_1_parametrik.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Statistik Parametrik dan Non-Parametrik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_2_power.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><em>Statistical Power</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_3_hipotesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pengujian Hipotesis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_4_signifikansi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Signifikansi Statistik &amp; *p-value*</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_5_confidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><em>Confidence Interval</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_6_effect_size.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><em>Effect Size</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./5_t-test.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PERBEDAAN RATA-RATA DUA KELOMPOK</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_1_perbedaan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Memahami Perbedaan Rata-rata Antar Kelompok</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_2_between_within.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Perbedaan Rata-rata Antar Kelompok vs.&nbsp;Dalam Kelompok</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_3_independent_ttest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><em>Independent Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_4_paired_ttest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><em>Paired Samples t-test</em>: Parametrik dan Non-Parametrik</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./6_anova.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MEMBANDINGKAN RATA-RATA TIGA ATAU LEBIH KELOMPOK</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_1_tujuan_anova.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Tujuan Perbandingan Tiga Kelompok atau Lebih</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_2_prinsip_anova.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Prinsip-prinsip Dasar dan Asumsi-asumsi <em>ANOVA</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_3_jenis_anova.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Jenis-jenis <em>ANOVA</em> dan Interpretasi Hasil Analisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_4_anova_nonpar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alternatif Non-Parametrik untuk <em>ANOVA</em></span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./7_korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANALISIS KORELASI</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_1_karakteristik_korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Karakteristik Hubungan Antara Dua Variabel</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_2_asumsi_korelasi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Asumsi Korelasi, Interpretasi, dan Penulisan Hasil Analisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./8_regresi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MODEL REGRESI LINEAR</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Alihkan bagian">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_1_prinsip_regresi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Prinsip Dasar Model Regresi Linear</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_2_regresi_sederhana.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Regresi Linear Sederhana</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_3_regresi_majemuk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Regresi Linear Majemuk</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_4_regresi_hierarkis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Regresi Linear Hierarkis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_latihan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Soal Latihan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glosarium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glosarium</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daftar Pustaka</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Daftar Isi</h2>
+   
+  <ul>
+  <li><a href="#anova-satu-arah" id="toc-anova-satu-arah" class="nav-link active" data-scroll-target="#anova-satu-arah"><span class="header-section-number">22.1</span> <em>ANOVA</em> Satu Arah</a></li>
+  <li><a href="#anova-dua-arah" id="toc-anova-dua-arah" class="nav-link" data-scroll-target="#anova-dua-arah"><span class="header-section-number">22.2</span> <em>ANOVA</em> Dua Arah</a></li>
+  <li><a href="#anova-pengukuran-berulang" id="toc-anova-pengukuran-berulang" class="nav-link" data-scroll-target="#anova-pengukuran-berulang"><span class="header-section-number">22.3</span> <em>ANOVA</em> Pengukuran Berulang</a></li>
+  <li><a href="#anova-desain-campuran" id="toc-anova-desain-campuran" class="nav-link" data-scroll-target="#anova-desain-campuran"><span class="header-section-number">22.4</span> <em>ANOVA</em> Desain Campuran</a></li>
+  <li><a href="#sec-posthoc" id="toc-sec-posthoc" class="nav-link" data-scroll-target="#sec-posthoc"><span class="header-section-number">22.5</span> Uji <em>Post-hoc</em> vs.&nbsp;<em>Planned Contrasts</em></a></li>
+  <li><a href="#effect-size-dan-visualisasi-hasil-analisis" id="toc-effect-size-dan-visualisasi-hasil-analisis" class="nav-link" data-scroll-target="#effect-size-dan-visualisasi-hasil-analisis"><span class="header-section-number">22.6</span> <em>Effect Size</em> dan Visualisasi Hasil Analisis</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>Jenis-jenis <em>ANOVA</em> mengacu pada model statistik berbeda yang digunakan untuk menganalisis varians di antara rata-rata kelompok dalam berbagai desain eksperimental. Jenis yang paling umum digunakan adalah <strong><em>ANOVA</em></strong> <strong>Satu Arah</strong> (<em>One-Way ANOVA</em>) dan <strong><em>ANOVA</em></strong> <strong>Dua Arah</strong> (<em>Two-Way ANOVA</em>). Setiap jenis memiliki tujuan berbeda dan sesuai untuk skenario penelitian tertentu. Memahami jenis-jenis ini sangat penting untuk memilih metode analisis yang tepat berdasarkan struktur data dan desain eksperimen Anda.&nbsp;</p>
+<p>Pemilihan jenis <em>ANOVA</em> yang akan digunakan bergantung pada desain penelitian dan sifat data yang dianalisis. Pemahaman menyeluruh tentang jenis-jenis yang berbeda memungkinkan peneliti untuk membuat keputusan yang terinformasi, memastikan bahwa analisis statistik secara akurat mencerminkan hubungan dan perbedaan yang ada dalam data. Landasan ini penting tidak hanya untuk melakukan analisis statistik yang efektif tetapi juga untuk menafsirkan hasil dengan cara yang bermakna yang berkontribusi pada bidang studi yang lebih luas.</p>
+<section id="anova-satu-arah" class="level2" data-number="22.1">
+<h2 data-number="22.1" class="anchored" data-anchor-id="anova-satu-arah"><span class="header-section-number">22.1</span> <em>ANOVA</em> Satu Arah</h2>
+<p><strong><em>ANOVA</em></strong> <strong>Satu Arah</strong> digunakan ketika peneliti ingin membandingkan rata-rata tiga atau lebih kelompok independen berdasarkan satu variabel independen. Misalnya, jika seorang peneliti sedang memeriksa dampak metode pengajaran yang berbeda terhadap kinerja siswa, mereka dapat mengelompokkan siswa ke dalam tiga kelompok berdasarkan metode yang digunakan. <em>ANOVA</em> Satu Arah membantu menentukan apakah ada perbedaan yang signifikan secara statistik dalam skor kinerja rata-rata di antara kelompok-kelompok ini. Jenis <em>ANOVA</em> ini menjawab pertanyaan mendasar tentang apakah setidaknya satu rata-rata kelompok berbeda dari yang lain tanpa mendalami interaksi antara beberapa variabel.&nbsp;</p>
+<p><strong>Menghitung hasil dalam <em>ANOVA</em> satu arah</strong> melibatkan beberapa langkah kunci yang memungkinkan peneliti untuk menarik kesimpulan bermakna dari data yang diperoleh. Tujuan utama <em>ANOVA</em> satu arah adalah untuk menentukan apakah ada perbedaan yang signifikan secara statistik di antara rata-rata tiga atau lebih kelompok independen. Proses ini dimulai dengan perumusan hipotesis nol, yang menyatakan bahwa semua rata-rata kelompok adalah sama, dan hipotesis alternatif, yang menunjukkan bahwa setidaknya satu rata-rata kelompok berbeda. Dengan menggunakan perangkat lunak statistik atau perhitungan manual, Anda dapat memperoleh statistik F, yang membandingkan varians antar kelompok dengan varians dalam kelompok. <a href="#tbl-oneway" class="quarto-xref">Tabel&nbsp;<span>22.1</span></a> memuat contoh hasil analisis <em>ANOVA</em> satu-arah dengan menggunakan perangkat lunak JASP.</p>
+<p>Pada <em>ANOVA</em> satu arah, <strong>interpretasi</strong> dimulai dengan menilai nilai F dan <em>p-value</em>. Jika <em>p-value</em> lebih kecil dari batas signifikansi, misalnya 0,05, maka dapat disimpulkan bahwa ada perbedaan signifikan di antara kelompok yang dibandingkan. Interpretasi <em>ANOVA</em> satu arah hanya berfokus pada satu variabel independen sehingga lebih sederhana, namun penting untuk memperhatikan ukuran efek seperti <em>eta-squared</em> untuk memahami seberapa besar pengaruh faktor tersebut terhadap variabel dependen. Dalam pelaporan, hasil <em>ANOVA</em> satu arah disusun dengan mencantumkan nilai F, derajat kebebasan antar dan dalam kelompok, nilai <em>p</em>, dan ukuran efek. Misalnya: “Analisis varians satu arah menunjukkan perbedaan signifikan antara kelompok, <em>F</em>(2, 87) = 4,76, <em>p</em> = 0,011, <em>η²</em> = 0,098.”</p>
+<div id="tbl-oneway" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-oneway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;22.1: Contoh tabel <em>output</em> hasil <em>ANOVA</em> satu-arah
+</figcaption>
+<div aria-describedby="tbl-oneway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 24%">
+<col style="width: 9%">
+<col style="width: 20%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><em>Sum of squares</em></th>
+<th><em>df1</em></th>
+<th><em>Mean square</em></th>
+<th>F</th>
+<th><em>p</em></th>
+<th><em>η²</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Metode terapi</td>
+<td>24.420</td>
+<td>2</td>
+<td>8.140</td>
+<td>4.761</td>
+<td>.011</td>
+<td>.098</td>
+</tr>
+<tr class="even">
+<td>Residuals</td>
+<td>613.139</td>
+<td>87</td>
+<td>2.813</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="anova-dua-arah" class="level2" data-number="22.2">
+<h2 data-number="22.2" class="anchored" data-anchor-id="anova-dua-arah"><span class="header-section-number">22.2</span> <em>ANOVA</em> Dua Arah</h2>
+<p><strong><em>ANOVA</em></strong> <strong>Dua Arah</strong> memungkinkan pengujian dua variabel independen secara bersamaan dan efek interaksi kedua variabel tersebut terhadap variabel dependen. Misalnya, sebuah penelitian bertujuan mengeksplorasi bagaimana metode pengajaran dan jenis kelamin siswa memengaruhi kinerja. Dengan menggunakan <em>ANOVA</em> dua arah, peneliti dapat menilai tidak hanya efek utama dari setiap variabel independen tetapi juga apakah efek dari satu variabel berbeda tergantung pada tingkat variabel lainnya. Jenis ini sangat berguna dalam desain eksperimental yang lebih kompleks di mana interaksi antar faktor diharapkan memainkan peran penting.</p>
+<p>Dalam <em>ANOVA</em> Dua Arah, <strong>interpretasi</strong> mencakup dua komponen utama: efek utama dari masing-masing variabel independen dan efek interaksi antara keduanya. Peneliti perlu menilai apakah setiap efek utama dan interaksi menunjukkan signifikansi. Memahami <strong>efek interaksi</strong> sangat penting untuk menginterpretasikan hasil <em>ANOVA</em> dua arah. Ketika peneliti menyelidiki pengaruh dua variabel independen terhadap variabel dependen, mereka tidak hanya tertarik pada efek utama dari masing-masing variabel independen tetapi juga bagaimana variabel-variabel ini dapat berinteraksi satu sama lain. Efek interaksi terjadi ketika pengaruh satu variabel independen terhadap variabel dependen berubah tergantung pada level variabel independen lainnya. Ini berarti bahwa pengaruh gabungan dari variabel-variabel tersebut tidak hanya bersifat aditif; sebaliknya, hubungannya lebih kompleks dan memerlukan pemeriksaan yang cermat.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ANOVA desain faktorial
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Penelitian yang melibatkan lebih dari satu variabel independen (faktor) untuk melihat pengaruhnya terhadap variabel dependen disebut juga sebagai <strong><em>ANOVA</em></strong> <strong>desain faktorial</strong>. Umumnya, desain ini dituliskan dalam bentuk “faktorial 2x2” (atau 3x2, 2x4, dan seterusnya). Notasi tersebut menunjukkan jumlah level dari masing-masing faktor; misalnya, desain 2x2 berarti ada dua faktor, dan masing-masing faktor memiliki dua level.</p>
+</div>
+</div>
+<p>Untuk mengilustrasikan efek interaksi, perhatikan sebuah penelitian yang menguji pengaruh metode pengajaran dan jenis kelamin siswa terhadap kinerja akademik. Jika kinerja siswa laki-laki dan perempuan berbeda secara signifikan berdasarkan metode pengajaran yang digunakan, ini menunjukkan efek interaksi (lihat <a href="#tbl-twoway" class="quarto-xref">Tabel&nbsp;<span>22.2</span></a>). Misalnya, metode pengajaran tertentu mungkin lebih efektif untuk siswa perempuan sementara metode lain mungkin menguntungkan siswa laki-laki. Memahami interaksi ini memungkinkan peneliti untuk menyesuaikan strategi pendidikan untuk meningkatkan hasil bagi kelompok siswa yang berbeda, menekankan pentingnya mempertimbangkan bagaimana variabel-variabel bekerja bersama daripada secara terpisah.</p>
+<p><strong>Penulisan hasil</strong> mengikuti urutan pelaporan efek utama terlebih dahulu, baru kemudian efek interaksi. Sebagai contoh: “Terdapat efek utama yang signifikan dari metode pengajaran terhadap prestasi siswa, <em>F</em>(2, 84) = 5,23, <em>p</em> = 0,007, <em>η²</em> = 0,111, namun tidak ditemukan interaksi yang signifikan antara metode pengajaran dan jenis kelamin, <em>F</em>(2, 84) = 1,04, <em>p</em> = 0,358.”</p>
+<div id="tbl-twoway" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-twoway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;22.2: Contoh tabel <em>output</em> hasil <em>ANOVA</em> dua-arah
+</figcaption>
+<div aria-describedby="tbl-twoway-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 20%">
+<col style="width: 6%">
+<col style="width: 16%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Sum of Squares</th>
+<th>df</th>
+<th>Mean Square</th>
+<th>F</th>
+<th>p</th>
+<th><em>η²</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Metode</td>
+<td>11.341</td>
+<td>2</td>
+<td>4.341</td>
+<td>5.232</td>
+<td>.007</td>
+<td>.111</td>
+</tr>
+<tr class="even">
+<td>Jenis kelamin</td>
+<td>2.234</td>
+<td>1</td>
+<td>0.653</td>
+<td>2.331</td>
+<td>.105</td>
+<td>.012</td>
+</tr>
+<tr class="odd">
+<td>Metode x Jenis kelamin</td>
+<td>0.351</td>
+<td>2</td>
+<td>0.121</td>
+<td>1.042</td>
+<td>.358</td>
+<td>.008</td>
+</tr>
+<tr class="even">
+<td>Residuals</td>
+<td>6.748</td>
+<td>84</td>
+<td>2.548</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="anova-pengukuran-berulang" class="level2" data-number="22.3">
+<h2 data-number="22.3" class="anchored" data-anchor-id="anova-pengukuran-berulang"><span class="header-section-number">22.3</span> <em>ANOVA</em> Pengukuran Berulang</h2>
+<p>Selain Satu Arah dan Dua Arah, ada bentuk khusus <em>ANOVA</em> seperti <strong><em>ANOVA</em></strong> <strong>Pengukuran Berulang</strong> (<em>Repeated Measures ANOVA</em>), yang digunakan ketika partisipan yang sama diukur beberapa kali dalam kondisi berbeda. Metode ini dapat terjadi dalam studi longitudinal atau eksperimen di mana individu terpapar pada semua tingkat variabel independen.</p>
+<p>Pada <em>ANOVA</em> Pengukuran Berulang, <strong>interpretasi</strong> memperhatikan signifikansi perubahan antar kondisi atau waktu. Karena pengukuran dilakukan berulang pada individu yang sama, penyesuaian untuk <em>sphericity</em> sering diperlukan, misalnya menggunakan koreksi <em>Greenhouse-Geisser</em>.</p>
+<p><em>Sphericity</em> mengacu pada kondisi di mana varians perbedaan antara setiap pasangan tingkat pengukuran berulang adalah sama. Dengan kata lain, kovarians antara setiap pasangan pengukuran berulang harus sama. Pelanggaran <em>sphericity</em> dapat menyebabkan peningkatan risiko kesalahan Tipe I (menolak H<sub>0</sub>​ padahal benar) dan Tipe II (gagal menolak H<sub>0</sub>​ padahal salah), sehingga hasil F-statistik menjadi tidak akurat.</p>
+<p><a href="#tbl-repeated" class="quarto-xref">Tabel&nbsp;<span>22.3</span></a> menunjukkan contoh hasil <em>ANOVA</em> pengukuran berulang mengenai efektivitas terapi meditasi dalam mengurangi kecemasan Penulisan hasil mencantumkan statistik <em>F</em>, derajat kebebasan yang telah disesuaikan (jika perlu), nilai <em>p</em>, dan ukuran efek, misalnya: “Analisis pengukuran berulang menunjukkan perubahan signifikan tingkat kecemasan antar sesi terapi, <em>F</em>(2, 29) = 8,57, <em>p</em> = 0,006, <em>η²<sub>partial</sub></em> = 0,228.”</p>
+<div id="tbl-repeated" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-repeated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;22.3: Contoh tabel <em>output</em> hasil <em>ANOVA</em> pengukuran berulang
+</figcaption>
+<div aria-describedby="tbl-repeated-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 24%">
+<col style="width: 9%">
+<col style="width: 20%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><em>Sum of squares</em></th>
+<th><em>df1</em></th>
+<th><em>Mean square</em></th>
+<th>F</th>
+<th><em>p</em></th>
+<th><em>η²<sub>p</sub></em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Kecemasan</td>
+<td>19.443</td>
+<td>2</td>
+<td>5.341</td>
+<td>8.567</td>
+<td>.006</td>
+<td>.228</td>
+</tr>
+<tr class="even">
+<td>Residuals</td>
+<td>8.458</td>
+<td>29</td>
+<td>2.547</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="anova-desain-campuran" class="level2" data-number="22.4">
+<h2 data-number="22.4" class="anchored" data-anchor-id="anova-desain-campuran"><span class="header-section-number">22.4</span> <em>ANOVA</em> Desain Campuran</h2>
+<p>Variasi lainnya adalah <strong><em>ANOVA</em></strong> <strong>Desain Campuran</strong> (<em>Mixed-Design ANOVA</em>), yang menggabungkan faktor independen dan pengukuran berulang, memungkinkan analisis data yang lebih terperinci. Memahami variasi-variasi ini memungkinkan peneliti untuk memilih metode statistik yang paling efektif untuk pertanyaan penelitian mereka yang spesifik.</p>
+<p><strong>Interpretasi</strong> hasil analisis <em>ANOVA</em> Desain Campuran lebih kompleks karena mencakup efek utama untuk faktor <em>between-subjects</em>, faktor <em>within-subjects</em>, serta interaksi keduanya. Peneliti perlu mengevaluasi apakah ada perbedaan antar kelompok, perubahan dalam kelompok dari waktu ke waktu, dan apakah pola perubahan berbeda antar kelompok. Contoh hasil analisisnya dapat dilihat di <a href="#tbl-mixed" class="quarto-xref">Tabel&nbsp;<span>22.4</span></a>. Penulisan hasil memuat masing-masing efek secara sistematis. Misalnya: “Terdapat efek utama yang signifikan dari kelompok perlakuan terhadap tingkat stres, <em>F</em>(1, 58) = 10,12, <em>p</em> = 0,002, serta efek waktu yang signifikan, <em>F</em>(2, 116) = 6,87, p = 0,002. Interaksi antara kelompok dan waktu juga signifikan, <em>F</em>(2, 116) = 4,21, <em>p</em> = 0,017, menunjukkan bahwa perubahan stres antar waktu berbeda berdasarkan kelompok perlakuan.”</p>
+<div id="tbl-mixed" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mixed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;22.4: Contoh tabel output hasil <em>ANOVA</em> campuran
+</figcaption>
+<div aria-describedby="tbl-mixed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><em>Cases</em></th>
+<th><em>Sum of squares</em></th>
+<th><em>df</em></th>
+<th><em>Mean square</em></th>
+<th>F</th>
+<th><em>p</em></th>
+<th><em>η²<sub>p</sub></em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Waktu</td>
+<td>28.212</td>
+<td>1</td>
+<td>7.311</td>
+<td>6.871</td>
+<td>.002</td>
+<td>.311</td>
+</tr>
+<tr class="even">
+<td>Waktu x Treatment</td>
+<td>23.553</td>
+<td>2</td>
+<td>6.431</td>
+<td>4.212</td>
+<td>.017</td>
+<td>.124</td>
+</tr>
+<tr class="odd">
+<td>Residuals</td>
+<td>29.221</td>
+<td>116</td>
+<td>7.531</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Between-subjects effects</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 25%">
+<col style="width: 8%">
+<col style="width: 21%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><em>Sum of squares</em></th>
+<th><em>df</em></th>
+<th><em>Mean square</em></th>
+<th>F</th>
+<th><em>p</em></th>
+<th><em>η²</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Treatment</td>
+<td>45.112</td>
+<td>1</td>
+<td>12.477</td>
+<td>10.124</td>
+<td>.002</td>
+<td>.398</td>
+</tr>
+<tr class="even">
+<td>Residuals</td>
+<td>60.211</td>
+<td>58</td>
+<td>13.415</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sec-posthoc" class="level2" data-number="22.5">
+<h2 data-number="22.5" class="anchored" data-anchor-id="sec-posthoc"><span class="header-section-number">22.5</span> Uji <em>Post-hoc</em> vs.&nbsp;<em>Planned Contrasts</em></h2>
+<p>Setelah uji <em>ANOVA</em> menunjukkan adanya perbedaan rata-rata yang signifikan, peneliti perlu mengidentifikasi lebih jauh kelompok mana yang berbeda. Di sinilah <em>planned contrasts</em> dan uji <em>post-hoc</em> berperan. <em>Planned contrasts</em> digunakan ketika peneliti sejak awal telah menetapkan hipotesis spesifik mengenai kelompok mana yang diharapkan berbeda. Misalnya, dalam studi tentang efektivitas tiga metode pengajaran, seorang peneliti mungkin sejak awal ingin menguji apakah metode A lebih efektif dibandingkan metode B dan C secara gabungan.</p>
+<p>Sementara itu, uji <em>post-hoc</em> digunakan ketika peneliti tidak memiliki prediksi spesifik tentang kelompok mana yang berbeda sebelum analisis dilakukan. Setelah menemukan hasil <em>ANOVA</em> yang signifikan, uji <em>post-hoc</em> dijalankan untuk mengeksplorasi semua kemungkinan perbedaan antar pasangan kelompok.</p>
+<p>Misalnya, kita melakukan uji <em>post hoc</em> dari data <a href="#tbl-oneway" class="quarto-xref">Tabel&nbsp;<span>22.1</span></a>. Hasil ANOVA menunjukkan adanya perbedaan yang signifikan antar kelompok metode terapi, <em>F</em>(2, 87) = 4,76, <em>p</em> = 0,011. Namun, dari hasil tersebut kita belum bisa mengidentifikasi antar kelompok mana yang berbeda. Uji post hoc bisa membantu kita menyimpulkan perbedaan dari masing-masing kelompok yang diteliti. Dari hasil yang dipaparkan pada <a href="#tbl-posthoc" class="quarto-xref">Tabel&nbsp;<span>22.5</span></a>, data menunjukkan bahwa terdapat perbedaan yang signifikan antara kelompok CBT dan Journaling (<em>t</em>(87) = 4.360, <em>p<sub>tukey</sub></em> = .002). Begitu juga dengan perbedaan antara Journaling dan Placebo (<em>t</em>(87) = 5.876, <em>p<sub>tukey</sub></em> &lt; .001). Namun, tidak ditemukan adanya perbedaan antara kelompok CBT dan Placebo (<em>t</em>(87) = 1.516, <em>p<sub>tukey</sub></em> = .012). Dari hasil ini kita dapat menyimpulkan bahwa metode Journaling adalah metode yang paling efektif dalam mereduksi stres pada partisipan, sedangkan metode CBT dan Placebo menunjukkan efek yang tidak berbeda.</p>
+<div id="tbl-posthoc" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;22.5: Contoh hasil uji <em>post hoc</em>
+</figcaption>
+<div aria-describedby="tbl-posthoc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<p><em>Post hoc comparisons: Metode terapi</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 25%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th><em>Mean difference</em></th>
+<th><em>SE</em></th>
+<th><em>df</em></th>
+<th><em>t</em></th>
+<th><em>p<sub>tukey</sub></em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CBT</td>
+<td>Journaling</td>
+<td>-0.766</td>
+<td>0.176</td>
+<td>87</td>
+<td>-4.360</td>
+<td>.002</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Placebo</td>
+<td>0.267</td>
+<td>0.176</td>
+<td>87</td>
+<td>1.516</td>
+<td>.012</td>
+</tr>
+<tr class="odd">
+<td>Journaling</td>
+<td>Placebo</td>
+<td>1.033</td>
+<td>0.176</td>
+<td>87</td>
+<td>5.876</td>
+<td>&lt;.001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Beberapa uji <em>post-hoc</em> yang umum meliputi:</p>
+<ul>
+<li><strong>Uji <em>Tukey HSD</em></strong>: Uji ini digunakan ketika varians kelompok sama dan ukuran sampel sama.</li>
+<li><strong>Uji <em>Bonferroni</em></strong>: Uji ini digunakan ketika varians kelompok tidak sama atau ukuran sampel tidak sama.</li>
+<li><strong>Uji <em>Scheffe</em></strong>: Uji ini adalah uji yang paling konservatif dan digunakan ketika ada banyak perbandingan yang dibuat.</li>
+</ul>
+<p>Memahami perbedaan antara <em>planned contrasts</em> dan uji <em>post-hoc</em> penting dalam desain analisis, karena keduanya menjadi metode yang menjawab kebutuhan penelitian yang berbeda. <em>Planned contrasts</em> lebih terfokus dan lebih kuat secara statistik untuk hipotesis yang sudah direncanakan, sedangkan uji <em>post-hoc</em> memberikan fleksibilitas eksploratif dalam menganalisis data setelah hasil utama ditemukan.</p>
+</section>
+<section id="effect-size-dan-visualisasi-hasil-analisis" class="level2" data-number="22.6">
+<h2 data-number="22.6" class="anchored" data-anchor-id="effect-size-dan-visualisasi-hasil-analisis"><span class="header-section-number">22.6</span> <em>Effect Size</em> dan Visualisasi Hasil Analisis</h2>
+<p>Dalam semua jenis <em>ANOVA</em>, ukuran efek seperti <em>eta-squared</em> atau <em>partial eta-squared</em> sangat dianjurkan untuk dilaporkan karena memberikan informasi tambahan tentang besarnya pengaruh yang ditemukan. Selain itu, visualisasi hasil menggunakan diagram batang atau plot garis dapat memperjelas interpretasi perbedaan antar kelompok atau perubahan dalam waktu, seperti yang ditampilkan dalam <a href="#fig-visualisasi" class="quarto-xref">Gambar&nbsp;<span>22.1</span></a>.</p>
+<div id="fig-visualisasi" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-visualisasi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/6_2_visual_interaksi.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-visualisasi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;22.1: Contoh penggunaan visualisasi hasil analisis
+</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./6_2_prinsip_anova.html" class="pagination-link" aria-label="Prinsip-prinsip Dasar dan Asumsi-asumsi *ANOVA*">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Prinsip-prinsip Dasar dan Asumsi-asumsi <em>ANOVA</em></span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./6_4_anova_nonpar.html" class="pagination-link" aria-label="Alternatif Non-Parametrik untuk *ANOVA*">
+        <span class="nav-page-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Alternatif Non-Parametrik untuk <em>ANOVA</em></span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Statistik untuk Psikologi &amp; Ilmu Sosial</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Buku ini dicetak menggunakan <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

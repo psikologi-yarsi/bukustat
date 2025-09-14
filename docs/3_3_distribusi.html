@@ -98,6 +98,28 @@ div.csl-indent {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -129,7 +151,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -550,10 +572,10 @@ window.Quarto = {
 
 
 
-<p>Setiap nilai dalam sekumpulan data memiliki frekuensi kemunculan yang berbeda-beda; nilai ekstrem biasanya muncul lebih jarang, sedangkan nilai yang mendekati <em>mean</em> lebih sering muncul. Pola ini membentuk <strong>distribusi data</strong>, yang jika digambarkan dalam grafik seperti poligon frekuensi, akan membentuk kurva. Pada distribusi yang ideal, yaitu <strong>distribusi normal</strong>, kurva berbentuk lonceng (<strong><em>bell-shaped</em></strong>) dan <strong>simetris</strong> di sekitar nilai ukuran pemusatan data seperti <em>mean</em> atau median [<span class="citation" data-cites="Field2018 Gravetter2017">(<a href="#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="#ref-Gravetter2017" role="doc-biblioref">Gravetter &amp; Wallnau, 2017</a>)</span>. Namun, pada kenyataannya, data bisa saja miring (<em>skewed</em>) jika nilai-nilai terkonsentrasi di satu sisi, atau memiliki kurtosis jika kurvanya lebih runcing atau lebih datar dari distribusi normal. Pemahaman tentang bentuk distribusi ini penting karena banyak analisis statistik, terutama yang bersifat inferensial, mengasumsikan bahwa data terdistribusi normal. Untuk itu, bagian-bagian berikut akan membahas lebih lanjut mengenai <strong>kurva normal</strong>, <strong><em>skewness</em></strong>, <strong>kurtosis</strong>, dan <strong><em>z-score</em></strong> sebagai alat untuk menstandarkan data.</p>
+<p>Setiap nilai dalam sekumpulan data memiliki frekuensi kemunculan yang berbeda-beda; nilai ekstrem biasanya muncul lebih jarang, sedangkan nilai yang mendekati <em>mean</em> lebih sering muncul. Pola ini membentuk <strong>distribusi data</strong>, yang jika digambarkan dalam grafik seperti poligon frekuensi, akan membentuk kurva. Pada distribusi yang ideal, yaitu <strong>distribusi normal</strong>, kurva berbentuk lonceng (<strong><em>bell-shaped</em></strong>) dan <strong>simetris</strong> di sekitar nilai ukuran pemusatan data seperti <em>mean</em> atau median [<span class="citation" data-cites="Field2018 Gravetter2017">(<a href="references.html#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="references.html#ref-Gravetter2017" role="doc-biblioref">Gravetter &amp; Wallnau, 2017</a>)</span>. Namun, pada kenyataannya, data bisa saja miring (<em>skewed</em>) jika nilai-nilai terkonsentrasi di satu sisi, atau memiliki kurtosis jika kurvanya lebih runcing atau lebih datar dari distribusi normal. Pemahaman tentang bentuk distribusi ini penting karena banyak analisis statistik, terutama yang bersifat inferensial, mengasumsikan bahwa data terdistribusi normal. Untuk itu, bagian-bagian berikut akan membahas lebih lanjut mengenai <strong>kurva normal</strong>, <strong><em>skewness</em></strong>, <strong>kurtosis</strong>, dan <strong><em>z-score</em></strong> sebagai alat untuk menstandarkan data.</p>
 <section id="kurva-normal" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="kurva-normal"><span class="header-section-number">9.1</span> Kurva Normal</h2>
-<p>Seperti telah disampaikan sebelumnya, distribusi data dapat dikatakan normal jika kurvanya membentuk lonceng dan simetris. Pada distribusi data yang demikian, frekuensi dari setiap nilai <strong>data tersebar secara simetris</strong> antara yang terletak di atas tendensi sentral dan yang di bawah tendensi sentral. Data tersebar 50% di atas dan 50% di bawah tendensi sentral, dengan frekuensi yang semakin mengecil pada nilai data yang semakin ekstrem, baik yang kecil maupun yang besar (lihat <a href="#fig-kurva" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-kurva</span></a>).</p>
+<p>Seperti telah disampaikan sebelumnya, distribusi data dapat dikatakan normal jika kurvanya membentuk lonceng dan simetris. Pada distribusi data yang demikian, frekuensi dari setiap nilai <strong>data tersebar secara simetris</strong> antara yang terletak di atas tendensi sentral dan yang di bawah tendensi sentral. Data tersebar 50% di atas dan 50% di bawah tendensi sentral, dengan frekuensi yang semakin mengecil pada nilai data yang semakin ekstrem, baik yang kecil maupun yang besar (lihat <a href="#fig-kurva" class="quarto-xref">Gambar&nbsp;<span>9.1</span></a>).</p>
 <div id="fig-kurva" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-kurva-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -564,8 +586,8 @@ Gambar&nbsp;9.1: Bentuk kurva normal
 </figcaption>
 </figure>
 </div>
-<p>Pada kurva normal, tiga pengukuran data terpusat (<em>mean</em>, median, dan modus) berada pada satu titik atau nilai yang relatif sama. Dari <a href="#fig-kurva" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-kurva</span></a> dapat lebih terlihat jelas bahwa 50% data tersebar di atas tendensi sentral dan 50% data tersebar di bawah tendensi sentral, di mana semakin jauh dari tendensi sentral maka semakin sedikit frekuensinya.</p>
-<p>Untuk menjawab masalah-masalah tertentu, kita perlu mencari besaran frekuensi sebuah nilai atau cakupan nilai berdasarkan sebaran data yang ada. Misalnya, kita ingin memperkirakan ada berapa jumlah mahasiswa yang nilai ujiannya antara 70 dan 85, di mana nilai <em>mean</em> = 80 <em>SD</em> = 5, dan <em>N</em> = 250. Dengan memanfaatkan informasi standar deviasi (<em>s</em>), proporsi frekuensi data pada distribusi normal dapat kita hitung berdasarkan luas area dalam kurva. <a href="#fig-proporsi" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-proporsi</span></a> menunjukkan besaran proporsi frekuensi pada data dilihat dari luas area berdasarkan nilai standar deviasi.</p>
+<p>Pada kurva normal, tiga pengukuran data terpusat (<em>mean</em>, median, dan modus) berada pada satu titik atau nilai yang relatif sama. Dari <a href="#fig-kurva" class="quarto-xref">Gambar&nbsp;<span>9.1</span></a> dapat lebih terlihat jelas bahwa 50% data tersebar di atas tendensi sentral dan 50% data tersebar di bawah tendensi sentral, di mana semakin jauh dari tendensi sentral maka semakin sedikit frekuensinya.</p>
+<p>Untuk menjawab masalah-masalah tertentu, kita perlu mencari besaran frekuensi sebuah nilai atau cakupan nilai berdasarkan sebaran data yang ada. Misalnya, kita ingin memperkirakan ada berapa jumlah mahasiswa yang nilai ujiannya antara 70 dan 85, di mana nilai <em>mean</em> = 80 <em>SD</em> = 5, dan <em>N</em> = 250. Dengan memanfaatkan informasi standar deviasi (<em>s</em>), proporsi frekuensi data pada distribusi normal dapat kita hitung berdasarkan luas area dalam kurva. <a href="#fig-proporsi" class="quarto-xref">Gambar&nbsp;<span>9.2</span></a> menunjukkan besaran proporsi frekuensi pada data dilihat dari luas area berdasarkan nilai standar deviasi.</p>
 <div id="fig-proporsi" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-proporsi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -589,7 +611,7 @@ Gambar&nbsp;9.2: Proporsi sebaran data pada kurva normal
 <section id="skewness" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="skewness"><span class="header-section-number">9.2</span> <em>Skewness</em></h2>
 <p>Data pada sampel yang diambil dari populasi penelitian tidak selalu terdistribusi secara normal. Sebaran yang tidak normal ini seringnya terjadi pada sekumpulan data yang memiliki nilai ekstrem (<em>outlier</em>) yang proporsinya cukup jauh melebihi data yang tersebar secara normal. Besarnya <em>outlier</em> ini membuat sebaran data seolah-olah terpusat di bawah nilai tengah, atau sebaliknya terpusat di atas nilai tengah.</p>
-<p>Jika data yang tersebar secara normal membentuk kurva berbentuk lonceng yang simetris, maka <strong>data yang tidak normal</strong> tersebut bisa membentuk <strong>kurva yang miring</strong> atau juling (<em>skewed</em>). Arah kemiringan (<em>skewness</em>) kurva bergantung pada besaran frekuensi data yang menyimpang dari nilai tengah <span class="citation" data-cites="Cumming2011">(<a href="#ref-Cumming2011" role="doc-biblioref">Cumming, 2011</a>)</span>. Jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih kecil daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kanan, yang disebut sebagai <em>skew</em> negatif (<a href="#fig-negs" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-negs</span></a>). Sebaliknya, jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih besar daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kiri, yang disebut sebagai <em>skew</em> positif (<a href="#fig-poss" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-poss</span></a>).</p>
+<p>Jika data yang tersebar secara normal membentuk kurva berbentuk lonceng yang simetris, maka <strong>data yang tidak normal</strong> tersebut bisa membentuk <strong>kurva yang miring</strong> atau juling (<em>skewed</em>). Arah kemiringan (<em>skewness</em>) kurva bergantung pada besaran frekuensi data yang menyimpang dari nilai tengah <span class="citation" data-cites="Cumming2011">(<a href="references.html#ref-Cumming2011" role="doc-biblioref">Cumming, 2011</a>)</span>. Jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih kecil daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kanan, yang disebut sebagai <em>skew</em> negatif (<a href="#fig-negs" class="quarto-xref">Gambar&nbsp;<span>9.3 (a)</span></a>). Sebaliknya, jika frekuensi nilai yang berada di bawah <em>mean</em> jauh lebih besar daripada frekuensi nilai di atas <em>mean</em>, maka puncak kurva akan condong ke kiri, yang disebut sebagai <em>skew</em> positif (<a href="#fig-poss" class="quarto-xref">Gambar&nbsp;<span>9.3 (b)</span></a>).</p>
 <div id="fig-skewness" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-skewness-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -633,7 +655,7 @@ Gambar&nbsp;9.3: Distribusi skewed
 \]</span></p>
 <p>Jika hasil penghitungan nilai <em>skewness</em> adalah positif, maka disebut dengan kurva <em>skewed</em> positif. Jika hasil hitungnya negatif, maka disebut dengan kurva <em>skewed</em> negatif. Apabila hasil hitungnya (mendekati) nol, maka disebut dengan kurva normal. Tidak ada angka pasti, seberapa dekat dengan nol dapat disebut sebagai kurva normal, tetapi kesepakatan umum adalah ± 0,5.</p></li>
 <li><p><strong>Membandingkan nilai ukuran pemusatan data</strong></p>
-<p>Jika <em>mean</em> lebih kecil dari median, maka bentuk distribusinya adalah <em>skewed</em> negatif. Sebaliknya, jika <em>mean</em> lebih lebih besar dari median, maka bentuk distribusinya adalah <em>skewed</em> positif. Namun, jika <em>mean</em>, median, dan modus berada pada satu titik yang relatif sama atau berdekatan, maka bentuk distribusi datanya adalah normal (<a href="#fig-distri" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-distri</span></a>).</p></li>
+<p>Jika <em>mean</em> lebih kecil dari median, maka bentuk distribusinya adalah <em>skewed</em> negatif. Sebaliknya, jika <em>mean</em> lebih lebih besar dari median, maka bentuk distribusinya adalah <em>skewed</em> positif. Namun, jika <em>mean</em>, median, dan modus berada pada satu titik yang relatif sama atau berdekatan, maka bentuk distribusi datanya adalah normal (<a href="#fig-distri" class="quarto-xref">Gambar&nbsp;<span>9.4</span></a>).</p></li>
 </ol>
 <div id="fig-distri" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -648,7 +670,7 @@ Gambar&nbsp;9.4: Skewness data berdasarkan lokasi tendensi sentral
 </section>
 <section id="kurtosis" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="kurtosis"><span class="header-section-number">9.3</span> Kurtosis</h2>
-<p>Kurtosis adalah seberapa <strong>berbeda bentuk kurva dari kurva normal</strong>, dilihat dari seberapa tebal-tipis bagian ekor dari kurva tersebut [<span class="citation" data-cites="Field2018 Howell2013">(<a href="#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="#ref-Howell2013" role="doc-biblioref">Howell, 2013</a>)</span>. Selain dilihat dari ekor kurva, kurtosis sebenarnya juga menunjukkan seberapa tajam bentuk puncak dari kurva. Terdapat tiga bentuk kurtosis, yaitu normal, ekor panjang (<strong><em>heavy-tailed</em></strong>) dan ekor pendek (<strong><em>light-tailed</em></strong>) (<a href="#fig-kurtosis" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-kurtosis</span></a>).</p>
+<p>Kurtosis adalah seberapa <strong>berbeda bentuk kurva dari kurva normal</strong>, dilihat dari seberapa tebal-tipis bagian ekor dari kurva tersebut [<span class="citation" data-cites="Field2018 Howell2013">(<a href="references.html#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="references.html#ref-Howell2013" role="doc-biblioref">Howell, 2013</a>)</span>. Selain dilihat dari ekor kurva, kurtosis sebenarnya juga menunjukkan seberapa tajam bentuk puncak dari kurva. Terdapat tiga bentuk kurtosis, yaitu normal, ekor panjang (<strong><em>heavy-tailed</em></strong>) dan ekor pendek (<strong><em>light-tailed</em></strong>) (<a href="#fig-kurtosis" class="quarto-xref">Gambar&nbsp;<span>9.5</span></a>).</p>
 <div id="fig-kurtosis" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-kurtosis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -672,7 +694,7 @@ z = \frac{X - \bar{x}}{\text{SD}}
 <p><em>z-score</em> juga bermanfaat dalam mendeteksi <em>outlier</em>, serta dalam berbagai analisis statistik lanjutan seperti uji hipotesis dan analisis distribusi normal. Karena <em>z-score</em> mengubah data ke skala yang seragam, ia menjadi alat penting dalam interpretasi dan generalisasi hasil penelitian.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-Cumming2011" class="csl-entry" role="listitem">
 Cumming, G. (2011). <em>Understanding the New Statistics: Effect Sizes, Confidence Intervals, and Meta-Analysis</em>. Routledge.
 </div>

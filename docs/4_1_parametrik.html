@@ -98,9 +98,31 @@ div.csl-indent {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -523,9 +545,9 @@ background-size: cover;
 <p>Dalam statistik inferensial, metode analisis dapat dibedakan menjadi dua kelompok besar, yaitu statistik <strong>parametrik</strong> dan statistik <strong>non-parametrik</strong>. Pemilihan metode ini berpengaruh pada validitas hasil analisis karena masing-masing memiliki asumsi dan prinsip kerja yang berbeda. Meskipun keduanya bertujuan untuk menarik kesimpulan dari data sampel ke populasi, perbedaan pendekatan dapat memengaruhi akurasi dan kekuatan analisis.</p>
 <section id="asumsi-parametrik" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="asumsi-parametrik"><span class="header-section-number">10.1</span> Asumsi Parametrik</h2>
-<p>Metode analisis parametrik bekerja dengan optimal jika data memiliki distribusi normal (lihat <a href="#sec-distribusi" class="quarto-xref"><span class="quarto-unresolved-ref">sec-distribusi</span></a>). Karena berbagai prosedur parametrik—seperti estimasi parameter dan pengujian hipotesis—mengandalkan sifat distribusi normal, penyimpangan yang besar dari normalitas dapat membuat hasil analisis menjadi bias atau kurang akurat. Oleh karena itu, sebelum menggunakan metode parametrik, peneliti perlu memeriksa apakah data mendekati distribusi normal melalui uji statistik maupun pemeriksaan visual.</p>
-<p>Pemeriksaan melalui <strong>metode visual</strong> bisa dilihat berdasarkan kurva sebaran data. Salah satu yang paling umum digunakan adalah grafik histogram. Jika histogram tampak seperti lonceng, maka distribusi data tersebut dikatakan normal. Sebaliknya, jika terdapat kemiringan sehingga kurva terlihat jelas tidak simetris, maka data tidak terdistribusi dengan normal (lihat <a href="#fig-normal" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-normal</span></a>).</p>
-<p>Metode <strong>pengujian statsitik</strong> dapat menjadi cara yang paling akurat untuk menentukan normalitas distribusi data <span class="citation" data-cites="Field2018 Tabachnick2019">(<a href="#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="#ref-Tabachnick2019" role="doc-biblioref">Tabachnick &amp; Fidell, 2019</a>)</span>. Terdapat dua uji statistik yang cukup umum digunakan digunakan dalam konteks riset ilmu sosial, yaitu <strong><em>Kolmogorov-Smirnov</em></strong> (KS) dan <strong><em>Shapiro-Wilk</em></strong> (SW). Sejumlah studi mengungkapkan bahwa uji SW lebih andal dibanding KS karena memiliki daya uji (<em>power</em>) yang lebih tinggi dalam mendeteksi berbagai bentuk penyimpangan dari normalitas, baik akibat <em>skewness</em> maupun <em>kurtosis</em>, pada hampir semua ukuran sampel dan jenis distribusi <span class="citation" data-cites="Oktaviani2014 Razali2011 Yap2011">(<a href="#ref-Oktaviani2014" role="doc-biblioref">Oktaviani &amp; Notobroto, 2014</a>; <a href="#ref-Razali2011" role="doc-biblioref">Razali &amp; Wah, 2011</a>; <a href="#ref-Yap2011" role="doc-biblioref">Yap &amp; Sim, 2011</a>)</span>. Selain itu, KS cenderung kurang <em>powerful</em> untuk sampel kecil <span class="citation" data-cites="Ghasemi2012">(<a href="#ref-Ghasemi2012" role="doc-biblioref">Ghasemi &amp; Zahediasl, 2012</a>)</span>. Oleh karena itu, tes SW lebih disarankan untuk digunakan dalam pengujian normalitas distribusi data.</p>
+<p>Metode analisis parametrik bekerja dengan optimal jika data memiliki distribusi normal (lihat <a href="3_3_distribusi.html" class="quarto-xref"><span>Bab 9</span></a>). Karena berbagai prosedur parametrik—seperti estimasi parameter dan pengujian hipotesis—mengandalkan sifat distribusi normal, penyimpangan yang besar dari normalitas dapat membuat hasil analisis menjadi bias atau kurang akurat. Oleh karena itu, sebelum menggunakan metode parametrik, peneliti perlu memeriksa apakah data mendekati distribusi normal melalui uji statistik maupun pemeriksaan visual.</p>
+<p>Pemeriksaan melalui <strong>metode visual</strong> bisa dilihat berdasarkan kurva sebaran data. Salah satu yang paling umum digunakan adalah grafik histogram. Jika histogram tampak seperti lonceng, maka distribusi data tersebut dikatakan normal. Sebaliknya, jika terdapat kemiringan sehingga kurva terlihat jelas tidak simetris, maka data tidak terdistribusi dengan normal (lihat <a href="#fig-normal" class="quarto-xref">Gambar&nbsp;<span>10.1</span></a>).</p>
+<p>Metode <strong>pengujian statsitik</strong> dapat menjadi cara yang paling akurat untuk menentukan normalitas distribusi data <span class="citation" data-cites="Field2018 Tabachnick2019">(<a href="references.html#ref-Field2018" role="doc-biblioref">Field, 2018</a>; <a href="references.html#ref-Tabachnick2019" role="doc-biblioref">Tabachnick &amp; Fidell, 2019</a>)</span>. Terdapat dua uji statistik yang cukup umum digunakan digunakan dalam konteks riset ilmu sosial, yaitu <strong><em>Kolmogorov-Smirnov</em></strong> (KS) dan <strong><em>Shapiro-Wilk</em></strong> (SW). Sejumlah studi mengungkapkan bahwa uji SW lebih andal dibanding KS karena memiliki daya uji (<em>power</em>) yang lebih tinggi dalam mendeteksi berbagai bentuk penyimpangan dari normalitas, baik akibat <em>skewness</em> maupun <em>kurtosis</em>, pada hampir semua ukuran sampel dan jenis distribusi <span class="citation" data-cites="Oktaviani2014 Razali2011 Yap2011">(<a href="references.html#ref-Oktaviani2014" role="doc-biblioref">Oktaviani &amp; Notobroto, 2014</a>; <a href="references.html#ref-Razali2011" role="doc-biblioref">Razali &amp; Wah, 2011</a>; <a href="references.html#ref-Yap2011" role="doc-biblioref">Yap &amp; Sim, 2011</a>)</span>. Selain itu, KS cenderung kurang <em>powerful</em> untuk sampel kecil <span class="citation" data-cites="Ghasemi2012">(<a href="references.html#ref-Ghasemi2012" role="doc-biblioref">Ghasemi &amp; Zahediasl, 2012</a>)</span>. Oleh karena itu, tes SW lebih disarankan untuk digunakan dalam pengujian normalitas distribusi data.</p>
 <div id="fig-normal" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-normal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -570,9 +592,9 @@ Gambar&nbsp;10.1: Kurva distribusi data
 </section>
 <section id="metode-non-parametrik" class="level2" data-number="10.3">
 <h2 data-number="10.3" class="anchored" data-anchor-id="metode-non-parametrik"><span class="header-section-number">10.3</span> Metode Non-Parametrik</h2>
-<p>Metode <strong>non-parametrik</strong> adalah pendekatan analisis statistik yang <strong>tidak bergantung pada asumsi</strong> bentuk distribusi tertentu dan tidak secara langsung menggunakan parameter populasi seperti <em>mean</em> atau varians dalam perhitungannya <span class="citation" data-cites="Conover1999">(<a href="#ref-Conover1999" role="doc-biblioref">Conover, 1999</a>)</span>. Metode ini sering digunakan ketika data tidak memenuhi asumsi normalitas atau ketika data yang dimiliki berskala ordinal dan nominal, di mana informasi yang tersedia hanya berupa urutan atau kategori. Dalam praktiknya, metode non-parametrik banyak mengandalkan <strong>peringkat</strong> (<em>ranking</em>) untuk melakukan perbandingan antar kelompok atau mengukur hubungan antar variabel.</p>
+<p>Metode <strong>non-parametrik</strong> adalah pendekatan analisis statistik yang <strong>tidak bergantung pada asumsi</strong> bentuk distribusi tertentu dan tidak secara langsung menggunakan parameter populasi seperti <em>mean</em> atau varians dalam perhitungannya <span class="citation" data-cites="Conover1999">(<a href="references.html#ref-Conover1999" role="doc-biblioref">Conover, 1999</a>)</span>. Metode ini sering digunakan ketika data tidak memenuhi asumsi normalitas atau ketika data yang dimiliki berskala ordinal dan nominal, di mana informasi yang tersedia hanya berupa urutan atau kategori. Dalam praktiknya, metode non-parametrik banyak mengandalkan <strong>peringkat</strong> (<em>ranking</em>) untuk melakukan perbandingan antar kelompok atau mengukur hubungan antar variabel.</p>
 <p>Kelebihan metode non-parametrik terletak pada <strong>fleksibilitasnya</strong> terhadap bentuk data —metode ini tetap dapat digunakan meskipun data terdistribusi miring, memiliki <em>outlier</em>, atau jumlah sampel relatif kecil. Selain itu, metode ini lebih “aman” digunakan jika peneliti tidak yakin bahwa asumsi parametrik terpenuhi. Namun, konsekuensi dari fleksibilitas ini adalah <strong>kekuatan statistik yang umumnya lebih rendah</strong> dibandingkan metode parametrik ketika asumsi normalitas sebenarnya terpenuhi. Artinya, metode non-parametrik mungkin <strong>kurang sensitif</strong> dalam mendeteksi perbedaan atau hubungan yang ada, sehingga hasil yang signifikan memerlukan efek yang lebih besar atau jumlah sampel yang lebih banyak.</p>
-<p>Rangkuman perbandingan secara umum antara kedua metode analisis (parametrik vs.&nbsp;non-parametrik) dapat dilihat di <a href="#tbl-parametrik" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-parametrik</span></a>.</p>
+<p>Rangkuman perbandingan secara umum antara kedua metode analisis (parametrik vs.&nbsp;non-parametrik) dapat dilihat di <a href="#tbl-parametrik" class="quarto-xref">Tabel&nbsp;<span>10.1</span></a>.</p>
 <div id="tbl-parametrik" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-parametrik-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -625,7 +647,7 @@ Tabel&nbsp;10.1: Perbandingan metode statistik parametrik dan non-parametrik
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-Conover1999" class="csl-entry" role="listitem">
 Conover, W. J. (1999). <em>Practical Nonparametric Statistics</em> (3rd ed.). Wiley.
 </div>

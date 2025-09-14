@@ -78,6 +78,28 @@ ul.task-list li input[type="checkbox"] {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -109,7 +131,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -668,7 +690,7 @@ s^2 = \frac{\sum (X - \bar{x})^2}{N - 1}
 </tr>
 </tbody>
 </table>
-<p>Untuk dapat memperoleh nilai varians, kita perlu menghitung simpangan atau selisih dari setiap data poin terhadap mean kemudian dikuadratkan, seperti pada <a href="#tbl-varians2" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-varians2</span></a>.</p>
+<p>Untuk dapat memperoleh nilai varians, kita perlu menghitung simpangan atau selisih dari setiap data poin terhadap mean kemudian dikuadratkan, seperti pada <a href="#tbl-varians2" class="quarto-xref">Tabel&nbsp;<span>8.1</span></a>.</p>
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-varians2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Tabel&nbsp;8.1: Perhitungan simpangan dan varians dua kelompok
@@ -845,7 +867,7 @@ Tabel&nbsp;8.1: Perhitungan simpangan dan varians dua kelompok
 </div>
 </div>
 </figure>
-<p>Dari hasil penghitungan tersebut, kita menemukan perbedaan varians yang cukup besar antara kedua kelompok, meskipun <em>mean</em> keduanya tidak jauh berbeda. Hal ini menandakan bahwa kelompok b memiliki sebaran data yang jauh lebih beragam (heterogen) dibandingkan kelompok a (lihat <a href="#fig-varians" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-varians</span></a>). Oleh karena itu, pemaknaan terhadap nilai <em>mean</em> tiap kelompok juga berbeda, relatif terhadap variansnya masing-masing.</p>
+<p>Dari hasil penghitungan tersebut, kita menemukan perbedaan varians yang cukup besar antara kedua kelompok, meskipun <em>mean</em> keduanya tidak jauh berbeda. Hal ini menandakan bahwa kelompok b memiliki sebaran data yang jauh lebih beragam (heterogen) dibandingkan kelompok a (lihat <a href="#fig-varians" class="quarto-xref">Gambar&nbsp;<span>8.1</span></a>). Oleh karena itu, pemaknaan terhadap nilai <em>mean</em> tiap kelompok juga berbeda, relatif terhadap variansnya masing-masing.</p>
 <p>Varians memiliki fungsi penting dalam memahami keragaman atau variasi data di sekitar nilai rata-rata. Informasi ini sangat berguna untuk a) menilai konsistensi data (misalnya, dua kelompok dengan rata-rata yang sama bisa memiliki varians yang berbeda; kelompok dengan varians kecil berarti anggotanya lebih homogen.) dan b) dasar dari analisis statistik lanjutan, di mana varians menjadi komponen penting dalam berbagai teknik analisis, seperti standar deviasi, analisis varians (<em>ANOVA</em>), uji-t, dan regresi. Dengan demikian, varians bukan hanya ukuran penyebaran, tetapi juga alat untuk mengevaluasi struktur dan kualitas data sebelum melakukan interpretasi atau pengambilan keputusan lebih lanjut.</p>
 </section>
 <section id="standar-deviasi" class="level2" data-number="8.3">

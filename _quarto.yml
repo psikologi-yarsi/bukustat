@@ -115,12 +115,15 @@ format:
   html:
     theme:
       - united
-      - brand
-    css: styles2.scss
+      #- brand
+      #- styles3333.scss
+    #  - styles2.scss
+    css: styles3333.scss
     code-link: true
     author-meta: "Sunu Bagaskara, Entin Nurhayati, Sari Zakiah Akmal, Titi Sahidah Fitriana, & Aswin Januarsjaf"
     breadcrumb: true
     title-block-banner: banners.png
+    include-in-header: head.html
   pdf:
     documentclass: book
     pdf-engine: lualatex

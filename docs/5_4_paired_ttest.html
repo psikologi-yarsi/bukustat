@@ -78,9 +78,31 @@ ul.task-list li input[type="checkbox"] {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -503,7 +525,7 @@ background-size: cover;
 <p>Interpretasi dari hasil uji beda menggunakan <em>paired samples t-test</em> juga perlu dilakukan secara bertahap. Misalnya, peneliti ingin mengetahui perbedaan waktu reaksi partisipan ketika melihat tulisan berwarna hitam dan kuning. Tahapan interpretasi hasil <em>paired samples t-test</em> dapat dipahami dengan mempelajari contoh berikut:</p>
 <ol type="1">
 <li><p>Uji asumsi</p>
-<p>Hal pertama yang perlu dilihat adalah uji asumsi terkait distribusi data; data harus terdistribusi normal. <a href="#tbl-normal-paired" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-normal-paired</span></a> menunjukkan hasil uji normalitas data (<em>Shapiro-Wilk</em>). Diketahui bahwa skor waktu reaksi partisipan terdistribusi normal (<em>p</em> = .34; <em>p</em> &gt; .05). Artinya, sebaran data waktu reaksi pada kedua kondisi (stimulus hitam dan kuning) tidak berbeda secara signifikan dibandingkan sebaran data kurva normal. Dengan demikian, uji beda dapat dilakukan dengan statistik parametrik, <em>paired samples t-test.</em> Jika data tidak memenuhi uji asumsi normalitas data, maka uji parametrik tidak dapat dilanjutkan, perlu dilakukan uji non parametrik <em>(Wilcoxon signed-rank).</em></p>
+<p>Hal pertama yang perlu dilihat adalah uji asumsi terkait distribusi data; data harus terdistribusi normal. <a href="#tbl-normal-paired" class="quarto-xref">Tabel&nbsp;<span>19.1</span></a> menunjukkan hasil uji normalitas data (<em>Shapiro-Wilk</em>). Diketahui bahwa skor waktu reaksi partisipan terdistribusi normal (<em>p</em> = .34; <em>p</em> &gt; .05). Artinya, sebaran data waktu reaksi pada kedua kondisi (stimulus hitam dan kuning) tidak berbeda secara signifikan dibandingkan sebaran data kurva normal. Dengan demikian, uji beda dapat dilakukan dengan statistik parametrik, <em>paired samples t-test.</em> Jika data tidak memenuhi uji asumsi normalitas data, maka uji parametrik tidak dapat dilanjutkan, perlu dilakukan uji non parametrik <em>(Wilcoxon signed-rank).</em></p>
 <div id="tbl-normal-paired" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-normal-paired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -532,7 +554,7 @@ Tabel&nbsp;19.1: Contoh hasil uji normalitas normalitas sampel berpasangan
 </figure>
 </div></li>
 <li><p>Uji Hipotesis</p>
-<p>Selanjutnya, hal yang perlu dilihat adalah nilai p pada tabel <em>paired samples t-test</em>. Nilai <em>p</em> &lt; .001 (<em>p</em> &lt; .05) menunjukkan terdapat perbedaan signifikan waktu reaksi antara stimulus berwarna hitam dan kuning (lihat <a href="#tbl-paired-ttest" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-paired-ttest</span></a>). Pada tabel <em>output</em> uji <em>paired samples t-test</em> juga dapat dilihat nilai <em>Cohen’s d</em> yang menunjukkan seberapa besar efek dari perbedaan warna stimulus terhadap perbedaan waktu reaksi pada kedua kelompok (<em>effect size</em>). Nilai <em>t, df, p</em> dan <em>Cohen’s d</em> diperlukan dalam penulisan interpretasi hasil uji beda antar kelompok, yang dapat dilihat pada contoh interpretasi hasil uji <em>paired samples t-test.</em></p>
+<p>Selanjutnya, hal yang perlu dilihat adalah nilai p pada tabel <em>paired samples t-test</em>. Nilai <em>p</em> &lt; .001 (<em>p</em> &lt; .05) menunjukkan terdapat perbedaan signifikan waktu reaksi antara stimulus berwarna hitam dan kuning (lihat <a href="#tbl-paired-ttest" class="quarto-xref">Tabel&nbsp;<span>19.2</span></a>). Pada tabel <em>output</em> uji <em>paired samples t-test</em> juga dapat dilihat nilai <em>Cohen’s d</em> yang menunjukkan seberapa besar efek dari perbedaan warna stimulus terhadap perbedaan waktu reaksi pada kedua kelompok (<em>effect size</em>). Nilai <em>t, df, p</em> dan <em>Cohen’s d</em> diperlukan dalam penulisan interpretasi hasil uji beda antar kelompok, yang dapat dilihat pada contoh interpretasi hasil uji <em>paired samples t-test.</em></p>
 <div id="tbl-paired-ttest" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-paired-ttest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -576,7 +598,7 @@ Tabel&nbsp;19.2: Contoh hasil analisis <em>paired samples t-test</em>
 </figure>
 </div></li>
 <li><p>Data deskriptif</p>
-<p>Terakhir, informasi mengenai <em>Mean</em> dan <em>SD</em> diperlukan untuk mengetahui kelompok mana yang menunjukkan rata-rata skor paling tinggi. Contoh <a href="#tbl-desk-paired" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-desk-paired</span></a> menunjukkan stimulus hitam memiliki rata-rata waktu reaksi yang lebih lama dibandingkan stimulus kuning.</p>
+<p>Terakhir, informasi mengenai <em>Mean</em> dan <em>SD</em> diperlukan untuk mengetahui kelompok mana yang menunjukkan rata-rata skor paling tinggi. Contoh <a href="#tbl-desk-paired" class="quarto-xref">Tabel&nbsp;<span>19.3</span></a> menunjukkan stimulus hitam memiliki rata-rata waktu reaksi yang lebih lama dibandingkan stimulus kuning.</p>
 <div id="tbl-desk-paired" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-desk-paired-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -618,7 +640,7 @@ Tabel&nbsp;19.3: Contoh statistik deskriptif <em>paired samples t-test</em>
 </div></li>
 </ol>
 <p>Pelaporan hasil uji beda <em>paired samples t-test</em> dengan mengikuti format penulisan APA, sama dengan pelaporan uji <em>independent samples t-test</em>. Hasil <em>paired samples t-test</em> menunjukkan terdapat perbedaan waktu reaksi yang signifikan (<em>t</em> (49) = 5.55, <em>p</em> &lt; .001, <em>d</em> = .78) antara stimulus berwarna hitam (<em>M</em> = 67.84, <em>SD</em> = 9.30) dan stimulus kuning (<em>M</em> = 58.56, <em>SD</em> = 7.68). Atau, waktu reaksi partisipan (<em>t</em> (49) = 5.55, <em>p</em> &lt; .001, <em>d</em> = .78) ketika melihat stimulus hitam (<em>M</em> = 67.84, <em>SD</em> = 9.30) lebih lama dibandingkan ketika melihat stimulus kuning (<em>M</em> = 58.56, <em>SD</em> = 7.68).</p>
-<p>Prinsip yang sama juga dapat diterapkan untuk interpretasi dan melaporkan hasil uji beda non parametrik, dengan melihat hasil uji <em>Wilcoxon signed-rank</em>, seperti pada contoh di <a href="#tbl-wilcoxon" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-wilcoxon</span></a>.</p>
+<p>Prinsip yang sama juga dapat diterapkan untuk interpretasi dan melaporkan hasil uji beda non parametrik, dengan melihat hasil uji <em>Wilcoxon signed-rank</em>, seperti pada contoh di <a href="#tbl-wilcoxon" class="quarto-xref">Tabel&nbsp;<span>19.4</span></a>.</p>
 <p>Hasil uji <em>Wilcoxon signed-rank</em> menunjukkan bahwa partisipan menunjukkan perbedaan waktu reaksi yang signifikan antara stimulus berwarna hitam dan kuning (<em>z</em>= 4.45, <em>p</em> &lt; .001). Output JASP uji <em>Wilcoxon signed-rank</em> tidak menampilkan secara otomatis Median (Mdn) masing-masing kelompok, sehingga jika diperlukan Median masing-masing kelompok, dapat dihitung dengan menggunakan menu Descriptive pada <em>software</em> JASP.</p>
 <div id="tbl-wilcoxon" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">

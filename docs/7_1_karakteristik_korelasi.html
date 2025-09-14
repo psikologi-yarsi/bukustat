@@ -78,9 +78,31 @@ ul.task-list li input[type="checkbox"] {
 background-size: cover;
       }
 </style>
+<style>
+/* Breadcrumb */
+.quarto-page-breadcrumbs { color:#444 !important; font-weight:500; }
+.quarto-page-breadcrumbs a { color:#1a73e8 !important; text-decoration:none; }
+.quarto-page-breadcrumbs a:hover { color:#d93025 !important; text-decoration:underline; }
+
+/* Title & Subtitle hanya di banner */
+.quarto-title-block .title {
+  color: #F54927 !important;   // hanya banner
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+.quarto-title-block .subtitle {
+  background-color: #F54927;   // biru
+    color: #ffffff;              // teks putih
+    padding: 6px 12px;           // jarak dalam
+    border-radius: 6px;          // sudut membulat
+    display: inline-block;       // supaya background mengikuti panjang teks
+    font-weight: 500;
+    font-style: italic;
+}
+</style>
 
 
-<link rel="stylesheet" href="styles2.scss">
+<link rel="stylesheet" href="styles3333.scss">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -503,7 +525,7 @@ background-size: cover;
 <p>Hubungan antara dua variabel dalam statistik dapat dilihat dari uji korelasi, yaitu suatu teknik yang digunakan untuk mengukur dan menggambarkan sebuah keterkaitan antara dua variabel. Dalam uji korelasi, terdapat tiga karakteristik hubungan antara variabel X dan Y yaitu arah hubungan (positif atau negatif), bentuk hubungan (linear atau non linear) dan kekuatan hubungan.</p>
 <section id="arah-hubungan-korelasi" class="level2" data-number="24.1">
 <h2 data-number="24.1" class="anchored" data-anchor-id="arah-hubungan-korelasi"><span class="header-section-number">24.1</span> Arah Hubungan Korelasi</h2>
-<p>Berdasarkan arah hubungan, korelasi dapat dibedakan menjadi korelasi positif dan negatif. <strong>Korelasi positif (+)</strong> adalah ketika kedua variabel berubah dengan arah yang sama (X dan Y sama-sama naik/ meningkat atau X dan Y sama-sama turun). Dengan kata lain, jika variabel X mengalami peningkatan skor, maka variabel Y juga mengalami peningkatan skor. Atau, jika variabel X mengalami penurunan skor, maka variabel Y juga menurun. Misalnya, jika suhu di luar panas (terik), penjualan es teh manis meningkat; sedangkan jika cuaca mendung (suhu lebih dingin), penjualan es teh manis menurun. Hal ini menunjukkan bahwa suhu berkorelasi positif dengan penjualan es teh manis. Sementara itu, <strong>korelasi negatif (-)</strong> terjadi ketika kedua variabel berubah dengan arah yang berlawanan (X naik maka Y turun, atau X turun maka Y naik). Peningkatan skor pada variabel X diikuti dengan penurunan skor pada variabel Y. Misalnya, seorang dengan tingkat stres yang tinggi cenderung memiliki tingkat kebahagiaan yang rendah; stres berkorelasi negatif dengan kebahagiaan. Arah hubungan dapat divisualisasikan dalam <em>scatter plot</em> (lihat <a href="#fig-korelasi-linear" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-korelasi-linear</span></a>).</p>
+<p>Berdasarkan arah hubungan, korelasi dapat dibedakan menjadi korelasi positif dan negatif. <strong>Korelasi positif (+)</strong> adalah ketika kedua variabel berubah dengan arah yang sama (X dan Y sama-sama naik/ meningkat atau X dan Y sama-sama turun). Dengan kata lain, jika variabel X mengalami peningkatan skor, maka variabel Y juga mengalami peningkatan skor. Atau, jika variabel X mengalami penurunan skor, maka variabel Y juga menurun. Misalnya, jika suhu di luar panas (terik), penjualan es teh manis meningkat; sedangkan jika cuaca mendung (suhu lebih dingin), penjualan es teh manis menurun. Hal ini menunjukkan bahwa suhu berkorelasi positif dengan penjualan es teh manis. Sementara itu, <strong>korelasi negatif (-)</strong> terjadi ketika kedua variabel berubah dengan arah yang berlawanan (X naik maka Y turun, atau X turun maka Y naik). Peningkatan skor pada variabel X diikuti dengan penurunan skor pada variabel Y. Misalnya, seorang dengan tingkat stres yang tinggi cenderung memiliki tingkat kebahagiaan yang rendah; stres berkorelasi negatif dengan kebahagiaan. Arah hubungan dapat divisualisasikan dalam <em>scatter plot</em> (lihat <a href="#fig-korelasi-linear" class="quarto-xref">Gambar&nbsp;<span>24.1</span></a>).</p>
 <div id="fig-korelasi-linear" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-korelasi-linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -517,7 +539,7 @@ Gambar&nbsp;24.1: Visualisasi arah korelasi
 </section>
 <section id="bentuk-hubungan-korelasi" class="level2" data-number="24.2">
 <h2 data-number="24.2" class="anchored" data-anchor-id="bentuk-hubungan-korelasi"><span class="header-section-number">24.2</span> Bentuk Hubungan Korelasi</h2>
-<p><strong>Bentuk hubungan</strong> antara dua variabel&nbsp; dibedakan menjadi hubungan linear dan non linear. Bentuk hubungan ini akan terlihat lebih jelas ketika data kedua variabel divisualisasikan dalam sebuah plot. <strong>Hubungan linear</strong> adalah ketika titik-titik dalam <em>scatter plot</em> cenderung membentuk garis lurus. Sedangkan, <strong>hubungan non linear</strong> terjadi jika titik-titik dalam <em>scatter plot</em> cenderung membentuk garis lengkung. Visualisasi hubungan linear dapat dilihat pada Gambar 7.1., sedangkan hubungan non linear dapat dilihat pada <a href="#fig-korelasi-nonlinear" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-korelasi-nonlinear</span></a>.</p>
+<p><strong>Bentuk hubungan</strong> antara dua variabel&nbsp; dibedakan menjadi hubungan linear dan non linear. Bentuk hubungan ini akan terlihat lebih jelas ketika data kedua variabel divisualisasikan dalam sebuah plot. <strong>Hubungan linear</strong> adalah ketika titik-titik dalam <em>scatter plot</em> cenderung membentuk garis lurus. Sedangkan, <strong>hubungan non linear</strong> terjadi jika titik-titik dalam <em>scatter plot</em> cenderung membentuk garis lengkung. Visualisasi hubungan linear dapat dilihat pada Gambar 7.1., sedangkan hubungan non linear dapat dilihat pada <a href="#fig-korelasi-nonlinear" class="quarto-xref">Gambar&nbsp;<span>24.2</span></a>.</p>
 <div id="fig-korelasi-nonlinear" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-korelasi-nonlinear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -531,7 +553,7 @@ Gambar&nbsp;24.2: Visualisasi korelasi non-linear
 </section>
 <section id="besaran-hubungan-korelasi" class="level2" data-number="24.3">
 <h2 data-number="24.3" class="anchored" data-anchor-id="besaran-hubungan-korelasi"><span class="header-section-number">24.3</span> Besaran Hubungan Korelasi</h2>
-<p><strong>Besarnya kekuatan korelasi</strong> ditentukan oleh angka hasil pengujian korelasi atau disebut dengan koefisien korelasi. Koefisien korelasi mencerminkan tingkat konsistensi hubungan antara dua variabel. Koefisien korelasi berada pada rentang 0.00 (tidak berkorelasi) dan 1.00 (korelasi sempurna), semakin mendekati 1.00 menunjukkan derajat hubungan yang semakin kuat. Koefisien korelasi .72 memiliki hubungan yang lebih kuat dibandingkan .55. Ketika divisualisasikan dalam <em>scatter plot</em>, kuat atau lemahnya korelasi dapat dilihat dari kepadatan sebaran data di sekitar garis korelasi. Visualisasi dapat dilihat pada <a href="#fig-magnitude" class="quarto-xref">Gambar&nbsp;<span class="quarto-unresolved-ref">fig-magnitude</span></a>, sedangkan kekuatan korelasi dapat diinterpretasikan dengan mengacu pada <a href="#tbl-koefisien" class="quarto-xref">Tabel&nbsp;<span class="quarto-unresolved-ref">tbl-koefisien</span></a>.</p>
+<p><strong>Besarnya kekuatan korelasi</strong> ditentukan oleh angka hasil pengujian korelasi atau disebut dengan koefisien korelasi. Koefisien korelasi mencerminkan tingkat konsistensi hubungan antara dua variabel. Koefisien korelasi berada pada rentang 0.00 (tidak berkorelasi) dan 1.00 (korelasi sempurna), semakin mendekati 1.00 menunjukkan derajat hubungan yang semakin kuat. Koefisien korelasi .72 memiliki hubungan yang lebih kuat dibandingkan .55. Ketika divisualisasikan dalam <em>scatter plot</em>, kuat atau lemahnya korelasi dapat dilihat dari kepadatan sebaran data di sekitar garis korelasi. Visualisasi dapat dilihat pada <a href="#fig-magnitude" class="quarto-xref">Gambar&nbsp;<span>24.3</span></a>, sedangkan kekuatan korelasi dapat diinterpretasikan dengan mengacu pada <a href="#tbl-koefisien" class="quarto-xref">Tabel&nbsp;<span>24.1</span></a>.</p>
 <div id="fig-magnitude" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-magnitude-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
