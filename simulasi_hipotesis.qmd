@@ -1,0 +1,86 @@
+---
+title: "Ukuran Sampel vs Signifikansi (IQ) — OJS"
+format: html
+engine: knitr   # penting: jangan panggil jupyter/python
+---
+
+```{html}
+<style>
+  .iq-wrap{max-width:900px;margin:0 auto}
+  .iq-info{
+    margin:.4rem 0 .8rem;padding:.55rem .8rem;text-align:center;
+    background:#fff;border:1px solid #e5e7eb;border-radius:10px
+  }
+  .iq-controls{display:grid;grid-template-columns:1fr;gap:.75rem;margin-top:.9rem}
+</style>
+<div class="iq-wrap"></div>
+```
+
+```{ojs}
+import * as Plot from "npm:@observablehq/plot";
+import { jStat } from "npm:jstat";
+
+/* ====== Parameter & util ====== */
+const muM = 100, sd = 15;                // Laki-laki: μ=100, σ=15
+function erfinv(x){                      // inverse error function (untuk qnorm ringan)
+  const a=0.147, ln=Math.log(1-x*x), t=2/(Math.PI*a)+ln/2, s=x<0?-1:1;
+  return s*Math.sqrt(Math.sqrt(t*t-ln/a)-t);
+}
+const qnorm = p => Math.SQRT2 * erfinv(2*p - 1);
+const fmtp = p => (p < 1e-3 ? "< 0.001" : p.toFixed(3));
+
+/* ====== Kontrol (akan kita tampilkan di bawah plot) ====== */
+const ctlDelta = Inputs.range([0,5], {step:0.5, value:0, label:"Δ (μL−μP)"});
+const ctlN     = Inputs.radio([100,500,1000,10000], {value:100, label:"n per kelompok", layout:"horizontal"});
+
+const delta = Generators.input(ctlDelta);
+const n     = Generators.input(ctlN);
+
+/* ====== Data deterministik (kuantil teoritis, tanpa sampling berat) ====== */
+const m = 200;
+const probs = Array.from({length:m}, (_,i)=>(i+0.5)/m);
+const muF = muM - delta;                                 // Perempuan bergeser Δ
+const data = [
+  ...probs.map(p => ({group:"Laki-laki",  y: muM + sd*qnorm(p)})),
+  ...probs.map(p => ({group:"Perempuan", y: muF + sd*qnorm(p)})),
+];
+
+/* ====== t & p (dua-arah, var.equal) ====== */
+const se = Math.sqrt(sd*sd/n + sd*sd/n);
+const t  = (muM - muF) / se;
+const df = 2*n - 2;
+const p  = 2*(1 - jStat.studentt.cdf(Math.abs(t), df));
+
+/* ====== Panel hasil (di bawah judul) ====== */
+display(html`<div class="iq-info">
+  <b>n/kelompok:</b> ${n} &nbsp;&nbsp;|&nbsp;&nbsp;
+  <b>Δ:</b> ${(muM-muF).toFixed(1)} &nbsp;&nbsp;|&nbsp;&nbsp;
+  <b>t(${df}) = ${t.toFixed(3)}</b> &nbsp;&nbsp;|&nbsp;&nbsp;
+  <b>p = ${fmtp(p)}</b>
+</div>`);
+
+/* ====== Plot (boxplot + titik) ====== */
+display(Plot.plot({
+  height: 390,
+  marginTop: 10,
+  marginBottom: 60,
+  x: {label:""},
+  y: {label:"Skor IQ"},
+  color: {legend: true},
+  marks: [
+    Plot.boxY(data, {
+      x: "group", y: "y",
+      fill: d => d.group==="Laki-laki" ? "#2563EB" : "#DC2626",
+      stroke: "currentColor", inset: 8
+    }),
+    Plot.dot(data, {
+      x:"group", y:"y",
+      fill: d => d.group==="Laki-laki" ? "#93C5FD" : "#FCA5A5",
+      r: 2, opacity: 0.6
+    })
+  ]
+}));
+
+/* ====== Tampilkan kontrol rapi di bawah plot ====== */
+display(html`<div class="iq-controls">${ctlDelta}${ctlN}</div>`);
+```
