@@ -17,7 +17,7 @@ Jika asumsi-asumsi ini tidak terpenuhi, analisis regresi dapat menghasilkan kesi
 
 Setelah menjalankan analisis regresi, hasil yang diperoleh harus diinterpretasikan untuk memahami hubungan antara X dan Y (lihat @fig-regresi-sederhana). Hal-hal yang perlu diperhatikan dalam interpretasi hasil adalah:
 
--   **Koefisien Regresi (*β*)**: Koefisien regresi menunjukkan seberapa besar perubahan **rata-rata Y** untuk setiap perubahan satu unit pada **X**. Interpretasi ini memberikan gambaran tentang peran variabel prediktor terhadap variabel luaran.
+-   **Koefisien Regresi (*β*)**: Koefisien regresi menunjukkan seberapa besar perubahan **rata-rata Y** untuk setiap perubahan satu standar deviasi pada **X**. Interpretasi ini memberikan gambaran tentang peran variabel prediktor terhadap variabel luaran.
 
 -   ***Intercept*** **(*a*)**: *Intercept* menunjukkan nilai Y ketika X = 0. Dalam beberapa kasus, *intercept* mungkin tidak memiliki makna praktis, terutama jika X = 0 tidak realistis dalam konteks penelitian.
 
@@ -25,7 +25,7 @@ Setelah menjalankan analisis regresi, hasil yang diperoleh harus diinterpretasik
 
 -   ***R-squared*** **(*R²*)**: Nilai *R²* menunjukkan seberapa besar **proporsi variabilitas** dalam variabel *outcome* yang dapat dijelaskan oleh variabel prediktor. *R*² berkisar antara 0 dan 1, di mana semakin mendekati 1, semakin baik model regresi dalam memprediksi variabel *outcome*. R² yang rendah menunjukkan bahwa model tidak dapat menjelaskan variabilitas Y secara signifikan.
 
-![Contoh output hasil analisis regresi sederhana](images/8_1_regresi_sederhana.png){#fig-regresi-sederhana alt="Contoh output hasil analisis regresi sederhana" fig-align="center"}
+![Contoh output hasil analisis regresi sederhana](images/8_1_regresi_sederhana.png){#fig-regresi-sederhana fig-align="center"}
 
 ## Penulisan Laporan Hasil Regresi Sederhana
 

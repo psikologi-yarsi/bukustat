@@ -667,6 +667,266 @@ Tabel&nbsp;10.1: Perbandingan metode statistik parametrik dan non-parametrik
 </div>
 </figure>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Simulasi Interaktif
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="stats-card">
+  <h2 class="anchored">🧪 Uji Normalitas Data (Shapiro–Wilk)</h2>
+  <p class="desc">Generate data acak, hitung nilai W dan p-value, lalu tebak distribusinya.</p>
+
+  <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+    <button id="genBtn" class="btn primary" style="flex:1;">🎲 Generate Data</button>
+    <button id="resetBtn" class="btn danger small">♻️ Reset</button>
+  </div>
+
+  <textarea id="dataBox" rows="5" placeholder="Data akan muncul di sini..." readonly=""></textarea>
+  
+  <button id="calcBtn" class="btn secondary" style="width:100%;" disabled="">📊 Hitung Shapiro–Wilk</button>
+
+  <div id="resultSection" style="margin-top:12px; display:none;">
+    <p><strong>Hasil Uji Shapiro–Wilk:</strong></p>
+    <p>W = <span id="wValue"></span></p>
+    <p>p-value = <span id="pValue"></span></p>
+  </div>
+
+  <div id="quizSection" style="margin-top:15px; display:none;">
+    <p><strong>Pertanyaan:</strong> Berdasarkan p-value di atas, bagaimana distribusi data?</p>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <button class="btn quiz-btn" data-ans="normal">Normal</button>
+      <button class="btn quiz-btn" data-ans="tidak">Tidak Normal</button>
+    </div>
+    <div id="quizFeedback" style="margin-top:10px; font-size:1.2rem;"></div>
+    <!-- Tombol Reset tambahan di bawah -->
+    <button id="resetBtnBottom" class="btn danger" style="width:100%; margin-top:15px;">♻️ Reset All</button>
+  </div>
+</div>
+
+<style>
+  .stats-card {
+    max-width: 520px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    font-family: system-ui, sans-serif;
+    color: #222;
+    margin: 12px auto;
+  }
+  .stats-card h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    color: #4a3aff;
+  }
+  .stats-card .desc {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #555;
+  }
+  .stats-card textarea {
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    resize: vertical;
+    margin-bottom: 8px;
+  }
+  .btn {
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  .btn.primary { background: linear-gradient(135deg, #4a3aff, #6c63ff); color: #fff; }
+  .btn.secondary { background: linear-gradient(135deg, #009688, #4db6ac); color: #fff; }
+  .btn.danger { background: linear-gradient(135deg, #e53935, #ef5350); color: #fff; }
+  .btn.small { padding: 8px 14px; font-size: 1rem; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // ---- Fungsi utilitas ----
+  function mean(arr) { return arr.reduce((a,b)=>a+b,0)/arr.length; }
+  function stddev(arr) { 
+    let m = mean(arr); 
+    return Math.sqrt(arr.reduce((sum,v)=>sum+(v-m)**2,0)/(arr.length-1)); 
+  }
+
+  // ---- Fungsi dasar distribusi normal ----
+  function randNormalRaw(mean=50, sd=10){
+    let u=0, v=0;
+    while(u===0) u = Math.random();
+    while(v===0) v = Math.random();
+    let num = Math.sqrt(-2.0*Math.log(u)) * Math.cos(2.0*Math.PI*v);
+    return mean + sd * num;
+  }
+  function randNormalInt(mean=50, sd=10){ return Math.round(randNormalRaw(mean, sd)); }
+  function randSkewedPositiveInt(mean=50, sd=10){ return Math.round(mean + Math.abs(randNormalRaw(0, sd))); }
+  function randSkewedNegativeInt(mean=50, sd=10){ return Math.round(mean - Math.abs(randNormalRaw(0, sd))); }
+
+  // ---- Approx Shapiro–Wilk ----
+  function shapiroWilkTest(x) {
+    let n = x.length;
+    let sorted = [...x].sort((a,b)=>a-b);
+    let m = mean(sorted);
+    let s = stddev(sorted);
+    
+    let a = [];
+    for (let i=0; i<n; i++) {
+      let val = (i+1 - 0.375) / (n + 0.25);
+      a.push(normSInv(val));
+    }
+    let c = Math.sqrt(a.reduce((sum,v)=>sum+v*v,0));
+    a = a.map(v => v/c);
+
+    let b = 0;
+    for (let i=0; i<n/2; i++) {
+      b += a[i] * (sorted[n-1-i] - sorted[i]);
+    }
+    let W = (b*b) / (x.reduce((sum,v)=>sum+(v-m)**2,0));
+    let p = Math.max(0, Math.min(1, 1 - Math.exp(-5*(W-0.9)))); 
+    return {W, p};
+  }
+
+  // ---- Inverse Normal CDF ----
+  function normSInv(p) {
+    if (p <= 0 || p >= 1) return 0;
+    const a1=-39.6968302866538,a2=220.946098424521,a3=-275.928510446969;
+    const a4=138.357751867269,a5=-30.6647980661472,a6=2.50662827745924;
+    const b1=-54.4760987982241,b2=161.585836858041,b3=-155.698979859887;
+    const b4=66.8013118877197,b5=-13.2806815528857;
+    const c1=-0.00778489400243029,c2=-0.322396458041136,c3=-2.40075827716184;
+    const c4=-2.54973253934373,c5=4.37466414146497,c6=2.93816398269878;
+    const d1=0.00778469570904146,d2=0.32246712907004,d3=2.445134137143,d4=3.75440866190742;
+    const plow=0.02425, phigh=1-plow;
+    let q,r;
+    if (p < plow) { q=Math.sqrt(-2*Math.log(p)); return (((((c1*q+c2)*q+c3)*q+c4)*q+c5)*q+c6)/((((d1*q+d2)*q+d3)*q+d4)*q+1);}
+    if (phigh < p){ q=Math.sqrt(-2*Math.log(1-p)); return -(((((c1*q+c2)*q+c3)*q+c4)*q+c5)*q+c6)/((((d1*q+d2)*q+d3)*q+d4)*q+1);}
+    q=p-0.5;r=q*q;
+    return (((((a1*r+a2)*r+a3)*r+a4)*r+a5)*r+a6)*q/(((((b1*r+b2)*r+b3)*r+b4)*r+b5)*r+1);
+  }
+
+  // ---- Event handling ----
+  const $ = id => document.getElementById(id);
+  let currentData = [];
+  let currentType = "";
+
+  // Fungsi untuk update status tombol hitung
+  function updateCalcBtnState() {
+    $('calcBtn').disabled = currentData.length === 0;
+  }
+
+  $('genBtn').addEventListener('click', ()=>{
+    let type = Math.random() < 0.5 ? "normal" : "tidak";
+    if (type === "normal") {
+      currentData = Array.from({length:40}, ()=>randNormalInt(50,10));
+    } else {
+      if (Math.random() < 0.5) {
+        currentData = Array.from({length:40}, ()=>randSkewedPositiveInt(40,10));
+      } else {
+        currentData = Array.from({length:40}, ()=>randSkewedNegativeInt(60,10));
+      }
+    }
+    currentType = type;
+    $('dataBox').value = currentData.join(", ");
+    $('resultSection').style.display = "none";
+    $('quizSection').style.display = "none";
+    $('quizFeedback').innerHTML = "";
+    document.querySelectorAll('.quiz-btn').forEach(b=>{ 
+      b.style.background=""; 
+      b.style.color=""; 
+      b.disabled=false; 
+    });
+    updateCalcBtnState(); // Update status tombol hitung
+  });
+
+  $('calcBtn').addEventListener('click', ()=>{
+    if(currentData.length===0) return; // Tambahan pengaman
+    let res = shapiroWilkTest(currentData);
+    $('wValue').textContent = res.W.toFixed(4);
+    $('pValue').textContent = res.p.toFixed(4);
+    $('resultSection').style.display = "block";
+    $('quizSection').style.display = "block";
+  });
+
+  document.querySelectorAll('.quiz-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      let ans = btn.dataset.ans;
+      document.querySelectorAll('.quiz-btn').forEach(b => b.disabled = true);
+      
+      const pValue = parseFloat($('pValue').textContent);
+      const isNormal = pValue > 0.05;
+      const correctAns = isNormal ? "normal" : "tidak";
+      
+      if (ans === correctAns) {
+        btn.style.background = 'green';
+        btn.style.color = 'white';
+        $('quizFeedback').innerHTML = "<strong style='color:green;'>Tepat!</strong>";
+      } else {
+        btn.style.background = 'red';
+        btn.style.color = 'white';
+        
+        document.querySelectorAll('.quiz-btn').forEach(b => {
+          if (b.dataset.ans === correctAns) {
+            b.style.background = 'green';
+            b.style.color = 'white';
+          }
+        });
+        
+        const alasan = isNormal
+          ? "Karena p-value > 0.05, data dianggap normal."
+          : "Karena p-value ≤ 0.05, data dianggap tidak normal.";
+        
+        $('quizFeedback').innerHTML = `
+          <strong style='color:red;'>Salah</strong>. 
+          Jawaban benar: <strong>${isNormal ? "Normal" : "Tidak Normal"}</strong>. 
+          ${alasan}
+        `;
+      }
+    });
+  });
+
+  // Fungsi reset
+  function resetAll() {
+    currentData = [];
+    $('dataBox').value = "";
+    $('resultSection').style.display = "none";
+    $('quizSection').style.display = "none";
+    $('quizFeedback').innerHTML = "";
+    document.querySelectorAll('.quiz-btn').forEach(b=>{
+      b.disabled=false; 
+      b.style.background=""; 
+      b.style.color="";
+    });
+    updateCalcBtnState(); // Update status tombol hitung
+  }
+
+  // Event listener untuk kedua tombol reset
+  $('resetBtn').addEventListener('click', resetAll);
+  $('resetBtnBottom').addEventListener('click', resetAll);
+
+  // Inisialisasi awal
+  updateCalcBtnState();
+});
+</script>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">

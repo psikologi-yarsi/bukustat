@@ -659,6 +659,242 @@ window.Quarto = {
 </tbody>
 </table>
 <p>Berdasarkan pengelompokan data berdasarkan frekuensi kemunculannya yang ditampilkan pada tabel Distribusi frekuensi tersebut, maka kita dapat menentukan bahwa nilai Modus dari data adalah 4.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Simulasi Interaktif
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="stats-card">
+  <h2 class="anchored">🔢 Menghitung Ukuran Pemusatan Data</h2>
+  <p class="desc">Pilih cara input data, lalu hitung Mean, Median, dan Modus.</p>
+
+  <label><input type="radio" name="mode" value="generate" checked=""> Generate angka acak (n=40, 20–50)</label><br>
+  <label><input type="radio" name="mode" value="manual"> Masukkan data sendiri</label>
+
+  <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; align-items:center;">
+    <button id="genBtn" class="btn primary" style="flex:1;">🎲 Generate Data</button>
+    <button id="resetBtn" class="btn danger small">🔁 Reset</button>
+  </div>
+
+  <textarea id="dataBox" rows="10" placeholder="Data akan muncul di sini setelah di-generate..."></textarea>
+
+  <button id="calcBtn" class="btn secondary">📊 Hitung Mean • Median • Modus</button>
+
+  <div id="out" class="result-box">Siap menghitung…</div>
+</div>
+
+<style>
+  .stats-card {
+    max-width: 520px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    font-family: system-ui, sans-serif;
+    color: #222;
+    margin: 12px auto;
+  }
+  .stats-card h2 {
+    margin-top: 0;
+    font-size: 2.2rem; /* lebih besar */
+    color: #4a3aff;
+  }
+  .stats-card .desc {
+    font-size: 1.5rem; /* lebih besar */
+    color: #555;
+    margin-bottom: 12px;
+  }
+  .stats-card textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px; /* lebih besar */
+    margin: 8px 0;
+    font-size: 1.4rem; /* lebih besar */
+    font-family: monospace;
+    resize: vertical;
+    transition: background 0.2s ease;
+  }
+  .textarea-readonly {
+    background: #f0f0f0;
+  }
+  .textarea-editable {
+    background: #f8f8ff;
+  }
+  .btn {
+    padding: 12px; /* lebih tinggi */
+    font-size: 1.4rem; /* lebih besar */
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+  }
+  .btn.primary {
+    background: linear-gradient(135deg, #4a3aff, #6c63ff);
+    color: white;
+  }
+  .btn.secondary {
+    background: linear-gradient(135deg, #ff9800, #ffc107);
+    color: white;
+    width: 100%;
+  }
+  .btn.danger {
+    background: linear-gradient(135deg, #e53935, #ef5350);
+    color: white;
+  }
+  .btn.small {
+    padding: 8px 14px;
+    font-size: 1.3rem; /* sedikit lebih besar */
+    flex: 0 0 auto;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  .result-box {
+    background: #f0f4ff;
+    border-left: 5px solid #4a3aff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+    font-family: monospace;
+    font-size: 1.05rem;
+    white-space: pre-wrap;
+    color: #333;
+  }
+
+  /* Responsif untuk layar kecil */
+  @media (max-width: 480px) {
+    .stats-card {
+      padding: 16px;
+    }
+    .stats-card h2 {
+      font-size: 1.8rem; /* lebih kecil sedikit agar muat di layar */
+    }
+    .stats-card .desc {
+      font-size: 1.2rem;
+    }
+    .stats-card textarea {
+      font-size: 1.2rem;
+    }
+    .btn {
+      font-size: 1.2rem;
+      width: 100%; /* tombol full width di layar kecil */
+    }
+    .btn.small {
+      width: 100%;
+    }
+    /* Atur ulang tombol generate & reset agar vertikal di mobile */
+    .stats-card div[style*="display:flex"] {
+      flex-direction: column !important;
+    }
+  }
+</style>
+
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  const N = 40, MIN = 20, MAX = 50;
+
+  function randInt(min, max){ return Math.floor(Math.random()*(max-min+1))+min; }
+  function parseNums(text){
+    if(!text) return [];
+    return text.trim().split(/[\s,;]+/).map(Number).filter(v => Number.isFinite(v));
+  }
+  function mean(a){ return a.reduce((s,v)=>s+v,0)/a.length; }
+  function median(a){
+    const s=[...a].sort((x,y)=>x-y), m=Math.floor(s.length/2);
+    return s.length%2 ? s[m] : (s[m-1]+s[m])/2;
+  }
+  function mode(a){
+    const f={}; let max=0;
+    for(const v of a){ f[v]=(f[v]||0)+1; if(f[v]>max) max=f[v]; }
+    const modes = Object.keys(f).filter(k => f[k]===max);
+    return {values:modes.map(Number), freq:max};
+  }
+
+  // Inisialisasi awal
+  document.addEventListener('DOMContentLoaded', () => {
+    $('dataBox').readOnly = true;
+    $('dataBox').classList.add('textarea-readonly');
+    $('out').textContent = "Mode Generate: klik 🎲 untuk membuat data acak.";
+  });
+
+  // Ganti mode
+  document.querySelectorAll('input[name="mode"]').forEach(radio=>{
+    radio.addEventListener('change', ()=>{
+      const mode = document.querySelector('input[name="mode"]:checked').value;
+      if(mode === "generate"){
+        $('dataBox').readOnly = true;
+        $('dataBox').classList.add('textarea-readonly');
+        $('dataBox').classList.remove('textarea-editable');
+        $('dataBox').value = "";
+        $('dataBox').placeholder = "Data akan muncul di sini setelah di-generate...";
+        $('genBtn').textContent = "🎲 Generate Data";
+        $('out').textContent = "Mode Generate: klik 🎲 untuk membuat data acak.";
+      } else {
+        $('dataBox').readOnly = false;
+        $('dataBox').classList.add('textarea-editable');
+        $('dataBox').classList.remove('textarea-readonly');
+        $('dataBox').value = "";
+        $('dataBox').placeholder = "Ketik atau tempel (paste) angka di sini, satu angka bulat per baris...";
+        $('genBtn').textContent = "⌨️ Gunakan Data";
+        $('out').textContent = "Mode Manual: masukkan data (hanya angka bulat), 1 angka per baris.";
+      }
+    });
+  });
+
+  // Tombol Generate / Gunakan Data
+  $('genBtn').addEventListener('click', ()=>{
+    const mode = document.querySelector('input[name="mode"]:checked').value;
+    if(mode === "generate"){
+      const arr = Array.from({length:N}, ()=>randInt(MIN,MAX));
+      $('dataBox').value = arr.join('\n');
+      $('out').textContent = `Data acak dibuat (${N} angka, rentang ${MIN}–${MAX}). Klik 📊 Hitung untuk melihat hasil.`;
+    } else {
+      $('out').textContent = "Masukkan data (hanya angka), 1 angka per baris.";
+    }
+  });
+
+  // Batasi input di mode manual
+  $('dataBox').addEventListener('input', ()=>{
+    const mode = document.querySelector('input[name="mode"]:checked').value;
+    if(mode === "manual"){
+      let cleaned = $('dataBox').value.replace(/[^0-9\s]/g, "");
+      cleaned = cleaned.replace(/[\s,]+/g, "\n");
+      $('dataBox').value = cleaned;
+    }
+  });
+
+  // Tombol Reset
+  $('resetBtn').addEventListener('click', ()=>{
+    $('dataBox').value = "";
+    $('out').textContent = "Siap menghitung…";
+  });
+
+  // Hitung statistik
+  $('calcBtn').addEventListener('click', ()=>{
+    const arr = parseNums($('dataBox').value);
+    if(arr.length<3){ $('out').textContent='Data terlalu sedikit atau tidak valid.'; return; }
+    const m = mean(arr);
+    const med = median(arr);
+    const mo = mode(arr);
+    $('out').textContent =
+      `n       : ${arr.length}
+Mean    : ${m.toFixed(2)}
+Median  : ${med}
+Modus   : ${mo.values.join(', ')} (frekuensi ${mo.freq})`;
+  });
+})();
+</script>
+</div>
+</div>
 
 
 </section>
