@@ -45,3 +45,397 @@ Terdapat dua hal penting yang perlu diingat diingat dalam menginterpretasi signi
 Kedua, *p-value* tidak menunjukkan peluang hipotesis benar atau salah, dan tidak membuktikan H₀ atau H₁ secara mutlak. *p-value* kecil menunjukkan bahwa jika H₀ benar, peluang memperoleh data seperti yang diamati sangat kecil; *p-value* besar menunjukkan data konsisten dengan H₀, tetapi bukan bukti bahwa H₀ benar.
 
 Dengan memahami hubungan antara signifikansi dan *p-value*, peneliti dapat membuat keputusan yang lebih tepat dalam pengujian hipotesis, sekaligus menghindari kesalahan interpretasi yang umum terjadi.
+
+:::: {.content-visible when-format="html"}
+::: callout-tip
+## Simulasi Interaktif
+
+```{=html}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Modul Interaktif: Nilai p dan Ukuran Sampel</title>
+
+<style>
+/* ======================================================
+   KARTU UTAMA (seragam dengan modul lain)
+   ====================================================== */
+.stats-card {
+  max-width: 760px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  font-family: system-ui, sans-serif;
+  color: #222;
+  margin: 16px auto;
+}
+
+.stats-card h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  color: #4a3aff;
+}
+
+.stats-card .desc {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.stats-card label {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.stats-card input[type="range"] {
+  width: 100%;
+  margin: 6px 0 4px;
+}
+
+/* ======================================================
+   TOMBOL
+   ====================================================== */
+.btn {
+  padding: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #4a3aff, #6c63ff);
+  color: white;
+}
+
+.btn.secondary {
+  background: linear-gradient(135deg, #ff9800, #ffc107);
+  color: white;
+}
+
+.btn.danger {
+  background: linear-gradient(135deg, #e53935, #ef5350);
+  color: white;
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 1.3rem;
+}
+
+/* ======================================================
+   GRID STATISTIK (2 × 2)
+   ====================================================== */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.stat-box {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.stat-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.stat-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.stat-value {
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.stat-value.big {
+  font-size: 2.4rem;
+}
+
+.stat-sub {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* ======================================================
+   KOTAK INTERPRETASI (PINK / HIJAU)
+   ====================================================== */
+.pv-result {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+.pv-result.nsig {
+  background: #fff1f2;
+  border-left: 6px solid #ef4444;
+  color: #7f1d1d;
+}
+
+.pv-result.sig {
+  background: #ecfdf5;
+  border-left: 6px solid #10b981;
+  color: #065f46;
+}
+
+.pv-result strong {
+  font-weight: 700;
+}
+
+/* ======================================================
+   RESPONSIF
+   ====================================================== */
+@media (max-width: 560px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-card h2 {
+    font-size: 1.8rem;
+  }
+  .stats-card .desc {
+    font-size: 1.2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="stats-card">
+
+  <!-- ===============================
+       DESKRIPSI AWAL
+       =============================== -->
+  <h2>📉 Mengapa Nilai p Tidak Cukup?</h2>
+  <p class="desc">
+    <strong>Nilai p sangat dipengaruhi oleh jumlah sampel (n)</strong>.
+    Dengan efek yang sama, peningkatan n saja dapat mengubah kesimpulan statistik.
+  </p>
+
+  <!-- ===============================
+       PILIH KASUS
+       =============================== -->
+  <p><strong>Pilih contoh kasus:</strong></p>
+  <button class="btn primary" onclick="showTTest()">📊 Perbedaan Mean (t-test)</button>
+  <button class="btn secondary" onclick="showCorr()">🔗 Korelasi</button>
+
+  <!-- ===============================
+       SLIDER
+       =============================== -->
+  <div id="sliderArea" style="display:none; margin-top:16px;">
+    <label>
+      Jumlah partisipan <span id="nLabel"></span>:
+      <strong id="nVal">–</strong>
+    </label>
+    <input type="range" id="nSlider">
+    <p class="desc"><em>Geser slider ke kanan untuk meningkatkan jumlah partisipan (n).</em></p>
+  </div>
+
+  <!-- ===============================
+       GRID STATISTIK
+       =============================== -->
+  <div id="statArea" style="display:none;">
+
+    <!-- t-test -->
+    <div id="ttestGrid" class="stat-grid" style="display:none;">
+      <div class="stat-box">
+        <div class="stat-title">RATA-RATA</div>
+        <div class="stat-text">A = 50<br>B = 52</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-title">UJI STATISTIK</div>
+        <div class="stat-value">t = <span id="tVal">–</span></div>
+        <div class="stat-sub">df = <span id="dfVal">–</span></div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-title">NILAI p</div>
+        <div class="stat-value big" id="pValT">–</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-title">EFFECT SIZE</div>
+        <div class="stat-value">d = 0.20</div>
+      </div>
+    </div>
+
+    <!-- korelasi -->
+    <div id="corrGrid" class="stat-grid" style="display:none;">
+      <div class="stat-box">
+        <div class="stat-title">KORELASI</div>
+        <div class="stat-value">r = 0.20</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-title">JUMLAH SAMPEL</div>
+        <div class="stat-text">n = <span id="nCorr">–</span></div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-title">NILAI p</div>
+        <div class="stat-value big" id="pValC">–</div>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-title">INTERPRETASI</div>
+        <div class="stat-text">Kekuatan hubungan <strong>tetap</strong></div>
+      </div>
+    </div>
+
+    <!-- KOTAK INTERPRETASI -->
+    <div id="resultBox" class="pv-result"></div>
+  </div>
+
+  <button class="btn danger small" style="margin-top:16px;" onclick="resetAll()">🔁 Reset</button>
+
+</div>
+
+<script>
+/* ======================================================
+   UTIL STATISTIK
+   ====================================================== */
+function erf(x) {
+  const sign = x >= 0 ? 1 : -1;
+  x = Math.abs(x);
+  const a1=0.254829592,a2=-0.284496736,a3=1.421413741,
+        a4=-1.453152027,a5=1.061405429,p=0.3275911;
+  const t=1/(1+p*x);
+  const y=1-(((((a5*t+a4)*t+a3)*t+a2)*t+a1)*t*Math.exp(-x*x));
+  return sign*y;
+}
+const normalCDF = x => 0.5*(1+erf(x/Math.sqrt(2)));
+const alpha = 0.05;
+
+/* ======================================================
+   PARAMETER TETAP
+   ====================================================== */
+const meanA = 50, meanB = 52, sd = 10;
+const r = 0.20;
+
+/* ======================================================
+   DOM
+   ====================================================== */
+const slider = document.getElementById("nSlider");
+const nVal = document.getElementById("nVal");
+const nLabel = document.getElementById("nLabel");
+const resultBox = document.getElementById("resultBox");
+
+let mode = null;
+
+/* ======================================================
+   MODE HANDLER
+   ====================================================== */
+function showTTest() {
+  mode = "t";
+  slider.min = 150;
+  slider.max = 230;
+  slider.value = 150;
+  nLabel.textContent = "per kelompok (n)";
+  sliderArea.style.display = "block";
+  statArea.style.display = "block";
+  ttestGrid.style.display = "grid";
+  corrGrid.style.display = "none";
+  update();
+}
+
+function showCorr() {
+  mode = "c";
+  slider.min = 30;
+  slider.max = 150;
+  slider.value = 30;
+  nLabel.textContent = "(n)";
+  sliderArea.style.display = "block";
+  statArea.style.display = "block";
+  corrGrid.style.display = "grid";
+  ttestGrid.style.display = "none";
+  update();
+}
+
+slider.addEventListener("input", update);
+
+/* ======================================================
+   UPDATE
+   ====================================================== */
+function update() {
+  const n = +slider.value;
+  nVal.textContent = n;
+
+  if (mode === "t") {
+    const se = Math.sqrt((2 * sd * sd) / n);
+    const t = (meanB - meanA) / se;
+    const df = 2 * n - 2;
+    const p = 2 * (1 - normalCDF(Math.abs(t)));
+
+    tVal.textContent = t.toFixed(2);
+    dfVal.textContent = df;
+    pValT.textContent = p.toFixed(4);
+
+    resultBox.className = "pv-result " + (p < alpha ? "sig" : "nsig");
+    resultBox.innerHTML =
+      p < alpha
+        ? "<strong>Hasil signifikan.</strong> Perbedaan mean yang sama kini signifikan secara statistik."
+        : "<strong>Hasil tidak signifikan.</strong> Perbedaan mean yang sama belum cukup kuat secara statistik.";
+  }
+
+  if (mode === "c") {
+    const t = r * Math.sqrt((n - 2) / (1 - r * r));
+    const p = 2 * (1 - normalCDF(Math.abs(t)));
+
+    nCorr.textContent = n;
+    pValC.textContent = p.toFixed(4);
+
+    resultBox.className = "pv-result " + (p < alpha ? "sig" : "nsig");
+    resultBox.innerHTML =
+      p < alpha
+        ? "<strong>Korelasi signifikan.</strong> Nilai r tidak berubah, tetapi jumlah sampel yang besar membuat hubungan kecil ini signifikan secara statistik."
+        : "<strong>Korelasi tidak signifikan.</strong> Dengan jumlah sampel terbatas, hubungan yang sama belum cukup kuat untuk dinyatakan signifikan.";
+  }
+}
+
+/* ======================================================
+   RESET
+   ====================================================== */
+function resetAll() {
+  mode = null;
+  sliderArea.style.display = "none";
+  statArea.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+```
+:::
+::::
+
+:::: {.content-visible when-format="pdf"}
+::: callout-tip
+## Simulasi Interaktif
+
+### Simulasi Nilai p {.unnumbered}
+
+\qrcode[height=3.0cm]{https://bit.ly/48XwtiQ}
+
+\vspace{1cm}
+
+\small\textit{Scan QR atau klik \href{https://bit.ly/48XwtiQ}{link ini} untuk membuka simulasi interaktif.}
+:::
+::::

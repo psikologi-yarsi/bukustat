@@ -29,7 +29,7 @@ Interpretasi dari hasil uji beda menggunakan *paired samples t-test* juga perlu 
 
     ::: {#tbl-paired-ttest}
     | Pengukuran 1 | Pengukuran 2 | *t*   | *df* | *p*     | *Cohen's d* | *SE Cohen's d* |
-    |--------------|--------------|-------|------|---------|-------------|----------------|
+    |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
     | Hitam        | Kuning       | 5.546 | 49   | \< .001 | 0.784       | 0.224          |
 
     : Contoh hasil analisis *paired samples t-test*
@@ -56,8 +56,259 @@ Hasil uji *Wilcoxon signed-rank* menunjukkan bahwa partisipan menunjukkan perbed
 
 ::: {#tbl-wilcoxon}
 | Pengukuran 1 | Pengukuran 2 | *W* | *z* | *df* | *p* | *Rank-Biserial Correlation* | *SE Rank-Biserial Correlation* |
-|----|----|----|----|----|----|----|----|
+|---------|---------|---------|---------|---------|---------|---------|---------|
 | Hitam | Kuning | 1021.5 | 4.446 |  | \< .001 | 0.737 | 0.164 |
 
 : Contoh hasil analisis *Wilcoxon signed-rank*
 :::
+
+:::: {.content-visible when-format="html"}
+::: callout-tip
+## Simulasi Interaktif
+
+```{=html}
+<div class="stats-card">
+  <h2>📊 Analisis Perbedaan Rata-rata</h2>
+
+  <!-- STEP 1 -->
+  <div id="step1">
+    <h4>1️⃣ Pilih jenis analisis</h4>
+    <button class="btn secondary" data-analysis="independent">Independent</button>
+    <button class="btn secondary" data-analysis="paired">Paired</button>
+  </div>
+
+  <!-- STEP 2 -->
+  <div id="step2" class="step">
+    <h4>2️⃣ Pilih sumber data</h4>
+    <button class="btn secondary" data-source="manual">Input manual</button>
+    <button class="btn secondary" data-source="generated">Generate data</button>
+  </div>
+
+  <!-- STEP 3 -->
+  <div id="step3" class="step">
+    <h4>3️⃣ Data</h4>
+
+    <label id="label1"></label>
+    <textarea id="data1" rows="5"></textarea>
+
+    <label id="label2"></label>
+    <textarea id="data2" rows="5"></textarea>
+
+    <button id="assumptionBtn" class="btn primary">🧪 Uji Asumsi</button>
+  </div>
+
+  <!-- STEP 4 -->
+  <div id="step4" class="step">
+    <h4>4️⃣ Hasil uji asumsi</h4>
+    <div id="assumptionBox"></div>
+  </div>
+
+  <!-- STEP 5 -->
+  <div id="step5" class="step">
+    <h4>5️⃣ Pilih metode analisis</h4>
+    <div id="methodButtons"></div>
+    <div id="methodFeedback" style="margin-top:10px;font-size:1.05rem;"></div>
+  </div>
+
+  <!-- STEP 6 -->
+  <div id="step6" class="step">
+    <button id="analyzeBtn" class="btn primary">📊 Analisis Data</button>
+  </div>
+
+  <div id="output" class="output"></div>
+
+  <button id="resetBtn" class="btn danger small">🔁 Reset</button>
+</div>
+
+<style>
+.stats-card{
+  max-width:720px;background:#fff;padding:20px;border-radius:14px;
+  box-shadow:0 4px 18px rgba(0,0,0,.08);font-family:system-ui
+}
+.step{display:none;margin-top:15px}
+textarea{width:100%;border-radius:10px;padding:8px;font-family:monospace}
+.btn{padding:10px 14px;border-radius:10px;border:none;font-weight:600;margin:4px}
+.btn.primary{background:#4a3aff;color:#fff}
+.btn.secondary{background:#009688;color:#fff}
+.btn.danger{background:#e53935;color:#fff}
+.quiz-btn{background:#eee}
+.output{margin-top:15px;font-size:1.1rem}
+label{font-weight:600;margin-top:10px;display:block}
+</style>
+
+<script>
+/* ===============================
+   STATE & UTIL
+=============================== */
+
+let analysis="", scenario={}, chosenTest="";
+const $=id=>document.getElementById(id);
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+
+function hideAllSteps(){
+  ["step2","step3","step4","step5","step6"].forEach(s=>{
+    $(s).style.display="none";
+  });
+}
+
+/* ===============================
+   DATA BANK (SAMA SEPERTI SEBELUMNYA)
+=============================== */
+
+const dataBank = {
+  independent: {
+    labels:["Kelompok 1","Kelompok 2"],
+    methods:[
+      { id:"independent_t", label:"Independent t-test" },
+      { id:"mann_whitney", label:"Mann–Whitney U" }
+    ],
+    scenarios:[
+      {
+        data:{
+          A:[58,60,61,62,59,63,64,65,66,60,61,62,63,64,65,66,67,60,61,62,
+             63,64,65,66,67,68,60,61,62,63,64,65,66,67,68,69,61,62,63,64,
+             65,66,67,68,69,70,62,63,64,65,66,67,68,69,70,71],
+          B:[60,61,62,63,64,65,66,67,68,62,63,64,65,66,67,68,69,63,64,65,
+             66,67,68,69,70,64,65,66,67,68,69,70,71,65,66,67,68,69,70,71,
+             72,66,67,68,69,70,71,72,73,67,68,69,70,71,72,73,74]
+        },
+        assumption:{
+          shapiro:{W:0.982,p:0.43},
+          levene:{F:0.71,p:0.40}
+        },
+        correct:"independent_t",
+        result:{t:2.31,p:0.024}
+      }
+    ]
+  },
+
+  paired: {
+    labels:["Time 1","Time 2"],
+    methods:[
+      { id:"paired_t", label:"Paired samples t-test" },
+      { id:"wilcoxon", label:"Wilcoxon signed-rank test" }
+    ],
+    scenarios:[
+      {
+        data:{
+          A:[55,56,57,58,59,60,61,62,63,64,55,56,57,58,59,60,61,62,63,64,
+             55,56,57,58,59,60,61,62,63,64,55,56,57,58,59,60,61,62,63,64,
+             55,56,57,58,59,60,61,62,63,64,55,56,57,58,59,60],
+          B:[58,59,60,61,62,63,64,65,66,67,58,59,60,61,62,63,64,65,66,67,
+             58,59,60,61,62,63,64,65,66,67,58,59,60,61,62,63,64,65,66,67,
+             58,59,60,61,62,63,64,65,66,67,58,59,60,61,62,63]
+        },
+        assumption:{
+          shapiro:{W:0.986,p:0.51}
+        },
+        correct:"paired_t",
+        result:{t:3.12,p:0.004}
+      }
+    ]
+  }
+};
+
+/* ===============================
+   INTERAKSI
+=============================== */
+
+document.querySelectorAll("[data-analysis]").forEach(b=>{
+  b.onclick=()=>{
+    hideAllSteps();
+    analysis=b.dataset.analysis;
+    $("step2").style.display="block";
+  };
+});
+
+document.querySelectorAll("[data-source]").forEach(b=>{
+  b.onclick=()=>{
+    $("step3").style.display="block";
+    scenario=pick(dataBank[analysis].scenarios);
+
+    $("label1").innerText=dataBank[analysis].labels[0];
+    $("label2").innerText=dataBank[analysis].labels[1];
+
+    if(b.dataset.source==="generated"){
+      $("data1").value=scenario.data.A.join(", ");
+      $("data2").value=scenario.data.B.join(", ");
+    } else {
+      $("data1").value="";
+      $("data2").value="";
+    }
+  };
+});
+
+$("assumptionBtn").onclick=()=>{
+  $("step4").style.display="block";
+  let a=scenario.assumption;
+  let html=`Shapiro–Wilk: W = ${a.shapiro.W}, p = ${a.shapiro.p}<br>`;
+  if(a.levene){
+    html+=`Levene’s test: F = ${a.levene.F}, p = ${a.levene.p}`;
+  }
+  $("assumptionBox").innerHTML=html;
+
+  const mb=$("methodButtons");
+  mb.innerHTML="";
+  dataBank[analysis].methods.forEach(m=>{
+    const btn=document.createElement("button");
+    btn.className="btn quiz-btn";
+    btn.textContent=m.label;
+    btn.onclick=()=>chooseMethod(m.id,btn);
+    mb.appendChild(btn);
+  });
+
+  $("step5").style.display="block";
+};
+
+function chooseMethod(id,btn){
+  chosenTest=id;
+  const fb=$("methodFeedback");
+  if(id===scenario.correct){
+    btn.style.background="green";btn.style.color="#fff";
+    fb.innerHTML="✅ <strong>Pilihan Anda tepat.</strong> Metode analisis sesuai dengan hasil uji asumsi.";
+    $("step6").style.display="block";
+  } else {
+    btn.style.background="red";btn.style.color="#fff";
+    fb.innerHTML="❌ <strong>Pilihan Anda belum tepat.</strong> Perhatikan kembali hasil uji asumsi data.";
+  }
+}
+
+$("analyzeBtn").onclick=()=>{
+  let r=scenario.result;
+  $("output").innerHTML =
+    r.t
+      ? `Hasil analisis: t = ${r.t}, p = ${r.p}`
+      : `Hasil analisis: ${r.U?"U":"W"} = ${r.U||r.W}, p = ${r.p}`;
+};
+
+/* ===============================
+   RESET KE LANGKAH 1
+=============================== */
+
+$("resetBtn").onclick=()=>{
+  analysis="";scenario={};chosenTest="";
+  $("data1").value="";$("data2").value="";
+  $("assumptionBox").innerHTML="";
+  $("methodButtons").innerHTML="";
+  $("methodFeedback").innerHTML="";
+  $("output").innerHTML="";
+  hideAllSteps();
+};
+</script>
+```
+:::
+::::
+
+:::: {.content-visible when-format="pdf"}
+::: callout-tip
+## Simulasi Interaktif
+
+### Simulasi Uji-t {.unnumbered}
+
+\qrcode[height=3.0cm]{https://bit.ly/3MOszS9}
+
+\vspace{1cm}
+
+\small\textit{Scan QR atau klik \href{https://bit.ly/3MOszS9}{link ini} untuk membuka simulasi interaktif.}
+:::
+::::
