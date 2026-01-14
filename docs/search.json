@@ -1267,5 +1267,15 @@
     "crumbs": [
       "Daftar Pustaka"
     ]
+  },
+  {
+    "objectID": "decision.html",
+    "href": "decision.html",
+    "title": "Memilih Uji Statistik yang Tepat",
+    "section": "",
+    "text": "Bagian ini menyajikan decision tree interaktif untuk membantu Anda memilih uji statistik yang tepat. Jawablah pertanyaan yang muncul secara bertahap, mulai dari jumlah dan jenis variabel, desain penelitian, hingga karakteristik data, dengan mengklik opsi yang tersedia. Setiap pilihan akan mengarahkan Anda ke langkah berikutnya sampai diperoleh rekomendasi uji statistik yang sesuai. Gunakan tombol Kembali untuk meninjau ulang keputusan, atau Reset untuk mencoba skenario analisis yang berbeda. Simulasi ini dirancang sebagai sarana pembelajaran untuk melatih cara berpikir statistik secara sistematis sebelum melakukan analisis data sesungguhnya.\n\n\n\n  \n  \n  Decision Tree Statistik\n  \n\n\n  \n    Decision Tree  Analisis Statistik\n\n    \n\n    \n      Kembali\n      Reset\n    \n\n    Catatan: simulasi ini hanya alat bantu edukatif; tetap perhatikan rancangan studi, kualitas data, dan pemenuhan asumsi sebelum menarik kesimpulan.",
+    "crumbs": [
+      "Memilih Uji Statistik yang Tepat"
+    ]
   }
 ]

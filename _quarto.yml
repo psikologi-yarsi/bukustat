@@ -95,6 +95,7 @@ book:
         - 8_4_regresi_hierarkis.qmd
         - 8_latihan.qmd
     
+    - decision.qmd
     - glosarium.qmd
     - references.qmd
 
