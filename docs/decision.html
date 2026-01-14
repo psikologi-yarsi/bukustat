@@ -548,7 +548,7 @@ background-size: cover;
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Decision Tree Statistik</title>
+  <title>Decision Tree Statistik — S1 (v2.9)</title>
   <style>
     /* v2.9 — Sinkron panjang box & estetika tepi
        - Gunakan satu lebar baku: --box-max untuk .question & .choices
@@ -616,7 +616,7 @@ background-size: cover;
 
 
   <div class="wrap">
-    <h4 class="anchored"><i>Decision Tree </i> Analisis Statistik</h4>
+    <h1>Decision Tree Analisis Statistik (S1)</h1>
 
     <div id="stage" class="stage"></div>
 
@@ -625,7 +625,7 @@ background-size: cover;
       <button id="resetBtn" class="btn primary">Reset</button>
     </div>
 
-    <p class="muted" style="font-size:12px;margin-top:12px">Catatan: simulasi ini hanya alat bantu edukatif; tetap perhatikan rancangan studi, kualitas data, dan pemenuhan asumsi sebelum menarik kesimpulan.</p>
+    <p class="muted" style="font-size:12px;margin-top:12px">Catatan: alat bantu edukatif; tetap perhatikan rancangan studi, kualitas data, dan pemenuhan asumsi sebelum menarik kesimpulan.</p>
   </div>
 
   <script>
@@ -654,9 +654,14 @@ background-size: cover;
       {label:'>2 kategori — sampel berpasangan', next:'Q_ASSUMP_KPAIRED'},
     ]},
     Q_PREDICTOR_TYPE_MULTI: { id:'Q_PREDICTOR_TYPE_MULTI', kind:'question', title:'Komposisi variabel?', options:[
-      {label:'Semua kontinyu', next:'R_LM'},
-      {label:'Semua kategorikal', next:'R_LM'},
-      {label:'Campuran (kontinyu + kategorikal)', next:'R_LM'},
+      {label:'Semua kontinyu', next:'M_LM'},
+      {label:'Semua kategorikal', next:'Q_PREDICTOR_TYPE_MULTI_CAT'},
+      {label:'Campuran (kontinyu + kategorikal)', next:'MR_ANC'},
+    ]},
+    Q_PREDICTOR_TYPE_MULTI_CAT: { id:'Q_PREDICTOR_TYPE_MULTI_CAT', kind:'question', title:'Jika variabel bebas kategorikal: komposisi sampel?', options:[
+      {label:'Sampel independen', next:'F_ANOVA'},
+      {label:'Sampel berpasangan', next:'FR_ANOVA'},
+      {label:'Campuran', next:'FM_ANOVA'},
     ]},
     Q_CAT_OUTCOME_FLOW: { id:'Q_CAT_OUTCOME_FLOW', kind:'question', title:'Untuk variabel terikat kategorikal, pilih alur:', options:[
       {label:'Uji asosiasi antar variabel kategorikal', next:'Q_CAT_ASSOC'},
@@ -697,13 +702,18 @@ background-size: cover;
     R_KW: { id:'R_KW', kind:'result', title:'Kruskal–Wallis' },
     R_ANOVA_RM: { id:'R_ANOVA_RM', kind:'result', title:'Repeated-Measures ANOVA' },
     R_FRIEDMAN: { id:'R_FRIEDMAN', kind:'result', title:'Friedman Test' },
-    R_PEARSON: { id:'R_PEARSON', kind:'result', title:'Korelasi Pearson r' },
+    R_PEARSON: { id:'R_PEARSON', kind:'result', title:'Korelasi Pearson r/Simple Linear Regression' },
     R_SPEARMAN_KENDALL: { id:'R_SPEARMAN_KENDALL', kind:'result', title:'Korelasi Spearman ρ / Kendall τ' },
     R_POINT_BISERIAL: { id:'R_POINT_BISERIAL', kind:'result', title:'Point-biserial r' },
     R_CHI2: { id:'R_CHI2', kind:'result', title:'Chi-square (Independence)' },
     R_MCNEMAR: { id:'R_MCNEMAR', kind:'result', title:'McNemar Test' },
     R_COCHRAN_Q: { id:'R_COCHRAN_Q', kind:'result', title:"Cochran's Q" },
     R_LM: { id:'R_LM', kind:'result', title:'Regresi Linear (Simple & Multiple)' },
+    M_LM: { id:'M_LM', kind:'result', title:'Multiple Linear Regression' },
+    F_ANOVA: { id:'F_ANOVA', kind:'result', title:'Independent Factorial ANOVA' },
+    FR_ANOVA: { id:'FR_ANOVA', kind:'result', title:'Factorial Repeated Measures ANOVA' },
+    FM_ANOVA: { id:'FM_ANOVA', kind:'result', title:'Factorial Mixed ANOVA' },
+    MR_ANC: { id:'MR_ANC', kind:'result', title:'Multiple Regression/ANCOVA' },
     R_OOS_MV: { id:'R_OOS_MV', kind:'result', title:'Di Luar Cakupan S1 (MANOVA/MANCOVA)' },
     R_OOS_CAT_OUTCOME: { id:'R_OOS_CAT_OUTCOME', kind:'result', title:'Di luar cakupan  materi S1 (Logistik/Ordinal/Multikelas)' },
   };
