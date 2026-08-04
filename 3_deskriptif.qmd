@@ -11,13 +11,13 @@ Bagian ini terdiri dari tiga bagian utama. Pertama, pembahasan mengenai ukuran p
 -   Menghitung dan menginterpretasikan *mean*, median, dan modus dari data.
 -   Memilih ukuran pemusatan data yang paling tepat berdasarkan karakteristik distribusi data.
 
-**Bab 8. Pembersihan Data:**
+**Bab 8. Ukuran Penyebaran Data:**
 
--   Melakukan analisis deskriptif awal untuk mengevaluasi distribusi dan karakteristik dasar data.
--   Mengidentifikasi dan menangani data hilang (*missing value*) serta *outlier* secara tepat untuk memastikan keakuratan analisis lanjutan.
+-   Menjelaskan konsep dispersi sebagai ukuran penyebaran data serta membedakan berbagai ukuran dispersi.
+-   Menghitung dan menginterpretasikan ukuran penyebaran data untuk menilai tingkat keragaman data serta membandingkan penyebaran antar kelompok data dalam konteks penelitian psikologi dan ilmu sosial.
 
-**Bab 9. Akuntabilitas Data:**
+**Bab 9. Bentuk Distribusi Data:**
 
--   Menjelaskan pentingnya pencatatan proses analisis statistik sebagai bentuk akuntabilitas ilmiah.
--   Memahami pentingnya transparansi dalam meningkatkan kualitas dan integritas penelitian psikologi.
+-   Menjelaskan karakteristik bentuk distribusi data serta menginterpretasikan implikasinya terhadap analisis statistik.
+-   Menghitung dan menginterpretasikan z-score untuk menentukan posisi relatif suatu nilai dalam distribusi data dan mengidentifikasi nilai ekstrem (*outlier*).
 :::
